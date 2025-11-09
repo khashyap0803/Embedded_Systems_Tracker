@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "embedded-tracker"
+version = "0.1.0"
+description = "Cross-platform roadmap tracking app for embedded systems mastery"
+authors = ["Khashyap <khashyap@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "embedded_tracker" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+PySide6 = "^6.7.0"
+sqlmodel = "^0.0.16"
+rich = "^13.9.0"
+notion-client = "^2.2.1"
+openai = "^1.44.1"
+anthropic = "^0.31.0"
+secretstorage = "^3.3.3"
+pytest = "^8.3.3"
+reportlab = "^4.1.0"
+pyusb = "^1.3.0"
+plyer = "^2.1.0"
+python-dateutil = "^2.9.0.post0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.8.0"
+ruff = "^0.6.8"
+pyinstaller = "^6.11.0"
+
+[tool.poetry.scripts]
+embedded-tracker = "embedded_tracker.cli:main"
+embedded-tracker-gui = "embedded_tracker.gui.main_window:run"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

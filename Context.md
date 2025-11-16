@@ -32,12 +32,17 @@
 
 ## Recent enhancements
 - Rebuilt the roadmap generator to cover the full 52-week curriculum with projects, certifications, applications, and metrics metadata.
+- Re-sequenced Phase 1 so the first 8 weeks now drill electronics fundamentals, digital logic, C syntax mastery, and UART/I2C/SPI basics before moving into advanced hardware bring-up.
+- Extended Phase 2 with RISC-V + ESP32-C3 bring-up labs, dual-stack connectivity, and Android companion provisioning flows while keeping the Zephyr/FreeRTOS rigor intact.
+- Added Android Automotive HAL integration, AAOS security workflows, and AI observability weeks (model drift, incident playbooks) so later phases cover in-car experiences and MLOps hardening.
 - Centralised seeding logic (`embedded_tracker.seed`) so the CLI, GUI, and installer all share the same insert paths.
 - Added live auto-seeding on first run plus packaged JSON assets, ensuring the GUI never launches empty, and wired both the CLI and GUI entrypoints to call `ensure_seed_data()` up front.
 - Fixed Hours tab filtering/presentation (IST-friendly timestamps, HH:MM:SS timers, numbered rows) and hardened container status roll-ups against legacy naive timestamps.
 - Introduced `services.override_day_status()` along with `_normalise_datetimes` so manual overrides instantly cascade through day/week/phase aggregates without timezone errors.
 - Rebuilt the Debian package via `scripts/build_linux_deb.sh` to confirm the PyInstaller + dpkg pipeline still lands the latest assets in `dist/linux/`.
 - Completed the "version 1" QA sweep: audited every service/CLI/GUI flow touching timers, timezone math, filters, and overrides; spot-checked the 4-phase/52-week seed (13–17 tracked hours per week, 15 projects, 4 certifications) against the 70/30 core-to-trends plan; re-ran `poetry run pytest`, `poetry run ruff check`, and rebuilt/reinstalled the `.deb` to validate packaging end-to-end.
+- Expanded the KPI set (boot times, bug counts, AI ops incident rates) so each phase tracks measurable outcomes, not just activities.
+- Added `scripts/verify_seed.py` to assert structural integrity (phases/weeks/days/hours), enforce ≥3 tasks/resources per week, and confirm keyword coverage for foundations, RISC-V/ESP32-C3, Android Automotive HAL, and AI/MLOps observability before shipping seeds or installers.
 - Introduced `Context.md` (this file) to describe the intent, architecture, and workflows for future collaborators or AI agents.
 
 ## Development workflow tips

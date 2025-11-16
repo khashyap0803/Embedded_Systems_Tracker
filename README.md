@@ -5,6 +5,10 @@ Embedded Tracker is a cross-platform personal dashboard designed to help you exe
 ## Features (Current & Planned)
 - ✅ SQLModel data schema for phases, weeks, tasks, resources, projects, certifications, applications, and metrics.
 - ✅ Auto-seeding that imports the roadmap JSON on first launch via shared helpers in `embedded_tracker.seed`.
+- ✅ Phase 1 now devotes its first eight weeks to electronics basics, digital logic, C mastery, and UART/I2C/SPI drills before progressing to advanced bring-up work.
+- ✅ Phase 2 injects open RISC-V + ESP32-C3 bring-up, dual-stack connectivity labs, and Android companion provisioning flows on top of the Zephyr/FreeRTOS stack.
+- ✅ Phase 3/4 add Android Automotive HAL integration, AAOS security operations, AI observability weeks, and KPI metrics (boot times, bug counts, incident rates) so later work mirrors production readiness.
+- ✅ `scripts/verify_seed.py` enforces structural integrity (phases/weeks/days/hours) and keyword coverage for foundations, RISC-V, Android/Automotive, and AI/MLOps themes before packaging.
 - ✅ Rich-powered CLI (`embedded-tracker list`, `embedded-tracker projects`, `embedded-tracker certifications`, etc.) to inspect roadmap progress from the terminal.
 - ✅ PySide6 desktop GUI with CRUD management tabs, filters, and shared persistence.
 - 🔄 Upcoming: analytics dashboards, AI prompt panels, GitHub/Notion sync, secure keyring storage.
@@ -39,6 +43,18 @@ poetry run python scripts/seed_roadmap.py data/roadmap_seed.json
 ```bash
 poetry run python scripts/generate_full_seed.py
 ```
+
+### Verify the roadmap quality
+Run the automated audit before packaging to guarantee every phase/week/day/hour is populated and key themes stay represented:
+
+```bash
+poetry run python scripts/verify_seed.py
+```
+
+The script checks for:
+- 52 total weeks across 4 phases, each with ≥3 tasks/resources.
+- Weekday schedules that include hour-level work blocks.
+- Coverage hits for foundational electronics, open RISC-V/ESP32-C3 bring-up, Android/Automotive HAL work, and AI/MLOps observability.
 
 ### Use the CLI
 ```bash

@@ -163,497 +163,504 @@ PHASES: List[PhasePlan] = [
         ),
         weeks=[
             WeekPlan(
-                focus="Week 1 – Lab setup, toolchain mastery, baseline measurements",
+                focus="Week 1 – Electronics fundamentals & measurement discipline",
                 tasks=[
                     TaskPlan(
-                        title="Provision hardware lab & version-controlled configs",
+                        title="Decode Ohm's/Kirchhoff laws with AI co-pilots",
                         description=(
-                            "Assemble STM32 Nucleo, ESP32 DevKit, logic analyzer,"
-                            " multimeter. Capture wiring diagrams and udev rules"
-                            " in Git-managed lab repo."
+                            "Work through daily voltage/current/power drills in"
+                            " Notion (Concept → Formula → MCU tie-in) while"
+                            " using Codex to produce quick C calculators for"
+                            " sanity checks."
                         ),
-                        estimated_hours=6.0,
+                        estimated_hours=4.5,
                         ai_prompt=(
-                            "Review my lab inventory and suggest safeguards for"
-                            " ESD, labeling, and repeatable flashing procedures."
+                            "Generate a C utility that solves Kirchhoff loop"
+                            " equations given resistor arrays and expected rail"
+                            " voltages."
                         ),
                     ),
                     TaskPlan(
-                        title="Stand up reproducible build environments",
+                        title="Component characterization lab",
                         description=(
-                            "Install arm-none-eabi toolchain, PlatformIO, Zephyr"
-                            " SDK, clang-format hooks. Automate setup via"
-                            " devcontainer and shell script."
+                            "Simulate common-passive circuits in Tinkercad/Wokwi"
+                            " and log oscilloscope-style screenshots explaining"
+                            " how the behavior maps to MCU power rails."
                         ),
                         estimated_hours=5.0,
                         ai_prompt=(
-                            "Inspect my devcontainer.json and post-create commands;"
-                            " highlight missing dependencies or caching tricks."
+                            "Review my RC/RL simulation captures and highlight"
+                            " regimes where MCU brownouts are likely."
                         ),
                     ),
                     TaskPlan(
-                        title="Instrument baseline power & timing measurements",
+                        title="Instrumentation setup & lab hygiene",
                         description=(
-                            "Bring up reference blink firmware, capture current"
-                            " draw vs. supply voltage, and record GPIO toggle"
-                            " latency using logic analyzer."
+                            "Label probes, create udev rules for bench gear, and"
+                            " document ESD/grounding procedures in a Git-tracked"
+                            " lab handbook."
                         ),
-                        estimated_hours=4.0,
+                        estimated_hours=3.5,
                         ai_prompt=(
-                            "Given oscilloscope captures, estimate ISR jitter and"
-                            " recommend probe settings for cleaner edges."
+                            "Suggest improvements to my lab SOP for static safety"
+                            " and repeatable measurements."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="Modern Embedded C++ (Miroslav Vitkovsky)",
+                        title="NPTEL Basic Electronics for Embedded Systems",
+                        type="course",
+                        notes="Lectures 1-4 (IIT Madras YouTube playlist)",
+                        url="https://www.youtube.com/playlist?list=PLbv9Ggz5ZX73n1CVxYvBy06_qm8JQ1le5",
+                    ),
+                    ResourcePlan(
+                        title="Practical Electronics for Inventors",
                         type="book",
-                        notes="Chapters 1-2 for toolchain expectations",
-                        url="https://leanpub.com/modern-embedded-cpp",
+                        notes="Chapters 1-3 nightly reading",
+                        url="https://archive.org/details/practical-electronics-for-inventors-4th-edition",
                     ),
                     ResourcePlan(
-                        title="STM32CubeProgrammer & reference manuals",
-                        type="docs",
-                        notes="RM0433 clock tree review",
-                        url="https://www.st.com/en/development-tools/stm32cubeprog.html",
-                    ),
-                    ResourcePlan(
-                        title="PlatformIO advanced debugging webinar",
+                        title="Khan Academy electronics shorts",
                         type="video",
-                        notes="JTAG workflow refresher",
-                        url="https://www.youtube.com/watch?v=rxgWAbh0YXw",
+                        notes="5-minute refreshers before drills",
+                        url="https://www.khanacademy.org/science/electrical-engineering",
                     ),
                 ],
             ),
             WeekPlan(
-                focus="Week 2 – Modern C++ firmware patterns & memory safety",
+                focus="Week 2 – Circuit simulation sprints & power supply literacy",
                 tasks=[
                     TaskPlan(
-                        title="Benchmark RAII peripheral wrappers",
+                        title="Tinkercad/Wokwi simulation marathon",
                         description=(
-                            "Refactor bare-metal drivers to RAII abstractions"
-                            " using templates and constexpr config. Compare"
-                            " flash/RAM usage to C baseline."
+                            "Build and document three mini-circuits (voltage"
+                            " divider, RC filter, op-amp buffer) with annotated"
+                            " screenshots and Git commits."
                         ),
-                        estimated_hours=6.5,
+                        estimated_hours=5.5,
                         ai_prompt=(
-                            "Suggest improvements to my template-based GPIO"
-                            " wrapper ensuring zero-cost abstractions."
+                            "Explain how my Tinkercad plots translate to real"
+                            " PCB traces and what tolerances to watch."
                         ),
                     ),
                     TaskPlan(
-                        title="Static analysis & sanitizers configuration",
+                        title="Power-supply troubleshooting drills",
                         description=(
-                            "Enable clang-tidy, cppcheck, and UBSan/ASan where"
-                            " supported via QEMU. Gate CI on static analysis"
-                            " profile."
+                            "Model buck/boost regulators, calculate ripple, and"
+                            " simulate load steps using LTspice or Falstad."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Given regulator parameters, estimate safe output"
+                            " ripple for STM32 analog rails."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Weekly review & debugging retro",
+                        description=(
+                            "Spend Sunday running QEMU/GDB dry-runs of simple"
+                            " C firmware that prints computed voltages, logging"
+                            " any bugs plus AI advice in Notion."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Audit my review notes and propose follow-up drills"
+                            " for weak electronics areas."
+                        ),
+                    ),
+                ],
+                resources=[
+                    ResourcePlan(
+                        title="Falstad circuit simulator",
+                        type="tool",
+                        notes="Use for quick what-if experiments",
+                        url="https://falstad.com/circuit/",
+                    ),
+                    ResourcePlan(
+                        title="All About Circuits power design series",
+                        type="article",
+                        notes="Ripple & regulation primers",
+                        url="https://www.allaboutcircuits.com/technical-articles/",
+                    ),
+                    ResourcePlan(
+                        title="Arm Keil QEMU lab",
+                        type="docs",
+                        notes="Dry-run firmware without hardware",
+                        url="https://developer.arm.com/documentation/106453/Latest/",
+                    ),
+                ],
+            ),
+            WeekPlan(
+                focus="Week 3 – Digital logic blueprints & finite-state thinking",
+                tasks=[
+                    TaskPlan(
+                        title="Truth tables → Logisim simulations",
+                        description=(
+                            "Model combinational circuits (encoders, multiplexers"
+                            " and adders) in Logisim, exporting timing diagrams"
+                            " with annotations."
                         ),
                         estimated_hours=5.0,
                         ai_prompt=(
-                            "Review clang-tidy config for embedded constraints;"
-                            " recommend rule adjustments to reduce noise."
+                            "Review my Logisim design files; point out hazards"
+                            " or redundant gates."
                         ),
                     ),
                     TaskPlan(
-                        title="Memory layout deep dive",
+                        title="FSM practice in C",
                         description=(
-                            "Analyze linker script, map file, and startup code."
-                            " Document boot flow, stack/heap usage, and zero-init"
-                            " sections."
+                            "Implement 4-bit adder and elevator FSMs in pure C"
+                            " and run them under QEMU/VS Code tests."
                         ),
                         estimated_hours=4.5,
                         ai_prompt=(
-                            "Given my linker map, highlight sections to relocate"
-                            " to CCM or DTCM for latency gains."
+                            "Explain whether my FSM encoding is Moore or Mealy"
+                            " and optimize for readability."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Signal integrity primer",
+                        description=(
+                            "Study rise/fall times, metastability, and debouncing"
+                            " using Saleae captures plus simulated noise."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Given recorded traces, highlight metastability risks"
+                            " and suggest synchronization tactics."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="Embedded Artistry linker script guide",
-                        type="article",
-                        notes="Use for map file annotation",
-                        url="https://embeddedartistry.com/blog/2016/10/07/firmware-linker-scripts/",
+                        title="Coursera Digital Systems (Princeton)",
+                        type="course",
+                        notes="Audit Weeks 1-2",
+                        url="https://www.coursera.org/learn/digital-systems",
                     ),
                     ResourcePlan(
-                        title="CppCon talk: Zero-cost abstractions on MCUs",
-                        type="video",
-                        notes="Revisit value semantics patterns",
-                        url="https://www.youtube.com/watch?v=_0nIqpSdFBI",
+                        title="Udemy Digital Electronics for Embedded",
+                        type="course",
+                        notes="Use first 5 hours for Logisim labs",
+                        url="https://www.udemy.com/course/digital-electronics-embedded/",
                     ),
                     ResourcePlan(
-                        title="QEMU for Cortex-M quickstart",
-                        type="docs",
-                        notes="Sanitizer instrumentation",
-                        url="https://interrupt.memfault.com/blog/qemu-for-cortex-m-development",
+                        title="Logisim Evolution",
+                        type="tool",
+                        notes="Preferred simulator for FSMs",
+                        url="https://github.com/logisim-evolution/logisim-evolution",
                     ),
                 ],
             ),
             WeekPlan(
-                focus="Week 3 – Bare-metal scheduling & CMSIS integration",
+                focus="Week 4 – MCU architecture survey & toolchain onboarding",
                 tasks=[
                     TaskPlan(
-                        title="Implement cooperative scheduler",
+                        title="Pipeline & memory map explorations",
                         description=(
-                            "Design tickless cooperative scheduler with event"
-                            " queues, priority aging, and unit tests on host."
-                        ),
-                        estimated_hours=6.0,
-                        ai_prompt=(
-                            "Analyze scheduler design; suggest guardrails for"
-                            " stack overflow detection and trace hooks."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="CMSIS HAL deep integration",
-                        description=(
-                            "Wrap CMSIS drivers with compile-time configs,"
-                            " ensuring clock tree abstraction is testable."
+                            "Compare AVR vs. Cortex-M core diagrams, map flash/"
+                            " SRAM/CCM regions, and document boot/reset flows."
                         ),
                         estimated_hours=4.5,
                         ai_prompt=(
-                            "Review my CMSIS abstraction for test seam quality"
-                            " and propose fault-injection hooks."
+                            "Explain how my annotated memory maps influence"
+                            " interrupt latency on STM32 vs. ESP32."
                         ),
                     ),
                     TaskPlan(
-                        title="Latency instrumentation harness",
+                        title="Toolchain and debugger drills",
                         description=(
-                            "Add cycle counter-based profiling with ITM/SWO"
-                            " output, capturing ISR entry/exit envelopes."
+                            "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI;"
+                            " flash sample firmware to UNO/ESP32/STM32 and log"
+                            " GDB commands used."
+                        ),
+                        estimated_hours=5.5,
+                        ai_prompt=(
+                            "Suggest better GDB macros or VS Code tasks for my"
+                            " bring-up workflow."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Dual-boot workstation optimization",
+                        description=(
+                            "Tune BIOS/firmware, configure Ubuntu + Windows"
+                            " dev environments, and document GPU/QEMU setups."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Given SWO trace output, identify bottlenecks and"
-                            " suggest buffering strategy."
+                            "Review my dual-boot checklist; point out missing"
+                            " power/performance tweaks."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="ARM CMSIS RTOS v2 design guidelines",
+                        title="ST STM32 Step-by-Step series",
+                        type="course",
+                        notes="Videos on toolchains and flashing",
+                        url="https://www.st.com/content/st_com/en/support/learning/st-step-by-step.html",
+                    ),
+                    ResourcePlan(
+                        title="Espressif Getting Started",
                         type="docs",
-                        notes="Scheduler reference",
-                        url="https://arm-software.github.io/CMSIS_5/RTOS2/html/index.html",
+                        notes="ESP-IDF CLI flow",
+                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html",
                     ),
                     ResourcePlan(
-                        title="Memfault interrupt latency case study",
-                        type="article",
-                        notes="Instrumentation patterns",
-                        url="https://interrupt.memfault.com/blog/interrupt-latency",
-                    ),
-                    ResourcePlan(
-                        title="Keil ITM/SWO tutorial",
-                        type="video",
-                        notes="Trace capture setup",
-                        url="https://www.youtube.com/watch?v=yJmO7qX0EXM",
-                    ),
-                ],
-            ),
-            WeekPlan(
-                focus="Week 4 – Debugging mastery & fault tolerance",
-                tasks=[
-                    TaskPlan(
-                        title="Advanced debugger scripting",
-                        description=(
-                            "Craft OpenOCD and pyOCD scripts for automated"
-                            " memory dumps, fault log extraction, and SWD"
-                            " recovery."
-                        ),
-                        estimated_hours=5.0,
-                        ai_prompt=(
-                            "Review my OpenOCD TCL scripts and suggest probes"
-                            " for hard-fault auto capture."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Hard fault triage playbook",
-                        description=(
-                            "Implement unified HardFault handler emitting stack"
-                            " frames to RTT console and persistent storage."
-                        ),
-                        estimated_hours=4.5,
-                        ai_prompt=(
-                            "Given register dump, assist root cause analysis and"
-                            " propose guard clauses."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Fault-injection test scenarios",
-                        description=(
-                            "Simulate brownout, clock failure, and corrupted"
-                            " flash to validate recovery pathways."
-                        ),
-                        estimated_hours=4.0,
-                        ai_prompt=(
-                            "Design additional fault-injection cases covering"
-                            " dual-bank flash swap and watchdog edges."
-                        ),
-                    ),
-                ],
-                resources=[
-                    ResourcePlan(
-                        title="Definitive Guide to ARM Cortex-M0/M3",
+                        title="ARM Cortex-M for Embedded Engineers",
                         type="book",
-                        notes="Exception model review",
-                        url="https://www.elsevier.com/books/the-definitive-guide-to-arm-cortex-m3-and-cortex-m4-processors/yiu/978-0-12-408082-9",
-                    ),
-                    ResourcePlan(
-                        title="Segger RTT best practices",
-                        type="docs",
-                        notes="Low-overhead logging",
-                        url="https://wiki.segger.com/RTT",
-                    ),
-                    ResourcePlan(
-                        title="Memfault Cortex-M HardFault guide",
-                        type="article",
-                        notes="HardFault handler template",
-                        url="https://interrupt.memfault.com/blog/cortex-m-hardfault-debug",
+                        notes="Architecture primer",
+                        url="https://www.arm.com/resources/education/books",
                     ),
                 ],
             ),
             WeekPlan(
-                focus="Week 5 – Communication stacks & HAL coexistence",
+                focus="Week 5 – C programming foundations & syntax fluency",
                 tasks=[
                     TaskPlan(
-                        title="Design SPI/I2C coexistence layer",
+                        title="Daily syntax/code-drill block",
                         description=(
-                            "Implement arbitration for shared buses with DMA,"
-                            " priority inversion safeguards, and unit tests."
+                            "Follow the edX UC Santa Cruz 'C for Embedded'"
+                            " track, solving two exercises nightly and logging"
+                            " takeaways in VS Code snippets."
                         ),
-                        estimated_hours=6.0,
+                        estimated_hours=5.0,
                         ai_prompt=(
-                            "Evaluate my bus arbitration design for starvation"
-                            " and suggest monitoring hooks."
+                            "Review my loop/pointer implementations and suggest"
+                            " clearer idioms for embedded targets."
                         ),
                     ),
                     TaskPlan(
-                        title="Protocol analyzers & fixtures",
+                        title="HackerRank C streak",
                         description=(
-                            "Capture traces for edge sensors via Saleae and"
-                            " decode transactions to confirm timing margins."
+                            "Complete 15 easy challenges this week focusing on"
+                            " arrays, strings, and structs relevant to MCUs."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Interpret Saleae export; identify anomalies and"
-                            " propose firmware timing fixes."
+                            "Provide hints for optimizing my HackerRank buffer"
+                            " parsing solutions without dynamic allocation."
                         ),
                     ),
                     TaskPlan(
-                        title="Hardware abstraction validation",
+                        title="Notion knowledge template build-out",
                         description=(
-                            "Run hardware-in-loop tests ensuring new bus layer"
-                            " survives hot-plug and noise injection."
+                            "Create reusable pages (Concept | Formula | Example"
+                            " | Embedded Tie-In | AI Prompt) for C patterns."
                         ),
-                        estimated_hours=4.5,
+                        estimated_hours=3.5,
                         ai_prompt=(
-                            "Design additional HIL scenarios stressing DMA"
-                            " concurrency under noise."
+                            "Critique my Notion template for documenting C"
+                            " idioms; propose missing metadata."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="I2C bus specification",
+                        title="edX C Programming for Embedded Systems",
+                        type="course",
+                        notes="Use Weeks 1-2",
+                        url="https://www.edx.org/course/c-programming-for-embedded-systems",
+                    ),
+                    ResourcePlan(
+                        title="Embedded C Programming (Book)",
+                        type="book",
+                        notes="Daily end-of-chapter drills",
+                        url="https://www.researchgate.net/publication/343889943_Embedded_C_Programming",
+                    ),
+                    ResourcePlan(
+                        title="HackerRank C track",
+                        type="platform",
+                        notes="Target 50 easy problems over the phase",
+                        url="https://www.hackerrank.com/domains/c",
+                    ),
+                ],
+            ),
+            WeekPlan(
+                focus="Week 6 – Memory, pointers, and ISR-grade C idioms",
+                tasks=[
+                    TaskPlan(
+                        title="Pointer gym & allocator simulator",
+                        description=(
+                            "Implement a mini heap/stack visualizer in C, run"
+                            " it under Valgrind, and screenshot leaks/fixes."
+                        ),
+                        estimated_hours=5.0,
+                        ai_prompt=(
+                            "Show me why my allocator approach might fragment"
+                            " memory on small MCUs."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Bit manipulation + register maps",
+                        description=(
+                            "Practice volatile/bitfield tricks by modeling GPIO"
+                            " registers for UNO + STM32, ensuring MISRA safety."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Validate my bitfield macros and flag undefined"
+                            " behavior risks."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="ISR basics & latency drills",
+                        description=(
+                            "Write mock ISRs in C, test them with QEMU timers,"
+                            " and document prologue/epilogue considerations."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Assess my ISR skeletons for reentrancy and stack"
+                            " usage problems."
+                        ),
+                    ),
+                ],
+                resources=[
+                    ResourcePlan(
+                        title="Valgrind quickstart",
+                        type="docs",
+                        notes="Memory checking on Ubuntu",
+                        url="https://valgrind.org/docs/manual/quick-start.html",
+                    ),
+                    ResourcePlan(
+                        title="Embedded C Coding Standards",
+                        type="book",
+                        notes="Chapters on pointers & volatile",
+                        url="https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard",
+                    ),
+                    ResourcePlan(
+                        title="STM32 reference manual GPIO chapter",
+                        type="docs",
+                        notes="Register map practice",
+                        url="https://www.st.com/resource/en/reference_manual/rm0433-stm32f7-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+                    ),
+                ],
+            ),
+            WeekPlan(
+                focus="Week 7 – Communication protocol essentials",
+                tasks=[
+                    TaskPlan(
+                        title="Bit-banged UART and baud calculators",
+                        description=(
+                            "Write a software UART for STM32/ESP32, verify it"
+                            " under QEMU + Saleae, and compare against hardware"
+                            " UART timing."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Check my UART timing math and suggest guardrails"
+                            " for clock drift."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="I2C/SPI lab book",
+                        description=(
+                            "Set up UNO + ESP32 sensor chains, capture logic"
+                            " analyzer traces, and annotate addressing, ACK/NACK"
+                            " behavior, and DMA interactions."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Analyze my Saleae captures; point out bus contentions"
+                            " or pull-up issues."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Protocol troubleshooting checklist",
+                        description=(
+                            "Document serial console, minicom workflow, and"
+                            " quick diagnostic scripts for UART/I2C/SPI."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Suggest additional checks for my I2C collision"
+                            " troubleshooting doc."
+                        ),
+                    ),
+                ],
+                resources=[
+                    ResourcePlan(
+                        title="I2C Bus Specification",
                         type="spec",
-                        notes="Check fast-mode plus tables",
+                        notes="Fast-mode tables",
                         url="https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
                     ),
                     ResourcePlan(
-                        title="Saleae Automation API",
-                        type="docs",
-                        notes="Script captures",
-                        url="https://support.saleae.com/api",
-                    ),
-                    ResourcePlan(
-                        title="ST AN4838 DMA best practices",
-                        type="appnote",
-                        notes="DMA handshake tuning",
-                        url="https://www.st.com/resource/en/application_note/an4838-stm32-dma-controller-stmicroelectronics.pdf",
-                    ),
-                ],
-            ),
-            WeekPlan(
-                focus="Week 6 – Time synchronization & clocking architectures",
-                tasks=[
-                    TaskPlan(
-                        title="Clock tree modeling",
-                        description=(
-                            "Model PLL configurations, jitter budgets, and"
-                            " power implications using Python and STM32CubeMX."
-                        ),
-                        estimated_hours=5.5,
-                        ai_prompt=(
-                            "Review PLL sweep script to ensure coverage for"
-                            " EMI and sensor interface requirements."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Time synchronization drivers",
-                        description=(
-                            "Implement PTP/IEEE 1588-lite timestamp capture"
-                            " for networked nodes with calibration routine."
-                        ),
-                        estimated_hours=5.0,
-                        ai_prompt=(
-                            "Assess timestamping driver; propose compensation"
-                            " for oscillator drift vs. reference clock."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Clock fault detection",
-                        description=(
-                            "Add watchdog for HSE/LSE failure and seamless"
-                            " fallback to internal RC with telemetry."
-                        ),
-                        estimated_hours=4.0,
-                        ai_prompt=(
-                            "Suggest diagnostic counters to capture clock"
-                            " failure frequency and recovery success."
-                        ),
-                    ),
-                ],
-                resources=[
-                    ResourcePlan(
-                        title="IEEE 1588 Precision Time Protocol overview",
-                        type="article",
-                        notes="Timing fundamentals refresher",
-                        url="https://www.nist.gov/publications/ieee-1588-precision-time-protocol",
-                    ),
-                    ResourcePlan(
-                        title="STM32 clock configuration guide",
-                        type="docs",
-                        notes="AN2867 for oscillator design",
-                        url="https://www.st.com/resource/en/application_note/cd00221665.pdf",
-                    ),
-                    ResourcePlan(
-                        title="Oscilloscope jitter measurement primer",
-                        type="article",
-                        notes="Correlate with PLL settings",
-                        url="https://www.tek.com/en/blog/what-jitter-and-how-do-i-measure-it",
-                    ),
-                ],
-            ),
-            WeekPlan(
-                focus="Week 7 – Embedded networking fundamentals",
-                tasks=[
-                    TaskPlan(
-                        title="Implement LWIP bare-metal integration",
-                        description=(
-                            "Port LWIP to STM32 with zero-copy buffers, DMA"
-                            " aware memory pools, and unit tests."
-                        ),
-                        estimated_hours=6.5,
-                        ai_prompt=(
-                            "Review LWIP port configuration; propose tuning for"
-                            " small MTU and TLS overhead."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Network diagnostics toolkit",
-                        description=(
-                            "Build CLI commands for ping, traceroute, and"
-                            " interface stats exposed over UART shell."
-                        ),
-                        estimated_hours=4.0,
-                        ai_prompt=(
-                            "Generate test plan validating diagnostics against"
-                            " simulated packet loss."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="ESP32 Wi-Fi bring-up",
-                        description=(
-                            "Configure ESP-IDF project with WPA3, OTA update"
-                            " hooks, and fallback hotspot provisioning."
-                        ),
-                        estimated_hours=4.5,
-                        ai_prompt=(
-                            "Evaluate provisioning UX; suggest secure pairing"
-                            " improvements."
-                        ),
-                    ),
-                ],
-                resources=[
-                    ResourcePlan(
-                        title="LWIP raw API manual",
-                        type="docs",
-                        notes="Integrate without RTOS",
-                        url="https://www.nongnu.org/lwip/2_1_x/raw_api.html",
-                    ),
-                    ResourcePlan(
-                        title="ESP-IDF security best practices",
-                        type="docs",
-                        notes="Provisioning patterns",
-                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/index.html",
-                    ),
-                    ResourcePlan(
-                        title="Embedded networking diagnostics cheatsheet",
-                        type="article",
-                        notes="CLI command inspiration",
-                        url="https://interrupt.memfault.com/blog/embedded-cli",
-                    ),
-                ],
-            ),
-            WeekPlan(
-                focus="Week 8 – Sensor fusion & signal processing foundations",
-                tasks=[
-                    TaskPlan(
-                        title="IMU calibration pipeline",
-                        description=(
-                            "Implement factory calibration routine capturing"
-                            " bias, scale, and temperature coefficients."
-                        ),
-                        estimated_hours=5.5,
-                        ai_prompt=(
-                            "Review calibration dataset; suggest statistical"
-                            " filters to reject outliers."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Fixed-point DSP primitives",
-                        description=(
-                            "Port FIR/IIR filters with CMSIS DSP, analyze"
-                            " quantization error vs. float baseline."
-                        ),
-                        estimated_hours=5.0,
-                        ai_prompt=(
-                            "Given fixed-point coefficients, estimate SNR and"
-                            " recommend scaling strategy."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="Sensor fusion prototype",
-                        description=(
-                            "Implement complementary filter on STM32, stream"
-                            " quaternion output to desktop visualizer."
-                        ),
-                        estimated_hours=4.5,
-                        ai_prompt=(
-                            "Analyze motion capture plots; tune filter gains for"
-                            " aggressive motion."
-                        ),
-                    ),
-                ],
-                resources=[
-                    ResourcePlan(
-                        title="IMU calibration tutorial (ST)",
-                        type="appnote",
-                        notes="Extrinsic compensation steps",
-                        url="https://www.st.com/resource/en/application_note/dm00083116-stm32f3-gimbal-imu-calibration-stmicroelectronics.pdf",
-                    ),
-                    ResourcePlan(
-                        title="CMSIS DSP library",
-                        type="docs",
-                        notes="Fixed-point API reference",
-                        url="https://arm-software.github.io/CMSIS_5/DSP/html/index.html",
-                    ),
-                    ResourcePlan(
-                        title="PX4 sensor fusion playlist",
+                        title="Saleae University",
                         type="video",
-                        notes="Quaternion math refresher",
-                        url="https://www.youtube.com/playlist?list=PLybtR63pQR2PzplOQ57Qf8Uai0n1AM5zF",
+                        notes="Logic analyzer workflow",
+                        url="https://www.youtube.com/playlist?list=PLZyvi_9gamL-6c0BpvyEukgqS0bkkCm1l",
+                    ),
+                    ResourcePlan(
+                        title="minicom cheat-sheet",
+                        type="article",
+                        notes="Serial debug commands",
+                        url="https://wiki.emacinc.com/wiki/Using_Minicom",
+                    ),
+                ],
+            ),
+            WeekPlan(
+                focus="Week 8 – Integration sprint, reviews, and communication demo",
+                tasks=[
+                    TaskPlan(
+                        title="Bit-banged UART showcase",
+                        description=(
+                            "Record a 5-minute walkthrough of your UART demo"
+                            " (real board + QEMU compare) and publish to GitHub"
+                            " Pages/YouTube."
+                        ),
+                        estimated_hours=4.0,
+                        ai_prompt=(
+                            "Edit my script for the UART demo video to make it"
+                            " recruiter-friendly."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Foundation retrospective & metrics",
+                        description=(
+                            "Review quizzes (GeeksforGeeks electronics, personal"
+                            " flashcards) and log accuracy/next steps."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Summarize weak spots from my quiz results and"
+                            " recommend reinforcement resources."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Phase artifact polish",
+                        description=(
+                            "Finalize documentation for the four starter projects"
+                            " (divider calc, FSM, allocator sim, UART lab) with"
+                            " READMEs and screenshots."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Review my README structure; suggest improvements"
+                            " for clarity and impact."
+                        ),
+                    ),
+                ],
+                resources=[
+                    ResourcePlan(
+                        title="GeeksforGeeks electronics quiz",
+                        type="assessment",
+                        notes="Target 80%+ score",
+                        url="https://www.geeksforgeeks.org/basic-electronics-engineering-quiz/",
+                    ),
+                    ResourcePlan(
+                        title="DaVinci Resolve quickstart",
+                        type="video",
+                        notes="Polish demo videos",
+                        url="https://www.blackmagicdesign.com/products/davinciresolve/training",
+                    ),
+                    ResourcePlan(
+                        title="Notion weekly review template",
+                        type="template",
+                        notes="Structure retros",
+                        url="https://www.notion.so/templates/weekly-review",
                     ),
                 ],
             ),
@@ -968,10 +975,9 @@ PHASES: List[PhasePlan] = [
             ProjectPlan(
                 name="LabOps Automation Suite",
                 description=(
-                    "GitOps-managed lab setup for the MSI B850M + Ryzen 7"
-                    " 7700 rig, covering BIOS profiles, dual-boot imaging,"
-                    " CUDA/RTX enablement, and repeatable VS Code"
-                    " devcontainer provisioning."
+                    "Git-managed checklist for the MSI B850M + Ryzen 7 7700"
+                    " rig covering BIOS profiles, dual-boot imaging, GPU"
+                    " drivers, and VS Code devcontainer setup."
                 ),
                 start_week=1,
                 end_week=4,
@@ -979,40 +985,38 @@ PHASES: List[PhasePlan] = [
                 repo_url="https://github.com/khashyap0803/embedded-labops",
             ),
             ProjectPlan(
-                name="Deterministic Timing Harness",
+                name="Foundation Electronics Notebook",
                 description=(
-                    "Cycle-accurate STM32/ESP32 harness that records power,"
-                    " jitter, and ISR latency via Saleae + AMD PMU traces;"
-                    " feeds Grafana dashboards for regression tracking."
+                    "Notion + markdown knowledge base of voltage divider"
+                    " calculators, LTspice sims, and measurement SOPs with"
+                    " accompanying Python/C utilities."
                 ),
-                start_week=2,
-                end_week=6,
+                start_week=1,
+                end_week=3,
                 status="in_progress",
-                repo_url="https://github.com/khashyap0803/deterministic-harness",
             ),
             ProjectPlan(
-                name="Debug Resilience Playbook",
+                name="Digital Logic Playground",
                 description=(
-                    "OpenOCD/pyOCD automation scripts plus Notion SOPs for"
-                    " fault triage, covering brownouts, flash corruption,"
-                    " and SWD recovery on the lab boards."
+                    "Logisim + C portfolio demonstrating FSMs, 4-bit adders,"
+                    " and QEMU-backed simulations with video walkthroughs."
                 ),
-                start_week=4,
+                start_week=3,
+                end_week=5,
+                status="planned",
+                repo_url="https://github.com/khashyap0803/digital-logic-playground",
+            ),
+            ProjectPlan(
+                name="Protocol Explorer Pack",
+                description=(
+                    "Suite of UART/I2C/SPI experiments (bit-banged UART,"
+                    " analyzer captures, minicom scripts) packaged with"
+                    " READMEs and troubleshooting checklists."
+                ),
+                start_week=6,
                 end_week=8,
                 status="planned",
-                repo_url="https://github.com/khashyap0803/debug-playbook",
-            ),
-            ProjectPlan(
-                name="Multi-sensor Baseline Kit",
-                description=(
-                    "Bring-up of IMU/pressure/temp stack on STM32 + ESP32"
-                    " with shared SPI/I2C arbitration, automated tests, and"
-                    " Grafana-exported energy metrics."
-                ),
-                start_week=7,
-                end_week=13,
-                status="planned",
-                repo_url="https://github.com/khashyap0803/sensor-baseline",
+                repo_url="https://github.com/khashyap0803/protocol-explorer",
             ),
         ],
         certifications=[
@@ -1037,15 +1041,28 @@ PHASES: List[PhasePlan] = [
                 unit="ratio",
                 week_number=13,
             ),
+            MetricPlan(
+                metric_type="foundation_quiz_score",
+                value=0.88,
+                unit="ratio",
+                week_number=8,
+            ),
+            MetricPlan(
+                metric_type="breadboard_bug_rate",
+                value=2.0,
+                unit="bugs_per_week",
+                week_number=9,
+            ),
         ],
     ),
     PhasePlan(
         name="Phase 2 – Real-Time Systems & Connected Firmware",
         description=(
-            "Deepen RTOS mastery, design resilient connectivity stacks, and"
-            " harden security for fleet-ready firmware. Culminates in a"
-            " production-quality Zephyr/FreeRTOS application spanning CAN,"
-            " Ethernet, BLE, and secure provisioning."
+            "Deepen RTOS mastery, tackle open RISC-V/ESP32-C3 bring-up,"
+            " design resilient connectivity stacks, and harden security"
+            " for fleet-ready firmware. Culminates in a production-quality"
+            " Zephyr/FreeRTOS application spanning CAN, Ethernet, BLE,"
+            " and secure provisioning."
         ),
         weeks=[
             WeekPlan(
@@ -1293,124 +1310,124 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
             WeekPlan(
-                focus="Week 18 – Industrial Ethernet & TSN exploration",
+                focus="Week 18 – RISC-V bring-up & open tooling",
                 tasks=[
                     TaskPlan(
-                        title="Profinet/TSN reconnaissance",
+                        title="SiFive/HiFive board definition",
                         description=(
-                            "Prototype TSN schedule using Zephyr Qav/Qbv"
-                            " features for deterministic Ethernet."
+                            "Port Zephyr to HiFive Unmatched/1 boards with"
+                            " custom Devicetree, memory maps, and PMP guards."
                         ),
                         estimated_hours=5.5,
                         ai_prompt=(
-                            "Review TSN gate schedule; highlight conflicts"
-                            " with CAN deadlines."
+                            "Review RISC-V board port; spot missing clock"
+                            " domains or peripheral mappings."
                         ),
                     ),
                     TaskPlan(
-                        title="Edge switch configuration lab",
+                        title="Open toolchain & debug pipeline",
                         description=(
-                            "Configure managed switch QoS, VLANs, and PTP"
-                            " boundary clock roles."
+                            "Compare GCC/Newlib vs. LLVM, wire up OpenOCD/J-Link"
+                            " debug scripts, and document flashing recipes."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Given switch config, suggest monitoring for drift"
-                            " and congestion."
+                            "Inspect toolchain matrix; recommend build flags"
+                            " for fast iteration."
                         ),
                     ),
                     TaskPlan(
-                        title="Network compliance tests",
+                        title="Performance counters & tracing",
                         description=(
-                            "Run Wireshark dissectors, packet capture scripts,"
-                            " and conformance checks."
+                            "Instrument mcycle/minstret counters, PMP faults,"
+                            " and Segger SystemView exporters for RISC-V cores."
                         ),
                         estimated_hours=4.5,
                         ai_prompt=(
-                            "Interpret Wireshark traces; identify jitter"
-                            " sources and countermeasures."
+                            "Analyze trace captures; highlight stall sources"
+                            " or privilege escalations."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="Time-Sensitive Networking tutorial",
+                        title="RISC-V privileged spec",
+                        type="spec",
+                        notes="Anchor PMP and privilege model",
+                        url="https://riscv.org/technical/specifications/",
+                    ),
+                    ResourcePlan(
+                        title="Zephyr RISC-V porting guide",
+                        type="docs",
+                        notes="DeviceTree + Kconfig patterns",
+                        url="https://docs.zephyrproject.org/latest/boards/riscv/index.html",
+                    ),
+                    ResourcePlan(
+                        title="OpenOCD RISC-V how-to",
                         type="article",
-                        notes="Primer on IEEE 802.1 Qbv/Qci",
-                        url="https://www.ni.com/en-us/innovations/white-papers/16/introduction-to-time-sensitive-networking--tsn-.html",
-                    ),
-                    ResourcePlan(
-                        title="Zephyr TSN samples",
-                        type="docs",
-                        notes="Example configs",
-                        url="https://docs.zephyrproject.org/latest/samples/net/tsn/README.html",
-                    ),
-                    ResourcePlan(
-                        title="Wireshark TSN dissector",
-                        type="docs",
-                        notes="Capture analysis",
-                        url="https://wiki.wireshark.org/Time-Sensitive_Networking",
+                        notes="Debug setup",
+                        url="https://interrupt.memfault.com/blog/getting-started-with-risc-v-debug",
                     ),
                 ],
             ),
             WeekPlan(
-                focus="Week 19 – Bluetooth Low Energy & provisioning UX",
+                focus="Week 19 – ESP32-C3 connectivity & low-power provisioning",
                 tasks=[
                     TaskPlan(
-                        title="BLE stack deep dive",
+                        title="ESP32-C3 dual-stack firmware",
                         description=(
-                            "Implement Zephyr Bluetooth host with secure"
-                            " connections, GATT services, and DFU."
+                            "Build ESP-IDF/Zephyr targets enabling Wi-Fi + BLE"
+                            " coex, Matter onboarding, and secure DFU paths."
                         ),
                         estimated_hours=6.0,
                         ai_prompt=(
-                            "Review GATT layout; propose characteristics for"
-                            " diagnostics and OTA."
+                            "Review dual-stack config; suggest coexistence"
+                            " tuning and RF calibration steps."
                         ),
                     ),
                     TaskPlan(
-                        title="Provisioning companion app",
+                        title="Low-power sleep & brownout lab",
                         description=(
-                            "Build Flutter or React Native app to provision"
-                            " Wi-Fi credentials via BLE."
+                            "Characterize deep sleep, ULP coprocessor wakeups,"
+                            " and brownout handling on ESP32-C3 boards."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Critique onboarding UX; suggest accessibility"
-                            " improvements."
+                            "Analyze sleep current logs; recommend firmware"
+                            " hooks for fleet diagnostics."
                         ),
                     ),
                     TaskPlan(
-                        title="RF characterization",
+                        title="Provisioning UX + Android companion",
                         description=(
-                            "Measure BLE RSSI vs. distance, interference,"
-                            " and antenna orientation."
+                            "Ship Android/Flutter app that provisions Wi-Fi,"
+                            " certificates, and fallback SoftAP workflows."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Interpret RF sweep data; recommend antenna"
-                            " placement tweaks."
+                            "Critique onboarding UX; ensure accessibility and"
+                            " automotive-friendly flows."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="Bluetooth Core Specification summary",
-                        type="spec",
-                        notes="Security sections",
-                        url="https://www.bluetooth.com/specifications/specs/",
+                        title="ESP-IDF Wi-Fi/BLE coexistence",
+                        type="docs",
+                        notes="Dual-stack configuration",
+                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/api-guides/coexist.html",
                     ),
                     ResourcePlan(
-                        title="Nordic DevAcademy BLE course",
-                        type="course",
-                        notes="Procedural refresher",
-                        url="https://academy.nordicsemi.com/",
+                        title="Espressif deep sleep cookbook",
+                        type="guide",
+                        notes="Low-power tuning",
+                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/api-guides/deep-sleep-stubs.html",
                     ),
                     ResourcePlan(
-                        title="Flutter BLE best practices",
-                        type="article",
-                        notes="App scaffolding",
-                        url="https://medium.com/flutter-community/ble-in-flutter-8769f55c1af9",
+                        title="Android companion app samples",
+                        type="repo",
+                        notes="Matter + provisioning UX",
+                        url="https://github.com/espressif/esp-idf-provisioning-android",
                     ),
                 ],
             ),
@@ -1914,15 +1931,27 @@ PHASES: List[PhasePlan] = [
                 unit="ratio",
                 week_number=26,
             ),
+            MetricPlan(
+                metric_type="riscv_port_boot_time",
+                value=1.8,
+                unit="seconds",
+                week_number=19,
+            ),
+            MetricPlan(
+                metric_type="firmware_bugs_found_per_week",
+                value=14.0,
+                unit="count",
+                week_number=24,
+            ),
         ],
     ),
     PhasePlan(
         name="Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",
         description=(
-            "Blend TinyML with safety-critical practices, harden products for"
-            " compliance, and build manufacturing-grade test infrastructure."
-            " End state: intelligent, secure firmware paired with production"
-            " test rigs and certification artefacts."
+            "Blend TinyML with safety-critical practices, Android Automotive"
+            " integration, and manufacturing readiness. Harden products for"
+            " compliance while building intelligent firmware paired with"
+            " production test rigs and certification artefacts."
         ),
         weeks=[
             WeekPlan(
@@ -2292,63 +2321,63 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
             WeekPlan(
-                focus="Week 33 – Cybersecurity operations & SBOM management",
+                focus="Week 33 – Android Automotive HAL & security operations",
                 tasks=[
                     TaskPlan(
-                        title="SBOM generation & automation",
+                        title="AOSP vehicle HAL customization",
                         description=(
-                            "Produce SPDX/CycloneDX SBOMs via build tooling"
-                            " and integrate into CI."
+                            "Extend AAOS HAL modules (sensors, HVAC, telematics)"
+                            " with binder services, VHAL configs, and tests."
                         ),
                         estimated_hours=4.5,
                         ai_prompt=(
-                            "Review SBOM content; ensure license and patch"
-                            " metadata completeness."
+                            "Review HAL patches; call out threading or"
+                            " permission gaps."
                         ),
                     ),
                     TaskPlan(
-                        title="Vulnerability triage playbook",
+                        title="Android/MCU integration harness",
                         description=(
-                            "Set up dependency scanning, CVE feeds, and"
-                            " response processes."
+                            "Bridge CAN/CAN-FD + Ethernet feeds into Android"
+                            " Automotive telemetry dashboards and UX flows."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Assess triage workflow; suggest automation for"
-                            " notification and patch validation."
+                            "Evaluate integration logs; suggest diagnostics"
+                            " surfacing for fleets."
                         ),
                     ),
                     TaskPlan(
-                        title="Secure boot attestation audits",
+                        title="SBOM & vulnerability automation",
                         description=(
-                            "Verify secure boot logs, certificate rotation,"
-                            " and tamper detection instrumentation."
+                            "Generate CycloneDX SBOMs for Android + firmware"
+                            " builds, wire CVE scanning and patch triage."
                         ),
                         estimated_hours=4.5,
                         ai_prompt=(
-                            "Inspect attestation reports; recommend additional"
-                            " integrity checks."
+                            "Audit SBOM export; ensure AAOS + MCU packages"
+                            " have remediation metadata."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
+                        title="Android Automotive HAL overview",
+                        type="docs",
+                        notes="Understand VHAL plumbing",
+                        url="https://source.android.com/docs/automotive",
+                    ),
+                    ResourcePlan(
+                        title="Android Automotive OS architecture",
+                        type="guide",
+                        notes="Map services & permissions",
+                        url="https://developer.android.com/cars",
+                    ),
+                    ResourcePlan(
                         title="CycloneDX CLI",
                         type="docs",
                         notes="Automate SBOMs",
                         url="https://cyclonedx.org/tool-center/",
-                    ),
-                    ResourcePlan(
-                        title="OWASP IoT security verification standard",
-                        type="standard",
-                        notes="Checklist for security ops",
-                        url="https://owasp.org/www-project-iot-security-verification-standard/",
-                    ),
-                    ResourcePlan(
-                        title="NIST Cybersecurity Framework",
-                        type="guide",
-                        notes="Align processes",
-                        url="https://www.nist.gov/cyberframework",
                     ),
                 ],
             ),
@@ -2790,6 +2819,18 @@ PHASES: List[PhasePlan] = [
                 unit="ratio",
                 week_number=39,
             ),
+            MetricPlan(
+                metric_type="android_hal_boot_time",
+                value=6.5,
+                unit="seconds",
+                week_number=33,
+            ),
+            MetricPlan(
+                metric_type="ai_ops_drift_alerts",
+                value=1.0,
+                unit="count",
+                week_number=42,
+            ),
         ],
     ),
     PhasePlan(
@@ -2924,42 +2965,42 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
             WeekPlan(
-                focus="Week 42 – Data analytics & insight delivery",
+                focus="Week 42 – AI observability & insight delivery",
                 tasks=[
                     TaskPlan(
-                        title="Analytics pipeline validation",
+                        title="Model performance & drift monitoring",
                         description=(
-                            "Ensure edge-to-cloud data fidelity, schema"
-                            " evolution, and governance."
+                            "Stand up edge-to-cloud metrics for accuracy,"
+                            " confusion matrices, and dataset drift alarms."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Audit analytics pipeline; point out data quality"
-                            " risks."
+                            "Review drift dashboards; prioritize retraining"
+                            " triggers."
                         ),
                     ),
                     TaskPlan(
-                        title="Insight dashboards",
+                        title="AI ops dashboards & alerts",
                         description=(
-                            "Build Grafana/Metabase dashboards with actionable"
-                            " KPIs for ops teams."
+                            "Build Grafana/Metabase boards blending system"
+                            " KPIs with ML health (latency, GPU, failures)."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Review dashboard layouts; suggest metric cadence"
-                            " and alerts."
+                            "Inspect alert thresholds; align with SLOs and"
+                            " automotive requirements."
                         ),
                     ),
                     TaskPlan(
-                        title="Data storytelling",
+                        title="Insight storytelling & incident playbooks",
                         description=(
-                            "Craft narratives translating telemetry into"
-                            " product decisions for stakeholders."
+                            "Author narratives + runbooks translating AI"
+                            " telemetry into exec-ready decisions."
                         ),
                         estimated_hours=3.5,
                         ai_prompt=(
-                            "Edit analytics narrative; highlight business"
-                            " outcomes."
+                            "Edit incident playbook; highlight ownership and"
+                            " MTTR expectations."
                         ),
                     ),
                 ],
@@ -2971,10 +3012,10 @@ PHASES: List[PhasePlan] = [
                         url="https://www.metabase.com/docs/latest/",
                     ),
                     ResourcePlan(
-                        title="Data storytelling for engineers",
-                        type="course",
-                        notes="Communicate insights",
-                        url="https://www.coursera.org/learn/analytics-storytelling",
+                        title="ML monitoring best practices",
+                        type="article",
+                        notes="Edge + cloud drift tactics",
+                        url="https://www.evidentlyai.com/ml-monitoring",
                     ),
                     ResourcePlan(
                         title="Grafana alerting walkthrough",
@@ -3651,6 +3692,18 @@ PHASES: List[PhasePlan] = [
                 value=50.0,
                 unit="count",
                 week_number=52,
+            ),
+            MetricPlan(
+                metric_type="ai_ops_incident_rate",
+                value=0.01,
+                unit="incidents_per_week",
+                week_number=47,
+            ),
+            MetricPlan(
+                metric_type="post_launch_crash_free_sessions",
+                value=0.985,
+                unit="ratio",
+                week_number=48,
             ),
         ],
     ),

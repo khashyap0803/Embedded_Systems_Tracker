@@ -4,7 +4,7 @@ Embedded Tracker is a cross-platform personal dashboard designed to help you exe
 
 ## Features (Current & Planned)
 - ✅ SQLModel data schema for phases, weeks, tasks, resources, projects, certifications, applications, and metrics.
-- ✅ Seed script that imports roadmap JSON and populates the local SQLite database.
+- ✅ Auto-seeding that imports the roadmap JSON on first launch via shared helpers in `embedded_tracker.seed`.
 - ✅ Rich-powered CLI (`embedded-tracker list`, `embedded-tracker projects`, `embedded-tracker certifications`, etc.) to inspect roadmap progress from the terminal.
 - ✅ PySide6 desktop GUI with CRUD management tabs, filters, and shared persistence.
 - 🔄 Upcoming: analytics dashboards, AI prompt panels, GitHub/Notion sync, secure keyring storage.
@@ -25,8 +25,19 @@ poetry install
 ```
 
 ### Seed the Database
+The app seeds itself automatically on first launch (both CLI and GUI call `ensure_seed_data()`), pulling from `data/roadmap_seed.json` when running from source or the packaged copy under `embedded_tracker/data/roadmap_seed.json` when installed.
+
+To refresh the roadmap manually (after editing the JSON or generating a new one), run:
+
 ```bash
 poetry run python scripts/seed_roadmap.py data/roadmap_seed.json
+```
+
+### Regenerate the curated roadmap
+`scripts/generate_full_seed.py` produces the 52-week plan (including projects, certifications, applications, and metrics) and writes it to both the repo `data/` folder and the packaged `embedded_tracker/data/` directory. Rerun it whenever you tweak the template:
+
+```bash
+poetry run python scripts/generate_full_seed.py
 ```
 
 ### Use the CLI
@@ -51,8 +62,8 @@ The first launch will create a per-user data directory in:
 - `$XDG_DATA_HOME/embedded-tracker` (or `~/.local/share/embedded-tracker`) on Linux
 
 ### Package the App
-- **Windows**: run `scripts/build_windows_exe.ps1` from PowerShell on a Windows host to generate a single-file `EmbeddedTracker.exe`.
-- **Ubuntu/Debian**: run `scripts/build_linux_deb.sh` on a Linux host with `dpkg-deb` installed to produce a `.deb` package under `dist/linux/`.
+- **Windows**: run `scripts/build_windows_exe.ps1` from PowerShell on a Windows host to generate a single-file `EmbeddedTracker.exe` (PyInstaller will bundle the packaged seed JSON, so first launch is still populated).
+- **Ubuntu/Debian**: run `scripts/build_linux_deb.sh` on a Linux host with `dpkg-deb` installed to produce `dist/linux/embedded-tracker_0.1.0_amd64.deb`.
 
 Both scripts call `pyinstaller`, so ensure you installed dev dependencies via `poetry install --with dev`.
 
@@ -63,16 +74,20 @@ embedded-tracker/
 │   ├── __init__.py
 │   ├── cli.py
 │   ├── db.py
+│   ├── seed.py
 │   ├── gui/
 │   │   ├── __init__.py
 │   │   └── main_window.py
 │   ├── models.py
 │   └── services.py
+│   └── data/
+│       └── roadmap_seed.json
 ├── data/
 │   └── roadmap_seed.json
 ├── scripts/
 │   ├── build_linux_deb.sh
 │   ├── build_windows_exe.ps1
+│   ├── generate_full_seed.py
 │   └── seed_roadmap.py
 ├── tests/
 │   └── test_models.py

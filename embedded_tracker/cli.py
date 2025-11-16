@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.table import Table
 from sqlmodel import select
 
-from .db import init_db, session_scope
+from .db import ensure_seed_data, init_db, session_scope
 from .models import (
     Application,
     ApplicationStatus,
@@ -459,6 +459,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[List[str]] = None) -> int:
     init_db()
+    ensure_seed_data()
     parser = build_parser()
     args = parser.parse_args(argv)
 

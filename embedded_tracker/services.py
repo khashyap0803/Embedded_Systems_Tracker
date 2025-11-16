@@ -408,6 +408,36 @@ def update_day(
         return _day_to_record(session, day, week, phase, _utcnow())
 
 
+def override_day_status(day_id: int, new_status: TaskStatus) -> DayRecord:
+    with session_scope() as session:
+        day = session.get(DayPlan, day_id)
+        if day is None:
+            raise ValueError(f"Day {day_id} not found")
+        has_tasks = (
+            session.exec(select(Task.id).where(Task.day_id == day_id).limit(1)).first()
+            is not None
+        )
+        if has_tasks:
+            raise ValueError("This day has hour-level tasks. Update their statuses instead.")
+        week = session.get(Week, day.week_id)
+        if week is None:
+            raise RuntimeError("Day missing associated week")
+        phase = session.get(Phase, week.phase_id)
+        if phase is None:
+            raise RuntimeError("Week missing associated phase")
+        now = _utcnow()
+        _apply_manual_day_status(day, new_status, now)
+        session.add(day)
+        session.flush()
+        _refresh_week_state(session, week, now)
+        _refresh_phase_state(session, phase, now)
+        session.flush()
+        session.refresh(day)
+        session.refresh(week)
+        session.refresh(phase)
+        return _day_to_record(session, day, week, phase, now)
+
+
 def delete_day(day_id: int) -> None:
     with session_scope() as session:
         day = session.get(DayPlan, day_id)
@@ -1063,6 +1093,15 @@ def _ensure_utc(dt: Optional[datetime]) -> Optional[datetime]:
     return dt.astimezone(UTC)
 
 
+def _normalise_datetimes(values: Iterable[Optional[datetime]]) -> List[datetime]:
+    normalised: List[datetime] = []
+    for value in values:
+        coerced = _ensure_utc(value)
+        if coerced is not None:
+            normalised.append(coerced)
+    return normalised
+
+
 def _seconds_between(start: Optional[datetime], end: datetime) -> int:
     end_utc = _ensure_utc(end)
     start_utc = _ensure_utc(start)
@@ -1224,9 +1263,9 @@ def _task_to_record(
         hour_number=task.hour_number,
         phase_id=phase.id or week.phase_id,
         phase_name=phase.name,
-    status_updated_at=_ensure_utc(task.status_updated_at) or _utcnow(),
-    first_started_at=_ensure_utc(task.first_started_at),
-    completed_at=_ensure_utc(task.completed_at),
+        status_updated_at=_ensure_utc(task.status_updated_at) or _utcnow(),
+        first_started_at=_ensure_utc(task.first_started_at),
+        completed_at=_ensure_utc(task.completed_at),
         work_seconds=snapshot.work_seconds,
         break_seconds=snapshot.break_seconds,
         pause_seconds=snapshot.pause_seconds,
@@ -1237,6 +1276,22 @@ def _task_to_record(
         is_on_break=snapshot.on_break,
         is_paused=snapshot.paused,
     )
+
+
+def _apply_manual_day_status(day: DayPlan, new_status: TaskStatus, now: datetime) -> None:
+    timestamp = _ensure_utc(now) or _utcnow()
+    if new_status == TaskStatus.PENDING:
+        day.status = TaskStatus.PENDING
+        day.actual_start = None
+        day.actual_end = None
+        return
+    day.status = new_status
+    if day.actual_start is None:
+        day.actual_start = timestamp
+    if new_status == TaskStatus.COMPLETED:
+        day.actual_end = timestamp
+    else:
+        day.actual_end = None
 
 
 def _transition_task_status(task: Task, new_status: TaskStatus, now: datetime) -> None:
@@ -1312,9 +1367,6 @@ def _update_container_status(
 def _refresh_day_state(session: Session, day: DayPlan, now: datetime) -> None:
     tasks = session.exec(select(Task).where(Task.day_id == day.id)).all()
     if not tasks:
-        day.status = TaskStatus.PENDING
-        day.actual_start = None
-        day.actual_end = None
         session.add(day)
         return
     child_statuses = [task.status for task in tasks]
@@ -1324,12 +1376,13 @@ def _refresh_day_state(session: Session, day: DayPlan, now: datetime) -> None:
         day.actual_start = None
         day.actual_end = None
     else:
-        start_candidates = [task.first_started_at for task in tasks if task.first_started_at]
+        start_candidates = _normalise_datetimes(task.first_started_at for task in tasks)
         if start_candidates:
             earliest = min(start_candidates)
-            day.actual_start = earliest if day.actual_start is None else min(day.actual_start, earliest)
+            current_start = _ensure_utc(day.actual_start)
+            day.actual_start = earliest if current_start is None else min(current_start, earliest)
         if new_status == TaskStatus.COMPLETED:
-            end_candidates = [task.completed_at for task in tasks if task.completed_at]
+            end_candidates = _normalise_datetimes(task.completed_at for task in tasks)
             if end_candidates:
                 day.actual_end = max(end_candidates)
         else:
@@ -1347,15 +1400,16 @@ def _refresh_week_state(session: Session, week: Week, now: datetime) -> None:
             week.actual_start = None
             week.actual_end = None
         else:
-            start_candidates = [day.actual_start for day in days if day.actual_start]
+            start_candidates = _normalise_datetimes(day.actual_start for day in days)
             if not start_candidates:
                 tasks = session.exec(select(Task).where(Task.week_id == week.id)).all()
-                start_candidates = [task.first_started_at for task in tasks if task.first_started_at]
+                start_candidates = _normalise_datetimes(task.first_started_at for task in tasks)
             if start_candidates:
                 earliest = min(start_candidates)
-                week.actual_start = earliest if week.actual_start is None else min(week.actual_start, earliest)
+                current_start = _ensure_utc(week.actual_start)
+                week.actual_start = earliest if current_start is None else min(current_start, earliest)
             if new_status == TaskStatus.COMPLETED:
-                end_candidates = [day.actual_end for day in days if day.actual_end]
+                end_candidates = _normalise_datetimes(day.actual_end for day in days)
                 if end_candidates:
                     week.actual_end = max(end_candidates)
             else:
@@ -1369,12 +1423,13 @@ def _refresh_week_state(session: Session, week: Week, now: datetime) -> None:
             week.actual_start = None
             week.actual_end = None
         else:
-            start_candidates = [task.first_started_at for task in tasks if task.first_started_at]
+            start_candidates = _normalise_datetimes(task.first_started_at for task in tasks)
             if start_candidates:
                 earliest = min(start_candidates)
-                week.actual_start = earliest if week.actual_start is None else min(week.actual_start, earliest)
+                current_start = _ensure_utc(week.actual_start)
+                week.actual_start = earliest if current_start is None else min(current_start, earliest)
             if new_status == TaskStatus.COMPLETED:
-                end_candidates = [task.completed_at for task in tasks if task.completed_at]
+                end_candidates = _normalise_datetimes(task.completed_at for task in tasks)
                 if end_candidates:
                     week.actual_end = max(end_candidates)
             else:
@@ -1392,19 +1447,20 @@ def _refresh_phase_state(session: Session, phase: Phase, now: datetime) -> None:
             phase.actual_start = None
             phase.actual_end = None
         else:
-            start_candidates = [week.actual_start for week in weeks if week.actual_start]
+            start_candidates = _normalise_datetimes(week.actual_start for week in weeks)
             if not start_candidates:
                 tasks = session.exec(
                     select(Task)
                     .join(Week, Task.week_id == Week.id)
                     .where(Week.phase_id == phase.id)
                 ).all()
-                start_candidates = [task.first_started_at for task in tasks if task.first_started_at]
+                start_candidates = _normalise_datetimes(task.first_started_at for task in tasks)
             if start_candidates:
                 earliest = min(start_candidates)
-                phase.actual_start = earliest if phase.actual_start is None else min(phase.actual_start, earliest)
+                current_start = _ensure_utc(phase.actual_start)
+                phase.actual_start = earliest if current_start is None else min(current_start, earliest)
             if new_status == TaskStatus.COMPLETED:
-                end_candidates = [week.actual_end for week in weeks if week.actual_end]
+                end_candidates = _normalise_datetimes(week.actual_end for week in weeks)
                 if end_candidates:
                     phase.actual_end = max(end_candidates)
             else:
@@ -1422,12 +1478,13 @@ def _refresh_phase_state(session: Session, phase: Phase, now: datetime) -> None:
             phase.actual_start = None
             phase.actual_end = None
         else:
-            start_candidates = [task.first_started_at for task in tasks if task.first_started_at]
+            start_candidates = _normalise_datetimes(task.first_started_at for task in tasks)
             if start_candidates:
                 earliest = min(start_candidates)
-                phase.actual_start = earliest if phase.actual_start is None else min(phase.actual_start, earliest)
+                current_start = _ensure_utc(phase.actual_start)
+                phase.actual_start = earliest if current_start is None else min(current_start, earliest)
             if new_status == TaskStatus.COMPLETED:
-                end_candidates = [task.completed_at for task in tasks if task.completed_at]
+                end_candidates = _normalise_datetimes(task.completed_at for task in tasks)
                 if end_candidates:
                     phase.actual_end = max(end_candidates)
             else:

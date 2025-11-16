@@ -32,7 +32,7 @@ from PySide6.QtWidgets import (
 )
 from zoneinfo import ZoneInfo
 
-from ..db import init_db
+from ..db import ensure_seed_data, init_db
 from ..models import ApplicationStatus, CertificationStatus, ProjectStatus, ResourceType, TaskStatus
 from .. import services
 from ..services import (
@@ -227,6 +227,7 @@ class BaseCrudTab(QWidget):
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
         self._records: List[Any] = []
+        self._suspend_resize = False
 
         layout = QVBoxLayout(self)
         filters = self.build_filters()
@@ -294,6 +295,9 @@ class BaseCrudTab(QWidget):
     def get_record_id(self, record: Any) -> Any:
         return getattr(record, "id")
 
+    def get_cell_value(self, record: Any, attr: str) -> Any:
+        return getattr(record, attr)
+
     # ---- Core operations ----------------------------------------------------
 
     def refresh(self) -> None:
@@ -307,11 +311,17 @@ class BaseCrudTab(QWidget):
         self.table.setRowCount(len(records))
         for row_index, record in enumerate(records):
             for col_index, (_, attr) in enumerate(self.columns):
-                value = getattr(record, attr)
+                if attr == "__index__":
+                    value = row_index + 1
+                else:
+                    value = self.get_cell_value(record, attr)
                 item = QTableWidgetItem(self.format_value(value))
                 item.setData(Qt.UserRole, self.get_record_id(record))
                 self.table.setItem(row_index, col_index, item)
-        self.table.resizeColumnsToContents()
+        if not self._suspend_resize:
+            self.table.resizeColumnsToContents()
+        else:
+            self._suspend_resize = False
 
     def handle_add(self) -> None:
         fields = self.build_form_fields()
@@ -378,6 +388,16 @@ class BaseCrudTab(QWidget):
             return f"{value:.2f}"
         return str(value)
 
+    @staticmethod
+    def format_duration(value: float | int | None) -> str:
+        if value is None:
+            total_seconds = 0
+        else:
+            total_seconds = max(0, int(round(float(value))))
+        hours, remainder = divmod(total_seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
 
 # ---- Specific tabs ---------------------------------------------------------
 
@@ -392,11 +412,13 @@ class PhasesTab(BaseCrudTab):
         ("Plan End", "end_date"),
         ("Actual Start", "actual_start"),
         ("Actual End", "actual_end"),
-        ("Work (h)", "work_hours"),
-        ("Break (h)", "break_hours"),
-        ("Pause (h)", "pause_hours"),
+        ("Work (HH:MM:SS)", "work_seconds"),
+        ("Break (HH:MM:SS)", "break_seconds"),
+        ("Pause (HH:MM:SS)", "pause_seconds"),
         ("Description", "description"),
     )
+
+    _duration_attrs = {"work_seconds", "break_seconds", "pause_seconds"}
 
     def fetch_records(self, **_: Any) -> List[PhaseRecord]:
         return services.list_phases()
@@ -418,6 +440,11 @@ class PhasesTab(BaseCrudTab):
     def delete_record(self, record_id: Any) -> None:
         services.delete_phase(record_id)
 
+    def get_cell_value(self, record: PhaseRecord, attr: str) -> Any:
+        if attr in self._duration_attrs:
+            return self.format_duration(getattr(record, attr))
+        return super().get_cell_value(record, attr)
+
 
 class WeeksTab(BaseCrudTab):
     entity_name = "Week"
@@ -430,11 +457,13 @@ class WeeksTab(BaseCrudTab):
         ("Plan End", "end_date"),
         ("Actual Start", "actual_start"),
         ("Actual End", "actual_end"),
-        ("Work (h)", "work_hours"),
-        ("Break (h)", "break_hours"),
-        ("Pause (h)", "pause_hours"),
+        ("Work (HH:MM:SS)", "work_seconds"),
+        ("Break (HH:MM:SS)", "break_seconds"),
+        ("Pause (HH:MM:SS)", "pause_seconds"),
         ("Focus", "focus"),
     )
+
+    _duration_attrs = {"work_seconds", "break_seconds", "pause_seconds"}
 
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         self.phase_filter = QComboBox()
@@ -478,6 +507,11 @@ class WeeksTab(BaseCrudTab):
     def delete_record(self, record_id: Any) -> None:
         services.delete_week(record_id)
 
+    def get_cell_value(self, record: WeekRecord, attr: str) -> Any:
+        if attr in self._duration_attrs:
+            return self.format_duration(getattr(record, attr))
+        return super().get_cell_value(record, attr)
+
 
 class DaysTab(BaseCrudTab):
     entity_name = "Day"
@@ -488,18 +522,22 @@ class DaysTab(BaseCrudTab):
         ("Day", "number"),
         ("Date", "scheduled_date"),
         ("Status", "status"),
-        ("Work (h)", "work_hours"),
-        ("Break (h)", "break_hours"),
-        ("Pause (h)", "pause_hours"),
+        ("Work (HH:MM:SS)", "work_seconds"),
+        ("Break (HH:MM:SS)", "break_seconds"),
+        ("Pause (HH:MM:SS)", "pause_seconds"),
         ("Hours", "hour_count"),
         ("Focus", "focus"),
         ("Notes", "notes"),
     )
 
+    _duration_attrs = {"work_seconds", "break_seconds", "pause_seconds"}
+
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         self.phase_filter = QComboBox()
         self.week_filter = QComboBox()
         super().__init__(parent)
+        self.table.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.table.customContextMenuRequested.connect(self._show_context_menu)
 
     def build_filters(self) -> Optional[QHBoxLayout]:
         layout = QHBoxLayout()
@@ -572,6 +610,43 @@ class DaysTab(BaseCrudTab):
     def delete_record(self, record_id: Any) -> None:
         services.delete_day(record_id)
 
+    def get_cell_value(self, record: DayRecord, attr: str) -> Any:
+        if attr in self._duration_attrs:
+            return self.format_duration(getattr(record, attr))
+        return super().get_cell_value(record, attr)
+
+    def _show_context_menu(self, position) -> None:
+        record = self._selected_record()
+        if record is None or record.hour_count:
+            return
+        menu = QMenu(self)
+        status_menu = menu.addMenu("Set Status")
+        options = [
+            ("Pending", TaskStatus.PENDING),
+            ("Working", TaskStatus.WORKING),
+            ("Break", TaskStatus.BREAK),
+            ("Paused", TaskStatus.PAUSED),
+            ("Completed", TaskStatus.COMPLETED),
+        ]
+        for label, status in options:
+            action = status_menu.addAction(label)
+            action.triggered.connect(lambda _, s=status, rid=record.id: self._apply_status(rid, s))
+        menu.exec(self.table.viewport().mapToGlobal(position))
+
+    def _apply_status(self, record_id: int, status: TaskStatus) -> None:
+        try:
+            services.override_day_status(record_id, status)
+        except Exception as exc:  # noqa: BLE001
+            QMessageBox.critical(self, "Update Day Status", str(exc))
+        else:
+            self.refresh()
+            self._refresh_hierarchy_tabs()
+
+    def _refresh_hierarchy_tabs(self) -> None:
+        window = self.window()
+        if window is not None and hasattr(window, "refresh_hierarchy"):
+            window.refresh_hierarchy()
+
 
 class HoursTab(BaseCrudTab):
     entity_name = "Hour"
@@ -583,9 +658,9 @@ class HoursTab(BaseCrudTab):
         ("Hour", "hour_number"),
         ("Title", "title"),
         ("Status", "status"),
-        ("Work (h)", "work_hours"),
-        ("Break (h)", "break_hours"),
-        ("Pause (h)", "pause_hours"),
+    ("Work (HH:MM:SS)", "work_duration"),
+    ("Break (HH:MM:SS)", "break_duration"),
+    ("Pause (HH:MM:SS)", "pause_duration"),
         ("Started", "first_started_at"),
         ("Completed", "completed_at"),
         ("AI Prompt", "ai_prompt"),
@@ -600,7 +675,9 @@ class HoursTab(BaseCrudTab):
         self.table.setContextMenuPolicy(Qt.CustomContextMenu)
         self.table.customContextMenuRequested.connect(self._show_context_menu)
         self._refresh_timer = QTimer(self)
-        self._refresh_timer.setInterval(15_000)
+        self._live_interval_ms = 1_000
+        self._idle_interval_ms = 15_000
+        self._refresh_timer.setInterval(self._idle_interval_ms)
         self._refresh_timer.timeout.connect(self._refresh_if_live)
         self._refresh_timer.start()
 
@@ -695,25 +772,14 @@ class HoursTab(BaseCrudTab):
             if record.day_id is not None and record.hour_number is not None
         ]
 
-    def refresh(self) -> None:
-        try:
-            records = self.fetch_records(**self.get_filter_kwargs())
-        except Exception as exc:  # noqa: BLE001
-            QMessageBox.critical(self, f"Load {self.entity_name}", str(exc))
-            return
-
-        self._records = records
-        self.table.setRowCount(len(records))
-        for row_index, record in enumerate(records):
-            for col_index, (_, attr) in enumerate(self.columns):
-                if attr == "__index__":
-                    value = row_index + 1
-                else:
-                    value = getattr(record, attr)
-                item = QTableWidgetItem(self.format_value(value))
-                item.setData(Qt.UserRole, self.get_record_id(record))
-                self.table.setItem(row_index, col_index, item)
-        self.table.resizeColumnsToContents()
+    def get_cell_value(self, record: TaskRecord, attr: str) -> Any:
+        if attr == "work_duration":
+            return self.format_duration(record.work_seconds)
+        if attr == "break_duration":
+            return self.format_duration(record.break_seconds)
+        if attr == "pause_duration":
+            return self.format_duration(record.pause_seconds)
+        return super().get_cell_value(record, attr)
 
     def build_form_fields(self, record: Optional[TaskRecord] = None) -> List[FormField]:
         weeks = services.list_weeks()
@@ -753,7 +819,14 @@ class HoursTab(BaseCrudTab):
         services.delete_task(record_id)
 
     def _refresh_if_live(self) -> None:
-        if any(record.is_running or record.is_on_break for record in self._records):
+        any_live = any(
+            record.is_running or record.is_on_break or record.is_paused for record in self._records
+        )
+        target_interval = self._live_interval_ms if any_live else self._idle_interval_ms
+        if self._refresh_timer.interval() != target_interval:
+            self._refresh_timer.setInterval(target_interval)
+        if any_live:
+            self._suspend_resize = True
             self.refresh()
 
     def _show_context_menu(self, position) -> None:
@@ -1164,6 +1237,7 @@ def run() -> None:
     """Initialise the database and start the Qt event loop."""
 
     init_db()
+    ensure_seed_data()
     app = QApplication.instance() or QApplication([])
     window = MainWindow()
     window.show()

@@ -1841,6 +1841,80 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
         ],
+        projects=[
+            ProjectPlan(
+                name="Zephyr Multi-Protocol Connectivity Gateway",
+                description=(
+                    "Deliver a Zephyr-based IoT gateway that bridges CAN, BLE,"
+                    " Ethernet, and MQTT with resilient reconnect logic and"
+                    " field diagnostics."
+                ),
+                start_week=14,
+                end_week=21,
+                status="in_progress",
+                repo_url="https://github.com/nanifour/zephyr-connectivity-gateway",
+                demo_url="https://www.loom.com/share/zephyr-gateway-demo",
+            ),
+            ProjectPlan(
+                name="Secure OTA Update Orchestrator",
+                description=(
+                    "Build an MCU + gateway orchestration layer that signs,"
+                    " encrypts, and stages FreeRTOS/Zephyr firmware updates"
+                    " with rollback telemetry."
+                ),
+                start_week=17,
+                end_week=23,
+                status="planned",
+                repo_url="https://github.com/nanifour/secure-ota-orchestrator",
+            ),
+            ProjectPlan(
+                name="Fleet Diagnostics Telemetry Stack",
+                description=(
+                    "Implement structured logging, health monitoring, and"
+                    " Prometheus/Grafana exporters for edge nodes and"
+                    " gateways."
+                ),
+                start_week=19,
+                end_week=25,
+                status="planned",
+                repo_url="https://github.com/nanifour/fleet-diagnostics-stack",
+            ),
+            ProjectPlan(
+                name="Digital Twin Provisioning Portal",
+                description=(
+                    "Create a provisioning workflow that pairs hardware IDs"
+                    " with digital twins, secrets, and manufacturing test"
+                    " certificates."
+                ),
+                start_week=22,
+                end_week=26,
+                status="planned",
+                repo_url="https://github.com/nanifour/digital-twin-portal",
+            ),
+        ],
+        certifications=[
+            CertificationPlan(
+                name="FreeRTOS Certified Developer",
+                provider="AWS Training & Certification",
+                due_week=24,
+                status="planned",
+                credential_url="https://aws.amazon.com/training/course-descriptions/freertos/",
+            ),
+        ],
+        metrics=[
+            MetricPlan(
+                metric_type="rtos_context_switch_latency",
+                value=18.0,
+                unit="microseconds",
+                week_number=20,
+            ),
+            MetricPlan(
+                metric_type="fleet_connectivity_uptime",
+                value=0.997,
+                unit="ratio",
+                week_number=26,
+            ),
+        ],
     ),
     PhasePlan(
         name="Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",
@@ -2642,6 +2716,79 @@ PHASES: List[PhasePlan] = [
                         url="https://www.mountaingoatsoftware.com/agile/scrum/sprint-retrospective",
                     ),
                 ],
+            ),
+        ],
+        projects=[
+            ProjectPlan(
+                name="TinyML Sensor Fusion Rig",
+                description=(
+                    "Design a Cortex-M based fusion stack combining IMU,"
+                    " audio, and environmental inputs with TinyML models"
+                    " and adaptive filtering."
+                ),
+                start_week=27,
+                end_week=34,
+                status="in_progress",
+                repo_url="https://github.com/nanifour/tinyml-sensor-fusion",
+                demo_url="https://www.loom.com/share/tinyml-fusion-demo",
+            ),
+            ProjectPlan(
+                name="Functional Safety Automation Harness",
+                description=(
+                    "Automate ISO 26262 evidence capture with diagnostic"
+                    " coverage calculators, MC/DC reports, and fault"
+                    " injection scripts."
+                ),
+                start_week=30,
+                end_week=37,
+                status="planned",
+                repo_url="https://github.com/nanifour/functional-safety-harness",
+            ),
+            ProjectPlan(
+                name="Manufacturing Test Automation Bench",
+                description=(
+                    "Develop hardware-in-the-loop fixtures, boundary-scan"
+                    " recipes, and SBOM validation for pilot manufacturing."
+                ),
+                start_week=32,
+                end_week=39,
+                status="planned",
+                repo_url="https://github.com/nanifour/manufacturing-test-bench",
+            ),
+            ProjectPlan(
+                name="Edge DevOps Observability Pipeline",
+                description=(
+                    "Create CI/CD workflows that deliver signed artifacts,"
+                    " run device-in-the-loop regression tests, and emit"
+                    " compliance evidence."
+                ),
+                start_week=34,
+                end_week=40,
+                status="planned",
+                repo_url="https://github.com/nanifour/edge-devops-pipeline",
+            ),
+        ],
+        certifications=[
+            CertificationPlan(
+                name="Edge Impulse Expert",
+                provider="Edge Impulse",
+                due_week=36,
+                status="planned",
+                credential_url="https://edgeimpulse.com/experts",
+            ),
+        ],
+        metrics=[
+            MetricPlan(
+                metric_type="tinyml_inference_latency",
+                value=18.5,
+                unit="milliseconds",
+                week_number=34,
+            ),
+            MetricPlan(
+                metric_type="manufacturing_test_pass_rate",
+                value=0.975,
+                unit="ratio",
+                week_number=39,
             ),
         ],
     ),
@@ -3789,12 +3936,25 @@ def build_seed() -> dict:
     return seed
 
 
+def _write_seed_file(seed: dict, target_path: Path) -> None:
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    target_path.write_text(json.dumps(seed, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {target_path}")
+
+
 def main() -> None:
-    data_dir = Path(__file__).resolve().parents[1] / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
-    seed_path = data_dir / "roadmap_seed.json"
-    seed_path.write_text(json.dumps(build_seed(), indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {seed_path}")
+    repo_root = Path(__file__).resolve().parents[1]
+    seed_payload = build_seed()
+    targets = [
+        repo_root / "data" / "roadmap_seed.json",
+        repo_root / "embedded_tracker" / "data" / "roadmap_seed.json",
+    ]
+    seen_paths = set()
+    for target in targets:
+        if target in seen_paths:
+            continue
+        _write_seed_file(seed_payload, target)
+        seen_paths.add(target)
 
 
 if __name__ == "__main__":

@@ -28,6 +28,11 @@ _DATA_DIR = Path(os.environ.get("EMBEDDED_TRACKER_DATA_DIR", _default_data_dir()
 _DATA_DIR.mkdir(parents=True, exist_ok=True)
 _DB_PATH = _DATA_DIR / "embedded_tracker.db"
 _ENGINE = create_engine(f"sqlite:///{_DB_PATH}", echo=False, future=True)
+_SEED_ENV_VAR = "EMBEDDED_TRACKER_SEED_FILE"
+_PACKAGE_ROOT = Path(__file__).resolve().parent
+_REPO_ROOT = _PACKAGE_ROOT.parent
+_REPO_SEED_PATH = _REPO_ROOT / "data" / "roadmap_seed.json"
+_PACKAGE_SEED_PATH = _PACKAGE_ROOT / "data" / "roadmap_seed.json"
 
 
 def init_db() -> None:
@@ -147,4 +152,41 @@ def _apply_migrations() -> None:
                     "UPDATE task SET status_updated_at = COALESCE(status_updated_at, CURRENT_TIMESTAMP)"
                 )
             )
+
+def _seed_candidate_paths(explicit: Path | None = None) -> list[Path]:
+    candidates: list[Path] = []
+    if explicit:
+        candidates.append(explicit)
+    env_path = os.environ.get(_SEED_ENV_VAR)
+    if env_path:
+        candidates.append(Path(env_path))
+    candidates.extend([_REPO_SEED_PATH, _PACKAGE_SEED_PATH])
+    unique: list[Path] = []
+    for candidate in candidates:
+        if candidate and candidate not in unique:
+            unique.append(candidate)
+    return unique
+
+
+def ensure_seed_data(seed_path: Path | None = None) -> None:
+    """Populate the database with roadmap data if it is currently empty."""
+
+    for candidate in _seed_candidate_paths(seed_path):
+        if candidate.exists():
+            resolved = candidate
+            break
+    else:
+        return
+
+    with session_scope() as session:
+        row = session.execute(text("SELECT 1 FROM phase LIMIT 1")).first()
+        if row:
+            return
+
+    # Import lazily to avoid circular dependency during module import.
+    from .seed import seed_from_file
+
+    print(f"Auto-seeding roadmap database from {resolved}")
+    seed_from_file(resolved)
+
 

@@ -7,11 +7,11 @@ from enum import Enum
 from typing import Optional
 
 from sqlalchemy import Column, DateTime, Enum as SAEnum
+from sqlmodel import Field, SQLModel
 
 
 def _utcnow() -> datetime:
     return datetime.now(timezone.utc)
-from sqlmodel import Field, SQLModel
 
 
 class TaskStatus(str, Enum):
@@ -169,11 +169,26 @@ class Task(SQLModel, table=True):
 class ResourceType(str, Enum):
     """Categorisation for reference material."""
 
-    VIDEO = "video"
     ARTICLE = "article"
+    VIDEO = "video"
     BOOK = "book"
     COURSE = "course"
     TOOL = "tool"
+    DOCS = "docs"
+    SPEC = "spec"
+    APPNOTE = "appnote"
+    WHITEPAPER = "whitepaper"
+    PAPER = "paper"
+    BENCHMARK = "benchmark"
+    CHECKLIST = "checklist"
+    TEMPLATE = "template"
+    GUIDE = "guide"
+    PLATFORM = "platform"
+    REPO = "repo"
+    TALK = "talk"
+    HANDS_ON = "hands-on"
+    WORKSHEET = "worksheet"
+    STANDARD = "standard"
     OTHER = "other"
 
 

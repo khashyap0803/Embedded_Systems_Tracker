@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from enum import Enum
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
@@ -30,6 +30,7 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QWidget,
 )
+from zoneinfo import ZoneInfo
 
 from ..db import init_db
 from ..models import ApplicationStatus, CertificationStatus, ProjectStatus, ResourceType, TaskStatus
@@ -45,6 +46,21 @@ from ..services import (
     TaskRecord,
     WeekRecord,
 )
+try:
+    IST = ZoneInfo("Asia/Kolkata")
+except Exception:  # pragma: no cover - fallback when tzdata missing
+    IST = timezone(timedelta(hours=5, minutes=30))
+
+DATETIME_DISPLAY_FORMAT = "%I:%M %p · %d/%m/%Y"
+
+
+def _format_local_datetime(value: Optional[datetime]) -> str:
+    if value is None:
+        return ""
+    if value.tzinfo is None:
+        value = value.replace(tzinfo=timezone.utc)
+    local_value = value.astimezone(IST)
+    return local_value.strftime(DATETIME_DISPLAY_FORMAT)
 
 
 @dataclass(slots=True)
@@ -354,6 +370,8 @@ class BaseCrudTab(QWidget):
             return ""
         if isinstance(value, Enum):  # type: ignore[arg-type]
             return value.value  # type: ignore[return-value]
+        if isinstance(value, datetime):
+            return _format_local_datetime(value)
         if isinstance(value, date):
             return value.isoformat()
         if isinstance(value, float):
@@ -558,7 +576,7 @@ class DaysTab(BaseCrudTab):
 class HoursTab(BaseCrudTab):
     entity_name = "Hour"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Phase", "phase_name"),
         ("Week", "week_number"),
         ("Day", "day_number"),
@@ -569,7 +587,6 @@ class HoursTab(BaseCrudTab):
         ("Break (h)", "break_hours"),
         ("Pause (h)", "pause_hours"),
         ("Started", "first_started_at"),
-        ("Updated", "status_updated_at"),
         ("Completed", "completed_at"),
         ("AI Prompt", "ai_prompt"),
     )
@@ -671,7 +688,32 @@ class HoursTab(BaseCrudTab):
         }
 
     def fetch_records(self, **kwargs: Any) -> List[TaskRecord]:
-        return services.list_tasks(**kwargs)
+        records = services.list_tasks(**kwargs)
+        return [
+            record
+            for record in records
+            if record.day_id is not None and record.hour_number is not None
+        ]
+
+    def refresh(self) -> None:
+        try:
+            records = self.fetch_records(**self.get_filter_kwargs())
+        except Exception as exc:  # noqa: BLE001
+            QMessageBox.critical(self, f"Load {self.entity_name}", str(exc))
+            return
+
+        self._records = records
+        self.table.setRowCount(len(records))
+        for row_index, record in enumerate(records):
+            for col_index, (_, attr) in enumerate(self.columns):
+                if attr == "__index__":
+                    value = row_index + 1
+                else:
+                    value = getattr(record, attr)
+                item = QTableWidgetItem(self.format_value(value))
+                item.setData(Qt.UserRole, self.get_record_id(record))
+                self.table.setItem(row_index, col_index, item)
+        self.table.resizeColumnsToContents()
 
     def build_form_fields(self, record: Optional[TaskRecord] = None) -> List[FormField]:
         weeks = services.list_weeks()

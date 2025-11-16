@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, Iterable, Type, TypeVar
@@ -172,7 +172,17 @@ def upsert_task(
             task.hour_number = hour_number
     if task_payload.get("estimated_minutes") and not task_payload.get("estimated_hours"):
         task.estimated_hours = float(task_payload["estimated_minutes"]) / 60.0
-    task.status_updated_at = datetime.utcnow()
+    if task_payload.get("status_updated_at"):
+        raw = task_payload["status_updated_at"]
+        if isinstance(raw, str):
+            parsed = datetime.fromisoformat(raw)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            task.status_updated_at = parsed
+        else:
+            task.status_updated_at = raw if raw.tzinfo else raw.replace(tzinfo=timezone.utc)
+    else:
+        task.status_updated_at = datetime.now(timezone.utc)
     return task
 
 

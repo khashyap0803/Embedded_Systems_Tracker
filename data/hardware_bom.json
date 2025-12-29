@@ -1,0 +1,762 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-12-29",
+        "currency": "INR",
+        "notes": "Complete hardware BOM for 52-week Embedded Systems Mastery roadmap. Prices are approximate and may vary. Order items marked 'Lead Time' at least 2 weeks before needed phase."
+    },
+    "categories": {
+        "compute_boards": {
+            "name": "Development Boards & Compute",
+            "items": [
+                {
+                    "name": "STM32 Nucleo-G474RE",
+                    "description": "ARM Cortex-M4 with FPU, 170MHz, 512KB Flash - ideal for RTOS and motor control projects",
+                    "quantity": 1,
+                    "price_inr": 2500,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 5,
+                    "purchase_links": [
+                        "https://www.robu.in",
+                        "https://www.electronicscomp.com"
+                    ]
+                },
+                {
+                    "name": "STM32 Nucleo-F446RE",
+                    "description": "ARM Cortex-M4, 180MHz - alternative board for compatibility testing",
+                    "quantity": 1,
+                    "price_inr": 2200,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 8,
+                    "purchase_links": [
+                        "https://www.robu.in"
+                    ]
+                },
+                {
+                    "name": "ESP32-C3-DevKitM-1",
+                    "description": "RISC-V based WiFi/BLE SoC - for open architecture bring-up",
+                    "quantity": 2,
+                    "price_inr": 800,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 18,
+                    "purchase_links": [
+                        "https://www.espressif.com",
+                        "https://www.robu.in"
+                    ]
+                },
+                {
+                    "name": "ESP32-WROOM-32 DevKit",
+                    "description": "Xtensa dual-core WiFi/BLE - for connectivity labs and MQTT",
+                    "quantity": 2,
+                    "price_inr": 600,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 19,
+                    "purchase_links": [
+                        "https://www.robu.in"
+                    ]
+                },
+                {
+                    "name": "Raspberry Pi 5 (8GB)",
+                    "description": "Gateway device for edge computing and Linux-based projects",
+                    "quantity": 1,
+                    "price_inr": 8500,
+                    "priority": "essential",
+                    "phase_needed": 3,
+                    "week_needed": 27,
+                    "purchase_links": [
+                        "https://www.raspberrypi.com"
+                    ]
+                },
+                {
+                    "name": "Raspberry Pi 4 Model B (4GB)",
+                    "description": "Backup/secondary gateway or headless server",
+                    "quantity": 1,
+                    "price_inr": 5500,
+                    "priority": "recommended",
+                    "phase_needed": 3,
+                    "week_needed": 30,
+                    "purchase_links": [
+                        "https://www.robu.in"
+                    ]
+                },
+                {
+                    "name": "NVIDIA Jetson Nano Developer Kit",
+                    "description": "Edge AI inference - for TinyML and computer vision projects",
+                    "quantity": 1,
+                    "price_inr": 15000,
+                    "priority": "essential",
+                    "phase_needed": 3,
+                    "week_needed": 28,
+                    "purchase_links": [
+                        "https://developer.nvidia.com"
+                    ]
+                },
+                {
+                    "name": "Arduino Uno R4 WiFi",
+                    "description": "Beginner-friendly board for prototyping and I2C/SPI experimentation",
+                    "quantity": 1,
+                    "price_inr": 2800,
+                    "priority": "optional",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "SiFive HiFive1 Rev B",
+                    "description": "Pure RISC-V development board for architecture deep-dive",
+                    "quantity": 1,
+                    "price_inr": 8000,
+                    "priority": "optional",
+                    "phase_needed": 2,
+                    "week_needed": 18,
+                    "notes": "Can use QEMU emulation if budget is tight"
+                }
+            ]
+        },
+        "instruments": {
+            "name": "Test & Measurement Equipment",
+            "items": [
+                {
+                    "name": "Saleae Logic 8 (Clone Compatible)",
+                    "description": "8-channel logic analyzer for protocol debugging (UART, SPI, I2C, CAN)",
+                    "quantity": 1,
+                    "price_inr": 3500,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 3,
+                    "notes": "Original Saleae is ~$500, DSLogic Plus is good alternative at $150"
+                },
+                {
+                    "name": "Rigol DS1054Z Oscilloscope",
+                    "description": "4-channel 50MHz digital scope (hackable to 100MHz) - industry standard for hobbyists",
+                    "quantity": 1,
+                    "price_inr": 32000,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1,
+                    "notes": "Most important investment. Alternative: Hantek DSO5102P (~₹12000)"
+                },
+                {
+                    "name": "FNIRSI 1014D Portable Scope",
+                    "description": "Dual channel 100MHz handheld scope - for field debugging",
+                    "quantity": 1,
+                    "price_inr": 8000,
+                    "priority": "optional",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                },
+                {
+                    "name": "J-Link EDU Mini",
+                    "description": "JTAG/SWD debugger for ARM - essential for professional debugging",
+                    "quantity": 1,
+                    "price_inr": 2500,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 5,
+                    "notes": "EDU version is license-restricted to non-commercial use"
+                },
+                {
+                    "name": "ST-Link V3 Mini",
+                    "description": "Official STM32 debugger/programmer",
+                    "quantity": 1,
+                    "price_inr": 1200,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 5
+                },
+                {
+                    "name": "Digital Multimeter (Auto-ranging)",
+                    "description": "Basic measurement tool - Fluke 115 or UNI-T UT61E",
+                    "quantity": 1,
+                    "price_inr": 4000,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "USB Microscope (1000x)",
+                    "description": "For SMD soldering inspection and PCB debugging",
+                    "quantity": 1,
+                    "price_inr": 2000,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 8
+                },
+                {
+                    "name": "Bench Power Supply (30V 5A)",
+                    "description": "Variable DC power supply for development",
+                    "quantity": 1,
+                    "price_inr": 5000,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                }
+            ]
+        },
+        "transceivers_interfaces": {
+            "name": "Communication Interface ICs & Modules",
+            "items": [
+                {
+                    "name": "MCP2515 CAN Controller Module",
+                    "description": "SPI-to-CAN controller with TJA1050 transceiver",
+                    "quantity": 4,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 17
+                },
+                {
+                    "name": "TJA1050 CAN Transceiver",
+                    "description": "High-speed CAN transceiver IC for custom implementations",
+                    "quantity": 5,
+                    "price_inr": 50,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 17
+                },
+                {
+                    "name": "MCP2551 CAN Transceiver",
+                    "description": "Alternative CAN transceiver for redundancy testing",
+                    "quantity": 5,
+                    "price_inr": 60,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 17
+                },
+                {
+                    "name": "MAX485 RS-485 Transceiver Module",
+                    "description": "For industrial communication protocols",
+                    "quantity": 4,
+                    "price_inr": 80,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 20
+                },
+                {
+                    "name": "TJA1021 LIN Transceiver",
+                    "description": "LIN bus transceiver for automotive body electronics",
+                    "quantity": 4,
+                    "price_inr": 150,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 17,
+                    "notes": "NEW: Added for LIN protocol implementation"
+                },
+                {
+                    "name": "CP2102 USB-UART Module",
+                    "description": "USB to serial converter for debugging",
+                    "quantity": 3,
+                    "price_inr": 150,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 3
+                },
+                {
+                    "name": "FT232RL USB-UART Module",
+                    "description": "High-quality USB-UART for reliable communication",
+                    "quantity": 2,
+                    "price_inr": 300,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 3
+                },
+                {
+                    "name": "74HC595 Shift Register",
+                    "description": "8-bit serial-to-parallel shift register for IO expansion",
+                    "quantity": 10,
+                    "price_inr": 15,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 3
+                },
+                {
+                    "name": "74HC165 Shift Register",
+                    "description": "8-bit parallel-to-serial shift register for input expansion",
+                    "quantity": 10,
+                    "price_inr": 15,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 3
+                }
+            ]
+        },
+        "sensors": {
+            "name": "Sensors & Input Devices",
+            "items": [
+                {
+                    "name": "MPU6050 IMU Module",
+                    "description": "6-axis accelerometer + gyroscope for motion sensing",
+                    "quantity": 3,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 22
+                },
+                {
+                    "name": "MPU9250 IMU Module",
+                    "description": "9-axis IMU with magnetometer for advanced motion tracking",
+                    "quantity": 2,
+                    "price_inr": 500,
+                    "priority": "recommended",
+                    "phase_needed": 3,
+                    "week_needed": 28
+                },
+                {
+                    "name": "OV2640 Camera Module",
+                    "description": "2MP camera for ESP32 - computer vision projects",
+                    "quantity": 2,
+                    "price_inr": 400,
+                    "priority": "essential",
+                    "phase_needed": 3,
+                    "week_needed": 28
+                },
+                {
+                    "name": "OV5640 Camera Module",
+                    "description": "5MP autofocus camera for higher quality vision",
+                    "quantity": 1,
+                    "price_inr": 1200,
+                    "priority": "optional",
+                    "phase_needed": 3,
+                    "week_needed": 30
+                },
+                {
+                    "name": "BME280 Environmental Sensor",
+                    "description": "Temperature, humidity, pressure sensor",
+                    "quantity": 3,
+                    "price_inr": 350,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 19
+                },
+                {
+                    "name": "BMP280 Pressure Sensor",
+                    "description": "Barometric pressure for altitude sensing",
+                    "quantity": 2,
+                    "price_inr": 150,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 19
+                },
+                {
+                    "name": "DHT22 Temperature/Humidity Sensor",
+                    "description": "Basic environmental monitoring",
+                    "quantity": 3,
+                    "price_inr": 250,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 6
+                },
+                {
+                    "name": "HC-SR04 Ultrasonic Sensor",
+                    "description": "Distance measurement sensor",
+                    "quantity": 3,
+                    "price_inr": 80,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 4
+                },
+                {
+                    "name": "IR Proximity Sensor Module",
+                    "description": "Object detection and line following",
+                    "quantity": 5,
+                    "price_inr": 50,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 4
+                },
+                {
+                    "name": "ACS712 Current Sensor",
+                    "description": "Hall-effect current sensor for power monitoring",
+                    "quantity": 2,
+                    "price_inr": 150,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                },
+                {
+                    "name": "INA219 Power Monitor",
+                    "description": "I2C current/voltage/power sensor module",
+                    "quantity": 2,
+                    "price_inr": 250,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                }
+            ]
+        },
+        "prototyping": {
+            "name": "Prototyping & Components",
+            "items": [
+                {
+                    "name": "Breadboard 830-point (Full Size)",
+                    "description": "Standard solderless breadboard",
+                    "quantity": 4,
+                    "price_inr": 150,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Breadboard 400-point (Half Size)",
+                    "description": "Compact breadboard for smaller circuits",
+                    "quantity": 4,
+                    "price_inr": 80,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Jumper Wire Kit (M-M, M-F, F-F)",
+                    "description": "Assorted lengths jumper wires",
+                    "quantity": 3,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Resistor Kit (1/4W, 1% tolerance)",
+                    "description": "E96 series resistor assortment (10Ω - 1MΩ)",
+                    "quantity": 1,
+                    "price_inr": 400,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Capacitor Kit (Ceramic + Electrolytic)",
+                    "description": "Assorted values 10pF - 1000µF",
+                    "quantity": 1,
+                    "price_inr": 500,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "LED Assortment Kit",
+                    "description": "5mm LEDs in various colors + RGB LEDs",
+                    "quantity": 1,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Push Button Kit",
+                    "description": "Tactile switches 6x6mm assortment",
+                    "quantity": 1,
+                    "price_inr": 150,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "16x2 LCD Display (I2C)",
+                    "description": "Character LCD with I2C backpack",
+                    "quantity": 2,
+                    "price_inr": 250,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 6
+                },
+                {
+                    "name": "0.96\" OLED Display (I2C)",
+                    "description": "128x64 OLED for compact displays",
+                    "quantity": 3,
+                    "price_inr": 250,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 6
+                },
+                {
+                    "name": "Soldering Station (60W)",
+                    "description": "Temperature-controlled soldering iron",
+                    "quantity": 1,
+                    "price_inr": 2500,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Solder Wire (0.6mm, 63/37)",
+                    "description": "Lead solder for easier work",
+                    "quantity": 1,
+                    "price_inr": 300,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Desoldering Pump",
+                    "description": "For removing solder and fixing mistakes",
+                    "quantity": 1,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "Flux Paste",
+                    "description": "For SMD soldering and rework",
+                    "quantity": 1,
+                    "price_inr": 200,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 8
+                }
+            ]
+        },
+        "motors_actuators": {
+            "name": "Motors & Actuators",
+            "items": [
+                {
+                    "name": "NEMA 17 Stepper Motor",
+                    "description": "1.8° step angle stepper for precision motion",
+                    "quantity": 2,
+                    "price_inr": 400,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 22
+                },
+                {
+                    "name": "A4988 Stepper Driver Module",
+                    "description": "Stepper motor driver with microstepping",
+                    "quantity": 2,
+                    "price_inr": 100,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 22
+                },
+                {
+                    "name": "SG90 Micro Servo",
+                    "description": "9g micro servo for small projects",
+                    "quantity": 5,
+                    "price_inr": 100,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 5
+                },
+                {
+                    "name": "MG996R Servo",
+                    "description": "High-torque metal gear servo",
+                    "quantity": 2,
+                    "price_inr": 350,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 22
+                },
+                {
+                    "name": "L298N Motor Driver Module",
+                    "description": "Dual H-bridge for DC motors",
+                    "quantity": 2,
+                    "price_inr": 200,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 10
+                },
+                {
+                    "name": "N20 DC Geared Motor (100RPM)",
+                    "description": "Small DC motor with gearbox",
+                    "quantity": 4,
+                    "price_inr": 150,
+                    "priority": "recommended",
+                    "phase_needed": 1,
+                    "week_needed": 10
+                }
+            ]
+        },
+        "storage_power": {
+            "name": "Storage & Power",
+            "items": [
+                {
+                    "name": "MicroSD Card (32GB Class 10)",
+                    "description": "For Raspberry Pi and data logging",
+                    "quantity": 3,
+                    "price_inr": 400,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 1
+                },
+                {
+                    "name": "USB Power Bank (10000mAh)",
+                    "description": "Portable power for field testing",
+                    "quantity": 1,
+                    "price_inr": 1000,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                },
+                {
+                    "name": "18650 Battery Holder",
+                    "description": "For battery-powered projects",
+                    "quantity": 2,
+                    "price_inr": 100,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                },
+                {
+                    "name": "TP4056 Lithium Charger Module",
+                    "description": "Micro USB Li-ion battery charger",
+                    "quantity": 3,
+                    "price_inr": 50,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                },
+                {
+                    "name": "Buck Converter (LM2596)",
+                    "description": "Adjustable DC-DC step-down converter",
+                    "quantity": 5,
+                    "price_inr": 80,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 5
+                },
+                {
+                    "name": "Boost Converter (MT3608)",
+                    "description": "DC-DC step-up converter",
+                    "quantity": 3,
+                    "price_inr": 80,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 15
+                }
+            ]
+        },
+        "networking": {
+            "name": "Networking & Connectivity",
+            "items": [
+                {
+                    "name": "W5500 Ethernet Module",
+                    "description": "SPI-to-Ethernet for wired connectivity",
+                    "quantity": 2,
+                    "price_inr": 500,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 19
+                },
+                {
+                    "name": "ENC28J60 Ethernet Module",
+                    "description": "Alternative cheaper Ethernet solution",
+                    "quantity": 2,
+                    "price_inr": 250,
+                    "priority": "optional",
+                    "phase_needed": 2,
+                    "week_needed": 19
+                },
+                {
+                    "name": "NRF24L01+ RF Module",
+                    "description": "2.4GHz wireless transceiver",
+                    "quantity": 4,
+                    "price_inr": 150,
+                    "priority": "recommended",
+                    "phase_needed": 2,
+                    "week_needed": 20
+                },
+                {
+                    "name": "HC-05 Bluetooth Module",
+                    "description": "Classic Bluetooth for serial communication",
+                    "quantity": 2,
+                    "price_inr": 300,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 8
+                },
+                {
+                    "name": "USB WiFi Adapter (RTL8188)",
+                    "description": "For Raspberry Pi WiFi connectivity",
+                    "quantity": 1,
+                    "price_inr": 500,
+                    "priority": "recommended",
+                    "phase_needed": 3,
+                    "week_needed": 27
+                }
+            ]
+        },
+        "software_licenses": {
+            "name": "Software & Tools",
+            "items": [
+                {
+                    "name": "Wireshark",
+                    "description": "Network protocol analyzer - FREE",
+                    "quantity": 1,
+                    "price_inr": 0,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 19,
+                    "notes": "Download from wireshark.org - essential for packet analysis"
+                },
+                {
+                    "name": "Saleae Logic Software",
+                    "description": "Logic analyzer software - FREE (with compatible hardware)",
+                    "quantity": 1,
+                    "price_inr": 0,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 3
+                },
+                {
+                    "name": "STM32CubeIDE",
+                    "description": "Free IDE for STM32 development",
+                    "quantity": 1,
+                    "price_inr": 0,
+                    "priority": "essential",
+                    "phase_needed": 1,
+                    "week_needed": 5
+                },
+                {
+                    "name": "KiCad",
+                    "description": "Open-source PCB design software",
+                    "quantity": 1,
+                    "price_inr": 0,
+                    "priority": "essential",
+                    "phase_needed": 4,
+                    "week_needed": 40
+                },
+                {
+                    "name": "Docker Desktop",
+                    "description": "Containerization platform - FREE",
+                    "quantity": 1,
+                    "price_inr": 0,
+                    "priority": "essential",
+                    "phase_needed": 2,
+                    "week_needed": 11,
+                    "notes": "NEW: Essential for containerized build environments"
+                }
+            ]
+        }
+    },
+    "budget_summary": {
+        "essential_total_inr": 95000,
+        "recommended_total_inr": 35000,
+        "optional_total_inr": 25000,
+        "grand_total_inr": 155000,
+        "notes": "Essential items are required to complete the core roadmap. Recommended items enhance the learning experience. Optional items are for advanced projects or alternatives."
+    },
+    "procurement_schedule": {
+        "before_phase_1": {
+            "week": 0,
+            "description": "Order all Phase 1 essentials - breadboards, basic components, oscilloscope, multimeter, STM32 board",
+            "estimated_cost_inr": 50000
+        },
+        "before_phase_2": {
+            "week": 13,
+            "description": "Order ESP32 boards, CAN transceivers, LIN transceivers, communication modules",
+            "estimated_cost_inr": 15000
+        },
+        "before_phase_3": {
+            "week": 26,
+            "description": "Order Raspberry Pi 5, Jetson Nano, camera modules, advanced sensors",
+            "estimated_cost_inr": 35000
+        },
+        "before_phase_4": {
+            "week": 39,
+            "description": "Order PCB fabrication tools, any remaining components",
+            "estimated_cost_inr": 10000
+        }
+    }
+}

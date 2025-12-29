@@ -60,8 +60,8 @@ def check_structure(phases: list[dict]) -> list[str]:
                             f"Week {week['number']} day {day['number']} hour {hour['hour_number']}\n"
                             " has non-positive estimated minutes"
                         )
-    if week_counter != 52:
-        issues.append(f"Expected 52 weeks, found {week_counter}")
+    if week_counter not in (52, 53):
+        issues.append(f"Expected 52-53 weeks, found {week_counter}")
     return issues
 
 

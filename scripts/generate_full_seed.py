@@ -787,46 +787,66 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
             WeekPlan(
-                focus="Week 11 – Testing infrastructure & CI enablement",
+                focus="Week 11 – Containerized Build Environments & CI Enablement",
                 tasks=[
+                    TaskPlan(
+                        title="Docker firmware build environment setup",
+                        description=(
+                            "Create Dockerfile with ARM GCC toolchain, CMake, and"
+                            " ESP-IDF SDK. Build and test firmware images inside"
+                            " containers for reproducibility across machines."
+                        ),
+                        estimated_hours=5.0,
+                        ai_prompt=(
+                            "Review my Dockerfile for embedded toolchain; suggest"
+                            " layer optimization and caching strategies."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Multi-stage Docker builds for firmware",
+                        description=(
+                            "Implement multi-stage builds separating SDK/toolchain"
+                            " from application code. Create docker-compose for"
+                            " STM32, ESP32, and Zephyr build targets."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Analyze my docker-compose setup; suggest improvements"
+                            " for cross-platform build matrix."
+                        ),
+                    ),
                     TaskPlan(
                         title="Host-based simulation harness",
                         description=(
                             "Extend existing simulator with fake drivers,"
                             " golden sensor traces, and property-based tests."
                         ),
-                        estimated_hours=5.5,
+                        estimated_hours=4.0,
                         ai_prompt=(
                             "Review property-based test strategy; suggest"
                             " invariants capturing sensor drift."
                         ),
                     ),
                     TaskPlan(
-                        title="Hardware test farm automation",
+                        title="GitHub Actions CI with containerized builds",
                         description=(
-                            "Provision Raspberry Pi runners controlling boards"
-                            " via USB, power relays, and measurement gear."
-                        ),
-                        estimated_hours=4.5,
-                        ai_prompt=(
-                            "Suggest reliability safeguards for remote flashing"
-                            " and automated recovery."
-                        ),
-                    ),
-                    TaskPlan(
-                        title="CI dashboards & traces",
-                        description=(
-                            "Publish build, test, and energy metrics to Grafana"
-                            " with historical comparison."
+                            "Set up CI workflow using Docker images for consistent"
+                            " builds, run unit tests, and publish artifacts."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Review Grafana queries; propose SLO-style alerts"
-                            " for regressions."
+                            "Review my CI workflow; suggest caching and parallelism"
+                            " improvements for faster builds."
                         ),
                     ),
                 ],
                 resources=[
+                    ResourcePlan(
+                        title="Docker for Embedded Development",
+                        type="article",
+                        notes="Containerization best practices",
+                        url="https://interrupt.memfault.com/blog/using-docker-for-embedded",
+                    ),
                     ResourcePlan(
                         title="Renode & Robot Framework guide",
                         type="article",
@@ -840,13 +860,14 @@ PHASES: List[PhasePlan] = [
                         url="https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners",
                     ),
                     ResourcePlan(
-                        title="Grafana streaming metrics tutorial",
-                        type="video",
-                        notes="Dashboards refresher",
-                        url="https://grafana.com/go/learn/grafana-fundamentals/",
+                        title="ESP-IDF Docker image",
+                        type="docs",
+                        notes="Official containerized development environment",
+                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-docker-image.html",
                     ),
                 ],
             ),
+
             WeekPlan(
                 focus="Week 12 – Safety basics & design for reliability",
                 tasks=[
@@ -1249,68 +1270,172 @@ PHASES: List[PhasePlan] = [
                 ],
             ),
             WeekPlan(
-                focus="Week 17 – CAN/CAN-FD & automotive-grade networking",
+                focus="Week 17 – CAN/CAN-FD Physical Layer & LIN Protocol",
                 tasks=[
                     TaskPlan(
-                        title="CAN stack integration",
+                        title="CAN physical layer deep-dive",
                         description=(
-                            "Implement CAN-FD driver with ISO-TP, UDS"
-                            " diagnostics, and acceptance filters."
+                            "Study CAN/CAN-FD bit timing, sample points, and"
+                            " transceivers (TJA1050/MCP2551). Configure STM32"
+                            " bxCAN/FDCAN peripherals with proper bit rate."
                         ),
-                        estimated_hours=6.0,
+                        estimated_hours=5.0,
                         ai_prompt=(
-                            "Evaluate CAN filter strategy; suggest DBC tuning"
-                            " for critical frames."
+                            "Review my CAN bit timing calculations; verify sample"
+                            " point positioning and propagation segment values."
                         ),
                     ),
                     TaskPlan(
-                        title="Network load simulation",
+                        title="LIN slave implementation",
                         description=(
-                            "Use CANoe or cantools to simulate bus loads,"
-                            " error frames, and measure latency budgets."
+                            "Implement LIN 2.1 slave node using UART peripheral."
+                            " Handle break detection, sync field, protected ID,"
+                            " and checksum calculation. Test with LIN master."
                         ),
-                        estimated_hours=4.5,
+                        estimated_hours=5.5,
                         ai_prompt=(
-                            "Interpret bus load metrics; propose fail-safe"
-                            " behaviors on error passive."
+                            "Review my LIN frame handler; suggest improvements"
+                            " for break detection robustness and checksum types."
                         ),
                     ),
                     TaskPlan(
-                        title="Diagnostics tooling",
+                        title="LIN schedule table manager",
                         description=(
-                            "Build PC-side CLI to flash ECUs via UDS, capture"
-                            " DTCs, and log sessions."
+                            "Build schedule table with event-triggered and"
+                            " sporadic frame support. Implement sleep/wake-up"
+                            " management for LIN network."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Suggest ergonomics improvements to UDS CLI and"
-                            " error handling."
+                            "Analyze my LIN schedule table; suggest optimizations"
+                            " for minimizing bus load and latency."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="CAN/LIN gateway prototype",
+                        description=(
+                            "Create simple CAN-to-LIN gateway translating body"
+                            " control messages. Log and visualize traffic flow."
+                        ),
+                        estimated_hours=4.0,
+                        ai_prompt=(
+                            "Review my gateway routing logic; suggest message"
+                            " prioritization and error handling strategies."
                         ),
                     ),
                 ],
                 resources=[
                     ResourcePlan(
-                        title="Vector CANoe essentials",
-                        type="course",
-                        notes="Simulation techniques",
-                        url="https://elearning.vector.com/mod/page/view.php?id=1734",
+                        title="LIN 2.1 Specification",
+                        type="spec",
+                        notes="Official LIN protocol reference",
+                        url="https://www.lin-cia.org/standards/",
                     ),
                     ResourcePlan(
-                        title="Vector CAN FD knowledge base",
+                        title="Vector LIN Basics",
                         type="article",
-                        notes="Protocol nuances",
-                        url="https://www.vector.com/int/en/know-how/technical-articles/can-fd/",
+                        notes="Introduction to LIN networking",
+                        url="https://www.vector.com/int/en/know-how/technical-articles/lin/",
                     ),
                     ResourcePlan(
-                        title="cantools usage guide",
+                        title="CAN Physical Layer Design",
+                        type="appnote",
+                        notes="NXP TJA1050 application note",
+                        url="https://www.nxp.com/docs/en/application-note/AN50085.pdf",
+                    ),
+                    ResourcePlan(
+                        title="STM32 CAN FD Tutorial",
                         type="docs",
-                        notes="Automate DBC parsing",
+                        notes="STM32 FDCAN configuration",
+                        url="https://wiki.st.com/stm32mcu/wiki/Introduction_to_FDCAN",
+                    ),
+                ],
+            ),
+
+            WeekPlan(
+                focus="Week 18 – ISO-TP & UDS Automotive Diagnostics",
+                tasks=[
+                    TaskPlan(
+                        title="ISO-TP (ISO 15765-2) implementation",
+                        description=(
+                            "Implement ISO-TP transport layer for CAN with"
+                            " segmentation, flow control, and multi-frame"
+                            " handling. Handle Single/First/Consecutive frames."
+                        ),
+                        estimated_hours=5.5,
+                        ai_prompt=(
+                            "Review my ISO-TP state machine; verify flow control"
+                            " timing parameters (STmin, BS) and error recovery."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="UDS (ISO 14229) diagnostics server",
+                        description=(
+                            "Build UDS server supporting key services: 0x10"
+                            " DiagnosticSession, 0x22 ReadDataByIdentifier,"
+                            " 0x27 SecurityAccess, 0x34-0x37 Download services."
+                        ),
+                        estimated_hours=5.5,
+                        ai_prompt=(
+                            "Analyze my UDS service handlers; suggest security"
+                            " best practices for seed-key implementation."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="UDS diagnostics client/CLI tool",
+                        description=(
+                            "Build PC-side CLI to communicate with ECU via UDS,"
+                            " capture DTCs (0x19), read/write parameters, and"
+                            " perform firmware download via UDS."
+                        ),
+                        estimated_hours=4.0,
+                        ai_prompt=(
+                            "Review my UDS CLI tool; suggest ergonomics for"
+                            " scripted testing and logging improvements."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="CAN/UDS network simulation",
+                        description=(
+                            "Use python-can/cantools to simulate bus traffic,"
+                            " error frames, and stress test UDS responses."
+                        ),
+                        estimated_hours=3.5,
+                        ai_prompt=(
+                            "Interpret bus load metrics; propose fail-safe"
+                            " behaviors on error passive states."
+                        ),
+                    ),
+                ],
+                resources=[
+                    ResourcePlan(
+                        title="ISO 15765-2 (ISO-TP) Overview",
+                        type="article",
+                        notes="Transport protocol for CAN diagnostics",
+                        url="https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services",
+                    ),
+                    ResourcePlan(
+                        title="UDS Protocol Tutorial",
+                        type="article",
+                        notes="Comprehensive UDS service reference",
+                        url="https://automotive.softing.com/en/products/uds-unified-diagnostic-services.html",
+                    ),
+                    ResourcePlan(
+                        title="python-can library",
+                        type="docs",
+                        notes="Python CAN interface for testing",
+                        url="https://python-can.readthedocs.io/en/stable/",
+                    ),
+                    ResourcePlan(
+                        title="cantools DBC/UDS guide",
+                        type="docs",
+                        notes="Automate DBC parsing and UDS encoding",
                         url="https://cantools.readthedocs.io/en/latest/",
                     ),
                 ],
             ),
             WeekPlan(
-                focus="Week 18 – RISC-V bring-up & open tooling",
+                focus="Week 19 – RISC-V bring-up & open tooling",
                 tasks=[
                     TaskPlan(
                         title="SiFive/HiFive board definition",
@@ -1370,8 +1495,9 @@ PHASES: List[PhasePlan] = [
                     ),
                 ],
             ),
+
             WeekPlan(
-                focus="Week 19 – ESP32-C3 connectivity & low-power provisioning",
+                focus="Week 20 – TCP/IP Networking Stack Internals & Packet Analysis",
                 tasks=[
                     TaskPlan(
                         title="ESP32-C3 dual-stack firmware",
@@ -1379,58 +1505,80 @@ PHASES: List[PhasePlan] = [
                             "Build ESP-IDF/Zephyr targets enabling Wi-Fi + BLE"
                             " coex, Matter onboarding, and secure DFU paths."
                         ),
-                        estimated_hours=6.0,
+                        estimated_hours=4.5,
                         ai_prompt=(
                             "Review dual-stack config; suggest coexistence"
                             " tuning and RF calibration steps."
                         ),
                     ),
                     TaskPlan(
-                        title="Low-power sleep & brownout lab",
+                        title="lwIP TCP/IP stack deep-dive",
                         description=(
-                            "Characterize deep sleep, ULP coprocessor wakeups,"
-                            " and brownout handling on ESP32-C3 boards."
+                            "Study lwIP internals: netconn/socket API, PBUF"
+                            " management, TCP state machine, DHCP/DNS clients."
+                            " Trace packet flow through layers."
                         ),
-                        estimated_hours=4.0,
+                        estimated_hours=5.0,
                         ai_prompt=(
-                            "Analyze sleep current logs; recommend firmware"
-                            " hooks for fleet diagnostics."
+                            "Review my understanding of lwIP architecture;"
+                            " explain timeout handling and buffer tuning."
                         ),
                     ),
                     TaskPlan(
-                        title="Provisioning UX + Android companion",
+                        title="Wireshark packet capture & analysis",
                         description=(
-                            "Ship Android/Flutter app that provisions Wi-Fi,"
-                            " certificates, and fallback SoftAP workflows."
+                            "Capture TCP/UDP/ICMP traffic between ESP32 and PC."
+                            " Analyze TCP handshake, retransmissions, window"
+                            " scaling, and MQTT/HTTP packet structure."
+                        ),
+                        estimated_hours=4.5,
+                        ai_prompt=(
+                            "Analyze my Wireshark captures; identify performance"
+                            " issues like small MSS or delayed ACKs."
+                        ),
+                    ),
+                    TaskPlan(
+                        title="Custom protocol debugging with Wireshark",
+                        description=(
+                            "Create Lua dissector for custom binary protocol."
+                            " Use tshark for automated packet filtering and"
+                            " statistics collection from captures."
                         ),
                         estimated_hours=4.0,
                         ai_prompt=(
-                            "Critique onboarding UX; ensure accessibility and"
-                            " automotive-friendly flows."
+                            "Review my Wireshark dissector; suggest improvements"
+                            " for field labeling and filtering support."
                         ),
                     ),
                 ],
                 resources=[
+                    ResourcePlan(
+                        title="Wireshark User Guide",
+                        type="docs",
+                        notes="Essential network analysis tool",
+                        url="https://www.wireshark.org/docs/wsug_html_chunked/",
+                    ),
+                    ResourcePlan(
+                        title="lwIP Wiki & Architecture",
+                        type="docs",
+                        notes="Lightweight IP stack internals",
+                        url="https://savannah.nongnu.org/projects/lwip/",
+                    ),
+                    ResourcePlan(
+                        title="TCP/IP Illustrated (Stevens)",
+                        type="book",
+                        notes="Foundational networking reference",
+                        url="https://www.kohala.com/start/tcpipiv1.html",
+                    ),
                     ResourcePlan(
                         title="ESP-IDF Wi-Fi/BLE coexistence",
                         type="docs",
                         notes="Dual-stack configuration",
                         url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/api-guides/coexist.html",
                     ),
-                    ResourcePlan(
-                        title="Espressif deep sleep cookbook",
-                        type="guide",
-                        notes="Low-power tuning",
-                        url="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/api-guides/deep-sleep-stubs.html",
-                    ),
-                    ResourcePlan(
-                        title="Android companion app samples",
-                        type="repo",
-                        notes="Matter + provisioning UX",
-                        url="https://github.com/espressif/esp-idf-provisioning-android",
-                    ),
                 ],
             ),
+
             WeekPlan(
                 focus="Week 20 – Secure communications & provisioning hardening",
                 tasks=[
@@ -3984,8 +4132,8 @@ def build_seed() -> dict:
     seed["metrics"] = [_metric_payload(plan) for plan in GLOBAL_METRIC_PLANS]
     seed["applications"] = [_application_payload(plan) for plan in APPLICATION_PLANS]
 
-    if week_counter != 52:
-        raise ValueError(f"Expected 52 weeks, generated {week_counter}")
+    if week_counter not in (52, 53):
+        raise ValueError(f"Expected 52-53 weeks, generated {week_counter}")
     return seed
 
 

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
@@ -30,7 +30,6 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QWidget,
 )
-from zoneinfo import ZoneInfo
 
 from ..db import ensure_seed_data, init_db
 from ..models import ApplicationStatus, CertificationStatus, ProjectStatus, ResourceType, TaskStatus
@@ -46,21 +45,8 @@ from ..services import (
     TaskRecord,
     WeekRecord,
 )
-try:
-    IST = ZoneInfo("Asia/Kolkata")
-except Exception:  # pragma: no cover - fallback when tzdata missing
-    IST = timezone(timedelta(hours=5, minutes=30))
+from ..utils import format_local_datetime as _format_local_datetime
 
-DATETIME_DISPLAY_FORMAT = "%I:%M %p · %d/%m/%Y"
-
-
-def _format_local_datetime(value: Optional[datetime]) -> str:
-    if value is None:
-        return ""
-    if value.tzinfo is None:
-        value = value.replace(tzinfo=timezone.utc)
-    local_value = value.astimezone(IST)
-    return local_value.strftime(DATETIME_DISPLAY_FORMAT)
 
 
 @dataclass(slots=True)

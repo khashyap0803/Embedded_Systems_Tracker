@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import date, datetime, timezone
+from datetime import date
 from typing import List, Optional
 
 from rich.console import Console
@@ -27,22 +27,9 @@ from .models import (
     TaskStatus,
     Week,
 )
+from .utils import ensure_utc, utcnow
 
 console = Console()
-
-UTC = timezone.utc
-
-
-def _utcnow() -> datetime:
-    return datetime.now(UTC)
-
-
-def _ensure_utc(dt: Optional[datetime]) -> Optional[datetime]:
-    if dt is None:
-        return None
-    if dt.tzinfo is None:
-        return dt.replace(tzinfo=UTC)
-    return dt.astimezone(UTC)
 
 
 def _current_work_hours(task: Task) -> float:
@@ -50,10 +37,11 @@ def _current_work_hours(task: Task) -> float:
 
     seconds = task.total_work_seconds or 0
     if task.status == TaskStatus.WORKING:
-        last_start = _ensure_utc(task.last_work_started_at)
+        last_start = ensure_utc(task.last_work_started_at)
         if last_start:
-            seconds += max(0, int((_utcnow() - last_start).total_seconds()))
+            seconds += max(0, int((utcnow() - last_start).total_seconds()))
     return round(seconds / 3600, 2)
+
 
 
 def list_tasks(

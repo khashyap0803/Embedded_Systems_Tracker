@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import date, datetime
 from enum import Enum
 from typing import Iterable, List, Optional, Type
 
@@ -26,15 +26,15 @@ from .models import (
     TaskStatus,
     Week,
 )
+from .utils import (
+    ensure_utc as _ensure_utc,
+    normalise_datetimes as _normalise_datetimes,
+    seconds_between as _seconds_between,
+    utcnow as _utcnow,
+)
 
 
 UNSET = object()
-
-UTC = timezone.utc
-
-
-def _utcnow() -> datetime:
-    return datetime.now(UTC)
 
 
 @dataclass(slots=True)
@@ -203,6 +203,16 @@ class MetricRecord:
 
 
 # -----------------------------------------------------------------------------
+# Validation helpers
+# -----------------------------------------------------------------------------
+
+def _validate_date_range(start_date: date, end_date: date, entity_name: str = "Entity") -> None:
+    """Validate that start_date is not after end_date."""
+    if start_date > end_date:
+        raise ValueError(f"{entity_name} start_date ({start_date}) cannot be after end_date ({end_date})")
+
+
+# -----------------------------------------------------------------------------
 # Phase helpers
 # -----------------------------------------------------------------------------
 
@@ -214,12 +224,14 @@ def list_phases() -> List[PhaseRecord]:
 
 
 def create_phase(*, name: str, description: Optional[str], start_date: date, end_date: date) -> PhaseRecord:
+    _validate_date_range(start_date, end_date, "Phase")
     with session_scope() as session:
         phase = Phase(name=name, description=description, start_date=start_date, end_date=end_date)
         session.add(phase)
         session.flush()
         session.refresh(phase)
         return _phase_to_record(session, phase, _utcnow())
+
 
 
 def update_phase(
@@ -249,10 +261,32 @@ def update_phase(
 
 
 def delete_phase(phase_id: int) -> None:
+    """Delete a phase and all its related data (weeks, days, tasks, resources, projects, certifications, metrics)."""
     with session_scope() as session:
         phase = session.get(Phase, phase_id)
         if phase is None:
             raise ValueError(f"Phase {phase_id} not found")
+        
+        # Delete all metrics associated with this phase
+        metrics = session.exec(select(Metric).where(Metric.phase_id == phase_id)).all()
+        for metric in metrics:
+            session.delete(metric)
+        
+        # Delete all certifications associated with this phase
+        certifications = session.exec(select(Certification).where(Certification.phase_id == phase_id)).all()
+        for cert in certifications:
+            session.delete(cert)
+        
+        # Delete all projects associated with this phase
+        projects = session.exec(select(Project).where(Project.phase_id == phase_id)).all()
+        for project in projects:
+            session.delete(project)
+        
+        # Delete all weeks (which cascades to days, tasks, resources)
+        weeks = session.exec(select(Week).where(Week.phase_id == phase_id)).all()
+        for week in weeks:
+            _delete_week_cascade(session, week)
+        
         session.delete(phase)
 
 
@@ -271,6 +305,7 @@ def list_weeks(*, phase_id: Optional[int] = None) -> List[WeekRecord]:
 
 
 def create_week(*, number: int, start_date: date, end_date: date, focus: Optional[str], phase_id: int) -> WeekRecord:
+    _validate_date_range(start_date, end_date, "Week")
     with session_scope() as session:
         phase = session.get(Phase, phase_id)
         if phase is None:
@@ -280,6 +315,7 @@ def create_week(*, number: int, start_date: date, end_date: date, focus: Optiona
         session.flush()
         session.refresh(week)
         return _week_to_record(session, week, phase, _utcnow())
+
 
 
 def update_week(
@@ -317,11 +353,32 @@ def update_week(
 
 
 def delete_week(week_id: int) -> None:
+    """Delete a week and all its related data (days, tasks, resources)."""
     with session_scope() as session:
         week = session.get(Week, week_id)
         if week is None:
             raise ValueError(f"Week {week_id} not found")
-        session.delete(week)
+        _delete_week_cascade(session, week)
+
+
+def _delete_week_cascade(session: Session, week: Week) -> None:
+    """Internal helper to delete week and all related data within an existing session."""
+    # Delete all resources associated with this week
+    resources = session.exec(select(Resource).where(Resource.week_id == week.id)).all()
+    for resource in resources:
+        session.delete(resource)
+    
+    # Delete all days (which cascades to tasks)
+    days = session.exec(select(DayPlan).where(DayPlan.week_id == week.id)).all()
+    for day in days:
+        _delete_day_cascade(session, day)
+    
+    # Delete tasks that are directly linked to week (not through a day)
+    tasks = session.exec(select(Task).where(Task.week_id == week.id)).all()
+    for task in tasks:
+        session.delete(task)
+    
+    session.delete(week)
 
 
 # -----------------------------------------------------------------------------
@@ -439,11 +496,22 @@ def override_day_status(day_id: int, new_status: TaskStatus) -> DayRecord:
 
 
 def delete_day(day_id: int) -> None:
+    """Delete a day and all its associated tasks."""
     with session_scope() as session:
         day = session.get(DayPlan, day_id)
         if day is None:
             raise ValueError(f"Day {day_id} not found")
-        session.delete(day)
+        _delete_day_cascade(session, day)
+
+
+def _delete_day_cascade(session: Session, day: DayPlan) -> None:
+    """Internal helper to delete day and all related tasks within an existing session."""
+    # Delete all tasks associated with this day
+    tasks = session.exec(select(Task).where(Task.day_id == day.id)).all()
+    for task in tasks:
+        session.delete(task)
+    
+    session.delete(day)
 
 
 # -----------------------------------------------------------------------------
@@ -1085,29 +1153,7 @@ def _coerce_enum(value, enum_cls: Type[Enum]):  # type: ignore[type-arg]
     return enum_cls(value)
 
 
-def _ensure_utc(dt: Optional[datetime]) -> Optional[datetime]:
-    if dt is None:
-        return None
-    if dt.tzinfo is None:
-        return dt.replace(tzinfo=UTC)
-    return dt.astimezone(UTC)
 
-
-def _normalise_datetimes(values: Iterable[Optional[datetime]]) -> List[datetime]:
-    normalised: List[datetime] = []
-    for value in values:
-        coerced = _ensure_utc(value)
-        if coerced is not None:
-            normalised.append(coerced)
-    return normalised
-
-
-def _seconds_between(start: Optional[datetime], end: datetime) -> int:
-    end_utc = _ensure_utc(end)
-    start_utc = _ensure_utc(start)
-    if start_utc is None or end_utc is None:
-        return 0
-    return max(0, int((end_utc - start_utc).total_seconds()))
 
 
 def _task_timing_snapshot(task: Task, now: datetime) -> TimingSnapshot:

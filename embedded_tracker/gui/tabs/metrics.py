@@ -14,7 +14,7 @@ class MetricsTab(BaseCrudTab):
     
     entity_name = "Metric"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Date", "recorded_date"),
         ("Type", "metric_type"),
         ("Value", "value"),

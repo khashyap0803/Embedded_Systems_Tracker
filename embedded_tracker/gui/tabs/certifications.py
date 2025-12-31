@@ -15,7 +15,7 @@ class CertificationsTab(BaseCrudTab):
     
     entity_name = "Certification"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Name", "name"),
         ("Phase", "phase_name"),
         ("Status", "status"),

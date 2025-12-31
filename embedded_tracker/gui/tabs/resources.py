@@ -15,7 +15,7 @@ class ResourcesTab(BaseCrudTab):
     
     entity_name = "Resource"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Phase", "phase_name"),
         ("Week", "week_number"),
         ("Title", "title"),

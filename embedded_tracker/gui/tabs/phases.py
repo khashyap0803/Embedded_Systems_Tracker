@@ -12,7 +12,7 @@ class PhasesTab(BaseCrudTab):
     
     entity_name = "Phase"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Name", "name"),
         ("Status", "status"),
         ("Plan Start", "start_date"),

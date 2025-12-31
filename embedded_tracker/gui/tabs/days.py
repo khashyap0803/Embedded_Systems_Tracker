@@ -16,7 +16,7 @@ class DaysTab(BaseCrudTab):
     
     entity_name = "Day"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Phase", "phase_name"),
         ("Week", "week_number"),
         ("Day", "number"),

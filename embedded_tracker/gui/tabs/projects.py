@@ -15,7 +15,7 @@ class ProjectsTab(BaseCrudTab):
     
     entity_name = "Project"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Name", "name"),
         ("Phase", "phase_name"),
         ("Status", "status"),

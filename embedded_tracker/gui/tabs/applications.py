@@ -15,7 +15,7 @@ class ApplicationsTab(BaseCrudTab):
     
     entity_name = "Application"
     columns = (
-        ("ID", "id"),
+        ("#", "__index__"),
         ("Company", "company"),
         ("Role", "role"),
         ("Status", "status"),

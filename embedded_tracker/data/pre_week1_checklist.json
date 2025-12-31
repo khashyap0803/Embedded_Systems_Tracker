@@ -1,0 +1,228 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-12-30",
+        "purpose": "Pre-Week-1 environment setup checklist to avoid 'Works on My Machine' issues",
+        "source": "Roadmap Audit Recommendations"
+    },
+    "overview": {
+        "description": "Complete this checklist BEFORE starting Week 1. This prevents environment issues that derail learning.",
+        "time_required": "1-2 days",
+        "goal": "Reproducible, containerized build environment"
+    },
+    "checklist": {
+        "1_docker_setup": {
+            "title": "Docker Environment",
+            "priority": "critical",
+            "tasks": [
+                {
+                    "task": "Install Docker",
+                    "command": "sudo apt install docker.io docker-compose",
+                    "verification": "docker --version",
+                    "notes": "Add yourself to docker group: sudo usermod -aG docker $USER"
+                },
+                {
+                    "task": "Test Docker works",
+                    "command": "docker run hello-world",
+                    "verification": "Should print 'Hello from Docker!'",
+                    "notes": null
+                },
+                {
+                    "task": "Pull ARM toolchain image",
+                    "command": "docker pull gcc-arm-embedded:latest",
+                    "verification": "docker images | grep arm",
+                    "notes": "Or build custom image later in Week 11"
+                }
+            ]
+        },
+        "2_toolchain_verification": {
+            "title": "Compiler Toolchain",
+            "priority": "critical",
+            "tasks": [
+                {
+                    "task": "Install ARM GCC",
+                    "command": "sudo apt install gcc-arm-none-eabi",
+                    "verification": "arm-none-eabi-gcc --version",
+                    "expected": "10.3.1 or higher"
+                },
+                {
+                    "task": "Install native GCC",
+                    "command": "sudo apt install build-essential",
+                    "verification": "gcc --version && make --version",
+                    "notes": null
+                },
+                {
+                    "task": "Install CMake",
+                    "command": "sudo apt install cmake",
+                    "verification": "cmake --version",
+                    "expected": "3.20 or higher"
+                },
+                {
+                    "task": "Install Ninja build",
+                    "command": "sudo apt install ninja-build",
+                    "verification": "ninja --version",
+                    "notes": "Faster than make for large projects"
+                }
+            ]
+        },
+        "3_ide_setup": {
+            "title": "Development Environment",
+            "priority": "high",
+            "tasks": [
+                {
+                    "task": "Install VS Code",
+                    "command": "sudo snap install code --classic",
+                    "verification": "code --version",
+                    "notes": null
+                },
+                {
+                    "task": "Install PlatformIO extension",
+                    "command": "code --install-extension platformio.platformio-ide",
+                    "verification": "Click PlatformIO icon in VS Code sidebar",
+                    "notes": null
+                },
+                {
+                    "task": "Install C/C++ extension",
+                    "command": "code --install-extension ms-vscode.cpptools",
+                    "verification": null,
+                    "notes": null
+                },
+                {
+                    "task": "Install Cortex-Debug extension",
+                    "command": "code --install-extension marus25.cortex-debug",
+                    "verification": null,
+                    "notes": "For hardware debugging"
+                },
+                {
+                    "task": "Install STM32CubeIDE",
+                    "source": "https://www.st.com/en/development-tools/stm32cubeide.html",
+                    "verification": "Launch STM32CubeIDE",
+                    "notes": "Download installer from ST website"
+                }
+            ]
+        },
+        "4_debug_tools": {
+            "title": "Debug Software",
+            "priority": "high",
+            "tasks": [
+                {
+                    "task": "Install OpenOCD",
+                    "command": "sudo apt install openocd",
+                    "verification": "openocd --version",
+                    "notes": "Open On-Chip Debugger for JTAG/SWD"
+                },
+                {
+                    "task": "Install GDB multiarch",
+                    "command": "sudo apt install gdb-multiarch",
+                    "verification": "gdb-multiarch --version",
+                    "notes": null
+                },
+                {
+                    "task": "Install Saleae Logic software",
+                    "source": "https://www.saleae.com/downloads/",
+                    "verification": "Launch Logic 2",
+                    "notes": "For logic analyzer - works with clones too"
+                },
+                {
+                    "task": "Install Wireshark",
+                    "command": "sudo apt install wireshark",
+                    "verification": "wireshark --version",
+                    "notes": "For network protocol analysis in IoT phases"
+                }
+            ]
+        },
+        "5_version_control": {
+            "title": "Git Setup",
+            "priority": "critical",
+            "tasks": [
+                {
+                    "task": "Configure Git identity",
+                    "command": "git config --global user.name 'Your Name' && git config --global user.email 'your@email.com'",
+                    "verification": "git config --list",
+                    "notes": null
+                },
+                {
+                    "task": "Create GitHub account",
+                    "source": "https://github.com",
+                    "verification": "Can push to a test repo",
+                    "notes": "Portfolio will live here"
+                },
+                {
+                    "task": "Setup SSH keys",
+                    "command": "ssh-keygen -t ed25519 -C 'your@email.com'",
+                    "verification": "ssh -T git@github.com",
+                    "notes": "Add public key to GitHub settings"
+                }
+            ]
+        },
+        "6_hardware_verification": {
+            "title": "Hardware Connectivity Test",
+            "priority": "high",
+            "tasks": [
+                {
+                    "task": "Connect Nucleo/STM32 board",
+                    "verification": "lsusb | grep STM",
+                    "notes": "Should show ST-Link device"
+                },
+                {
+                    "task": "Test ST-Link connection",
+                    "command": "st-info --probe",
+                    "verification": "Shows MCU info",
+                    "notes": "Install stlink-tools: sudo apt install stlink-tools"
+                },
+                {
+                    "task": "Blink LED test",
+                    "verification": "Can upload and run a blink program",
+                    "notes": "Use PlatformIO or STM32CubeIDE"
+                },
+                {
+                    "task": "Connect Logic Analyzer",
+                    "verification": "Shows up in Saleae Logic software",
+                    "notes": "Test capture on GPIO pin"
+                }
+            ]
+        },
+        "7_de_ide_skill_check": {
+            "title": "Build Without IDE (CRITICAL)",
+            "priority": "critical",
+            "description": "This is the skill that separates juniors from seniors. MUST be able to do before Week 1.",
+            "tasks": [
+                {
+                    "task": "Compile C file with raw gcc",
+                    "command": "gcc -o hello hello.c && ./hello",
+                    "verification": "Prints output",
+                    "notes": "Understand what gcc actually does"
+                },
+                {
+                    "task": "Write a Makefile",
+                    "description": "Create Makefile for a 2-file C project",
+                    "verification": "make && make clean works",
+                    "resource": "https://www.youtube.com/watch?v=_r7i5X0rXJk"
+                },
+                {
+                    "task": "Cross-compile for ARM",
+                    "command": "arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -c main.c -o main.o",
+                    "verification": "file main.o shows ARM format",
+                    "notes": "Just compile, don't need to link yet"
+                }
+            ]
+        }
+    },
+    "success_criteria": {
+        "minimum": [
+            "Docker runs containers successfully",
+            "arm-none-eabi-gcc compiles code",
+            "Can upload firmware to a board",
+            "Git pushing to GitHub works"
+        ],
+        "recommended": [
+            "Logic analyzer captures GPIO signals",
+            "Can write basic Makefile from scratch",
+            "STM32CubeIDE generates code"
+        ]
+    },
+    "estimated_costs": {
+        "software": "₹0 (all free/open source)",
+        "time": "8-16 hours over 1-2 days"
+    }
+}

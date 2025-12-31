@@ -1,27 +1,23 @@
 {
   "phases": [
     {
-      "name": "Phase 1 \u2013 Hardware Foundations & Modern Embedded C++",
+      "name": "Phase 1 – Hardware Foundations & Modern Embedded C++",
       "description": "Calibrate hardware lab, sharpen modern C++ for microcontrollers, and build disciplined debugging habits. End goal: confidently shipping bring-up firmware on STM32 and ESP32 targets.",
-      "start_date": "2025-10-27",
-      "end_date": "2026-01-25",
       "weeks": [
         {
           "number": 1,
-          "start_date": "2025-10-27",
-          "end_date": "2025-11-02",
-          "focus": "Week 1 \u2013 Electronics fundamentals & measurement discipline",
+          "focus": "Week 01 – Electronics fundamentals & measurement discipline",
           "tasks": [
             {
               "title": "Decode Ohm's/Kirchhoff laws with AI co-pilots",
-              "description": "Work through daily voltage/current/power drills in Notion (Concept \u2192 Formula \u2192 MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
+              "description": "Work through daily voltage/current/power drills in Notion (Concept → Formula → MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
               "estimated_hours": 4.5,
               "status": "planned",
               "ai_prompt": "Generate a C utility that solves Kirchhoff loop equations given resistor arrays and expected rail voltages."
             },
             {
               "title": "Component characterization lab",
-              "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+              "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
               "estimated_hours": 5.0,
               "status": "planned",
               "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely."
@@ -57,7 +53,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-10-27",
               "focus": "Decode Ohm's/Kirchhoff laws with AI co-pilots",
               "notes": "Focus: Decode Ohm's/Kirchhoff laws with AI co-pilots",
               "status": "pending",
@@ -65,7 +60,7 @@
                 {
                   "hour_number": 1,
                   "title": "Decode Ohm's/Kirchhoff laws with AI co-pilots (Segment 1/4)",
-                  "description": "Work through daily voltage/current/power drills in Notion (Concept \u2192 Formula \u2192 MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
+                  "description": "Work through daily voltage/current/power drills in Notion (Concept → Formula → MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
                   "estimated_minutes": 68,
                   "status": "planned",
                   "ai_prompt": "Generate a C utility that solves Kirchhoff loop equations given resistor arrays and expected rail voltages.",
@@ -74,7 +69,7 @@
                 {
                   "hour_number": 2,
                   "title": "Decode Ohm's/Kirchhoff laws with AI co-pilots (Segment 2/4)",
-                  "description": "Work through daily voltage/current/power drills in Notion (Concept \u2192 Formula \u2192 MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
+                  "description": "Work through daily voltage/current/power drills in Notion (Concept → Formula → MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
                   "estimated_minutes": 68,
                   "status": "planned",
                   "ai_prompt": "Generate a C utility that solves Kirchhoff loop equations given resistor arrays and expected rail voltages.",
@@ -83,7 +78,7 @@
                 {
                   "hour_number": 3,
                   "title": "Decode Ohm's/Kirchhoff laws with AI co-pilots (Segment 3/4)",
-                  "description": "Work through daily voltage/current/power drills in Notion (Concept \u2192 Formula \u2192 MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
+                  "description": "Work through daily voltage/current/power drills in Notion (Concept → Formula → MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
                   "estimated_minutes": 67,
                   "status": "planned",
                   "ai_prompt": "Generate a C utility that solves Kirchhoff loop equations given resistor arrays and expected rail voltages.",
@@ -93,7 +88,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-10-28",
               "focus": "Decode Ohm's/Kirchhoff laws with AI co-pilots",
               "notes": "Focus: Decode Ohm's/Kirchhoff laws with AI co-pilots, Component characterization lab",
               "status": "pending",
@@ -101,7 +95,7 @@
                 {
                   "hour_number": 4,
                   "title": "Decode Ohm's/Kirchhoff laws with AI co-pilots (Segment 4/4)",
-                  "description": "Work through daily voltage/current/power drills in Notion (Concept \u2192 Formula \u2192 MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
+                  "description": "Work through daily voltage/current/power drills in Notion (Concept → Formula → MCU tie-in) while using Codex to produce quick C calculators for sanity checks.",
                   "estimated_minutes": 67,
                   "status": "planned",
                   "ai_prompt": "Generate a C utility that solves Kirchhoff loop equations given resistor arrays and expected rail voltages.",
@@ -110,7 +104,7 @@
                 {
                   "hour_number": 5,
                   "title": "Component characterization lab (Segment 1/5)",
-                  "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+                  "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely.",
@@ -119,7 +113,7 @@
                 {
                   "hour_number": 6,
                   "title": "Component characterization lab (Segment 2/5)",
-                  "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+                  "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely.",
@@ -129,7 +123,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-10-29",
               "focus": "Component characterization lab",
               "notes": "Focus: Component characterization lab, Instrumentation setup & lab hygiene",
               "status": "pending",
@@ -137,7 +130,7 @@
                 {
                   "hour_number": 7,
                   "title": "Component characterization lab (Segment 3/5)",
-                  "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+                  "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely.",
@@ -146,7 +139,7 @@
                 {
                   "hour_number": 8,
                   "title": "Component characterization lab (Segment 4/5)",
-                  "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+                  "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely.",
@@ -155,7 +148,7 @@
                 {
                   "hour_number": 9,
                   "title": "Component characterization lab (Segment 5/5)",
-                  "description": "Simulate common-passive circuits in Tinkercad/Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
+                  "description": "Simulate common-passive circuits in Wokwi and log oscilloscope-style screenshots explaining how the behavior maps to MCU power rails.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my RC/RL simulation captures and highlight regimes where MCU brownouts are likely.",
@@ -174,7 +167,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-10-30",
               "focus": "Instrumentation setup & lab hygiene",
               "notes": "Focus: Instrumentation setup & lab hygiene",
               "status": "pending",
@@ -210,7 +202,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-10-31",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -228,7 +219,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-11-01",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -246,7 +236,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-11-02",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -256,16 +245,14 @@
         },
         {
           "number": 2,
-          "start_date": "2025-11-03",
-          "end_date": "2025-11-09",
-          "focus": "Week 2 \u2013 Circuit simulation sprints & power supply literacy",
+          "focus": "Week 02 – Circuit simulation sprints & power supply literacy",
           "tasks": [
             {
-              "title": "Tinkercad/Wokwi simulation marathon",
+              "title": "Wokwi simulation marathon",
               "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
               "estimated_hours": 5.5,
               "status": "planned",
-              "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch."
+              "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch."
             },
             {
               "title": "Power-supply troubleshooting drills",
@@ -305,73 +292,71 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-11-03",
-              "focus": "Tinkercad/Wokwi simulation marathon",
-              "notes": "Focus: Tinkercad/Wokwi simulation marathon",
+              "focus": "Wokwi simulation marathon",
+              "notes": "Focus: Wokwi simulation marathon",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 1,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 1/6)",
+                  "title": "Wokwi simulation marathon (Segment 1/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 },
                 {
                   "hour_number": 2,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 2/6)",
+                  "title": "Wokwi simulation marathon (Segment 2/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 },
                 {
                   "hour_number": 3,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 3/6)",
+                  "title": "Wokwi simulation marathon (Segment 3/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 },
                 {
                   "hour_number": 4,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 4/6)",
+                  "title": "Wokwi simulation marathon (Segment 4/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 }
               ]
             },
             {
               "number": 2,
-              "scheduled_date": "2025-11-04",
-              "focus": "Tinkercad/Wokwi simulation marathon",
-              "notes": "Focus: Tinkercad/Wokwi simulation marathon, Power-supply troubleshooting drills",
+              "focus": "Wokwi simulation marathon",
+              "notes": "Focus: Wokwi simulation marathon, Power-supply troubleshooting drills",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 5,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 5/6)",
+                  "title": "Wokwi simulation marathon (Segment 5/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 },
                 {
                   "hour_number": 6,
-                  "title": "Tinkercad/Wokwi simulation marathon (Segment 6/6)",
+                  "title": "Wokwi simulation marathon (Segment 6/6)",
                   "description": "Build and document three mini-circuits (voltage divider, RC filter, op-amp buffer) with annotated screenshots and Git commits.",
                   "estimated_minutes": 55,
                   "status": "planned",
-                  "ai_prompt": "Explain how my Tinkercad plots translate to real PCB traces and what tolerances to watch.",
-                  "source_task_title": "Tinkercad/Wokwi simulation marathon"
+                  "ai_prompt": "Explain how my Wokwi plots translate to real PCB traces and what tolerances to watch.",
+                  "source_task_title": "Wokwi simulation marathon"
                 },
                 {
                   "hour_number": 7,
@@ -386,7 +371,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-11-05",
               "focus": "Power-supply troubleshooting drills",
               "notes": "Focus: Power-supply troubleshooting drills",
               "status": "pending",
@@ -422,7 +406,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-11-06",
               "focus": "Weekly review & debugging retro",
               "notes": "Focus: Weekly review & debugging retro",
               "status": "pending",
@@ -467,7 +450,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-11-07",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -485,7 +467,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-11-08",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -503,7 +484,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-11-09",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -513,12 +493,10 @@
         },
         {
           "number": 3,
-          "start_date": "2025-11-10",
-          "end_date": "2025-11-16",
-          "focus": "Week 3 \u2013 Digital logic blueprints & finite-state thinking",
+          "focus": "Week 03 – Digital logic blueprints & finite-state thinking",
           "tasks": [
             {
-              "title": "Truth tables \u2192 Logisim simulations",
+              "title": "Truth tables → Logisim simulations",
               "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
               "estimated_hours": 5.0,
               "status": "planned",
@@ -562,64 +540,62 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-11-10",
-              "focus": "Truth tables \u2192 Logisim simulations",
-              "notes": "Focus: Truth tables \u2192 Logisim simulations",
+              "focus": "Truth tables → Logisim simulations",
+              "notes": "Focus: Truth tables → Logisim simulations",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 1,
-                  "title": "Truth tables \u2192 Logisim simulations (Segment 1/5)",
+                  "title": "Truth tables → Logisim simulations (Segment 1/5)",
                   "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my Logisim design files; point out hazards or redundant gates.",
-                  "source_task_title": "Truth tables \u2192 Logisim simulations"
+                  "source_task_title": "Truth tables → Logisim simulations"
                 },
                 {
                   "hour_number": 2,
-                  "title": "Truth tables \u2192 Logisim simulations (Segment 2/5)",
+                  "title": "Truth tables → Logisim simulations (Segment 2/5)",
                   "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my Logisim design files; point out hazards or redundant gates.",
-                  "source_task_title": "Truth tables \u2192 Logisim simulations"
+                  "source_task_title": "Truth tables → Logisim simulations"
                 },
                 {
                   "hour_number": 3,
-                  "title": "Truth tables \u2192 Logisim simulations (Segment 3/5)",
+                  "title": "Truth tables → Logisim simulations (Segment 3/5)",
                   "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my Logisim design files; point out hazards or redundant gates.",
-                  "source_task_title": "Truth tables \u2192 Logisim simulations"
+                  "source_task_title": "Truth tables → Logisim simulations"
                 },
                 {
                   "hour_number": 4,
-                  "title": "Truth tables \u2192 Logisim simulations (Segment 4/5)",
+                  "title": "Truth tables → Logisim simulations (Segment 4/5)",
                   "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my Logisim design files; point out hazards or redundant gates.",
-                  "source_task_title": "Truth tables \u2192 Logisim simulations"
+                  "source_task_title": "Truth tables → Logisim simulations"
                 }
               ]
             },
             {
               "number": 2,
-              "scheduled_date": "2025-11-11",
-              "focus": "Truth tables \u2192 Logisim simulations",
-              "notes": "Focus: Truth tables \u2192 Logisim simulations, FSM practice in C",
+              "focus": "Truth tables → Logisim simulations",
+              "notes": "Focus: Truth tables → Logisim simulations, FSM practice in C",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 5,
-                  "title": "Truth tables \u2192 Logisim simulations (Segment 5/5)",
+                  "title": "Truth tables → Logisim simulations (Segment 5/5)",
                   "description": "Model combinational circuits (encoders, multiplexers and adders) in Logisim, exporting timing diagrams with annotations.",
                   "estimated_minutes": 60,
                   "status": "planned",
                   "ai_prompt": "Review my Logisim design files; point out hazards or redundant gates.",
-                  "source_task_title": "Truth tables \u2192 Logisim simulations"
+                  "source_task_title": "Truth tables → Logisim simulations"
                 },
                 {
                   "hour_number": 6,
@@ -643,7 +619,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-11-12",
               "focus": "FSM practice in C",
               "notes": "Focus: FSM practice in C, Signal integrity primer",
               "status": "pending",
@@ -688,7 +663,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-11-13",
               "focus": "Signal integrity primer",
               "notes": "Focus: Signal integrity primer",
               "status": "pending",
@@ -715,7 +689,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-11-14",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -733,7 +706,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-11-15",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -751,7 +723,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-11-16",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -761,10 +732,15 @@
         },
         {
           "number": 4,
-          "start_date": "2025-11-17",
-          "end_date": "2025-11-23",
-          "focus": "Week 4 \u2013 MCU architecture survey & toolchain onboarding",
+          "focus": "Week 04 – MCU architecture survey & toolchain onboarding",
           "tasks": [
+            {
+              "title": "Master STM32L4 RCC (Reset and Clock Control)",
+              "description": "CRITICAL for L476RG: The L4 series starts at 4MHz MSI. Most tutorials assume 16MHz+. Learn to configure PLL to boost to 80MHz. Understand MSI, HSI, HSE, PLL, and how wrong clock = wrong UART baud/timing.",
+              "estimated_hours": 3.0,
+              "status": "planned",
+              "ai_prompt": "Generate code to configure STM32L476 from 4MHz MSI to 80MHz using PLL. Explain each RCC register setting."
+            },
             {
               "title": "Pipeline & memory map explorations",
               "description": "Compare AVR vs. Cortex-M core diagrams, map flash/ SRAM/CCM regions, and document boot/reset flows.",
@@ -810,13 +786,21 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-11-17",
               "focus": "Pipeline & memory map explorations",
               "notes": "Focus: Pipeline & memory map explorations",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 1,
+                  "title": "Master STM32L4 RCC (Reset and Clock Control)",
+                  "description": "CRITICAL for L476RG: The L4 series starts at 4MHz MSI. Learn to configure PLL to boost to 80MHz. Wrong clock = wrong UART baud/timing.",
+                  "estimated_minutes": 90,
+                  "status": "planned",
+                  "ai_prompt": "Generate code to configure STM32L476 from 4MHz MSI to 80MHz using PLL. Explain each RCC register setting.",
+                  "source_task_title": "Master STM32L4 RCC (Reset and Clock Control)"
+                },
+                {
+                  "hour_number": 2,
                   "title": "Pipeline & memory map explorations (Segment 1/4)",
                   "description": "Compare AVR vs. Cortex-M core diagrams, map flash/ SRAM/CCM regions, and document boot/reset flows.",
                   "estimated_minutes": 68,
@@ -825,7 +809,7 @@
                   "source_task_title": "Pipeline & memory map explorations"
                 },
                 {
-                  "hour_number": 2,
+                  "hour_number": 3,
                   "title": "Pipeline & memory map explorations (Segment 2/4)",
                   "description": "Compare AVR vs. Cortex-M core diagrams, map flash/ SRAM/CCM regions, and document boot/reset flows.",
                   "estimated_minutes": 68,
@@ -834,7 +818,7 @@
                   "source_task_title": "Pipeline & memory map explorations"
                 },
                 {
-                  "hour_number": 3,
+                  "hour_number": 4,
                   "title": "Pipeline & memory map explorations (Segment 3/4)",
                   "description": "Compare AVR vs. Cortex-M core diagrams, map flash/ SRAM/CCM regions, and document boot/reset flows.",
                   "estimated_minutes": 67,
@@ -846,13 +830,12 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-11-18",
               "focus": "Pipeline & memory map explorations",
               "notes": "Focus: Pipeline & memory map explorations, Toolchain and debugger drills",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 4,
+                  "hour_number": 1,
                   "title": "Pipeline & memory map explorations (Segment 4/4)",
                   "description": "Compare AVR vs. Cortex-M core diagrams, map flash/ SRAM/CCM regions, and document boot/reset flows.",
                   "estimated_minutes": 67,
@@ -861,7 +844,7 @@
                   "source_task_title": "Pipeline & memory map explorations"
                 },
                 {
-                  "hour_number": 5,
+                  "hour_number": 2,
                   "title": "Toolchain and debugger drills (Segment 1/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -870,7 +853,7 @@
                   "source_task_title": "Toolchain and debugger drills"
                 },
                 {
-                  "hour_number": 6,
+                  "hour_number": 3,
                   "title": "Toolchain and debugger drills (Segment 2/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -879,7 +862,7 @@
                   "source_task_title": "Toolchain and debugger drills"
                 },
                 {
-                  "hour_number": 7,
+                  "hour_number": 4,
                   "title": "Toolchain and debugger drills (Segment 3/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -891,13 +874,12 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-11-19",
               "focus": "Toolchain and debugger drills",
               "notes": "Focus: Toolchain and debugger drills, Dual-boot workstation optimization",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 8,
+                  "hour_number": 1,
                   "title": "Toolchain and debugger drills (Segment 4/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -906,7 +888,7 @@
                   "source_task_title": "Toolchain and debugger drills"
                 },
                 {
-                  "hour_number": 9,
+                  "hour_number": 2,
                   "title": "Toolchain and debugger drills (Segment 5/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -915,7 +897,7 @@
                   "source_task_title": "Toolchain and debugger drills"
                 },
                 {
-                  "hour_number": 10,
+                  "hour_number": 3,
                   "title": "Toolchain and debugger drills (Segment 6/6)",
                   "description": "Install PlatformIO, STM32CubeIDE, and ESP-IDF CLI; flash sample firmware to UNO/ESP32/STM32 and log GDB commands used.",
                   "estimated_minutes": 55,
@@ -924,7 +906,7 @@
                   "source_task_title": "Toolchain and debugger drills"
                 },
                 {
-                  "hour_number": 11,
+                  "hour_number": 4,
                   "title": "Dual-boot workstation optimization (Segment 1/4)",
                   "description": "Tune BIOS/firmware, configure Ubuntu + Windows dev environments, and document GPU/QEMU setups.",
                   "estimated_minutes": 60,
@@ -936,13 +918,12 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-11-20",
               "focus": "Dual-boot workstation optimization",
               "notes": "Focus: Dual-boot workstation optimization",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 12,
+                  "hour_number": 1,
                   "title": "Dual-boot workstation optimization (Segment 2/4)",
                   "description": "Tune BIOS/firmware, configure Ubuntu + Windows dev environments, and document GPU/QEMU setups.",
                   "estimated_minutes": 60,
@@ -951,7 +932,7 @@
                   "source_task_title": "Dual-boot workstation optimization"
                 },
                 {
-                  "hour_number": 13,
+                  "hour_number": 2,
                   "title": "Dual-boot workstation optimization (Segment 3/4)",
                   "description": "Tune BIOS/firmware, configure Ubuntu + Windows dev environments, and document GPU/QEMU setups.",
                   "estimated_minutes": 60,
@@ -960,7 +941,7 @@
                   "source_task_title": "Dual-boot workstation optimization"
                 },
                 {
-                  "hour_number": 14,
+                  "hour_number": 3,
                   "title": "Dual-boot workstation optimization (Segment 4/4)",
                   "description": "Tune BIOS/firmware, configure Ubuntu + Windows dev environments, and document GPU/QEMU setups.",
                   "estimated_minutes": 60,
@@ -972,13 +953,12 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-11-21",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 15,
+                  "hour_number": 1,
                   "title": "Deep work focus block",
                   "description": "Allocate time for deliberate practice or backlog grooming.",
                   "estimated_minutes": 45,
@@ -990,13 +970,12 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-11-22",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 16,
+                  "hour_number": 1,
                   "title": "Weekly integration & portfolio review",
                   "description": "Summarize lessons, sync repos, publish status update.",
                   "estimated_minutes": 120,
@@ -1008,7 +987,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-11-23",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -1018,9 +996,7 @@
         },
         {
           "number": 5,
-          "start_date": "2025-11-24",
-          "end_date": "2025-11-30",
-          "focus": "Week 5 \u2013 C programming foundations & syntax fluency",
+          "focus": "Week 05 – C programming foundations & syntax fluency",
           "tasks": [
             {
               "title": "Daily syntax/code-drill block",
@@ -1067,7 +1043,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-11-24",
               "focus": "Daily syntax/code-drill block",
               "notes": "Focus: Daily syntax/code-drill block",
               "status": "pending",
@@ -1112,7 +1087,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-11-25",
               "focus": "Daily syntax/code-drill block",
               "notes": "Focus: Daily syntax/code-drill block, HackerRank C streak",
               "status": "pending",
@@ -1157,7 +1131,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-11-26",
               "focus": "HackerRank C streak",
               "notes": "Focus: HackerRank C streak, Notion knowledge template build-out",
               "status": "pending",
@@ -1202,7 +1175,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-11-27",
               "focus": "Notion knowledge template build-out",
               "notes": "Focus: Notion knowledge template build-out",
               "status": "pending",
@@ -1220,7 +1192,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-11-28",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -1238,7 +1209,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-11-29",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -1256,7 +1226,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-11-30",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -1266,9 +1235,7 @@
         },
         {
           "number": 6,
-          "start_date": "2025-12-01",
-          "end_date": "2025-12-07",
-          "focus": "Week 6 \u2013 Memory, pointers, and ISR-grade C idioms",
+          "focus": "Week 06 – Memory, pointers, and ISR-grade C idioms",
           "tasks": [
             {
               "title": "Pointer gym & allocator simulator",
@@ -1315,7 +1282,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-12-01",
               "focus": "Pointer gym & allocator simulator",
               "notes": "Focus: Pointer gym & allocator simulator",
               "status": "pending",
@@ -1360,7 +1326,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-12-02",
               "focus": "Pointer gym & allocator simulator",
               "notes": "Focus: Pointer gym & allocator simulator, Bit manipulation + register maps",
               "status": "pending",
@@ -1396,7 +1361,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-12-03",
               "focus": "Bit manipulation + register maps",
               "notes": "Focus: Bit manipulation + register maps, ISR basics & latency drills",
               "status": "pending",
@@ -1441,7 +1405,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-12-04",
               "focus": "ISR basics & latency drills",
               "notes": "Focus: ISR basics & latency drills",
               "status": "pending",
@@ -1468,7 +1431,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-12-05",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -1486,7 +1448,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-12-06",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -1504,7 +1465,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-12-07",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -1513,10 +1473,41 @@
           ]
         },
         {
+          "focus": "Week 7 Focus – DMA Fundamentals & Peripheral Basics",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
           "number": 7,
-          "start_date": "2025-12-08",
-          "end_date": "2025-12-14",
-          "focus": "Week 7 \u2013 Communication protocol essentials",
+          "is_buffer": true
+        },
+        {
+          "number": 8,
+          "focus": "Week 08 – Communication protocol essentials",
           "tasks": [
             {
               "title": "Bit-banged UART and baud calculators",
@@ -1563,7 +1554,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-12-08",
               "focus": "Bit-banged UART and baud calculators",
               "notes": "Focus: Bit-banged UART and baud calculators",
               "status": "pending",
@@ -1599,7 +1589,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-12-09",
               "focus": "Bit-banged UART and baud calculators",
               "notes": "Focus: Bit-banged UART and baud calculators, I2C/SPI lab book",
               "status": "pending",
@@ -1635,7 +1624,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-12-10",
               "focus": "I2C/SPI lab book",
               "notes": "Focus: I2C/SPI lab book, Protocol troubleshooting checklist",
               "status": "pending",
@@ -1680,7 +1668,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-12-11",
               "focus": "Protocol troubleshooting checklist",
               "notes": "Focus: Protocol troubleshooting checklist",
               "status": "pending",
@@ -1707,7 +1694,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-12-12",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -1725,7 +1711,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-12-13",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -1743,7 +1728,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-12-14",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -1752,11 +1736,30 @@
           ]
         },
         {
-          "number": 8,
-          "start_date": "2025-12-15",
-          "end_date": "2025-12-21",
-          "focus": "Week 8 \u2013 Integration sprint, reviews, and communication demo",
+          "number": 9,
+          "focus": "Week 09 – DMA Fundamentals & Integration sprint, reviews, and communication demo",
           "tasks": [
+            {
+              "title": "DMA Fundamentals – Controller Architecture",
+              "description": "CRITICAL: Learn DMA BEFORE writing production UART/SPI drivers. Understand DMA controller, channels, requests, and memory-to-peripheral transfers. This prevents the 'Blocking I/O Trap' - you must know how to offload CPU work.",
+              "estimated_hours": 4.0,
+              "status": "planned",
+              "ai_prompt": "Explain STM32 DMA controller architecture: channels, streams, priority, and how it interfaces with UART/SPI/I2C peripherals."
+            },
+            {
+              "title": "DMA Circular Buffers & Double-Buffering",
+              "description": "Master circular DMA and double-buffering patterns. Essential for continuous data streaming without CPU intervention. Practice with UART RX circular DMA.",
+              "estimated_hours": 3.5,
+              "status": "planned",
+              "ai_prompt": "Generate STM32 code for circular DMA UART receive with half-transfer and transfer-complete interrupts."
+            },
+            {
+              "title": "DMA + Interrupt Coordination",
+              "description": "Learn to coordinate DMA completion interrupts with your application logic. Understand DMA interrupt flags: TC (Transfer Complete), HT (Half Transfer), TE (Transfer Error).",
+              "estimated_hours": 3.0,
+              "status": "planned",
+              "ai_prompt": "Show best practices for handling DMA interrupts in STM32 HAL and register-level code."
+            },
             {
               "title": "Bit-banged UART showcase",
               "description": "Record a 5-minute walkthrough of your UART demo (real board + QEMU compare) and publish to GitHub Pages/YouTube.",
@@ -1802,13 +1805,39 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-12-15",
-              "focus": "Bit-banged UART showcase",
+              "focus": "DMA Fundamentals & Bit-banged UART showcase",
               "notes": "Focus: Bit-banged UART showcase",
               "status": "pending",
               "hours": [
                 {
                   "hour_number": 1,
+                  "title": "DMA Fundamentals – Controller Architecture",
+                  "description": "CRITICAL: Learn DMA BEFORE writing production UART/SPI drivers. Understand DMA controller, channels, requests, and memory-to-peripheral transfers.",
+                  "estimated_minutes": 120,
+                  "status": "planned",
+                  "ai_prompt": "Explain STM32 DMA controller architecture: channels, streams, priority, and how it interfaces with UART/SPI/I2C peripherals.",
+                  "source_task_title": "DMA Fundamentals – Controller Architecture"
+                },
+                {
+                  "hour_number": 2,
+                  "title": "DMA Circular Buffers & Double-Buffering",
+                  "description": "Master circular DMA and double-buffering patterns. Essential for continuous data streaming without CPU intervention.",
+                  "estimated_minutes": 105,
+                  "status": "planned",
+                  "ai_prompt": "Generate STM32 code for circular DMA UART receive with half-transfer and transfer-complete interrupts.",
+                  "source_task_title": "DMA Circular Buffers & Double-Buffering"
+                },
+                {
+                  "hour_number": 3,
+                  "title": "DMA + Interrupt Coordination",
+                  "description": "Learn to coordinate DMA completion interrupts with your application logic. Understand TC, HT, TE interrupt flags.",
+                  "estimated_minutes": 90,
+                  "status": "planned",
+                  "ai_prompt": "Show best practices for handling DMA interrupts in STM32 HAL and register-level code.",
+                  "source_task_title": "DMA + Interrupt Coordination"
+                },
+                {
+                  "hour_number": 4,
                   "title": "Bit-banged UART showcase (Segment 1/4)",
                   "description": "Record a 5-minute walkthrough of your UART demo (real board + QEMU compare) and publish to GitHub Pages/YouTube.",
                   "estimated_minutes": 60,
@@ -1817,7 +1846,7 @@
                   "source_task_title": "Bit-banged UART showcase"
                 },
                 {
-                  "hour_number": 2,
+                  "hour_number": 5,
                   "title": "Bit-banged UART showcase (Segment 2/4)",
                   "description": "Record a 5-minute walkthrough of your UART demo (real board + QEMU compare) and publish to GitHub Pages/YouTube.",
                   "estimated_minutes": 60,
@@ -1826,7 +1855,7 @@
                   "source_task_title": "Bit-banged UART showcase"
                 },
                 {
-                  "hour_number": 3,
+                  "hour_number": 6,
                   "title": "Bit-banged UART showcase (Segment 3/4)",
                   "description": "Record a 5-minute walkthrough of your UART demo (real board + QEMU compare) and publish to GitHub Pages/YouTube.",
                   "estimated_minutes": 60,
@@ -1835,7 +1864,7 @@
                   "source_task_title": "Bit-banged UART showcase"
                 },
                 {
-                  "hour_number": 4,
+                  "hour_number": 7,
                   "title": "Bit-banged UART showcase (Segment 4/4)",
                   "description": "Record a 5-minute walkthrough of your UART demo (real board + QEMU compare) and publish to GitHub Pages/YouTube.",
                   "estimated_minutes": 60,
@@ -1847,13 +1876,12 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-12-16",
               "focus": "Foundation retrospective & metrics",
               "notes": "Focus: Foundation retrospective & metrics",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 5,
+                  "hour_number": 1,
                   "title": "Foundation retrospective & metrics (Segment 1/4)",
                   "description": "Review quizzes (GeeksforGeeks electronics, personal flashcards) and log accuracy/next steps.",
                   "estimated_minutes": 53,
@@ -1862,7 +1890,7 @@
                   "source_task_title": "Foundation retrospective & metrics"
                 },
                 {
-                  "hour_number": 6,
+                  "hour_number": 2,
                   "title": "Foundation retrospective & metrics (Segment 2/4)",
                   "description": "Review quizzes (GeeksforGeeks electronics, personal flashcards) and log accuracy/next steps.",
                   "estimated_minutes": 53,
@@ -1871,7 +1899,7 @@
                   "source_task_title": "Foundation retrospective & metrics"
                 },
                 {
-                  "hour_number": 7,
+                  "hour_number": 3,
                   "title": "Foundation retrospective & metrics (Segment 3/4)",
                   "description": "Review quizzes (GeeksforGeeks electronics, personal flashcards) and log accuracy/next steps.",
                   "estimated_minutes": 52,
@@ -1880,7 +1908,7 @@
                   "source_task_title": "Foundation retrospective & metrics"
                 },
                 {
-                  "hour_number": 8,
+                  "hour_number": 4,
                   "title": "Foundation retrospective & metrics (Segment 4/4)",
                   "description": "Review quizzes (GeeksforGeeks electronics, personal flashcards) and log accuracy/next steps.",
                   "estimated_minutes": 52,
@@ -1892,13 +1920,12 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-12-17",
               "focus": "Phase artifact polish",
               "notes": "Focus: Phase artifact polish",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 9,
+                  "hour_number": 1,
                   "title": "Phase artifact polish (Segment 1/4)",
                   "description": "Finalize documentation for the four starter projects (divider calc, FSM, allocator sim, UART lab) with READMEs and screenshots.",
                   "estimated_minutes": 53,
@@ -1907,7 +1934,7 @@
                   "source_task_title": "Phase artifact polish"
                 },
                 {
-                  "hour_number": 10,
+                  "hour_number": 2,
                   "title": "Phase artifact polish (Segment 2/4)",
                   "description": "Finalize documentation for the four starter projects (divider calc, FSM, allocator sim, UART lab) with READMEs and screenshots.",
                   "estimated_minutes": 53,
@@ -1916,7 +1943,7 @@
                   "source_task_title": "Phase artifact polish"
                 },
                 {
-                  "hour_number": 11,
+                  "hour_number": 3,
                   "title": "Phase artifact polish (Segment 3/4)",
                   "description": "Finalize documentation for the four starter projects (divider calc, FSM, allocator sim, UART lab) with READMEs and screenshots.",
                   "estimated_minutes": 52,
@@ -1925,7 +1952,7 @@
                   "source_task_title": "Phase artifact polish"
                 },
                 {
-                  "hour_number": 12,
+                  "hour_number": 4,
                   "title": "Phase artifact polish (Segment 4/4)",
                   "description": "Finalize documentation for the four starter projects (divider calc, FSM, allocator sim, UART lab) with READMEs and screenshots.",
                   "estimated_minutes": 52,
@@ -1937,13 +1964,12 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-12-18",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 13,
+                  "hour_number": 1,
                   "title": "Deep work focus block",
                   "description": "Allocate time for deliberate practice or backlog grooming.",
                   "estimated_minutes": 45,
@@ -1955,13 +1981,12 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-12-19",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 14,
+                  "hour_number": 1,
                   "title": "Deep work focus block",
                   "description": "Allocate time for deliberate practice or backlog grooming.",
                   "estimated_minutes": 45,
@@ -1973,13 +1998,12 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-12-20",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
               "hours": [
                 {
-                  "hour_number": 15,
+                  "hour_number": 1,
                   "title": "Weekly integration & portfolio review",
                   "description": "Summarize lessons, sync repos, publish status update.",
                   "estimated_minutes": 120,
@@ -1991,7 +2015,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-12-21",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -2000,10 +2023,8 @@
           ]
         },
         {
-          "number": 9,
-          "start_date": "2025-12-22",
-          "end_date": "2025-12-28",
-          "focus": "Week 9 \u2013 Power management & low energy design",
+          "number": 10,
+          "focus": "Week 10 – Power management & low energy design",
           "tasks": [
             {
               "title": "Sleep state orchestration",
@@ -2050,7 +2071,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-12-22",
               "focus": "Sleep state orchestration",
               "notes": "Focus: Sleep state orchestration",
               "status": "pending",
@@ -2095,7 +2115,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-12-23",
               "focus": "Sleep state orchestration",
               "notes": "Focus: Sleep state orchestration, Dynamic frequency scaling experiments",
               "status": "pending",
@@ -2131,7 +2150,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-12-24",
               "focus": "Dynamic frequency scaling experiments",
               "notes": "Focus: Dynamic frequency scaling experiments, Energy profiling automation",
               "status": "pending",
@@ -2167,7 +2185,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2025-12-25",
               "focus": "Energy profiling automation",
               "notes": "Focus: Energy profiling automation",
               "status": "pending",
@@ -2203,7 +2220,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2025-12-26",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -2221,7 +2237,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2025-12-27",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -2239,7 +2254,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2025-12-28",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -2248,10 +2262,8 @@
           ]
         },
         {
-          "number": 10,
-          "start_date": "2025-12-29",
-          "end_date": "2026-01-04",
-          "focus": "Week 10 \u2013 Bootloaders & secure update foundations",
+          "number": 11,
+          "focus": "Week 11 – Bootloaders & secure update foundations",
           "tasks": [
             {
               "title": "Blueprint dual-bank bootloader",
@@ -2298,7 +2310,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2025-12-29",
               "focus": "Blueprint dual-bank bootloader",
               "notes": "Focus: Blueprint dual-bank bootloader",
               "status": "pending",
@@ -2343,7 +2354,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2025-12-30",
               "focus": "Blueprint dual-bank bootloader",
               "notes": "Focus: Blueprint dual-bank bootloader, Cryptographic primitives integration",
               "status": "pending",
@@ -2388,7 +2398,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2025-12-31",
               "focus": "Cryptographic primitives integration",
               "notes": "Focus: Cryptographic primitives integration, FOTA staging pipeline",
               "status": "pending",
@@ -2424,7 +2433,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-01-01",
               "focus": "FOTA staging pipeline",
               "notes": "Focus: FOTA staging pipeline",
               "status": "pending",
@@ -2460,7 +2468,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-01-02",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -2478,7 +2485,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-01-03",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -2496,7 +2502,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-01-04",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -2505,10 +2510,8 @@
           ]
         },
         {
-          "number": 11,
-          "start_date": "2026-01-05",
-          "end_date": "2026-01-11",
-          "focus": "Week 11 \u2013 Containerized Build Environments & CI Enablement",
+          "number": 12,
+          "focus": "Week 12 – Containerized Build Environments & CI Enablement",
           "tasks": [
             {
               "title": "Docker firmware build environment setup",
@@ -2568,7 +2571,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-01-05",
               "focus": "Docker firmware build environment setup",
               "notes": "Focus: Docker firmware build environment setup",
               "status": "pending",
@@ -2613,7 +2615,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-01-06",
               "focus": "Docker firmware build environment setup",
               "notes": "Focus: Docker firmware build environment setup, Multi-stage Docker builds for firmware",
               "status": "pending",
@@ -2649,7 +2650,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-01-07",
               "focus": "Multi-stage Docker builds for firmware",
               "notes": "Focus: Multi-stage Docker builds for firmware, Host-based simulation harness",
               "status": "pending",
@@ -2685,7 +2685,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-01-08",
               "focus": "Host-based simulation harness",
               "notes": "Focus: Host-based simulation harness, GitHub Actions CI with containerized builds",
               "status": "pending",
@@ -2730,7 +2729,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-01-09",
               "focus": "GitHub Actions CI with containerized builds",
               "notes": "Focus: GitHub Actions CI with containerized builds",
               "status": "pending",
@@ -2766,7 +2764,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-01-10",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -2784,7 +2781,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-01-11",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -2793,10 +2789,8 @@
           ]
         },
         {
-          "number": 12,
-          "start_date": "2026-01-12",
-          "end_date": "2026-01-18",
-          "focus": "Week 12 \u2013 Safety basics & design for reliability",
+          "number": 13,
+          "focus": "Week 13 – Safety basics & design for reliability",
           "tasks": [
             {
               "title": "Failure Mode and Effects Analysis (FMEA)",
@@ -2843,7 +2837,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-01-12",
               "focus": "Failure Mode and Effects Analysis (FMEA)",
               "notes": "Focus: Failure Mode and Effects Analysis (FMEA)",
               "status": "pending",
@@ -2879,7 +2872,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-01-13",
               "focus": "Failure Mode and Effects Analysis (FMEA)",
               "notes": "Focus: Failure Mode and Effects Analysis (FMEA), Watchdog strategy consolidation",
               "status": "pending",
@@ -2915,7 +2907,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-01-14",
               "focus": "Watchdog strategy consolidation",
               "notes": "Focus: Watchdog strategy consolidation, Brownout & EMI resilience",
               "status": "pending",
@@ -2960,7 +2951,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-01-15",
               "focus": "Brownout & EMI resilience",
               "notes": "Focus: Brownout & EMI resilience",
               "status": "pending",
@@ -2996,7 +2986,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-01-16",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -3014,7 +3003,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-01-17",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -3032,7 +3020,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-01-18",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -3041,10 +3028,8 @@
           ]
         },
         {
-          "number": 13,
-          "start_date": "2026-01-19",
-          "end_date": "2026-01-25",
-          "focus": "Week 13 \u2013 Phase consolidation & portfolio artifact",
+          "number": 14,
+          "focus": "Week 14 – Phase consolidation & portfolio artifact",
           "tasks": [
             {
               "title": "Refactor showcase firmware",
@@ -3091,7 +3076,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-01-19",
               "focus": "Refactor showcase firmware",
               "notes": "Focus: Refactor showcase firmware",
               "status": "pending",
@@ -3136,7 +3120,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-01-20",
               "focus": "Refactor showcase firmware",
               "notes": "Focus: Refactor showcase firmware, Case study write-up",
               "status": "pending",
@@ -3181,7 +3164,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-01-21",
               "focus": "Case study write-up",
               "notes": "Focus: Case study write-up, Phase retrospective & backlog grooming",
               "status": "pending",
@@ -3226,7 +3208,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-01-22",
               "focus": "Phase retrospective & backlog grooming",
               "notes": "Focus: Phase retrospective & backlog grooming",
               "status": "pending",
@@ -3244,7 +3225,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-01-23",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -3262,7 +3242,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-01-24",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -3280,7 +3259,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-01-25",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -3329,7 +3307,7 @@
       ],
       "certifications": [
         {
-          "name": "ST MCU Developer \u2013 Level 1",
+          "name": "ST MCU Developer – Level 1",
           "provider": "STMicroelectronics Academy",
           "due_date": "2026-01-05",
           "completion_date": null,
@@ -3366,16 +3344,12 @@
       ]
     },
     {
-      "name": "Phase 2 \u2013 Real-Time Systems & Connected Firmware",
+      "name": "Phase 2 – Real-Time Systems & Connected Firmware",
       "description": "Deepen RTOS mastery, tackle open RISC-V/ESP32-C3 bring-up, design resilient connectivity stacks, and harden security for fleet-ready firmware. Culminates in a production-quality Zephyr/FreeRTOS application spanning CAN, Ethernet, BLE, and secure provisioning.",
-      "start_date": "2026-01-26",
-      "end_date": "2026-05-03",
       "weeks": [
         {
-          "number": 14,
-          "start_date": "2026-01-26",
-          "end_date": "2026-02-01",
-          "focus": "Week 14 \u2013 Zephyr RTOS architecture & board bring-up",
+          "number": 15,
+          "focus": "Week 15 – Zephyr RTOS architecture & board bring-up",
           "tasks": [
             {
               "title": "Custom Zephyr board definition",
@@ -3422,7 +3396,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-01-26",
               "focus": "Custom Zephyr board definition",
               "notes": "Focus: Custom Zephyr board definition",
               "status": "pending",
@@ -3467,7 +3440,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-01-27",
               "focus": "Custom Zephyr board definition",
               "notes": "Focus: Custom Zephyr board definition, Kernel services tour",
               "status": "pending",
@@ -3503,7 +3475,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-01-28",
               "focus": "Kernel services tour",
               "notes": "Focus: Kernel services tour",
               "status": "pending",
@@ -3539,7 +3510,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-01-29",
               "focus": "West build automation",
               "notes": "Focus: West build automation",
               "status": "pending",
@@ -3584,7 +3554,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-01-30",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -3602,7 +3571,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-01-31",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -3620,7 +3588,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-02-01",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -3629,10 +3596,41 @@
           ]
         },
         {
-          "number": 15,
-          "start_date": "2026-02-02",
-          "end_date": "2026-02-08",
-          "focus": "Week 15 \u2013 Deterministic scheduling & time partitioning",
+          "focus": "Week 16 – 🔄 BUFFER – Catch-up & Consolidation",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
+          "number": 16,
+          "is_buffer": true
+        },
+        {
+          "number": 17,
+          "focus": "Week 17 – Deterministic scheduling & time partitioning",
           "tasks": [
             {
               "title": "Latency budgeting & rate-monotonic analysis",
@@ -3679,7 +3677,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-02-02",
               "focus": "Latency budgeting & rate-monotonic analysis",
               "notes": "Focus: Latency budgeting & rate-monotonic analysis",
               "status": "pending",
@@ -3724,7 +3721,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-02-03",
               "focus": "Latency budgeting & rate-monotonic analysis",
               "notes": "Focus: Latency budgeting & rate-monotonic analysis, Time-triggered executor",
               "status": "pending",
@@ -3769,7 +3765,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-02-04",
               "focus": "Time-triggered executor",
               "notes": "Focus: Time-triggered executor, Tracing & visualization",
               "status": "pending",
@@ -3814,7 +3809,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-02-05",
               "focus": "Tracing & visualization",
               "notes": "Focus: Tracing & visualization",
               "status": "pending",
@@ -3850,7 +3844,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-02-06",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -3868,7 +3861,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-02-07",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -3886,7 +3878,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-02-08",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -3895,10 +3886,8 @@
           ]
         },
         {
-          "number": 16,
-          "start_date": "2026-02-09",
-          "end_date": "2026-02-15",
-          "focus": "Week 16 \u2013 High-performance drivers & DMA pipelines",
+          "number": 18,
+          "focus": "Week 18 Focus – Advanced DMA Patterns & Multi-channel DMA",
           "tasks": [
             {
               "title": "Chained DMA transfers",
@@ -3945,7 +3934,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-02-09",
               "focus": "Chained DMA transfers",
               "notes": "Focus: Chained DMA transfers",
               "status": "pending",
@@ -3990,7 +3978,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-02-10",
               "focus": "Chained DMA transfers",
               "notes": "Focus: Chained DMA transfers, Zero-copy sensor framework",
               "status": "pending",
@@ -4035,7 +4022,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-02-11",
               "focus": "Zero-copy sensor framework",
               "notes": "Focus: Zero-copy sensor framework, Driver fatigue tests",
               "status": "pending",
@@ -4080,7 +4066,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-02-12",
               "focus": "Driver fatigue tests",
               "notes": "Focus: Driver fatigue tests",
               "status": "pending",
@@ -4116,7 +4101,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-02-13",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -4134,7 +4118,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-02-14",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -4152,7 +4135,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-02-15",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -4161,10 +4143,8 @@
           ]
         },
         {
-          "number": 17,
-          "start_date": "2026-02-16",
-          "end_date": "2026-02-22",
-          "focus": "Week 17 \u2013 CAN/CAN-FD Physical Layer & LIN Protocol",
+          "number": 19,
+          "focus": "Week 19 – CAN/CAN-FD Physical Layer & LIN Protocol",
           "tasks": [
             {
               "title": "CAN physical layer deep-dive",
@@ -4224,7 +4204,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-02-16",
               "focus": "CAN physical layer deep-dive",
               "notes": "Focus: CAN physical layer deep-dive",
               "status": "pending",
@@ -4269,7 +4248,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-02-17",
               "focus": "CAN physical layer deep-dive",
               "notes": "Focus: CAN physical layer deep-dive, LIN slave implementation",
               "status": "pending",
@@ -4314,7 +4292,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-02-18",
               "focus": "LIN slave implementation",
               "notes": "Focus: LIN slave implementation, LIN schedule table manager",
               "status": "pending",
@@ -4359,7 +4336,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-02-19",
               "focus": "LIN schedule table manager",
               "notes": "Focus: LIN schedule table manager, CAN/LIN gateway prototype",
               "status": "pending",
@@ -4404,7 +4380,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-02-20",
               "focus": "CAN/LIN gateway prototype",
               "notes": "Focus: CAN/LIN gateway prototype",
               "status": "pending",
@@ -4440,7 +4415,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-02-21",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -4458,7 +4432,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-02-22",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -4467,10 +4440,8 @@
           ]
         },
         {
-          "number": 18,
-          "start_date": "2026-02-23",
-          "end_date": "2026-03-01",
-          "focus": "Week 18 \u2013 ISO-TP & UDS Automotive Diagnostics",
+          "number": 20,
+          "focus": "Week 20 – ISO-TP & UDS Automotive Diagnostics",
           "tasks": [
             {
               "title": "ISO-TP (ISO 15765-2) implementation",
@@ -4530,7 +4501,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-02-23",
               "focus": "ISO-TP (ISO 15765-2) implementation",
               "notes": "Focus: ISO-TP (ISO 15765-2) implementation",
               "status": "pending",
@@ -4575,7 +4545,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-02-24",
               "focus": "ISO-TP (ISO 15765-2) implementation",
               "notes": "Focus: ISO-TP (ISO 15765-2) implementation, UDS (ISO 14229) diagnostics server",
               "status": "pending",
@@ -4620,7 +4589,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-02-25",
               "focus": "UDS (ISO 14229) diagnostics server",
               "notes": "Focus: UDS (ISO 14229) diagnostics server",
               "status": "pending",
@@ -4665,7 +4633,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-02-26",
               "focus": "UDS diagnostics client/CLI tool",
               "notes": "Focus: UDS diagnostics client/CLI tool",
               "status": "pending",
@@ -4710,7 +4677,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-02-27",
               "focus": "CAN/UDS network simulation",
               "notes": "Focus: CAN/UDS network simulation",
               "status": "pending",
@@ -4755,7 +4721,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-02-28",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -4773,7 +4738,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-03-01",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -4782,10 +4746,8 @@
           ]
         },
         {
-          "number": 19,
-          "start_date": "2026-03-02",
-          "end_date": "2026-03-08",
-          "focus": "Week 19 \u2013 RISC-V bring-up & open tooling",
+          "number": 21,
+          "focus": "Week 21 – RISC-V bring-up & open tooling",
           "tasks": [
             {
               "title": "SiFive/HiFive board definition",
@@ -4832,7 +4794,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-03-02",
               "focus": "SiFive/HiFive board definition",
               "notes": "Focus: SiFive/HiFive board definition",
               "status": "pending",
@@ -4877,7 +4838,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-03-03",
               "focus": "SiFive/HiFive board definition",
               "notes": "Focus: SiFive/HiFive board definition, Open toolchain & debug pipeline",
               "status": "pending",
@@ -4922,7 +4882,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-03-04",
               "focus": "Open toolchain & debug pipeline",
               "notes": "Focus: Open toolchain & debug pipeline, Performance counters & tracing",
               "status": "pending",
@@ -4958,7 +4917,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-03-05",
               "focus": "Performance counters & tracing",
               "notes": "Focus: Performance counters & tracing",
               "status": "pending",
@@ -4994,7 +4952,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-03-06",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -5012,7 +4969,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-03-07",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -5030,7 +4986,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-03-08",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -5039,10 +4994,8 @@
           ]
         },
         {
-          "number": 20,
-          "start_date": "2026-03-09",
-          "end_date": "2026-03-15",
-          "focus": "Week 20 \u2013 TCP/IP Networking Stack Internals & Packet Analysis",
+          "number": 22,
+          "focus": "Week 22 – TCP/IP Networking Stack Internals & Packet Analysis",
           "tasks": [
             {
               "title": "ESP32-C3 dual-stack firmware",
@@ -5102,7 +5055,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-03-09",
               "focus": "ESP32-C3 dual-stack firmware",
               "notes": "Focus: ESP32-C3 dual-stack firmware",
               "status": "pending",
@@ -5138,7 +5090,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-03-10",
               "focus": "ESP32-C3 dual-stack firmware",
               "notes": "Focus: ESP32-C3 dual-stack firmware, lwIP TCP/IP stack deep-dive",
               "status": "pending",
@@ -5174,7 +5125,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-03-11",
               "focus": "lwIP TCP/IP stack deep-dive",
               "notes": "Focus: lwIP TCP/IP stack deep-dive",
               "status": "pending",
@@ -5210,7 +5160,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-03-12",
               "focus": "Wireshark packet capture & analysis",
               "notes": "Focus: Wireshark packet capture & analysis",
               "status": "pending",
@@ -5246,7 +5195,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-03-13",
               "focus": "Wireshark packet capture & analysis",
               "notes": "Focus: Wireshark packet capture & analysis, Custom protocol debugging with Wireshark",
               "status": "pending",
@@ -5282,7 +5230,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-03-14",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -5300,7 +5247,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-03-15",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -5309,10 +5255,8 @@
           ]
         },
         {
-          "number": 21,
-          "start_date": "2026-03-16",
-          "end_date": "2026-03-22",
-          "focus": "Week 20 \u2013 Secure communications & provisioning hardening",
+          "number": 23,
+          "focus": "Week 23 – Secure communications & provisioning hardening",
           "tasks": [
             {
               "title": "TLS stack integration",
@@ -5359,7 +5303,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-03-16",
               "focus": "TLS stack integration",
               "notes": "Focus: TLS stack integration",
               "status": "pending",
@@ -5404,7 +5347,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-03-17",
               "focus": "TLS stack integration",
               "notes": "Focus: TLS stack integration, Secure credential provisioning",
               "status": "pending",
@@ -5449,7 +5391,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-03-18",
               "focus": "Secure credential provisioning",
               "notes": "Focus: Secure credential provisioning",
               "status": "pending",
@@ -5485,7 +5426,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-03-19",
               "focus": "Pen test & threat modeling",
               "notes": "Focus: Pen test & threat modeling",
               "status": "pending",
@@ -5521,7 +5461,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-03-20",
               "focus": "Pen test & threat modeling",
               "notes": "Focus: Pen test & threat modeling",
               "status": "pending",
@@ -5539,7 +5478,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-03-21",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -5557,7 +5495,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-03-22",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -5566,10 +5503,8 @@
           ]
         },
         {
-          "number": 22,
-          "start_date": "2026-03-23",
-          "end_date": "2026-03-29",
-          "focus": "Week 21 \u2013 Fleet update infrastructure & DevOps",
+          "number": 24,
+          "focus": "Week 24 – Fleet update infrastructure & DevOps",
           "tasks": [
             {
               "title": "Update orchestration server",
@@ -5616,7 +5551,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-03-23",
               "focus": "Update orchestration server",
               "notes": "Focus: Update orchestration server",
               "status": "pending",
@@ -5661,7 +5595,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-03-24",
               "focus": "Update orchestration server",
               "notes": "Focus: Update orchestration server, Progressive rollout automation",
               "status": "pending",
@@ -5697,7 +5630,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-03-25",
               "focus": "Progressive rollout automation",
               "notes": "Focus: Progressive rollout automation",
               "status": "pending",
@@ -5733,7 +5665,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-03-26",
               "focus": "Device health telemetry",
               "notes": "Focus: Device health telemetry",
               "status": "pending",
@@ -5778,7 +5709,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-03-27",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -5796,7 +5726,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-03-28",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -5814,7 +5743,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-03-29",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -5823,10 +5751,41 @@
           ]
         },
         {
-          "number": 23,
-          "start_date": "2026-03-30",
-          "end_date": "2026-04-05",
-          "focus": "Week 22 \u2013 Data pipelines & storage durability",
+          "focus": "Week 25 – 🔄 BUFFER – Catch-up & Consolidation",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
+          "number": 25,
+          "is_buffer": true
+        },
+        {
+          "number": 26,
+          "focus": "Week 26 – Data pipelines & storage durability",
           "tasks": [
             {
               "title": "Filesystem resilience",
@@ -5873,7 +5832,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-03-30",
               "focus": "Filesystem resilience",
               "notes": "Focus: Filesystem resilience",
               "status": "pending",
@@ -5918,7 +5876,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-03-31",
               "focus": "Filesystem resilience",
               "notes": "Focus: Filesystem resilience, Structured telemetry encoding",
               "status": "pending",
@@ -5954,7 +5911,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-04-01",
               "focus": "Structured telemetry encoding",
               "notes": "Focus: Structured telemetry encoding, Edge analytics groundwork",
               "status": "pending",
@@ -5990,7 +5946,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-04-02",
               "focus": "Edge analytics groundwork",
               "notes": "Focus: Edge analytics groundwork",
               "status": "pending",
@@ -6026,7 +5981,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-04-03",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -6044,7 +5998,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-04-04",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -6062,7 +6015,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-04-05",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -6071,10 +6023,8 @@
           ]
         },
         {
-          "number": 24,
-          "start_date": "2026-04-06",
-          "end_date": "2026-04-12",
-          "focus": "Week 23 \u2013 Observability, logging, and remote diagnostics",
+          "number": 27,
+          "focus": "Week 27 – Observability, logging, and remote diagnostics",
           "tasks": [
             {
               "title": "Unified logging schema",
@@ -6121,7 +6071,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-04-06",
               "focus": "Unified logging schema",
               "notes": "Focus: Unified logging schema",
               "status": "pending",
@@ -6157,7 +6106,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-04-07",
               "focus": "Unified logging schema",
               "notes": "Focus: Unified logging schema, Crash dump & corefile export",
               "status": "pending",
@@ -6193,7 +6141,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-04-08",
               "focus": "Crash dump & corefile export",
               "notes": "Focus: Crash dump & corefile export, Remote debug toolkit",
               "status": "pending",
@@ -6238,7 +6185,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-04-09",
               "focus": "Remote debug toolkit",
               "notes": "Focus: Remote debug toolkit",
               "status": "pending",
@@ -6274,7 +6220,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-04-10",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -6292,7 +6237,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-04-11",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -6310,7 +6254,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-04-12",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -6319,10 +6262,8 @@
           ]
         },
         {
-          "number": 25,
-          "start_date": "2026-04-13",
-          "end_date": "2026-04-19",
-          "focus": "Week 24 \u2013 Gateway integration & heterogeneous compute",
+          "number": 28,
+          "focus": "Week 28 – Gateway integration & heterogeneous compute",
           "tasks": [
             {
               "title": "Linux gateway handshake",
@@ -6369,7 +6310,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-04-13",
               "focus": "Linux gateway handshake",
               "notes": "Focus: Linux gateway handshake",
               "status": "pending",
@@ -6414,7 +6354,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-04-14",
               "focus": "Linux gateway handshake",
               "notes": "Focus: Linux gateway handshake, Edge containerization",
               "status": "pending",
@@ -6459,7 +6398,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-04-15",
               "focus": "Edge containerization",
               "notes": "Focus: Edge containerization, Secure gateway firmware channel",
               "status": "pending",
@@ -6495,7 +6433,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-04-16",
               "focus": "Secure gateway firmware channel",
               "notes": "Focus: Secure gateway firmware channel",
               "status": "pending",
@@ -6522,7 +6459,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-04-17",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -6540,7 +6476,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-04-18",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -6558,7 +6493,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-04-19",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -6567,10 +6501,8 @@
           ]
         },
         {
-          "number": 26,
-          "start_date": "2026-04-20",
-          "end_date": "2026-04-26",
-          "focus": "Week 25 \u2013 Mixed-criticality & virtualization",
+          "number": 29,
+          "focus": "Week 29 – Mixed-criticality & virtualization",
           "tasks": [
             {
               "title": "Static partitioning prototype",
@@ -6617,7 +6549,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-04-20",
               "focus": "Static partitioning prototype",
               "notes": "Focus: Static partitioning prototype",
               "status": "pending",
@@ -6662,7 +6593,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-04-21",
               "focus": "Static partitioning prototype",
               "notes": "Focus: Static partitioning prototype, Hypervisor evaluation",
               "status": "pending",
@@ -6698,7 +6628,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-04-22",
               "focus": "Hypervisor evaluation",
               "notes": "Focus: Hypervisor evaluation, Safety case scaffolding",
               "status": "pending",
@@ -6734,7 +6663,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-04-23",
               "focus": "Safety case scaffolding",
               "notes": "Focus: Safety case scaffolding",
               "status": "pending",
@@ -6770,7 +6698,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-04-24",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -6788,7 +6715,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-04-25",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -6806,7 +6732,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-04-26",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -6815,14 +6740,12 @@
           ]
         },
         {
-          "number": 27,
-          "start_date": "2026-04-27",
-          "end_date": "2026-05-03",
-          "focus": "Week 26 \u2013 Phase consolidation, demos, and midterm review",
+          "number": 30,
+          "focus": "Week 30 – Phase consolidation, demos, and midterm review",
           "tasks": [
             {
               "title": "End-to-end integration demo",
-              "description": "Record video demo of MCU \u2194 gateway \u2194 cloud workflow with monitoring dashboards.",
+              "description": "Record video demo of MCU ↔ gateway ↔ cloud workflow with monitoring dashboards.",
               "estimated_hours": 4.5,
               "status": "planned",
               "ai_prompt": "Review demo script; suggest narrative emphasis for hiring managers."
@@ -6865,7 +6788,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-04-27",
               "focus": "End-to-end integration demo",
               "notes": "Focus: End-to-end integration demo",
               "status": "pending",
@@ -6873,7 +6795,7 @@
                 {
                   "hour_number": 1,
                   "title": "End-to-end integration demo (Segment 1/4)",
-                  "description": "Record video demo of MCU \u2194 gateway \u2194 cloud workflow with monitoring dashboards.",
+                  "description": "Record video demo of MCU ↔ gateway ↔ cloud workflow with monitoring dashboards.",
                   "estimated_minutes": 68,
                   "status": "planned",
                   "ai_prompt": "Review demo script; suggest narrative emphasis for hiring managers.",
@@ -6882,7 +6804,7 @@
                 {
                   "hour_number": 2,
                   "title": "End-to-end integration demo (Segment 2/4)",
-                  "description": "Record video demo of MCU \u2194 gateway \u2194 cloud workflow with monitoring dashboards.",
+                  "description": "Record video demo of MCU ↔ gateway ↔ cloud workflow with monitoring dashboards.",
                   "estimated_minutes": 68,
                   "status": "planned",
                   "ai_prompt": "Review demo script; suggest narrative emphasis for hiring managers.",
@@ -6891,7 +6813,7 @@
                 {
                   "hour_number": 3,
                   "title": "End-to-end integration demo (Segment 3/4)",
-                  "description": "Record video demo of MCU \u2194 gateway \u2194 cloud workflow with monitoring dashboards.",
+                  "description": "Record video demo of MCU ↔ gateway ↔ cloud workflow with monitoring dashboards.",
                   "estimated_minutes": 67,
                   "status": "planned",
                   "ai_prompt": "Review demo script; suggest narrative emphasis for hiring managers.",
@@ -6901,7 +6823,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-04-28",
               "focus": "End-to-end integration demo",
               "notes": "Focus: End-to-end integration demo, Documentation sprint",
               "status": "pending",
@@ -6909,7 +6830,7 @@
                 {
                   "hour_number": 4,
                   "title": "End-to-end integration demo (Segment 4/4)",
-                  "description": "Record video demo of MCU \u2194 gateway \u2194 cloud workflow with monitoring dashboards.",
+                  "description": "Record video demo of MCU ↔ gateway ↔ cloud workflow with monitoring dashboards.",
                   "estimated_minutes": 67,
                   "status": "planned",
                   "ai_prompt": "Review demo script; suggest narrative emphasis for hiring managers.",
@@ -6937,7 +6858,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-04-29",
               "focus": "Documentation sprint",
               "notes": "Focus: Documentation sprint, Midterm skills assessment",
               "status": "pending",
@@ -6982,7 +6902,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-04-30",
               "focus": "Midterm skills assessment",
               "notes": "Focus: Midterm skills assessment",
               "status": "pending",
@@ -7009,7 +6928,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-05-01",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -7027,7 +6945,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-05-02",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -7045,7 +6962,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-05-03",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -7131,16 +7047,12 @@
       ]
     },
     {
-      "name": "Phase 3 \u2013 Edge Intelligence, Safety & Manufacturing Readiness",
+      "name": "Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",
       "description": "Blend TinyML with safety-critical practices, Android Automotive integration, and manufacturing readiness. Harden products for compliance while building intelligent firmware paired with production test rigs and certification artefacts.",
-      "start_date": "2026-05-04",
-      "end_date": "2026-08-02",
       "weeks": [
         {
-          "number": 28,
-          "start_date": "2026-05-04",
-          "end_date": "2026-05-10",
-          "focus": "Week 27 \u2013 TinyML foundations on Cortex-M",
+          "number": 31,
+          "focus": "Week 31 – TinyML foundations on Cortex-M",
           "tasks": [
             {
               "title": "Dataset curation & labeling",
@@ -7187,7 +7099,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-05-04",
               "focus": "Dataset curation & labeling",
               "notes": "Focus: Dataset curation & labeling",
               "status": "pending",
@@ -7223,7 +7134,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-05-05",
               "focus": "Dataset curation & labeling",
               "notes": "Focus: Dataset curation & labeling, Model prototyping",
               "status": "pending",
@@ -7259,7 +7169,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-05-06",
               "focus": "Model prototyping",
               "notes": "Focus: Model prototyping, TFLite Micro deployment",
               "status": "pending",
@@ -7304,7 +7213,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-05-07",
               "focus": "TFLite Micro deployment",
               "notes": "Focus: TFLite Micro deployment",
               "status": "pending",
@@ -7349,7 +7257,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-05-08",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -7367,7 +7274,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-05-09",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -7385,7 +7291,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-05-10",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -7394,10 +7299,8 @@
           ]
         },
         {
-          "number": 29,
-          "start_date": "2026-05-11",
-          "end_date": "2026-05-17",
-          "focus": "Week 28 \u2013 Optimization, quantization, and benchmarks",
+          "number": 32,
+          "focus": "Week 32 – Optimization, quantization, and benchmarks",
           "tasks": [
             {
               "title": "Quantization-aware training",
@@ -7444,7 +7347,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-05-11",
               "focus": "Quantization-aware training",
               "notes": "Focus: Quantization-aware training",
               "status": "pending",
@@ -7489,7 +7391,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-05-12",
               "focus": "Quantization-aware training",
               "notes": "Focus: Quantization-aware training, Operator fusion & optimization",
               "status": "pending",
@@ -7525,7 +7426,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-05-13",
               "focus": "Operator fusion & optimization",
               "notes": "Focus: Operator fusion & optimization, Benchmark harness",
               "status": "pending",
@@ -7561,7 +7461,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-05-14",
               "focus": "Benchmark harness",
               "notes": "Focus: Benchmark harness",
               "status": "pending",
@@ -7597,7 +7496,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-05-15",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -7615,7 +7513,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-05-16",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -7633,7 +7530,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-05-17",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -7642,10 +7538,8 @@
           ]
         },
         {
-          "number": 30,
-          "start_date": "2026-05-18",
-          "end_date": "2026-05-24",
-          "focus": "Week 29 \u2013 Sensor fusion with ML & adaptive algorithms",
+          "number": 33,
+          "focus": "Week 33 – Sensor fusion with ML & adaptive algorithms",
           "tasks": [
             {
               "title": "Feature engineering",
@@ -7692,7 +7586,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-05-18",
               "focus": "Feature engineering",
               "notes": "Focus: Feature engineering",
               "status": "pending",
@@ -7728,7 +7621,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-05-19",
               "focus": "Feature engineering",
               "notes": "Focus: Feature engineering, Adaptive filtering",
               "status": "pending",
@@ -7764,7 +7656,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-05-20",
               "focus": "Adaptive filtering",
               "notes": "Focus: Adaptive filtering, On-device learning experiments",
               "status": "pending",
@@ -7800,7 +7691,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-05-21",
               "focus": "On-device learning experiments",
               "notes": "Focus: On-device learning experiments",
               "status": "pending",
@@ -7836,7 +7726,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-05-22",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -7854,7 +7743,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-05-23",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -7872,7 +7760,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-05-24",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -7881,10 +7768,41 @@
           ]
         },
         {
-          "number": 31,
-          "start_date": "2026-05-25",
-          "end_date": "2026-05-31",
-          "focus": "Week 30 \u2013 Embedded computer vision & perception",
+          "focus": "Week 34 – 🔄 BUFFER – Catch-up & Consolidation",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
+          "number": 34,
+          "is_buffer": true
+        },
+        {
+          "number": 35,
+          "focus": "Week 35 – Embedded computer vision & perception",
           "tasks": [
             {
               "title": "Camera interface bring-up",
@@ -7931,7 +7849,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-05-25",
               "focus": "Camera interface bring-up",
               "notes": "Focus: Camera interface bring-up",
               "status": "pending",
@@ -7976,7 +7893,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-05-26",
               "focus": "Camera interface bring-up",
               "notes": "Focus: Camera interface bring-up, Model selection",
               "status": "pending",
@@ -8021,7 +7937,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-05-27",
               "focus": "Model selection",
               "notes": "Focus: Model selection, Pipeline optimization",
               "status": "pending",
@@ -8057,7 +7972,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-05-28",
               "focus": "Pipeline optimization",
               "notes": "Focus: Pipeline optimization",
               "status": "pending",
@@ -8093,7 +8007,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-05-29",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -8111,7 +8024,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-05-30",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -8129,7 +8041,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-05-31",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -8138,10 +8049,8 @@
           ]
         },
         {
-          "number": 32,
-          "start_date": "2026-06-01",
-          "end_date": "2026-06-07",
-          "focus": "Week 31 \u2013 Functional safety standards deep dive",
+          "number": 36,
+          "focus": "Week 36 – Functional safety standards deep dive",
           "tasks": [
             {
               "title": "Safety plan creation",
@@ -8188,7 +8097,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-06-01",
               "focus": "Safety plan creation",
               "notes": "Focus: Safety plan creation",
               "status": "pending",
@@ -8224,7 +8132,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-06-02",
               "focus": "Safety plan creation",
               "notes": "Focus: Safety plan creation, Software safety requirements",
               "status": "pending",
@@ -8260,7 +8167,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-06-03",
               "focus": "Software safety requirements",
               "notes": "Focus: Software safety requirements, Verification planning",
               "status": "pending",
@@ -8305,7 +8211,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-06-04",
               "focus": "Verification planning",
               "notes": "Focus: Verification planning",
               "status": "pending",
@@ -8332,7 +8237,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-06-05",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -8350,7 +8254,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-06-06",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -8368,7 +8271,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-06-07",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -8377,10 +8279,8 @@
           ]
         },
         {
-          "number": 33,
-          "start_date": "2026-06-08",
-          "end_date": "2026-06-14",
-          "focus": "Week 32 \u2013 Diagnostic coverage & redundancy",
+          "number": 37,
+          "focus": "Week 37 – Diagnostic coverage & redundancy",
           "tasks": [
             {
               "title": "Diagnostic coverage calculations",
@@ -8427,7 +8327,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-06-08",
               "focus": "Diagnostic coverage calculations",
               "notes": "Focus: Diagnostic coverage calculations",
               "status": "pending",
@@ -8463,7 +8362,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-06-09",
               "focus": "Diagnostic coverage calculations",
               "notes": "Focus: Diagnostic coverage calculations, Redundant monitoring",
               "status": "pending",
@@ -8499,7 +8397,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-06-10",
               "focus": "Redundant monitoring",
               "notes": "Focus: Redundant monitoring, Fault injection campaign",
               "status": "pending",
@@ -8535,7 +8432,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-06-11",
               "focus": "Fault injection campaign",
               "notes": "Focus: Fault injection campaign",
               "status": "pending",
@@ -8571,7 +8467,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-06-12",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -8589,7 +8484,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-06-13",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -8607,7 +8501,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-06-14",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -8616,10 +8509,8 @@
           ]
         },
         {
-          "number": 34,
-          "start_date": "2026-06-15",
-          "end_date": "2026-06-21",
-          "focus": "Week 33 \u2013 Android Automotive HAL & security operations",
+          "number": 38,
+          "focus": "Week 38 – Android Automotive HAL & security operations",
           "tasks": [
             {
               "title": "AOSP vehicle HAL customization",
@@ -8666,7 +8557,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-06-15",
               "focus": "AOSP vehicle HAL customization",
               "notes": "Focus: AOSP vehicle HAL customization",
               "status": "pending",
@@ -8702,7 +8592,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-06-16",
               "focus": "AOSP vehicle HAL customization",
               "notes": "Focus: AOSP vehicle HAL customization, Android/MCU integration harness",
               "status": "pending",
@@ -8738,7 +8627,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-06-17",
               "focus": "Android/MCU integration harness",
               "notes": "Focus: Android/MCU integration harness, SBOM & vulnerability automation",
               "status": "pending",
@@ -8774,7 +8662,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-06-18",
               "focus": "SBOM & vulnerability automation",
               "notes": "Focus: SBOM & vulnerability automation",
               "status": "pending",
@@ -8810,7 +8697,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-06-19",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -8828,7 +8714,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-06-20",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -8846,7 +8731,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-06-21",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -8855,10 +8739,8 @@
           ]
         },
         {
-          "number": 35,
-          "start_date": "2026-06-22",
-          "end_date": "2026-06-28",
-          "focus": "Week 34 \u2013 Production test fixtures & DFM",
+          "number": 39,
+          "focus": "Week 39 – Production test fixtures & DFM",
           "tasks": [
             {
               "title": "Test fixture design",
@@ -8905,7 +8787,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-06-22",
               "focus": "Test fixture design",
               "notes": "Focus: Test fixture design",
               "status": "pending",
@@ -8950,7 +8831,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-06-23",
               "focus": "Test fixture design",
               "notes": "Focus: Test fixture design, Manufacturing test scripts",
               "status": "pending",
@@ -8986,7 +8866,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-06-24",
               "focus": "Manufacturing test scripts",
               "notes": "Focus: Manufacturing test scripts, DFM review",
               "status": "pending",
@@ -9022,7 +8901,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-06-25",
               "focus": "DFM review",
               "notes": "Focus: DFM review",
               "status": "pending",
@@ -9058,7 +8936,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-06-26",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -9076,7 +8953,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-06-27",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -9094,7 +8970,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-06-28",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -9103,10 +8978,8 @@
           ]
         },
         {
-          "number": 36,
-          "start_date": "2026-06-29",
-          "end_date": "2026-07-05",
-          "focus": "Week 35 \u2013 Hardware design validation & compliance",
+          "number": 40,
+          "focus": "Week 40 – Hardware design validation & compliance",
           "tasks": [
             {
               "title": "Schematic review blitz",
@@ -9153,7 +9026,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-06-29",
               "focus": "Schematic review blitz",
               "notes": "Focus: Schematic review blitz",
               "status": "pending",
@@ -9189,7 +9061,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-06-30",
               "focus": "Schematic review blitz",
               "notes": "Focus: Schematic review blitz, PCB layout validation",
               "status": "pending",
@@ -9225,7 +9096,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-07-01",
               "focus": "PCB layout validation",
               "notes": "Focus: PCB layout validation, Compliance gap analysis",
               "status": "pending",
@@ -9261,7 +9131,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-07-02",
               "focus": "Compliance gap analysis",
               "notes": "Focus: Compliance gap analysis",
               "status": "pending",
@@ -9297,7 +9166,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-07-03",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -9315,7 +9183,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-07-04",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -9333,7 +9200,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-07-05",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -9342,10 +9208,8 @@
           ]
         },
         {
-          "number": 37,
-          "start_date": "2026-07-06",
-          "end_date": "2026-07-12",
-          "focus": "Week 36 \u2013 Reliability engineering & environmental tests",
+          "number": 41,
+          "focus": "Week 41 – Reliability engineering & environmental tests",
           "tasks": [
             {
               "title": "HALT/HASS planning",
@@ -9392,7 +9256,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-07-06",
               "focus": "HALT/HASS planning",
               "notes": "Focus: HALT/HASS planning",
               "status": "pending",
@@ -9428,7 +9291,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-07-07",
               "focus": "HALT/HASS planning",
               "notes": "Focus: HALT/HASS planning, Environmental testing",
               "status": "pending",
@@ -9464,7 +9326,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-07-08",
               "focus": "Environmental testing",
               "notes": "Focus: Environmental testing, Reliability statistics",
               "status": "pending",
@@ -9500,7 +9361,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-07-09",
               "focus": "Reliability statistics",
               "notes": "Focus: Reliability statistics",
               "status": "pending",
@@ -9536,7 +9396,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-07-10",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -9554,7 +9413,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-07-11",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -9572,7 +9430,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-07-12",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -9581,10 +9438,8 @@
           ]
         },
         {
-          "number": 38,
-          "start_date": "2026-07-13",
-          "end_date": "2026-07-19",
-          "focus": "Week 37 \u2013 Supply chain resilience & lifecycle management",
+          "number": 42,
+          "focus": "Week 42 – Supply chain resilience & lifecycle management",
           "tasks": [
             {
               "title": "Component risk assessment",
@@ -9631,7 +9486,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-07-13",
               "focus": "Component risk assessment",
               "notes": "Focus: Component risk assessment",
               "status": "pending",
@@ -9676,7 +9530,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-07-14",
               "focus": "Lifecycle management playbook",
               "notes": "Focus: Lifecycle management playbook",
               "status": "pending",
@@ -9721,7 +9574,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-07-15",
               "focus": "Manufacturing data flows",
               "notes": "Focus: Manufacturing data flows",
               "status": "pending",
@@ -9766,7 +9618,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-07-16",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -9784,7 +9635,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-07-17",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -9802,7 +9652,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-07-18",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -9820,7 +9669,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-07-19",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -9829,10 +9677,41 @@
           ]
         },
         {
-          "number": 39,
-          "start_date": "2026-07-20",
-          "end_date": "2026-07-26",
-          "focus": "Week 38 \u2013 Regulatory compliance & certification prep",
+          "focus": "Week 43 – 🔄 BUFFER – Catch-up & Consolidation",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
+          "number": 43,
+          "is_buffer": true
+        },
+        {
+          "number": 44,
+          "focus": "Week 44 – Regulatory compliance & certification prep",
           "tasks": [
             {
               "title": "Regulatory landscape mapping",
@@ -9879,7 +9758,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-07-20",
               "focus": "Regulatory landscape mapping",
               "notes": "Focus: Regulatory landscape mapping",
               "status": "pending",
@@ -9924,7 +9802,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-07-21",
               "focus": "Technical file compilation",
               "notes": "Focus: Technical file compilation",
               "status": "pending",
@@ -9960,7 +9837,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-07-22",
               "focus": "Technical file compilation",
               "notes": "Focus: Technical file compilation, Pre-certification lab coordination",
               "status": "pending",
@@ -9996,7 +9872,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-07-23",
               "focus": "Pre-certification lab coordination",
               "notes": "Focus: Pre-certification lab coordination",
               "status": "pending",
@@ -10023,7 +9898,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-07-24",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -10041,7 +9915,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-07-25",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -10059,7 +9932,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-07-26",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -10068,10 +9940,8 @@
           ]
         },
         {
-          "number": 40,
-          "start_date": "2026-07-27",
-          "end_date": "2026-08-02",
-          "focus": "Week 39 \u2013 Phase integration, storytelling, and demo",
+          "number": 45,
+          "focus": "Week 45 – Phase integration, storytelling, and demo",
           "tasks": [
             {
               "title": "Intelligent firmware showcase",
@@ -10118,7 +9988,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-07-27",
               "focus": "Intelligent firmware showcase",
               "notes": "Focus: Intelligent firmware showcase",
               "status": "pending",
@@ -10154,7 +10023,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-07-28",
               "focus": "Intelligent firmware showcase",
               "notes": "Focus: Intelligent firmware showcase, Certification dossier review",
               "status": "pending",
@@ -10190,7 +10058,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-07-29",
               "focus": "Certification dossier review",
               "notes": "Focus: Certification dossier review, Phase retrospective & backlog refresh",
               "status": "pending",
@@ -10235,7 +10102,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-07-30",
               "focus": "Phase retrospective & backlog refresh",
               "notes": "Focus: Phase retrospective & backlog refresh",
               "status": "pending",
@@ -10262,7 +10128,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-07-31",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -10280,7 +10145,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-08-01",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -10298,7 +10162,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-08-02",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -10384,16 +10247,12 @@
       ]
     },
     {
-      "name": "Phase 4 \u2013 Productization, Launch & Career Amplification",
+      "name": "Phase 4 – Productization, Launch & Career Amplification",
       "description": "Polish the product experience, finalize launch readiness, and translate achievements into standout portfolio assets. Concludes with simulated launch, community contributions, and career outreach campaign.",
-      "start_date": "2026-08-03",
-      "end_date": "2026-11-01",
       "weeks": [
         {
-          "number": 41,
-          "start_date": "2026-08-03",
-          "end_date": "2026-08-09",
-          "focus": "Week 40 \u2013 Productization roadmap & customer empathy",
+          "number": 46,
+          "focus": "Week 46 – Productization roadmap & customer empathy",
           "tasks": [
             {
               "title": "Voice-of-customer synthesis",
@@ -10440,7 +10299,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-08-03",
               "focus": "Voice-of-customer synthesis",
               "notes": "Focus: Voice-of-customer synthesis",
               "status": "pending",
@@ -10476,7 +10334,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-08-04",
               "focus": "Voice-of-customer synthesis",
               "notes": "Focus: Voice-of-customer synthesis, Productization backlog grooming",
               "status": "pending",
@@ -10512,7 +10369,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-08-05",
               "focus": "Productization backlog grooming",
               "notes": "Focus: Productization backlog grooming, Experience journey mapping",
               "status": "pending",
@@ -10557,7 +10413,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-08-06",
               "focus": "Experience journey mapping",
               "notes": "Focus: Experience journey mapping",
               "status": "pending",
@@ -10584,7 +10439,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-08-07",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -10602,7 +10456,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-08-08",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -10620,7 +10473,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-08-09",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -10629,10 +10481,8 @@
           ]
         },
         {
-          "number": 42,
-          "start_date": "2026-08-10",
-          "end_date": "2026-08-16",
-          "focus": "Week 41 \u2013 UX refinement & embedded UI polish",
+          "number": 47,
+          "focus": "Week 47 – UX refinement & embedded UI polish",
           "tasks": [
             {
               "title": "Qt/Qt Quick HMI enhancements",
@@ -10679,7 +10529,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-08-10",
               "focus": "Qt/Qt Quick HMI enhancements",
               "notes": "Focus: Qt/Qt Quick HMI enhancements",
               "status": "pending",
@@ -10715,7 +10564,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-08-11",
               "focus": "Qt/Qt Quick HMI enhancements",
               "notes": "Focus: Qt/Qt Quick HMI enhancements, UX validation",
               "status": "pending",
@@ -10751,7 +10599,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-08-12",
               "focus": "UX validation",
               "notes": "Focus: UX validation, UI performance optimization",
               "status": "pending",
@@ -10796,7 +10643,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-08-13",
               "focus": "UI performance optimization",
               "notes": "Focus: UI performance optimization",
               "status": "pending",
@@ -10823,7 +10669,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-08-14",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -10841,7 +10686,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-08-15",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -10859,7 +10703,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-08-16",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -10868,10 +10711,8 @@
           ]
         },
         {
-          "number": 43,
-          "start_date": "2026-08-17",
-          "end_date": "2026-08-23",
-          "focus": "Week 42 \u2013 AI observability & insight delivery",
+          "number": 48,
+          "focus": "Week 48 – AI observability & insight delivery",
           "tasks": [
             {
               "title": "Model performance & drift monitoring",
@@ -10918,7 +10759,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-08-17",
               "focus": "Model performance & drift monitoring",
               "notes": "Focus: Model performance & drift monitoring",
               "status": "pending",
@@ -10963,7 +10803,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-08-18",
               "focus": "AI ops dashboards & alerts",
               "notes": "Focus: AI ops dashboards & alerts",
               "status": "pending",
@@ -11008,7 +10847,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-08-19",
               "focus": "Insight storytelling & incident playbooks",
               "notes": "Focus: Insight storytelling & incident playbooks",
               "status": "pending",
@@ -11053,7 +10891,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-08-20",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11071,7 +10908,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-08-21",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11089,7 +10925,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-08-22",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -11107,7 +10942,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-08-23",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -11116,10 +10950,8 @@
           ]
         },
         {
-          "number": 44,
-          "start_date": "2026-08-24",
-          "end_date": "2026-08-30",
-          "focus": "Week 43 \u2013 Production logistics & operations runbooks",
+          "number": 49,
+          "focus": "Week 49 – Production logistics & operations runbooks",
           "tasks": [
             {
               "title": "Operations runbook",
@@ -11166,7 +10998,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-08-24",
               "focus": "Operations runbook",
               "notes": "Focus: Operations runbook",
               "status": "pending",
@@ -11211,7 +11042,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-08-25",
               "focus": "Fulfillment & logistics mapping",
               "notes": "Focus: Fulfillment & logistics mapping",
               "status": "pending",
@@ -11256,7 +11086,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-08-26",
               "focus": "Support tooling setup",
               "notes": "Focus: Support tooling setup",
               "status": "pending",
@@ -11301,7 +11130,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-08-27",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11319,7 +11147,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-08-28",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11337,7 +11164,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-08-29",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -11355,7 +11181,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-08-30",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -11364,10 +11189,8 @@
           ]
         },
         {
-          "number": 45,
-          "start_date": "2026-08-31",
-          "end_date": "2026-09-06",
-          "focus": "Week 44 \u2013 Performance scaling & cost optimization",
+          "number": 50,
+          "focus": "Week 50 – Performance scaling & cost optimization",
           "tasks": [
             {
               "title": "Performance budget enforcement",
@@ -11414,7 +11237,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-08-31",
               "focus": "Performance budget enforcement",
               "notes": "Focus: Performance budget enforcement",
               "status": "pending",
@@ -11459,7 +11281,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-09-01",
               "focus": "Cost modeling",
               "notes": "Focus: Cost modeling",
               "status": "pending",
@@ -11504,7 +11325,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-09-02",
               "focus": "Performance tuning sprint",
               "notes": "Focus: Performance tuning sprint",
               "status": "pending",
@@ -11549,7 +11369,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-09-03",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11567,7 +11386,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-09-04",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11585,7 +11403,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-09-05",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -11603,7 +11420,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-09-06",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -11612,10 +11428,8 @@
           ]
         },
         {
-          "number": 46,
-          "start_date": "2026-09-07",
-          "end_date": "2026-09-13",
-          "focus": "Week 45 \u2013 Security audits & red team drills",
+          "number": 51,
+          "focus": "Week 51 – Security audits & red team drills",
           "tasks": [
             {
               "title": "Security audit walkthrough",
@@ -11662,7 +11476,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-09-07",
               "focus": "Security audit walkthrough",
               "notes": "Focus: Security audit walkthrough",
               "status": "pending",
@@ -11698,7 +11511,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-09-08",
               "focus": "Security audit walkthrough",
               "notes": "Focus: Security audit walkthrough, Red team exercise",
               "status": "pending",
@@ -11734,7 +11546,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-09-09",
               "focus": "Red team exercise",
               "notes": "Focus: Red team exercise, Update security training",
               "status": "pending",
@@ -11779,7 +11590,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-09-10",
               "focus": "Update security training",
               "notes": "Focus: Update security training",
               "status": "pending",
@@ -11806,7 +11616,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-09-11",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -11824,7 +11633,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-09-12",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -11842,7 +11650,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-09-13",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -11851,10 +11658,41 @@
           ]
         },
         {
-          "number": 47,
-          "start_date": "2026-09-14",
-          "end_date": "2026-09-20",
-          "focus": "Week 46 \u2013 Release management & documentation freeze",
+          "focus": "Week 52 – 🔄 BUFFER – Catch-up & Consolidation",
+          "tasks": [
+            {
+              "title": "Catch up on incomplete tasks",
+              "description": "Review and complete any tasks that fell behind schedule. No new content - focus on mastery.",
+              "estimated_hours": 5.0,
+              "status": "planned"
+            },
+            {
+              "title": "Refactor and document code",
+              "description": "Clean up code from previous weeks, add comments, improve structure.",
+              "estimated_hours": 4.0,
+              "status": "planned"
+            },
+            {
+              "title": "Portfolio documentation update",
+              "description": "Update portfolio with completed projects, screenshots, and learnings.",
+              "estimated_hours": 3.0,
+              "status": "planned"
+            },
+            {
+              "title": "Knowledge consolidation & notes review",
+              "description": "Review notes, create summary documents, fill knowledge gaps.",
+              "estimated_hours": 2.0,
+              "status": "planned"
+            }
+          ],
+          "days": [],
+          "resources": [],
+          "number": 52,
+          "is_buffer": true
+        },
+        {
+          "number": 53,
+          "focus": "Week 53 – Release management & documentation freeze",
           "tasks": [
             {
               "title": "Release checklist completion",
@@ -11901,7 +11739,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-09-14",
               "focus": "Release checklist completion",
               "notes": "Focus: Release checklist completion",
               "status": "pending",
@@ -11946,7 +11783,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-09-15",
               "focus": "Documentation freeze",
               "notes": "Focus: Documentation freeze",
               "status": "pending",
@@ -11991,7 +11827,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-09-16",
               "focus": "Training & enablement",
               "notes": "Focus: Training & enablement",
               "status": "pending",
@@ -12036,7 +11871,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-09-17",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12054,7 +11888,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-09-18",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12072,7 +11905,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-09-19",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -12090,7 +11922,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-09-20",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -12099,10 +11930,8 @@
           ]
         },
         {
-          "number": 48,
-          "start_date": "2026-09-21",
-          "end_date": "2026-09-27",
-          "focus": "Week 47 \u2013 Launch simulation & incident readiness",
+          "number": 54,
+          "focus": "Week 54 – Launch simulation & incident readiness",
           "tasks": [
             {
               "title": "Game day exercise",
@@ -12149,7 +11978,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-09-21",
               "focus": "Game day exercise",
               "notes": "Focus: Game day exercise",
               "status": "pending",
@@ -12194,7 +12022,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-09-22",
               "focus": "Incident command training",
               "notes": "Focus: Incident command training",
               "status": "pending",
@@ -12239,7 +12066,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-09-23",
               "focus": "Post-launch metrics",
               "notes": "Focus: Post-launch metrics",
               "status": "pending",
@@ -12275,7 +12101,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-09-24",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12293,7 +12118,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-09-25",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12311,7 +12135,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-09-26",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -12329,7 +12152,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-09-27",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -12338,10 +12160,8 @@
           ]
         },
         {
-          "number": 49,
-          "start_date": "2026-09-28",
-          "end_date": "2026-10-04",
-          "focus": "Week 48 \u2013 Portfolio refresh & storytelling",
+          "number": 55,
+          "focus": "Week 55 – Portfolio refresh & storytelling",
           "tasks": [
             {
               "title": "Portfolio rebuild",
@@ -12388,7 +12208,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-09-28",
               "focus": "Portfolio rebuild",
               "notes": "Focus: Portfolio rebuild",
               "status": "pending",
@@ -12433,7 +12252,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-09-29",
               "focus": "Highlight reel production",
               "notes": "Focus: Highlight reel production",
               "status": "pending",
@@ -12478,7 +12296,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-09-30",
               "focus": "Reference packet",
               "notes": "Focus: Reference packet",
               "status": "pending",
@@ -12514,7 +12331,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-10-01",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12532,7 +12348,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-10-02",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12550,7 +12365,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-10-03",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -12568,7 +12382,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-10-04",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -12577,10 +12390,8 @@
           ]
         },
         {
-          "number": 50,
-          "start_date": "2026-10-05",
-          "end_date": "2026-10-11",
-          "focus": "Week 49 \u2013 Interview prep & coding drills",
+          "number": 56,
+          "focus": "Week 56 – Interview prep & coding drills",
           "tasks": [
             {
               "title": "Systems design interview prep",
@@ -12627,7 +12438,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-10-05",
               "focus": "Systems design interview prep",
               "notes": "Focus: Systems design interview prep",
               "status": "pending",
@@ -12672,7 +12482,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-10-06",
               "focus": "Firmware coding kata",
               "notes": "Focus: Firmware coding kata",
               "status": "pending",
@@ -12717,7 +12526,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-10-07",
               "focus": "Behavioral interview stories",
               "notes": "Focus: Behavioral interview stories",
               "status": "pending",
@@ -12753,7 +12561,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-10-08",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12771,7 +12578,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-10-09",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -12789,7 +12595,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-10-10",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -12807,7 +12612,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-10-11",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -12816,10 +12620,8 @@
           ]
         },
         {
-          "number": 51,
-          "start_date": "2026-10-12",
-          "end_date": "2026-10-18",
-          "focus": "Week 50 \u2013 Community impact & open-source contributions",
+          "number": 57,
+          "focus": "Week 57 – Community impact & open-source contributions",
           "tasks": [
             {
               "title": "Open-source contribution sprint",
@@ -12866,7 +12668,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-10-12",
               "focus": "Open-source contribution sprint",
               "notes": "Focus: Open-source contribution sprint",
               "status": "pending",
@@ -12911,7 +12712,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-10-13",
               "focus": "Community talk or blog",
               "notes": "Focus: Community talk or blog",
               "status": "pending",
@@ -12956,7 +12756,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-10-14",
               "focus": "Mentorship & outreach",
               "notes": "Focus: Mentorship & outreach",
               "status": "pending",
@@ -12992,7 +12791,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-10-15",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13010,7 +12808,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-10-16",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13028,7 +12825,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-10-17",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -13046,7 +12842,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-10-18",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -13055,10 +12850,8 @@
           ]
         },
         {
-          "number": 52,
-          "start_date": "2026-10-19",
-          "end_date": "2026-10-25",
-          "focus": "Week 51 \u2013 Capstone hardening & final demo",
+          "number": 58,
+          "focus": "Week 58 – Capstone hardening & final demo",
           "tasks": [
             {
               "title": "Capstone polish sprint",
@@ -13105,7 +12898,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-10-19",
               "focus": "Capstone polish sprint",
               "notes": "Focus: Capstone polish sprint",
               "status": "pending",
@@ -13150,7 +12942,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-10-20",
               "focus": "Final live demo rehearsal",
               "notes": "Focus: Final live demo rehearsal",
               "status": "pending",
@@ -13195,7 +12986,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-10-21",
               "focus": "Celebration & gratitude",
               "notes": "Focus: Celebration & gratitude",
               "status": "pending",
@@ -13222,7 +13012,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-10-22",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13240,7 +13029,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-10-23",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13258,7 +13046,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-10-24",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -13276,7 +13063,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-10-25",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -13285,10 +13071,8 @@
           ]
         },
         {
-          "number": 53,
-          "start_date": "2026-10-26",
-          "end_date": "2026-11-01",
-          "focus": "Week 52 \u2013 Launch retrospective & career outreach",
+          "number": 59,
+          "focus": "Week 59 – Launch retrospective & career outreach",
           "tasks": [
             {
               "title": "Launch retrospective",
@@ -13335,7 +13119,6 @@
           "days": [
             {
               "number": 1,
-              "scheduled_date": "2026-10-26",
               "focus": "Launch retrospective",
               "notes": "Focus: Launch retrospective, Career outreach campaign",
               "status": "pending",
@@ -13380,7 +13163,6 @@
             },
             {
               "number": 2,
-              "scheduled_date": "2026-10-27",
               "focus": "Career outreach campaign",
               "notes": "Focus: Career outreach campaign, Roadmap transition plan",
               "status": "pending",
@@ -13425,7 +13207,6 @@
             },
             {
               "number": 3,
-              "scheduled_date": "2026-10-28",
               "focus": "Roadmap transition plan",
               "notes": "Focus: Roadmap transition plan",
               "status": "pending",
@@ -13452,7 +13233,6 @@
             },
             {
               "number": 4,
-              "scheduled_date": "2026-10-29",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13470,7 +13250,6 @@
             },
             {
               "number": 5,
-              "scheduled_date": "2026-10-30",
               "focus": "Deep work",
               "notes": "Focus: Deep work",
               "status": "pending",
@@ -13488,7 +13267,6 @@
             },
             {
               "number": 6,
-              "scheduled_date": "2026-10-31",
               "focus": "Integration, reflection, portfolio updates",
               "notes": "Consolidate notes, update demos, plan next sprint.",
               "status": "pending",
@@ -13506,7 +13284,6 @@
             },
             {
               "number": 7,
-              "scheduled_date": "2026-11-01",
               "focus": "Rest & recharge",
               "notes": "No scheduled work. Prioritize health, family, and hobbies.",
               "status": "pending",
@@ -13594,7 +13371,7 @@
       "source": "Naukri",
       "date_applied": "2026-04-20",
       "next_action": "Finalize Zephyr mission computer write-up for batch #1 submissions (10 companies).",
-      "notes": "Target \u20b915-18 LPA; aligns with 50-application OKR."
+      "notes": "Target ₹15-18 LPA; aligns with 50-application OKR."
     },
     {
       "company": "Texas Instruments",
@@ -13630,7 +13407,7 @@
       "source": "LinkedIn",
       "date_applied": "2026-05-18",
       "next_action": "Benchmark throughput numbers on Ryzen rig for RF-heavy resume bullet.",
-      "notes": "Batch #3 (SoC vendors) \u2013 8 submissions planned."
+      "notes": "Batch #3 (SoC vendors) – 8 submissions planned."
     },
     {
       "company": "Ola Electric",
@@ -13639,7 +13416,7 @@
       "source": "Referral",
       "date_applied": "2026-05-25",
       "next_action": "Schedule mock interview to stress-test fleet ops story.",
-      "notes": "Supports \u20b920L+ target roles; includes 5 allied startups."
+      "notes": "Supports ₹20L+ target roles; includes 5 allied startups."
     },
     {
       "company": "NVIDIA Embedded",
@@ -13648,7 +13425,7 @@
       "source": "LinkedIn",
       "date_applied": "2026-06-01",
       "next_action": "Publish RTX 5060 Ti CUDA TinyML benchmark blog before applying.",
-      "notes": "Batch #4 (AI heavy) \u2013 ensures PC max-out narrative."
+      "notes": "Batch #4 (AI heavy) – ensures PC max-out narrative."
     },
     {
       "company": "Bosch Global Software",
@@ -13659,5 +13436,29 @@
       "next_action": "Share community talk + open-source contribution links for follow-up.",
       "notes": "Represents second wave of Bosch applications; keeps 50-app cadence warm."
     }
-  ]
+  ],
+  "metadata": {
+    "buffer_weeks_count": 6,
+    "total_weeks": 59,
+    "dynamic_scheduling": true,
+    "unlimited_weeks": true,
+    "last_updated": "2025-12-31",
+    "audit_fixes": [
+      {
+        "date": "2025-12-31",
+        "fix": "DMA Sequence Fix - Moved DMA fundamentals to Week 7 before communication protocols",
+        "reason": "Avoid 'Blocking I/O Trap' - learning UART/SPI with blocking code builds wrong muscle memory"
+      },
+      {
+        "date": "2025-12-31",
+        "fix": "DMA Sequence Final Fix - Added DMA Fundamentals to Week 9, RCC Clock to Week 4",
+        "reason": "Prevents 'Blocking I/O Trap' - learn DMA before writing production UART/SPI drivers. Prevents 'L476RG Clock Trap' - learn RCC before assuming default clock speeds."
+      },
+      {
+        "date": "2025-12-31",
+        "fix": "DMA Sequence Final Fix (Hours) - Added DMA to Week 9 Day 1, RCC to Week 4 Day 1",
+        "reason": "Tasks added as hours within days to match seeding logic in seed.py"
+      }
+    ]
+  }
 }

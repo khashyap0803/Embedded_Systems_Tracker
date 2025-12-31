@@ -13,6 +13,35 @@ except ImportError:
     ZoneInfo = None  # type: ignore[misc, assignment]
 
 
+# Public API exports
+__all__ = [
+    "UTC",
+    "utcnow",
+    "ensure_utc",
+    "normalise_datetimes",
+    "seconds_between",
+    "get_user_timezone",
+    "format_local_datetime",
+    "format_duration",
+    # Constants
+    "TIMER_REFRESH_MS",
+    "POMODORO_WORK_MINUTES",
+    "POMODORO_BREAK_MINUTES",
+    "LIVE_REFRESH_INTERVAL_MS",
+    "IDLE_REFRESH_INTERVAL_MS",
+]
+
+
+# Timer and Pomodoro constants
+TIMER_REFRESH_MS = 1000  # Timer refresh interval in milliseconds
+POMODORO_WORK_MINUTES = 25  # Standard Pomodoro work session
+POMODORO_BREAK_MINUTES = 5  # Standard Pomodoro break
+
+# GUI refresh intervals
+LIVE_REFRESH_INTERVAL_MS = 1000   # Refresh interval when task is running (1 second)
+IDLE_REFRESH_INTERVAL_MS = 15000  # Refresh interval when idle (15 seconds)
+
+
 UTC = timezone.utc
 
 
@@ -92,7 +121,6 @@ def get_user_timezone() -> timezone:
         
         # Try reading /etc/localtime symlink
         try:
-            import os.path
             if os.path.islink("/etc/localtime"):
                 link = os.readlink("/etc/localtime")
                 # Extract timezone from path like /usr/share/zoneinfo/Asia/Kolkata
@@ -106,7 +134,6 @@ def get_user_timezone() -> timezone:
     elif system == "darwin":
         # macOS - try reading /etc/localtime symlink
         try:
-            import os.path
             if os.path.islink("/etc/localtime"):
                 link = os.readlink("/etc/localtime")
                 if "zoneinfo/" in link:

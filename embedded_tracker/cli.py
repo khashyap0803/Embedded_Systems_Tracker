@@ -28,6 +28,7 @@ from .models import (
     Week,
 )
 from .utils import ensure_utc, utcnow
+from .services import reset_stale_tasks
 
 console = Console()
 
@@ -448,6 +449,14 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[List[str]] = None) -> int:
     init_db()
     ensure_seed_data()
+    
+    # Prune stale "working" tasks to prevent zombie timers
+    try:
+        from .services import reset_stale_tasks
+        reset_stale_tasks()
+    except Exception as e:
+        console.print(f"[yellow]Warning: Failed to reset stale tasks: {e}[/yellow]")
+
     parser = build_parser()
     args = parser.parse_args(argv)
 

@@ -1,0 +1,642 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-12-31",
+        "owner": "Nani",
+        "notes": "Current hardware inventory - boards, sensors, modules available at home. Status: available, in_use, ordered, broken [PATCHED: Red Team Audit Dec 2025] [UPDATED: Added PC config, SMD rework station, peripherals per Review Agent Audit Dec 2025]"
+    },
+    "boards": [
+        {
+            "id": "board_001",
+            "name": "NUCLEO-L476RG",
+            "type": "development_board",
+            "mcu": "STM32L476RG",
+            "architecture": "ARM Cortex-M4",
+            "frequency_mhz": 80,
+            "flash_kb": 1024,
+            "ram_kb": 128,
+            "quantity": 1,
+            "status": "available",
+            "features": [
+                "Low Power",
+                "USB OTG",
+                "LCD Driver",
+                "ST-Link V2-1"
+            ],
+            "purchase_date": null,
+            "notes": "Main STM32 development board with integrated debugger"
+        },
+        {
+            "id": "board_002",
+            "name": "STM32F411 BlackPill",
+            "type": "development_board",
+            "mcu": "STM32F411CEU6",
+            "architecture": "ARM Cortex-M4",
+            "frequency_mhz": 100,
+            "flash_kb": 512,
+            "ram_kb": 128,
+            "quantity": 1,
+            "status": "available",
+            "features": [
+                "USB OTG",
+                "Compact Form Factor"
+            ],
+            "purchase_date": null,
+            "notes": "Compact board for portable projects"
+        },
+        {
+            "id": "board_003",
+            "name": "ESP32 DevKit",
+            "type": "development_board",
+            "mcu": "ESP32-WROOM-32",
+            "architecture": "Xtensa LX6 Dual Core",
+            "frequency_mhz": 240,
+            "flash_kb": 4096,
+            "ram_kb": 520,
+            "quantity": 2,
+            "status": "available",
+            "features": [
+                "WiFi",
+                "Bluetooth",
+                "BLE",
+                "Touch Sensors"
+            ],
+            "purchase_date": null,
+            "notes": "WiFi/BLE enabled boards for IoT projects"
+        },
+        {
+            "id": "board_004",
+            "name": "Arduino Uno",
+            "type": "development_board",
+            "mcu": "ATmega328P",
+            "architecture": "AVR",
+            "frequency_mhz": 16,
+            "flash_kb": 32,
+            "ram_kb": 2,
+            "quantity": 1,
+            "status": "available",
+            "features": [
+                "USB-B",
+                "Beginner Friendly"
+            ],
+            "purchase_date": null,
+            "notes": "Classic Arduino for simple prototyping"
+        }
+    ],
+    "rf_modules": [
+        {
+            "id": "rf_001",
+            "name": "LoRa RA-02",
+            "type": "lora_transceiver",
+            "frequency_mhz": 433,
+            "chip": "SX1278",
+            "interface": "SPI",
+            "range_km": 10,
+            "quantity": 2,
+            "status": "available",
+            "notes": "Long range wireless for remote sensing projects"
+        },
+        {
+            "id": "rf_002",
+            "name": "433MHz TX/RX Module",
+            "type": "rf_transceiver",
+            "frequency_mhz": 433,
+            "quantity": 2,
+            "status": "available",
+            "notes": "Simple wireless communication pair"
+        }
+    ],
+    "sensors": [
+        {
+            "id": "sensor_001",
+            "name": "MQ-135 Gas Sensor",
+            "type": "gas",
+            "detects": [
+                "Air Quality",
+                "CO2",
+                "NH3",
+                "Benzene"
+            ],
+            "interface": "Analog",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Air quality monitoring"
+        },
+        {
+            "id": "sensor_002",
+            "name": "IR Sensor Module",
+            "type": "proximity",
+            "range_cm": 30,
+            "interface": "Digital",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Object detection and line following"
+        },
+        {
+            "id": "sensor_003",
+            "name": "LDR Sensor Module",
+            "type": "light",
+            "interface": "Analog/Digital",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Light intensity detection"
+        },
+        {
+            "id": "sensor_004",
+            "name": "PIR Sensor Module",
+            "type": "motion",
+            "range_m": 7,
+            "angle_deg": 120,
+            "interface": "Digital",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Motion detection for security/automation"
+        },
+        {
+            "id": "sensor_005",
+            "name": "HC-SR04 Ultrasonic Sensor",
+            "type": "distance",
+            "range_cm": [
+                2,
+                400
+            ],
+            "interface": "Digital (Trigger/Echo)",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Distance measurement"
+        },
+        {
+            "id": "sensor_006",
+            "name": "Touch Sensor Module",
+            "type": "touch",
+            "interface": "Digital",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Capacitive touch detection"
+        }
+    ],
+    "modules": [
+        {
+            "id": "mod_001",
+            "name": "Relay Module",
+            "type": "actuator",
+            "channels": 1,
+            "voltage": "5V",
+            "load_rating": "10A 250VAC",
+            "quantity": 1,
+            "status": "available",
+            "notes": "AC/DC load switching"
+        },
+        {
+            "id": "mod_002",
+            "name": "Power Supply Module",
+            "type": "power",
+            "input": "6.5-12V",
+            "output": [
+                "3.3V",
+                "5V"
+            ],
+            "quantity": 1,
+            "status": "available",
+            "notes": "Breadboard power supply"
+        },
+        {
+            "id": "mod_003",
+            "name": "RTC Module (DS3231)",
+            "type": "timing",
+            "interface": "I2C",
+            "backup_battery": true,
+            "quantity": 1,
+            "status": "available",
+            "notes": "Real-time clock with battery backup"
+        },
+        {
+            "id": "mod_004",
+            "name": "ADC Module",
+            "type": "converter",
+            "bits": 16,
+            "interface": "I2C/SPI",
+            "quantity": 1,
+            "status": "available",
+            "notes": "External ADC for higher precision"
+        },
+        {
+            "id": "mod_005",
+            "name": "MUX Module",
+            "type": "logic",
+            "channels": 8,
+            "quantity": 1,
+            "status": "available",
+            "notes": "Analog/Digital multiplexer"
+        },
+        {
+            "id": "mod_006",
+            "name": "Encoder/Decoder HT/HD",
+            "type": "logic",
+            "quantity": 1,
+            "status": "available",
+            "notes": "RF encoder/decoder pair"
+        },
+        {
+            "id": "mod_007",
+            "name": "Humidifier Piezo Module",
+            "type": "actuator",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Piezoelectric disc for mist generation"
+        },
+        {
+            "id": "mod_008",
+            "name": "TJA1050 CAN Transceiver Module",
+            "type": "bus_transceiver",
+            "interface": "CAN",
+            "quantity": 2,
+            "status": "ordered",
+            "notes": "CRITICAL: Added per Red Team Audit - CAN controller requires external transceiver"
+        },
+        {
+            "id": "mod_009",
+            "name": "TJA1021 LIN Transceiver Module",
+            "type": "bus_transceiver",
+            "interface": "LIN",
+            "quantity": 2,
+            "status": "ordered",
+            "notes": "Added per Red Team Audit - LIN slave implementation"
+        },
+        {
+            "id": "mod_010",
+            "name": "USB-CAN Analyzer",
+            "type": "bus_analyzer",
+            "interface": "USB/CAN",
+            "quantity": 1,
+            "status": "ordered",
+            "notes": "Added per Red Team Audit - verify CAN communication"
+        },
+        {
+            "id": "mod_011",
+            "name": "Variable Bench Power Supply (0-30V, 0-5A)",
+            "type": "power",
+            "input": "220V AC",
+            "output": "0-30V DC, 0-5A",
+            "quantity": 1,
+            "status": "ordered",
+            "notes": "CRITICAL: Added per Red Team Audit - motors cause brownout on USB rail"
+        }
+    ],
+    "displays": [
+        {
+            "id": "disp_001",
+            "name": "OLED Display 0.96 inch",
+            "type": "oled",
+            "resolution": "128x64",
+            "interface": "I2C",
+            "driver": "SSD1306",
+            "color": "White/Blue",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Compact display for status/debug info"
+        }
+    ],
+    "actuators": [
+        {
+            "id": "act_001",
+            "name": "Servo Motor SG90",
+            "type": "servo",
+            "torque_kg_cm": 1.8,
+            "angle_deg": 180,
+            "quantity": 1,
+            "status": "available",
+            "notes": "Micro servo for positioning"
+        },
+        {
+            "id": "act_002",
+            "name": "DC Motor",
+            "type": "motor",
+            "voltage": "3-6V",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Small DC motor"
+        },
+        {
+            "id": "act_003",
+            "name": "Buzzer (Active)",
+            "type": "audio",
+            "voltage": "5V",
+            "quantity": 1,
+            "status": "available",
+            "notes": "Audio feedback/alarms"
+        },
+        {
+            "id": "act_004",
+            "name": "LED Pack (Assorted)",
+            "type": "indicator",
+            "colors": [
+                "Red",
+                "Green",
+                "Blue",
+                "Yellow",
+                "White"
+            ],
+            "quantity": 20,
+            "status": "available",
+            "notes": "Various 5mm LEDs"
+        }
+    ],
+    "tools": [
+        {
+            "id": "tool_001",
+            "name": "Digital Multimeter",
+            "type": "measurement",
+            "features": [
+                "Voltage",
+                "Current",
+                "Resistance",
+                "Continuity"
+            ],
+            "quantity": 1,
+            "status": "available",
+            "notes": "Essential measurement tool"
+        },
+        {
+            "id": "tool_002",
+            "name": "Jumper Wires M-M",
+            "type": "connector",
+            "length_cm": 20,
+            "quantity": 40,
+            "status": "available"
+        },
+        {
+            "id": "tool_003",
+            "name": "Jumper Wires M-F",
+            "type": "connector",
+            "length_cm": 20,
+            "quantity": 40,
+            "status": "available"
+        },
+        {
+            "id": "tool_004",
+            "name": "Connecting Wires",
+            "type": "connector",
+            "quantity": 20,
+            "status": "available",
+            "notes": "Solid core wires for breadboarding"
+        },
+        {
+            "id": "tool_005",
+            "name": "24MHz 8-Channel Logic Analyzer (Saleae Clone)",
+            "type": "measurement",
+            "features": [
+                "SPI",
+                "I2C",
+                "UART",
+                "Protocol Analysis"
+            ],
+            "quantity": 1,
+            "status": "ordered",
+            "notes": "CRITICAL: Added per Red Team Audit - essential for debugging SPI/I2C protocols"
+        }
+    ],
+    "summary": {
+        "total_boards": 5,
+        "total_sensors": 6,
+        "total_modules": 9,
+        "total_rf_modules": 2,
+        "total_displays": 1,
+        "total_actuators": 4,
+        "notes": "Patched with Red Team Audit recommendations (Dec 2025). Items marked ordered are critical for curriculum."
+    },
+    "pc_system": [
+        {
+            "id": "pc_001",
+            "name": "AMD Ryzen 7 7700",
+            "type": "cpu",
+            "specifications": "8C/16T, 3.8/5.3GHz, 65W, AM5",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 29000,
+            "notes": "Main development CPU - excellent for firmware compilation and AI workloads"
+        },
+        {
+            "id": "pc_002",
+            "name": "Colorful GeForce RTX 5060 Ti Battle AX DUO 16GB-V",
+            "type": "gpu",
+            "specifications": "4608 CUDA, 16GB GDDR7, 180W, DLSS 4",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 47000,
+            "notes": "AI/Edge AI development - excellent for Edge ML weeks"
+        },
+        {
+            "id": "pc_003",
+            "name": "MSI B850M Gaming Plus WiFi 7",
+            "type": "motherboard",
+            "specifications": "mATX, AM5, WiFi 7/5G LAN, 2x M.2, PCIe 4.0",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 17000,
+            "notes": "Main board with excellent connectivity"
+        },
+        {
+            "id": "pc_004",
+            "name": "G.Skill Ripjaws S5 DDR5-6000",
+            "type": "ram",
+            "specifications": "32GB single-channel, CL36, DDR5",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 10200,
+            "notes": "Dual-channel upgrade pending"
+        },
+        {
+            "id": "pc_005",
+            "name": "Crucial P3 Plus Gen4 1TB SSD",
+            "type": "storage",
+            "specifications": "PCIe 4.0 x4, 5000MB/s, NVMe",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 5200,
+            "notes": "OS/apps drive - dual-boot ready"
+        },
+        {
+            "id": "pc_006",
+            "name": "Seagate Barracuda Gen3 1TB SSD",
+            "type": "storage",
+            "specifications": "PCIe 3.0 x4, 3500MB/s, NVMe",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 5000,
+            "notes": "Data/docs storage"
+        },
+        {
+            "id": "pc_007",
+            "name": "Ant Esports FG750 V2 80+ Gold",
+            "type": "psu",
+            "specifications": "750W semi-modular, ATX 3.0",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 5000,
+            "notes": "Handles OC spikes"
+        },
+        {
+            "id": "pc_008",
+            "name": "Ant Value VM40 Case",
+            "type": "case",
+            "specifications": "mATX, 4x RGB fans, tempered glass",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 3500,
+            "notes": "Fits all; 240mm AIO-ready"
+        }
+    ],
+    "soldering_equipment": [
+        {
+            "id": "solder_001",
+            "name": "Maxx Pamma 857DW+2 SMD Rework Station",
+            "type": "smd_rework",
+            "specifications": "Hot air + soldering, digital display",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Professional SMD rework for advanced PCB work"
+        },
+        {
+            "id": "solder_002",
+            "name": "25W Soldering Iron",
+            "type": "soldering_iron",
+            "specifications": "25W, basic tip",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Basic soldering for through-hole components"
+        },
+        {
+            "id": "solder_003",
+            "name": "Solder Wick",
+            "type": "consumable",
+            "specifications": "Desoldering braid",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "For desoldering/cleanup"
+        },
+        {
+            "id": "solder_004",
+            "name": "Solder Wire (Filament)",
+            "type": "consumable",
+            "specifications": "63/37 or lead-free",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Standard solder wire"
+        },
+        {
+            "id": "solder_005",
+            "name": "Solder Flux",
+            "type": "consumable",
+            "specifications": "Rosin flux paste/liquid",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Improves solder flow"
+        }
+    ],
+    "power_supplies": [
+        {
+            "id": "power_001",
+            "name": "MB102 Breadboard Power Supply",
+            "type": "breadboard_psu",
+            "specifications": "3.3V/5V output, takes 9V-12V input",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Breadboard power module"
+        },
+        {
+            "id": "power_002",
+            "name": "12V DC Adapter",
+            "type": "adapter",
+            "specifications": "12V 1A-2A DC",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Powers MB102 module"
+        }
+    ],
+    "debuggers": [
+        {
+            "id": "debug_001",
+            "name": "ST-Link V2 Debugger",
+            "type": "jtag_swd",
+            "specifications": "SWD/JTAG, USB",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "Separate debugger for BlackPill and other boards without built-in debugger"
+        }
+    ],
+    "interfaces": [
+        {
+            "id": "intf_001",
+            "name": "FT232 USB-UART Converter",
+            "type": "usb_serial",
+            "specifications": "FT232RL, 3.3V/5V selectable",
+            "quantity": 1,
+            "status": "available",
+            "purchase_date": null,
+            "notes": "USB to UART for debugging and communication"
+        }
+    ],
+    "peripherals": [
+        {
+            "id": "periph_001",
+            "name": "Antesports GM320 V2 Mouse",
+            "type": "mouse",
+            "specifications": "Wired optical, 12k DPI, RGB",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 1350,
+            "notes": "Precise for VS Code/sim drags"
+        },
+        {
+            "id": "periph_002",
+            "name": "Archer Tech Lab Astra M200 Keyboard",
+            "type": "keyboard",
+            "specifications": "Mechanical, Outemu Blue, RGB, USB-C",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 2000,
+            "notes": "Crisp for C coding/Phase 1 notes"
+        },
+        {
+            "id": "periph_003",
+            "name": "Kiwi Ears Allegro Mini DAC",
+            "type": "audio",
+            "specifications": "USB-C, CS43131 chip, 3.5/4.4mm, 120dB SNR",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 2000,
+            "notes": "Superior to onboard audio"
+        },
+        {
+            "id": "periph_004",
+            "name": "Headphone Zone X Oriveti Blackbird IEMs",
+            "type": "audio",
+            "specifications": "Hybrid 1DD+2BA, 16\u03a9/105dB, 4.4mm cable",
+            "quantity": 1,
+            "status": "in_use",
+            "purchase_date": "2025-10",
+            "price_inr": 5000,
+            "notes": "Neutral for gaming/learning audio"
+        }
+    ]
+}

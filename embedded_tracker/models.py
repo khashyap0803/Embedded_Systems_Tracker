@@ -2,16 +2,14 @@
 
 from __future__ import annotations
 
-from datetime import date, datetime, timezone
+from datetime import date, datetime
 from enum import Enum
 from typing import Optional
 
-from sqlalchemy import Column, DateTime, Enum as SAEnum
+from sqlalchemy import Column, DateTime, Enum as SAEnum, Index
 from sqlmodel import Field, SQLModel
 
-
-def _utcnow() -> datetime:
-    return datetime.now(timezone.utc)
+from .utils import utcnow as _utcnow
 
 
 class TaskStatus(str, Enum):
@@ -39,8 +37,8 @@ class Phase(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str = Field(index=True)
     description: Optional[str] = None
-    start_date: date
-    end_date: date
+    start_date: Optional[date] = None  # Dynamic: set when phase starts
+    end_date: Optional[date] = None  # Dynamic: set when phase ends
     status: TaskStatus = Field(
         default=TaskStatus.PENDING,
         sa_column=Column(
@@ -65,8 +63,8 @@ class Week(SQLModel, table=True):
 
     id: Optional[int] = Field(default=None, primary_key=True)
     number: int = Field(index=True)
-    start_date: date
-    end_date: date
+    start_date: Optional[date] = None  # Dynamic: set when week starts
+    end_date: Optional[date] = None  # Dynamic: set when week ends
     focus: Optional[str] = None
     status: TaskStatus = Field(
         default=TaskStatus.PENDING,
@@ -93,7 +91,7 @@ class DayPlan(SQLModel, table=True):
 
     id: Optional[int] = Field(default=None, primary_key=True)
     number: int = Field(index=True)
-    scheduled_date: date
+    scheduled_date: Optional[date] = None  # Dynamic: set when day starts
     focus: Optional[str] = None
     notes: Optional[str] = None
     status: TaskStatus = Field(
@@ -118,6 +116,13 @@ class DayPlan(SQLModel, table=True):
 
 class Task(SQLModel, table=True):
     """Atomic hour-level unit of work aligned to the roadmap."""
+
+    # Composite indices for common query patterns (performance optimization)
+    __table_args__ = (
+        Index('idx_task_week_status', 'week_id', 'status'),
+        Index('idx_task_week_day', 'week_id', 'day_id'),
+        Index('idx_task_day_hour', 'day_id', 'hour_number'),
+    )
 
     id: Optional[int] = Field(default=None, primary_key=True)
     title: str
@@ -284,3 +289,51 @@ class Metric(SQLModel, table=True):
     recorded_date: date = Field(default_factory=date.today)
 
     phase_id: Optional[int] = Field(default=None, foreign_key="phase.id")
+
+
+class HardwareCategory(str, Enum):
+    """Categories for hardware inventory items."""
+    
+    BOARD = "board"
+    SENSOR = "sensor"
+    MODULE = "module"
+    RF_MODULE = "rf_module"
+    DISPLAY = "display"
+    ACTUATOR = "actuator"
+    TOOL = "tool"
+    CONNECTOR = "connector"
+    POWER = "power"
+    OTHER = "other"
+
+
+class HardwareStatus(str, Enum):
+    """Status of hardware inventory items."""
+    
+    AVAILABLE = "available"
+    IN_USE = "in_use"
+    ORDERED = "ordered"
+    BROKEN = "broken"
+    LENT = "lent"
+
+
+class HardwareItem(SQLModel, table=True):
+    """Hardware inventory item - boards, sensors, modules, tools."""
+    
+    id: Optional[int] = Field(default=None, primary_key=True)
+    name: str = Field(index=True)
+    category: HardwareCategory = Field(default=HardwareCategory.OTHER)
+    hardware_type: Optional[str] = None  # e.g., "gas", "proximity", "lora"
+    mcu: Optional[str] = None  # For boards
+    architecture: Optional[str] = None  # e.g., "ARM Cortex-M4"
+    quantity: int = Field(default=1, ge=0)
+    status: HardwareStatus = Field(default=HardwareStatus.AVAILABLE)
+    specifications: Optional[str] = None  # JSON string for detailed specs
+    features: Optional[str] = None  # Comma-separated features
+    interface: Optional[str] = None  # e.g., "I2C", "SPI", "UART"
+    notes: Optional[str] = None
+    purchase_date: Optional[date] = None
+    price_inr: Optional[float] = None
+    
+    # Link to project if in use
+    project_id: Optional[int] = Field(default=None, foreign_key="project.id")
+

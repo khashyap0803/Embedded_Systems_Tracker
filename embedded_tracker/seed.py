@@ -57,15 +57,17 @@ def upsert_phase(session, phase_payload: Dict[str, Any]) -> Phase:
         phase = Phase(
             name=phase_payload["name"],
             description=phase_payload.get("description"),
-            start_date=normalise_date(phase_payload["start_date"]),
-            end_date=normalise_date(phase_payload["end_date"]),
+            start_date=normalise_date(phase_payload.get("start_date")),  # Optional now
+            end_date=normalise_date(phase_payload.get("end_date")),  # Optional now
         )
         session.add(phase)
         session.flush()
     else:
         phase.description = phase_payload.get("description", phase.description)
-        phase.start_date = normalise_date(phase_payload["start_date"])
-        phase.end_date = normalise_date(phase_payload["end_date"])
+        if "start_date" in phase_payload:
+            phase.start_date = normalise_date(phase_payload.get("start_date"))
+        if "end_date" in phase_payload:
+            phase.end_date = normalise_date(phase_payload.get("end_date"))
     phase.status = coerce_enum(TaskStatus, phase_payload.get("status"), TaskStatus.PENDING)
     return phase
 
@@ -81,16 +83,18 @@ def upsert_week(session, phase: Phase, week_payload: Dict[str, Any]) -> Week:
     if week is None:
         week = Week(
             number=week_payload["number"],
-            start_date=normalise_date(week_payload["start_date"]),
-            end_date=normalise_date(week_payload["end_date"]),
+            start_date=normalise_date(week_payload.get("start_date")),  # Optional now
+            end_date=normalise_date(week_payload.get("end_date")),  # Optional now
             focus=week_payload.get("focus"),
             phase_id=phase.id,
         )
         session.add(week)
         session.flush()
     else:
-        week.start_date = normalise_date(week_payload["start_date"])
-        week.end_date = normalise_date(week_payload["end_date"])
+        if "start_date" in week_payload:
+            week.start_date = normalise_date(week_payload.get("start_date"))
+        if "end_date" in week_payload:
+            week.end_date = normalise_date(week_payload.get("end_date"))
         week.focus = week_payload.get("focus", week.focus)
     week.status = coerce_enum(TaskStatus, week_payload.get("status"), TaskStatus.PENDING)
     return week
@@ -129,17 +133,36 @@ def upsert_task(
     task_payload: Dict[str, Any],
     *,
     day: DayPlan | None = None,
+    existing_tasks: List[Task] | None = None,
 ) -> Task:
     title = task_payload["title"]
     hour_number = task_payload.get("hour_number")
-    query = select(Task).where(Task.week_id == week.id)
-    if day is not None:
-        query = query.where(Task.day_id == day.id)
-    if hour_number is not None:
-        query = query.where(Task.hour_number == hour_number)
-    else:
-        query = query.where(Task.title == title)
-    task = session.exec(query).first()
+
+    task = None
+    if existing_tasks is not None:
+        # Filter in memory
+        candidates = [t for t in existing_tasks if t.week_id == week.id]
+        if day is not None:
+            candidates = [t for t in candidates if t.day_id == day.id]
+        
+        if hour_number is not None:
+            candidates = [t for t in candidates if t.hour_number == hour_number]
+        else:
+            candidates = [t for t in candidates if t.title == title]
+        
+        if candidates:
+            task = candidates[0]
+
+    if task is None and existing_tasks is None:
+        # Fallback to DB query if no cache provided
+        query = select(Task).where(Task.week_id == week.id)
+        if day is not None:
+            query = query.where(Task.day_id == day.id)
+        if hour_number is not None:
+            query = query.where(Task.hour_number == hour_number)
+        else:
+            query = query.where(Task.title == title)
+        task = session.exec(query).first()
     raw_status = task_payload.get("status", "pending")
     status = coerce_enum(TaskStatus, raw_status, TaskStatus.PENDING)
     if task is None:
@@ -340,6 +363,8 @@ def seed_from_payload(payload: Dict[str, Any]) -> int:
             phase = upsert_phase(session, phase_payload)
             for week_payload in _iterate(phase_payload.get("weeks")):
                 week = upsert_week(session, phase, week_payload)
+                # Pre-fetch tasks to avoid N+1 queries during upsert
+                week_tasks = session.exec(select(Task).where(Task.week_id == week.id)).all()
                 if week.status is None:
                     week.status = TaskStatus.PENDING
                 days_payload = list(_iterate(week_payload.get("days")))
@@ -349,10 +374,10 @@ def seed_from_payload(payload: Dict[str, Any]) -> int:
                         if day.status is None:
                             day.status = TaskStatus.PENDING
                         for hour_payload in _iterate(day_payload.get("hours")):
-                            upsert_task(session, week, hour_payload, day=day)
+                            upsert_task(session, week, hour_payload, day=day, existing_tasks=week_tasks)
                 else:
                     for task_payload in _iterate(week_payload.get("tasks")):
-                        upsert_task(session, week, task_payload)
+                        upsert_task(session, week, task_payload, existing_tasks=week_tasks)
                 for resource_payload in _iterate(week_payload.get("resources")):
                     upsert_resource(session, week, resource_payload)
 

@@ -1,0 +1,105 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-12-30",
+        "owner": "Nani",
+        "notes": "Development machine specifications for embedded systems development"
+    },
+    "development_machine": {
+        "name": "Primary Development Workstation",
+        "cpu": {
+            "model": "AMD Ryzen 7 7700",
+            "cores": 8,
+            "threads": 16,
+            "base_clock_ghz": 3.8,
+            "boost_clock_ghz": 5.3,
+            "architecture": "Zen 4",
+            "tdp_watts": 65
+        },
+        "gpu": {
+            "model": "NVIDIA GeForce RTX 5060 Ti",
+            "vram_gb": 16,
+            "architecture": "Blackwell",
+            "cuda_cores": null,
+            "notes": "Excellent for ML/TinyML model training and CUDA development"
+        },
+        "memory": {
+            "size_gb": 32,
+            "type": "DDR5",
+            "speed_mhz": 5200
+        },
+        "storage": {
+            "primary": {
+                "type": "NVMe SSD",
+                "size_gb": 1000,
+                "model": null
+            },
+            "secondary": null
+        },
+        "os": {
+            "name": "Ubuntu",
+            "version": "24.04 LTS",
+            "kernel": "6.x"
+        }
+    },
+    "development_tools": {
+        "ides": [
+            {
+                "name": "VS Code",
+                "extensions": [
+                    "PlatformIO",
+                    "C/C++",
+                    "Python",
+                    "Cortex-Debug"
+                ]
+            },
+            {
+                "name": "STM32CubeIDE",
+                "version": "latest"
+            }
+        ],
+        "compilers": [
+            "arm-none-eabi-gcc",
+            "gcc",
+            "clang"
+        ],
+        "debuggers": [
+            {
+                "name": "ST-Link (integrated)",
+                "type": "on-board",
+                "notes": "On Nucleo boards"
+            }
+        ],
+        "version_control": [
+            "Git",
+            "GitHub"
+        ],
+        "containerization": [
+            "Docker",
+            "Podman"
+        ],
+        "virtualization": [
+            "QEMU",
+            "VirtualBox"
+        ]
+    },
+    "test_equipment": {
+        "oscilloscope": null,
+        "logic_analyzer": null,
+        "multimeter": {
+            "available": true,
+            "model": "Digital Multimeter"
+        },
+        "power_supply": null,
+        "soldering_station": null
+    },
+    "capabilities": {
+        "embedded_development": true,
+        "ml_training": true,
+        "cuda_available": true,
+        "cross_compilation": true,
+        "rtos_development": true,
+        "pcb_design": true,
+        "simulation": true
+    }
+}

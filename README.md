@@ -1,118 +1,226 @@
-# Embedded Tracker
+# 🔧 Embedded Systems Tracker
 
-Embedded Tracker is a cross-platform personal dashboard designed to help you execute the Embedded Systems Mastery roadmap between October 2025 and October 2026. The project now ships with both a rich CLI and a PySide6 desktop interface driven by a shared SQLModel data layer.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/PySide6-6.0+-green.svg" alt="PySide6">
+  <img src="https://img.shields.io/badge/SQLite-3.0+-orange.svg" alt="SQLite">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+</p>
 
-## Features (Current & Planned)
-- ✅ SQLModel data schema for phases, weeks, tasks, resources, projects, certifications, applications, and metrics.
-- ✅ Auto-seeding that imports the roadmap JSON on first launch via shared helpers in `embedded_tracker.seed`.
-- ✅ Phase 1 now devotes its first eight weeks to electronics basics, digital logic, C mastery, and UART/I2C/SPI drills before progressing to advanced bring-up work.
-- ✅ Phase 2 injects open RISC-V + ESP32-C3 bring-up, dual-stack connectivity labs, and Android companion provisioning flows on top of the Zephyr/FreeRTOS stack.
-- ✅ Phase 3/4 add Android Automotive HAL integration, AAOS security operations, AI observability weeks, and KPI metrics (boot times, bug counts, incident rates) so later work mirrors production readiness.
-- ✅ `scripts/verify_seed.py` enforces structural integrity (phases/weeks/days/hours) and keyword coverage for foundations, RISC-V, Android/Automotive, and AI/MLOps themes before packaging.
-- ✅ Rich-powered CLI (`embedded-tracker list`, `embedded-tracker projects`, `embedded-tracker certifications`, etc.) to inspect roadmap progress from the terminal.
-- ✅ PySide6 desktop GUI with CRUD management tabs, filters, and shared persistence.
-- 🔄 Upcoming: analytics dashboards, AI prompt panels, GitHub/Notion sync, secure keyring storage.
+A comprehensive desktop application for tracking progress through a 59-week embedded systems learning roadmap. Built with Python, PySide6, and SQLite.
 
-## Getting Started
+---
 
-### Prerequisites
-- Python 3.12 managed via `pyenv` (recommended).
-- `poetry` for environment and dependency management.
+## ✨ Features
 
-### Setup
+### 📊 Roadmap Management
+| Feature | Description |
+|---------|-------------|
+| **Phase Tracking** | High-level 4-phase learning periods with dates and progress |
+| **Week Planning** | 59 weeks with focus areas and milestones |
+| **Day Scheduling** | Day-by-day task planning with notes |
+| **Task Tracking** | Hour-level work items with time tracking |
+
+### ⏱️ Time Management
+| Feature | Description |
+|---------|-------------|
+| **Live Timer** | Built-in work/break/pause timer with persistence |
+| **Zombie Timer Fix** | Auto-reset stale tasks on startup |
+| **Time Reports** | Track work, break, and pause hours |
+
+### 📚 Resource Management
+| Feature | Description |
+|---------|-------------|
+| **Resource Library** | Study materials linked to weeks |
+| **Project Portfolio** | Track projects with repo/demo links |
+| **Certifications** | Monitor certification progress |
+| **Job Applications** | Log applications and status |
+| **Hardware Inventory** | Track development boards and components |
+
+### 🎨 User Experience
+| Feature | Description |
+|---------|-------------|
+| **Dark/Light Themes** | Ember and Dawn themes with orange accents |
+| **Search & Filter** | Real-time text filtering on all tables |
+| **Undo/Redo** | Reversible delete operations |
+| **Backup/Restore** | Full JSON backup and restore |
+| **Keyboard Shortcuts** | Comprehensive shortcut support |
+| **Form Validation** | Inline validation with red borders |
+
+### 📤 Export & Reports
+| Feature | Description |
+|---------|-------------|
+| **CSV Export** | Export tasks and roadmap to CSV |
+| **PDF Reports** | Generate PDF reports with formatting |
+
+---
+
+## 🚀 Installation
+
+### From .deb Package (Recommended for Linux)
 ```bash
-pyenv install 3.12.1
-pyenv local 3.12.1
-python -m pip install --upgrade pip
-pip install poetry
+# Install the package
+sudo dpkg -i dist/linux/embedded-tracker_0.1.0_amd64.deb
+
+# Launch the application
+embedded-tracker
+```
+
+### From Source (Development)
+```bash
+# Clone repository
+git clone https://github.com/yourusername/embedded-tracker.git
+cd embedded-tracker
+
+# Install with Poetry
 poetry install
-```
 
-### Seed the Database
-The app seeds itself automatically on first launch (both CLI and GUI call `ensure_seed_data()`), pulling from `data/roadmap_seed.json` when running from source or the packaged copy under `embedded_tracker/data/roadmap_seed.json` when installed.
-
-To refresh the roadmap manually (after editing the JSON or generating a new one), run:
-
-```bash
-poetry run python scripts/seed_roadmap.py data/roadmap_seed.json
-```
-
-### Regenerate the curated roadmap
-`scripts/generate_full_seed.py` produces the 52-week plan (including projects, certifications, applications, and metrics) and writes it to both the repo `data/` folder and the packaged `embedded_tracker/data/` directory. Rerun it whenever you tweak the template:
-
-```bash
-poetry run python scripts/generate_full_seed.py
-```
-
-### Verify the roadmap quality
-Run the automated audit before packaging to guarantee every phase/week/day/hour is populated and key themes stay represented:
-
-```bash
-poetry run python scripts/verify_seed.py
-```
-
-The script checks for:
-- 52 total weeks across 4 phases, each with ≥3 tasks/resources.
-- Weekday schedules that include hour-level work blocks.
-- Coverage hits for foundational electronics, open RISC-V/ESP32-C3 bring-up, Android/Automotive HAL work, and AI/MLOps observability.
-
-### Use the CLI
-```bash
-poetry run embedded-tracker list --week 1
-poetry run embedded-tracker projects --status in_progress
-poetry run embedded-tracker certifications --status planned
-poetry run embedded-tracker metrics --metric-type hours_logged
-```
-
-### Launch the GUI
-```bash
-poetry run embedded-tracker-gui
-# or
+# Run application
 poetry run python main.py
 ```
 
-The first launch will create a per-user data directory in:
+---
 
-- `%LOCALAPPDATA%\EmbeddedTracker` on Windows
-- `~/Library/Application Support/EmbeddedTracker` on macOS
-- `$XDG_DATA_HOME/embedded-tracker` (or `~/.local/share/embedded-tracker`) on Linux
+## 📁 Project Structure
 
-### Package the App
-- **Windows**: run `scripts/build_windows_exe.ps1` from PowerShell on a Windows host to generate a single-file `EmbeddedTracker.exe` (PyInstaller will bundle the packaged seed JSON, so first launch is still populated).
-- **Ubuntu/Debian**: run `scripts/build_linux_deb.sh` on a Linux host with `dpkg-deb` installed to produce `dist/linux/embedded-tracker_0.1.0_amd64.deb`.
-
-Both scripts call `pyinstaller`, so ensure you installed dev dependencies via `poetry install --with dev`.
-
-## Project Structure
 ```
 embedded-tracker/
-├── embedded_tracker/
-│   ├── __init__.py
-│   ├── cli.py
-│   ├── db.py
-│   ├── seed.py
-│   ├── gui/
-│   │   ├── __init__.py
-│   │   └── main_window.py
-│   ├── models.py
-│   └── services.py
-│   └── data/
-│       └── roadmap_seed.json
-├── data/
-│   └── roadmap_seed.json
-├── scripts/
-│   ├── build_linux_deb.sh
-│   ├── build_windows_exe.ps1
-│   ├── generate_full_seed.py
-│   └── seed_roadmap.py
-├── tests/
-│   └── test_models.py
-├── main.py
-├── pyproject.toml
-└── README.md
+├── README.md                    # This file
+├── pyproject.toml               # Poetry configuration
+├── main.py                      # Entry point
+│
+├── docs/                        # Documentation
+│   ├── ARCHITECTURE.md          # System design
+│   ├── CHANGELOG.md             # Version history
+│   ├── DEVELOPMENT.md           # Developer guide
+│   └── API.md                   # API reference
+│
+├── embedded_tracker/            # Main Python package
+│   ├── __init__.py              # Package exports
+│   ├── cli.py                   # CLI interface
+│   ├── db.py                    # Database operations
+│   ├── export.py                # CSV/PDF export
+│   ├── models.py                # SQLModel ORM
+│   ├── seed.py                  # Data seeding
+│   ├── services.py              # Business logic
+│   ├── utils.py                 # Utilities
+│   ├── work_calendar.py         # Calendar utilities
+│   │
+│   ├── data/                    # Data files
+│   │   ├── roadmap_seed.json    # 59-week roadmap
+│   │   ├── hardware_*.json      # Hardware inventory
+│   │   └── *.json               # Configuration files
+│   │
+│   └── gui/                     # GUI components
+│       ├── base.py              # Base classes
+│       ├── main_window.py       # Main window
+│       ├── workers.py           # Background threads
+│       └── tabs/                # Tab implementations
+│
+├── scripts/                     # Build scripts
+│   └── build_linux_deb.sh       # Linux .deb builder
+│
+└── tests/                       # Test suite
 ```
 
-## Next Steps
-1. Add analytics dashboards and timeline visualisations to the GUI.
-2. Integrate AI prompt templates, keyring storage, and sync services.
-3. Harden packaging workflows (icons, auto-updaters, notarisation/signing).
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+N` | Add new record |
+| `Ctrl+E` | Edit selected record |
+| `Delete` | Delete selected record |
+| `Ctrl+R` | Refresh current tab |
+| `Ctrl+Shift+A` | Refresh all tabs |
+| `Ctrl+Z` | Undo last action |
+| `Ctrl+Y` | Redo last action |
+| `Ctrl+B` | Create backup |
+| `Ctrl+D` | Toggle dark/light theme |
+| `Ctrl+Tab` | Next tab |
+| `Ctrl+Shift+Tab` | Previous tab |
+| `Ctrl+1-9` | Go to specific tab |
+| `Escape` | Clear selection |
+| `Ctrl+Q` | Quit application |
+
+---
+
+## 💾 Data Storage
+
+| Data | Location |
+|------|----------|
+| Database | `~/.local/share/embedded-tracker/embedded_tracker.db` |
+| Logs | `~/.local/share/embedded-tracker/logs/` |
+| Backups | User-specified location (JSON format) |
+
+---
+
+## 🛠️ Development
+
+### Prerequisites
+- Python 3.11+
+- Poetry package manager
+- PySide6
+
+### Setup
+```bash
+# Install dependencies
+poetry install
+
+# Run tests
+poetry run pytest
+
+# Build .deb package
+bash scripts/build_linux_deb.sh
+```
+
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for detailed development guide.
+
+---
+
+## 📋 CLI Commands
+
+```bash
+# List tasks
+embedded-tracker list --week 1
+
+# Show today's tasks
+embedded-tracker today
+
+# List resources
+embedded-tracker resources
+
+# List projects
+embedded-tracker projects
+```
+
+---
+
+## 🔒 Security
+
+- **SQL Injection Protection**: All queries via SQLModel/SQLAlchemy
+- **Path Traversal Prevention**: Export path validation
+- **Input Validation**: All form inputs validated
+- **Zombie Timer Protection**: Stale tasks auto-reset on startup
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- [PySide6](https://wiki.qt.io/Qt_for_Python) - Qt bindings for Python
+- [SQLModel](https://sqlmodel.tiangolo.com/) - SQL databases with Python
+- [ReportLab](https://www.reportlab.com/) - PDF generation
+- [Rich](https://github.com/Textualize/rich) - CLI formatting
+
+---
+
+<p align="center">
+  Made with ❤️ for embedded systems enthusiasts
+</p>

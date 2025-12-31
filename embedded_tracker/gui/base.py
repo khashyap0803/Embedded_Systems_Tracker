@@ -214,6 +214,50 @@ class StatusDelegate(QStyledItemDelegate):
         return super().helpEvent(event, view, option, index)
 
 
+class UrlDelegate(QStyledItemDelegate):
+    """Custom delegate to render URLs as clickable blue links."""
+    
+    def paint(
+        self, painter: QPainter, option: QStyleOptionViewItem, index: Any
+    ) -> None:
+        text = str(index.data() or "")
+        
+        painter.save()
+        painter.setRenderHint(QPainter.Antialiasing, True)
+        
+        # Draw selection background if selected
+        from PySide6.QtWidgets import QStyle
+        if option.state & QStyle.State_Selected:
+            painter.fillRect(option.rect, option.palette.highlight())
+            painter.setPen(QPen(option.palette.highlightedText().color()))
+        else:
+            # Draw URL as blue underlined text
+            painter.setPen(QPen(QColor("#3498db")))  # Blue color for links
+        
+        # Set font with underline
+        font = QFont()
+        font.setUnderline(True)
+        font.setPointSize(10)
+        painter.setFont(font)
+        
+        # Draw text with left alignment and vertical centering
+        text_rect = option.rect.adjusted(8, 0, -8, 0)
+        # Truncate long URLs with ellipsis
+        metrics = painter.fontMetrics()
+        elided_text = metrics.elidedText(text, Qt.ElideMiddle, text_rect.width())
+        painter.drawText(text_rect, Qt.AlignLeft | Qt.AlignVCenter, elided_text)
+        
+        painter.restore()
+    
+    def helpEvent(self, event: QEvent, view: Any, option: QStyleOptionViewItem, index: Any) -> bool:
+        if event.type() == QEvent.ToolTip:
+            url = str(index.data() or "")
+            if url:
+                QToolTip.showText(event.globalPos(), f"Click to open: {url}")
+            return True
+        return super().helpEvent(event, view, option, index)
+
+
 class RippleButton(QPushButton):
     """Animated button with ripple effect on click."""
     
@@ -474,6 +518,11 @@ class BaseCrudTab(QWidget):
         for i, (_, field_name) in enumerate(self.columns):
             if "status" in field_name.lower():
                 self.table.setItemDelegateForColumn(i, StatusDelegate(self.table))
+            elif "url" in field_name.lower() or "link" in field_name.lower():
+                self.table.setItemDelegateForColumn(i, UrlDelegate(self.table))
+        
+        # Connect double-click to open URLs
+        self.table.cellDoubleClicked.connect(self._on_cell_double_click)
 
         button_row = QHBoxLayout()
         self.refresh_button = RippleButton("Refresh")
@@ -516,6 +565,22 @@ class BaseCrudTab(QWidget):
                 h_bar.setValue(h_bar.value() - delta)
                 return True
         return super().eventFilter(obj, event)
+
+    def _on_cell_double_click(self, row: int, column: int) -> None:
+        """Handle double-click on table cells - opens URLs in browser."""
+        # Check if this column is a URL column
+        if column < len(self.columns):
+            _, field_name = self.columns[column]
+            if "url" in field_name.lower() or "link" in field_name.lower():
+                item = self.table.item(row, column)
+                if item:
+                    url = item.text()
+                    if url and (url.startswith("http://") or url.startswith("https://")):
+                        import webbrowser
+                        webbrowser.open(url)
+                        return
+        # If not a URL, show edit dialog
+        self.handle_edit()
 
     # ---- Abstract methods (override in subclasses) ---------------------------
     def fetch_records(self, **kwargs: Any) -> List[Any]:

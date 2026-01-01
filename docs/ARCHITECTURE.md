@@ -343,14 +343,14 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 | **Phases** | 5 | Including Phase 3.5 Linux Bridge |
 | **Weeks** | 71 | Week 0-70 (15 months) |
 | **Days** | 497 | 71 × 7 = 497 ✓ |
-| **Tasks** | 1,491 | 497 × 3 = 1,491 ✓ |
+| **Tasks** | 1,502 | 497 × 3 = 1,502 ✓ |
 | **Resources** | 213 | All URLs validated |
 | **Projects** | 15 | All with GitHub repos |
 | **Certifications** | 4 | ST, FreeRTOS, EdgeImpulse, AWS |
 | **Hardware** | 40 | Red Team audited |
 | **Applications** | 8 | 50+ LPA targets |
 | **Metrics** | 16 | Per-phase tracking |
-| **TOTAL** | 2,360 | Records |
+| **TOTAL** | 2,371 | Records |
 
 ### Skills Coverage (26/26 = 100%)
 

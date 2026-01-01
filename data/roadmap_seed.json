@@ -4221,17 +4221,17 @@
     },
     {
       "id": 2361,
-      "title": "Deep Dive Study",
+      "title": "Analyze current consumption in different sleep modes",
       "day_id": 53
     },
     {
       "id": 2362,
-      "title": "Hands-on Practice",
+      "title": "Profile wake-up time and transition latency",
       "day_id": 53
     },
     {
       "id": 2363,
-      "title": "Knowledge Application",
+      "title": "Optimize power consumption for target battery life",
       "day_id": 53
     },
     {
@@ -5331,32 +5331,32 @@
     },
     {
       "id": 2604,
-      "title": "Bluetooth Architecture",
+      "title": "Study BLE protocol stack layers (L2CAP, ATT, GAP)",
       "day_id": 127
     },
     {
       "id": 2605,
-      "title": "GATT Profile",
+      "title": "Understand BLE connection parameters and intervals",
       "day_id": 127
     },
     {
       "id": 2606,
-      "title": "BLE Applications",
+      "title": "Analyze BLE advertising packet structure",
       "day_id": 127
     },
     {
       "id": 2607,
-      "title": "Bluetooth Architecture",
+      "title": "Design custom GATT service with characteristics",
       "day_id": 128
     },
     {
       "id": 2608,
-      "title": "GATT Profile",
+      "title": "Implement GATT read/write/notify operations",
       "day_id": 128
     },
     {
       "id": 2609,
-      "title": "BLE Applications",
+      "title": "Test GATT profile with BLE scanner app",
       "day_id": 128
     },
     {
@@ -5376,17 +5376,17 @@
     },
     {
       "id": 2613,
-      "title": "Bluetooth Architecture",
+      "title": "Profile BLE connection event timing",
       "day_id": 130
     },
     {
       "id": 2614,
-      "title": "GATT Profile",
+      "title": "Measure RSSI and connection quality metrics",
       "day_id": 130
     },
     {
       "id": 2615,
-      "title": "BLE Applications",
+      "title": "Optimize BLE throughput and latency",
       "day_id": 130
     },
     {
@@ -5436,32 +5436,32 @@
     },
     {
       "id": 2625,
-      "title": "Ethernet Fundamentals",
+      "title": "Configure ESP32-C3 Ethernet MAC and PHY",
       "day_id": 134
     },
     {
       "id": 2626,
-      "title": "TCP/IP Stack",
+      "title": "Set up dual-stack IPv4/IPv6 networking",
       "day_id": 134
     },
     {
       "id": 2627,
-      "title": "Network Applications",
+      "title": "Test Ethernet connectivity with ping and traceroute",
       "day_id": 134
     },
     {
       "id": 2628,
-      "title": "Ethernet Fundamentals",
+      "title": "Implement TCP client/server on ESP32",
       "day_id": 135
     },
     {
       "id": 2629,
-      "title": "TCP/IP Stack",
+      "title": "Handle socket errors and reconnection",
       "day_id": 135
     },
     {
       "id": 2630,
-      "title": "Network Applications",
+      "title": "Measure TCP throughput and latency",
       "day_id": 135
     },
     {
@@ -5481,32 +5481,32 @@
     },
     {
       "id": 2634,
-      "title": "Ethernet Fundamentals",
+      "title": "Capture Ethernet frames with Wireshark",
       "day_id": 137
     },
     {
       "id": 2635,
-      "title": "TCP/IP Stack",
+      "title": "Analyze TCP handshake and data transfer",
       "day_id": 137
     },
     {
       "id": 2636,
-      "title": "Network Applications",
+      "title": "Debug network issues with packet inspection",
       "day_id": 137
     },
     {
       "id": 2637,
-      "title": "Ethernet Fundamentals",
+      "title": "Filter packets by protocol and port",
       "day_id": 138
     },
     {
       "id": 2638,
-      "title": "TCP/IP Stack",
+      "title": "Analyze MQTT publish/subscribe traffic",
       "day_id": 138
     },
     {
       "id": 2639,
-      "title": "Network Applications",
+      "title": "Identify network bottlenecks and optimize",
       "day_id": 138
     },
     {
@@ -7896,17 +7896,17 @@
     },
     {
       "id": 3327,
-      "title": "Deep Dive Study",
+      "title": "Analyze model inference accuracy trends over time",
       "day_id": 298
     },
     {
       "id": 3328,
-      "title": "Hands-on Practice",
+      "title": "Investigate data drift detection mechanisms",
       "day_id": 298
     },
     {
       "id": 3329,
-      "title": "Knowledge Application",
+      "title": "Set up A/B testing for model updates",
       "day_id": 298
     },
     {
@@ -8001,17 +8001,17 @@
     },
     {
       "id": 3348,
-      "title": "Deep Dive Study",
+      "title": "Document production line setup procedures",
       "day_id": 305
     },
     {
       "id": 3349,
-      "title": "Hands-on Practice",
+      "title": "Create quality control checkpoint checklist",
       "day_id": 305
     },
     {
       "id": 3350,
-      "title": "Knowledge Application",
+      "title": "Plan inventory buffer for supply chain resilience",
       "day_id": 305
     },
     {
@@ -8106,17 +8106,17 @@
     },
     {
       "id": 3369,
-      "title": "Deep Dive Study",
+      "title": "Profile CPU and memory bottlenecks",
       "day_id": 312
     },
     {
       "id": 3370,
-      "title": "Hands-on Practice",
+      "title": "Analyze cache hit rates and memory access patterns",
       "day_id": 312
     },
     {
       "id": 3371,
-      "title": "Knowledge Application",
+      "title": "Implement targeted performance optimizations",
       "day_id": 312
     },
     {
@@ -8316,17 +8316,17 @@
     },
     {
       "id": 3432,
-      "title": "Deep Dive Study",
+      "title": "Conduct dry-run of release process",
       "day_id": 326
     },
     {
       "id": 3433,
-      "title": "Hands-on Practice",
+      "title": "Validate release artifacts and checksums",
       "day_id": 326
     },
     {
       "id": 3434,
-      "title": "Knowledge Application",
+      "title": "Prepare rollback procedures and contingency plans",
       "day_id": 326
     },
     {
@@ -9816,47 +9816,47 @@
     },
     {
       "id": 3618,
-      "title": "DSP Fundamentals",
+      "title": "Write Verilog module with ports and internal signals",
       "day_id": 429
     },
     {
       "id": 3619,
-      "title": "FIR Filters",
+      "title": "Implement combinational logic in Verilog",
       "day_id": 429
     },
     {
       "id": 3620,
-      "title": "IIR Filters",
+      "title": "Test Verilog module with simple testbench",
       "day_id": 429
     },
     {
       "id": 3624,
-      "title": "DSP Fundamentals",
+      "title": "Use SystemVerilog always_comb and always_ff",
       "day_id": 430
     },
     {
       "id": 3625,
-      "title": "FIR Filters",
+      "title": "Build FSM in SystemVerilog with enumerated states",
       "day_id": 430
     },
     {
       "id": 3626,
-      "title": "IIR Filters",
+      "title": "Write SystemVerilog assertions for verification",
       "day_id": 430
     },
     {
       "id": 3630,
-      "title": "Unit Testing",
+      "title": "Write self-checking testbench for Verilog module",
       "day_id": 431
     },
     {
       "id": 3631,
-      "title": "Integration Testing",
+      "title": "Generate test vectors for comprehensive coverage",
       "day_id": 431
     },
     {
       "id": 3632,
-      "title": "Test Automation",
+      "title": "Automate testbench with Makefile and waveform",
       "day_id": 431
     },
     {
@@ -9906,32 +9906,32 @@
     },
     {
       "id": 3615,
-      "title": "Fixed-Point Arithmetic",
+      "title": "Implement Q15/Q31 fixed-point representation",
       "day_id": 442
     },
     {
       "id": 3616,
-      "title": "Fixed-Point Operations",
+      "title": "Build fixed-point multiplication with scaling",
       "day_id": 442
     },
     {
       "id": 3617,
-      "title": "Fixed-Point Libraries",
+      "title": "Handle fixed-point overflow and saturation",
       "day_id": 442
     },
     {
       "id": 3621,
-      "title": "DSP Fundamentals",
+      "title": "Build Q15 add/subtract with saturation",
       "day_id": 443
     },
     {
       "id": 3622,
-      "title": "FIR Filters",
+      "title": "Implement Q15 multiply with rounding",
       "day_id": 443
     },
     {
       "id": 3623,
-      "title": "IIR Filters",
+      "title": "Create Q15 division algorithm",
       "day_id": 443
     },
     {

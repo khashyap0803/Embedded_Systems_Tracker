@@ -91,10 +91,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 90,ISR basics & latency drills (Segment 4/4),"Write mock ISRs in C, test them with QEMU timers, and document prologue/epilogue considerations.",Assess my ISR skeletons for reentrancy and stack usage problems.,39,4,6,6,13,pending,0.8666666666666667
 91,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,40,5,6,6,14,pending,0.75
 92,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",41,6,6,6,15,pending,2.0
-93,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,7,8,,pending,5.0
-94,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,7,8,,pending,4.0
-95,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,7,8,,pending,3.0
-96,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,7,8,,pending,2.0
+93,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,7,8,,pending,5.0
+94,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,7,8,,pending,4.0
+95,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,7,8,,pending,3.0
+96,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,7,8,,pending,2.0
 97,Bit-banged UART and baud calculators (Segment 1/4),"Write a software UART for STM32/ESP32, verify it under QEMU + Saleae, and compare against hardware UART timing.",Check my UART timing math and suggest guardrails for clock drift.,43,1,8,9,1,pending,1.1333333333333333
 98,Bit-banged UART and baud calculators (Segment 2/4),"Write a software UART for STM32/ESP32, verify it under QEMU + Saleae, and compare against hardware UART timing.",Check my UART timing math and suggest guardrails for clock drift.,43,1,8,9,2,pending,1.1333333333333333
 99,Bit-banged UART and baud calculators (Segment 3/4),"Write a software UART for STM32/ESP32, verify it under QEMU + Saleae, and compare against hardware UART timing.",Check my UART timing math and suggest guardrails for clock drift.,43,1,8,9,3,pending,1.1166666666666667
@@ -219,10 +219,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 218,West build automation (Segment 4/4),"Script multi-target builds, unit tests, and packaging via west and CMake presets.",Optimize my west manifest for dependency reuse across targets.,95,4,15,16,14,pending,0.8666666666666667
 219,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,96,5,15,16,15,pending,0.75
 220,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",97,6,15,16,16,pending,2.0
-221,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,16,17,,pending,5.0
-222,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,16,17,,pending,4.0
-223,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,16,17,,pending,3.0
-224,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,16,17,,pending,2.0
+221,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,16,17,,pending,5.0
+222,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,16,17,,pending,4.0
+223,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,16,17,,pending,3.0
+224,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,16,17,,pending,2.0
 225,Latency budgeting & rate-monotonic analysis (Segment 1/5),"Compute task deadlines, CPU utilization, and blocking time using RMA spreadsheets.",Review my RMA model; warn about overload and priority inversion risks.,99,1,17,18,1,pending,1.0
 226,Latency budgeting & rate-monotonic analysis (Segment 2/5),"Compute task deadlines, CPU utilization, and blocking time using RMA spreadsheets.",Review my RMA model; warn about overload and priority inversion risks.,99,1,17,18,2,pending,1.0
 227,Latency budgeting & rate-monotonic analysis (Segment 3/5),"Compute task deadlines, CPU utilization, and blocking time using RMA spreadsheets.",Review my RMA model; warn about overload and priority inversion risks.,99,1,17,18,3,pending,1.0
@@ -362,10 +362,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 361,Device health telemetry (Segment 4/4),"Publish heartbeat, error counters, and version info to observability stack.",Recommend telemetry compacting strategies for constrained links.,151,4,24,25,14,pending,1.0
 362,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,152,5,24,25,15,pending,0.75
 363,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",153,6,24,25,16,pending,2.0
-364,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,25,26,,pending,5.0
-365,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,25,26,,pending,4.0
-366,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,25,26,,pending,3.0
-367,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,25,26,,pending,2.0
+364,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,25,26,,pending,5.0
+365,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,25,26,,pending,4.0
+366,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,25,26,,pending,3.0
+367,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,25,26,,pending,2.0
 368,Filesystem resilience (Segment 1/5),"Evaluate LittleFS vs. FAT, simulate power-loss, and profile wear-leveling.",Interpret filesystem stress logs; propose flush strategies.,155,1,26,27,1,pending,1.0
 369,Filesystem resilience (Segment 2/5),"Evaluate LittleFS vs. FAT, simulate power-loss, and profile wear-leveling.",Interpret filesystem stress logs; propose flush strategies.,155,1,26,27,2,pending,1.0
 370,Filesystem resilience (Segment 3/5),"Evaluate LittleFS vs. FAT, simulate power-loss, and profile wear-leveling.",Interpret filesystem stress logs; propose flush strategies.,155,1,26,27,3,pending,1.0
@@ -485,10 +485,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 484,On-device learning experiments (Segment 4/4),Prototype incremental learning or personalization with cautious memory usage.,Assess personalization strategy; warn about catastrophic forgetting.,207,4,33,34,12,pending,1.0
 485,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,208,5,33,34,13,pending,0.75
 486,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",209,6,33,34,14,pending,2.0
-487,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,34,35,,pending,5.0
-488,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,34,35,,pending,4.0
-489,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,34,35,,pending,3.0
-490,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,34,35,,pending,2.0
+487,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,34,35,,pending,5.0
+488,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,34,35,,pending,4.0
+489,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,34,35,,pending,3.0
+490,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,34,35,,pending,2.0
 491,Camera interface bring-up (Segment 1/5),"Configure DCMI/CSI interface, tune exposure, and verify frame capture to RAM.",Review camera timing; suggest buffer strategy for low-latency inferencing.,211,1,35,38,1,pending,1.0
 492,Camera interface bring-up (Segment 2/5),"Configure DCMI/CSI interface, tune exposure, and verify frame capture to RAM.",Review camera timing; suggest buffer strategy for low-latency inferencing.,211,1,35,38,2,pending,1.0
 493,Camera interface bring-up (Segment 3/5),"Configure DCMI/CSI interface, tune exposure, and verify frame capture to RAM.",Review camera timing; suggest buffer strategy for low-latency inferencing.,211,1,35,38,3,pending,1.0
@@ -605,10 +605,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 604,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,263,4,42,46,13,pending,0.75
 605,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,264,5,42,46,14,pending,0.75
 606,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",265,6,42,46,15,pending,2.0
-607,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,43,47,,pending,5.0
-608,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,43,47,,pending,4.0
-609,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,43,47,,pending,3.0
-610,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,43,47,,pending,2.0
+607,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,43,47,,pending,5.0
+608,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,43,47,,pending,4.0
+609,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,43,47,,pending,3.0
+610,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,43,47,,pending,2.0
 611,Regulatory landscape mapping (Segment 1/4),"Identify applicable standards (FCC, CE, UL, RoHS) and documentation needs.",Review regulatory map; highlight missing regions or product classes.,267,1,44,48,1,pending,1.0
 612,Regulatory landscape mapping (Segment 2/4),"Identify applicable standards (FCC, CE, UL, RoHS) and documentation needs.",Review regulatory map; highlight missing regions or product classes.,267,1,44,48,2,pending,1.0
 613,Regulatory landscape mapping (Segment 3/4),"Identify applicable standards (FCC, CE, UL, RoHS) and documentation needs.",Review regulatory map; highlight missing regions or product classes.,267,1,44,48,3,pending,1.0
@@ -724,10 +724,10 @@ ID,Title,Description,AI Prompt,Day ID,Day Number,Week ID,Week Number,Hour Number
 723,Update security training (Segment 4/4),"Refresh secure coding guidelines, run lunch-and-learn for stakeholders.",Review training slides; ensure relevance to firmware engineers.,319,4,51,59,12,pending,0.8666666666666667
 724,Deep work focus block,Allocate time for deliberate practice or backlog grooming.,Identify one micro-skill to sharpen today and craft an AI-assisted plan.,320,5,51,59,13,pending,0.75
 725,Weekly integration & portfolio review,"Summarize lessons, sync repos, publish status update.","Summarize takeaways, log blockers, and queue AI prompts for next sprint in Notion.",321,6,51,59,14,pending,2.0
-726,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,,,N/A,52,60,,pending,5.0
-727,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",,,N/A,52,60,,pending,4.0
-728,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",,,N/A,52,60,,pending,3.0
-729,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",,,N/A,52,60,,pending,2.0
+726,Catch up on incomplete tasks,Review and complete any tasks that fell behind schedule. No new content - focus on mastery.,Help me understand and implement: Catch up on incomplete tasks. Provide step-by-step guidance with code examples.,,N/A,52,60,,pending,5.0
+727,Refactor and document code,"Clean up code from previous weeks, add comments, improve structure.",Help me understand and implement: Refactor and document code. Provide step-by-step guidance with code examples.,,N/A,52,60,,pending,4.0
+728,Portfolio documentation update,"Update portfolio with completed projects, screenshots, and learnings.",Help me understand and implement: Portfolio documentation update. Provide step-by-step guidance with code examples.,,N/A,52,60,,pending,3.0
+729,Knowledge consolidation & notes review,"Review notes, create summary documents, fill knowledge gaps.",Help me understand and implement: Knowledge consolidation & notes review. Provide step-by-step guidance with code examples.,,N/A,52,60,,pending,2.0
 730,Release checklist completion (Segment 1/4),"Finalize release checklist, approvals, and sign-off artifacts.",Review release checklist; ensure regulatory compliance steps.,323,1,53,61,1,pending,1.0
 731,Release checklist completion (Segment 2/4),"Finalize release checklist, approvals, and sign-off artifacts.",Review release checklist; ensure regulatory compliance steps.,323,1,53,61,2,pending,1.0
 732,Release checklist completion (Segment 3/4),"Finalize release checklist, approvals, and sign-off artifacts.",Review release checklist; ensure regulatory compliance steps.,323,1,53,61,3,pending,1.0

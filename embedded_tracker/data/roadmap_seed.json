@@ -778,18 +778,18 @@
               "focus": "Daily syntax/code-drill block",
               "hours": [
                 {
-                  "title": "Study drill block",
-                  "ai_prompt": "Learn fundamental concepts of drill block",
+                  "title": "C Syntax: Data Types and Declarations",
+                  "ai_prompt": "Master int, char, float, double, arrays, and initialization syntax",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice drill block",
-                  "ai_prompt": "Complete hands-on exercises for drill block",
+                  "title": "C Syntax: Control Structures",
+                  "ai_prompt": "Implement if-else, switch, for, while, do-while correctly",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply drill block",
-                  "ai_prompt": "Build project demonstrating drill block",
+                  "title": "C Syntax: Operators and Expressions",
+                  "ai_prompt": "Use arithmetic, logical, bitwise, and assignment operators",
                   "hour_number": 3
                 }
               ]
@@ -799,18 +799,18 @@
               "focus": "Daily syntax/code-drill block",
               "hours": [
                 {
-                  "title": "Study drill block",
-                  "ai_prompt": "Learn fundamental concepts of drill block",
+                  "title": "C Syntax: Arrays and Strings",
+                  "ai_prompt": "Declare, initialize, and manipulate arrays and C-strings",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice drill block",
-                  "ai_prompt": "Complete hands-on exercises for drill block",
+                  "title": "C Syntax: Multi-dimensional Arrays",
+                  "ai_prompt": "Work with 2D arrays and matrix operations",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply drill block",
-                  "ai_prompt": "Build project demonstrating drill block",
+                  "title": "C Syntax: String Library Functions",
+                  "ai_prompt": "Use strlen, strcpy, strcat, strcmp, sprintf safely",
                   "hour_number": 3
                 }
               ]
@@ -820,18 +820,18 @@
               "focus": "HackerRank C streak",
               "hours": [
                 {
-                  "title": "Study HackerRank C streak",
-                  "ai_prompt": "Learn fundamental concepts of HackerRank C streak",
+                  "title": "HackerRank: Easy C Problems",
+                  "ai_prompt": "Solve 3 easy-level C problems focusing on arrays",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice HackerRank C streak",
-                  "ai_prompt": "Complete hands-on exercises for HackerRank C streak",
+                  "title": "HackerRank: Medium C Problems",
+                  "ai_prompt": "Solve 2 medium-level C problems with pointers",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply HackerRank C streak",
-                  "ai_prompt": "Build project demonstrating HackerRank C streak",
+                  "title": "Code Review and Optimization",
+                  "ai_prompt": "Review solutions for efficiency and style",
                   "hour_number": 3
                 }
               ]
@@ -2002,18 +2002,18 @@
               "focus": "Docker firmware build environment setup",
               "hours": [
                 {
-                  "title": "Study Docker firmware build environment setup",
-                  "ai_prompt": "Learn fundamental concepts of Docker firmware build environment setup",
+                  "title": "Docker Fundamentals for Embedded",
+                  "ai_prompt": "Create Dockerfile with ARM cross-compilation toolchain",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Docker firmware build environment setup",
-                  "ai_prompt": "Complete hands-on exercises for Docker firmware build environment setup",
+                  "title": "Multi-stage Docker Builds",
+                  "ai_prompt": "Optimize image size with multi-stage build patterns",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Docker firmware build environment setup",
-                  "ai_prompt": "Build project demonstrating Docker firmware build environment setup",
+                  "title": "Docker Volume Mapping",
+                  "ai_prompt": "Map source code and build artifacts correctly",
                   "hour_number": 3
                 }
               ]
@@ -2023,18 +2023,18 @@
               "focus": "Docker firmware build environment setup",
               "hours": [
                 {
-                  "title": "Study Docker firmware build environment setup",
-                  "ai_prompt": "Learn fundamental concepts of Docker firmware build environment setup",
+                  "title": "Docker Compose for Build Environment",
+                  "ai_prompt": "Define multi-container build environment",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Docker firmware build environment setup",
-                  "ai_prompt": "Complete hands-on exercises for Docker firmware build environment setup",
+                  "title": "Cross-Compilation in Docker",
+                  "ai_prompt": "Configure arm-none-eabi-gcc in container",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Docker firmware build environment setup",
-                  "ai_prompt": "Build project demonstrating Docker firmware build environment setup",
+                  "title": "Build Caching Strategies",
+                  "ai_prompt": "Implement layer caching for faster builds",
                   "hour_number": 3
                 }
               ]
@@ -2044,18 +2044,18 @@
               "focus": "Multi-stage Docker builds for firmware",
               "hours": [
                 {
-                  "title": "Study stage Docker builds for firmware",
-                  "ai_prompt": "Learn fundamental concepts of stage Docker builds for firmware",
+                  "title": "Docker Registry Setup",
+                  "ai_prompt": "Push and pull firmware build images",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice stage Docker builds for firmware",
-                  "ai_prompt": "Complete hands-on exercises for stage Docker builds for firmware",
+                  "title": "CI/CD Docker Integration",
+                  "ai_prompt": "Use Docker in GitHub Actions workflow",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply stage Docker builds for firmware",
-                  "ai_prompt": "Build project demonstrating stage Docker builds for firmware",
+                  "title": "Build Reproducibility",
+                  "ai_prompt": "Ensure deterministic builds across environments",
                   "hour_number": 3
                 }
               ]
@@ -2197,18 +2197,18 @@
               "focus": "Watchdog strategy consolidation",
               "hours": [
                 {
-                  "title": "Study Watchdog strategy consolidation",
-                  "ai_prompt": "Learn fundamental concepts of Watchdog strategy consolidation",
+                  "title": "Watchdog Timer Architecture",
+                  "ai_prompt": "Understand IWDG vs WWDG on STM32",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Watchdog strategy consolidation",
-                  "ai_prompt": "Complete hands-on exercises for Watchdog strategy consolidation",
+                  "title": "Watchdog Integration Patterns",
+                  "ai_prompt": "Implement watchdog feeding with task monitoring",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Watchdog strategy consolidation",
-                  "ai_prompt": "Build project demonstrating Watchdog strategy consolidation",
+                  "title": "Watchdog Testing",
+                  "ai_prompt": "Validate watchdog triggers system reset correctly",
                   "hour_number": 3
                 }
               ]
@@ -2218,18 +2218,18 @@
               "focus": "Brownout & EMI resilience",
               "hours": [
                 {
-                  "title": "Study Brownout & EMI resilience",
-                  "ai_prompt": "Learn fundamental concepts of Brownout & EMI resilience",
+                  "title": "Brownout Detection (BOD)",
+                  "ai_prompt": "Configure voltage threshold monitoring",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Brownout & EMI resilience",
-                  "ai_prompt": "Complete hands-on exercises for Brownout & EMI resilience",
+                  "title": "EMI Countermeasures",
+                  "ai_prompt": "Apply filtering, shielding, and layout techniques",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Brownout & EMI resilience",
-                  "ai_prompt": "Build project demonstrating Brownout & EMI resilience",
+                  "title": "Power-Fail Safe Design",
+                  "ai_prompt": "Implement graceful shutdown on power loss",
                   "hour_number": 3
                 }
               ]
@@ -2620,18 +2620,18 @@
               "focus": "Mutex Deep Dive",
               "hours": [
                 {
-                  "title": "Mutex Fundamentals",
-                  "ai_prompt": "Protect shared resources",
+                  "title": "FreeRTOS Task Creation",
+                  "ai_prompt": "Use xTaskCreate to spawn tasks with stack size and priority",
                   "hour_number": 1
                 },
                 {
-                  "title": "Deadlock Prevention",
-                  "ai_prompt": "Avoid circular wait conditions",
+                  "title": "Task State Machine",
+                  "ai_prompt": "Understand Running, Ready, Blocked, Suspended states",
                   "hour_number": 2
                 },
                 {
-                  "title": "Priority Inheritance",
-                  "ai_prompt": "Implement priority inheritance",
+                  "title": "Task Priority Inheritance",
+                  "ai_prompt": "Implement priority inheritance for resource sharing",
                   "hour_number": 3
                 }
               ]
@@ -2641,18 +2641,18 @@
               "focus": "Semaphore Patterns",
               "hours": [
                 {
-                  "title": "Semaphore Types",
-                  "ai_prompt": "Compare binary and counting semaphores",
+                  "title": "Queue APIs Deep Dive",
+                  "ai_prompt": "Master xQueueCreate, xQueueSend, xQueueReceive",
                   "hour_number": 1
                 },
                 {
-                  "title": "Semaphore Usage",
-                  "ai_prompt": "Synchronize tasks and ISRs",
+                  "title": "Queue Set Operations",
+                  "ai_prompt": "Use queue sets to wait on multiple queues",
                   "hour_number": 2
                 },
                 {
-                  "title": "Semaphore Pitfalls",
-                  "ai_prompt": "Avoid common semaphore errors",
+                  "title": "Queue Design Patterns",
+                  "ai_prompt": "Implement producer-consumer with queues",
                   "hour_number": 3
                 }
               ]
@@ -2770,63 +2770,63 @@
           "days": [
             {
               "number": 1,
-              "focus": "Latency budgeting & rate-monotonic analysis",
+              "focus": "Fixed-Point Q-Format Introduction",
               "hours": [
                 {
-                  "title": "Study monotonic analysis",
-                  "ai_prompt": "Learn fundamental concepts of monotonic analysis",
+                  "title": "Q-Format Notation",
+                  "ai_prompt": "Understand Q15, Q31, Q7.8 notation",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice monotonic analysis",
-                  "ai_prompt": "Complete hands-on exercises for monotonic analysis",
+                  "title": "Fixed-Point vs Floating-Point",
+                  "ai_prompt": "Compare performance and precision",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply monotonic analysis",
-                  "ai_prompt": "Build project demonstrating monotonic analysis",
+                  "title": "Q-Format Conversion",
+                  "ai_prompt": "Convert between Q formats and floats",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 2,
-              "focus": "Latency budgeting & rate-monotonic analysis",
+              "focus": "Q-Format Arithmetic",
               "hours": [
                 {
-                  "title": "Study monotonic analysis",
-                  "ai_prompt": "Learn fundamental concepts of monotonic analysis",
+                  "title": "Q-Format Addition/Subtraction",
+                  "ai_prompt": "Handle overflow in fixed-point add/sub",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice monotonic analysis",
-                  "ai_prompt": "Complete hands-on exercises for monotonic analysis",
+                  "title": "Q-Format Multiplication",
+                  "ai_prompt": "Implement Q15/Q31 multiplication",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply monotonic analysis",
-                  "ai_prompt": "Build project demonstrating monotonic analysis",
+                  "title": "Q-Format Division",
+                  "ai_prompt": "Implement fixed-point division",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 3,
-              "focus": "Time-triggered executor",
+              "focus": "CMSIS-DSP Library",
               "hours": [
                 {
-                  "title": "Study triggered executor",
-                  "ai_prompt": "Learn fundamental concepts of triggered executor",
+                  "title": "CMSIS-DSP Overview",
+                  "ai_prompt": "Understand CMSIS-DSP module structure",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice triggered executor",
-                  "ai_prompt": "Complete hands-on exercises for triggered executor",
+                  "title": "CMSIS-DSP Integration",
+                  "ai_prompt": "Add CMSIS-DSP to project",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply triggered executor",
-                  "ai_prompt": "Build project demonstrating triggered executor",
+                  "title": "CMSIS-DSP Functions",
+                  "ai_prompt": "Use arm_q15_to_float, arm_mult_q15",
                   "hour_number": 3
                 }
               ]
@@ -2836,18 +2836,18 @@
               "focus": "Tracing & visualization",
               "hours": [
                 {
-                  "title": "Study Tracing & visualization",
-                  "ai_prompt": "Learn fundamental concepts of Tracing & visualization",
+                  "title": "Q15 Format Arithmetic",
+                  "ai_prompt": "Implement multiply, divide in Q15 fixed-point",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Tracing & visualization",
-                  "ai_prompt": "Complete hands-on exercises for Tracing & visualization",
+                  "title": "Q31 Format Operations",
+                  "ai_prompt": "Handle larger dynamic range with Q31",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Tracing & visualization",
-                  "ai_prompt": "Build project demonstrating Tracing & visualization",
+                  "title": "Fixed-Point Overflow",
+                  "ai_prompt": "Detect and handle saturation in fixed-point math",
                   "hour_number": 3
                 }
               ]
@@ -2857,18 +2857,18 @@
               "focus": "Deep work",
               "hours": [
                 {
-                  "title": "Deep Dive Study",
-                  "ai_prompt": "Thorough exploration of topic",
+                  "title": "Fixed-Point Filter Design",
+                  "ai_prompt": "Implement FIR filter with Q15 coefficients",
                   "hour_number": 1
                 },
                 {
-                  "title": "Hands-on Practice",
-                  "ai_prompt": "Build practical examples",
+                  "title": "CMSIS-DSP Integration",
+                  "ai_prompt": "Use ARM CMSIS-DSP fixed-point functions",
                   "hour_number": 2
                 },
                 {
-                  "title": "Knowledge Application",
-                  "ai_prompt": "Apply to real projects",
+                  "title": "Performance Benchmarking",
+                  "ai_prompt": "Compare fixed-point vs floating-point performance",
                   "hour_number": 3
                 }
               ]
@@ -3232,18 +3232,18 @@
               "focus": "ISO-TP (ISO 15765-2) implementation",
               "hours": [
                 {
-                  "title": "Study 2) implementation",
-                  "ai_prompt": "Learn fundamental concepts of 2) implementation",
+                  "title": "ISO-TP Segmentation",
+                  "ai_prompt": "Implement multi-frame message segmentation",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice 2) implementation",
-                  "ai_prompt": "Complete hands-on exercises for 2) implementation",
+                  "title": "ISO-TP Flow Control",
+                  "ai_prompt": "Handle flow control frames and timing",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply 2) implementation",
-                  "ai_prompt": "Build project demonstrating 2) implementation",
+                  "title": "ISO-TP State Machine",
+                  "ai_prompt": "Build complete ISO-TP send/receive state machine",
                   "hour_number": 3
                 }
               ]
@@ -3253,18 +3253,18 @@
               "focus": "ISO-TP (ISO 15765-2) implementation",
               "hours": [
                 {
-                  "title": "Study 2) implementation",
-                  "ai_prompt": "Learn fundamental concepts of 2) implementation",
+                  "title": "ISO-TP Error Handling",
+                  "ai_prompt": "Implement timeout and error recovery",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice 2) implementation",
-                  "ai_prompt": "Complete hands-on exercises for 2) implementation",
+                  "title": "ISO-TP Buffer Management",
+                  "ai_prompt": "Design efficient buffer pool for large messages",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply 2) implementation",
-                  "ai_prompt": "Build project demonstrating 2) implementation",
+                  "title": "ISO-TP Testing",
+                  "ai_prompt": "Test with CANoe or PCAN tools",
                   "hour_number": 3
                 }
               ]
@@ -3274,18 +3274,18 @@
               "focus": "UDS (ISO 14229) diagnostics server",
               "hours": [
                 {
-                  "title": "Study UDS (ISO 14229) diagnostics server",
-                  "ai_prompt": "Learn fundamental concepts of UDS (ISO 14229) diagnostics server",
+                  "title": "UDS Service Implementation",
+                  "ai_prompt": "Implement diagnostic session control (0x10)",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice UDS (ISO 14229) diagnostics server",
-                  "ai_prompt": "Complete hands-on exercises for UDS (ISO 14229) diagnostics server",
+                  "title": "UDS Security Access",
+                  "ai_prompt": "Implement authentication with seed-key (0x27)",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply UDS (ISO 14229) diagnostics server",
-                  "ai_prompt": "Build project demonstrating UDS (ISO 14229) diagnostics server",
+                  "title": "UDS Data Transfer",
+                  "ai_prompt": "Implement read/write by identifier (0x22, 0x2E)",
                   "hour_number": 3
                 }
               ]
@@ -3295,18 +3295,18 @@
               "focus": "UDS diagnostics client/CLI tool",
               "hours": [
                 {
-                  "title": "Study UDS diagnostics client/CLI tool",
-                  "ai_prompt": "Learn fundamental concepts of UDS diagnostics client/CLI tool",
+                  "title": "UDS Client Design",
+                  "ai_prompt": "Build command-line UDS diagnostic tool",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice UDS diagnostics client/CLI tool",
-                  "ai_prompt": "Complete hands-on exercises for UDS diagnostics client/CLI tool",
+                  "title": "UDS Request/Response",
+                  "ai_prompt": "Handle positive and negative responses",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply UDS diagnostics client/CLI tool",
-                  "ai_prompt": "Build project demonstrating UDS diagnostics client/CLI tool",
+                  "title": "UDS Fault Code Handling",
+                  "ai_prompt": "Implement DTC read and clear (0x19, 0x14)",
                   "hour_number": 3
                 }
               ]
@@ -3733,18 +3733,18 @@
               "focus": "Secure credential provisioning",
               "hours": [
                 {
-                  "title": "Study Secure credential provisioning",
-                  "ai_prompt": "Learn fundamental concepts of Secure credential provisioning",
+                  "title": "Certificate-Based Auth",
+                  "ai_prompt": "Implement X.509 certificate validation",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Secure credential provisioning",
-                  "ai_prompt": "Complete hands-on exercises for Secure credential provisioning",
+                  "title": "Secure Key Injection",
+                  "ai_prompt": "Design secure key provisioning workflow",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Secure credential provisioning",
-                  "ai_prompt": "Build project demonstrating Secure credential provisioning",
+                  "title": "Hardware Security Module",
+                  "ai_prompt": "Interface with HSM for key storage",
                   "hour_number": 3
                 }
               ]
@@ -3997,18 +3997,18 @@
               "focus": "BLE Fundamentals",
               "hours": [
                 {
-                  "title": "Study BLE Fundamentals",
-                  "ai_prompt": "Learn fundamental concepts of BLE Fundamentals",
+                  "title": "BLE Stack Architecture",
+                  "ai_prompt": "Understand GAP, GATT, L2CAP, HCI layers",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice BLE Fundamentals",
-                  "ai_prompt": "Complete hands-on exercises for BLE Fundamentals",
+                  "title": "BLE Advertising",
+                  "ai_prompt": "Configure advertising packets and intervals",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply BLE Fundamentals",
-                  "ai_prompt": "Build project demonstrating BLE Fundamentals",
+                  "title": "BLE Connection Parameters",
+                  "ai_prompt": "Optimize connection interval and latency",
                   "hour_number": 3
                 }
               ]
@@ -4018,18 +4018,18 @@
               "focus": "GATT Programming",
               "hours": [
                 {
-                  "title": "Study GATT Programming",
-                  "ai_prompt": "Learn fundamental concepts of GATT Programming",
+                  "title": "GATT Service Definition",
+                  "ai_prompt": "Create custom GATT service with characteristics",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice GATT Programming",
-                  "ai_prompt": "Complete hands-on exercises for GATT Programming",
+                  "title": "GATT Notifications",
+                  "ai_prompt": "Implement server-initiated notifications",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply GATT Programming",
-                  "ai_prompt": "Build project demonstrating GATT Programming",
+                  "title": "GATT Descriptors",
+                  "ai_prompt": "Add CCCD and user description descriptors",
                   "hour_number": 3
                 }
               ]
@@ -4039,18 +4039,18 @@
               "focus": "BLE Implementation",
               "hours": [
                 {
-                  "title": "Study BLE Implementation",
-                  "ai_prompt": "Learn fundamental concepts of BLE Implementation",
+                  "title": "BLE Peripheral Implementation",
+                  "ai_prompt": "Build complete BLE peripheral on Nordic/ESP32",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice BLE Implementation",
-                  "ai_prompt": "Complete hands-on exercises for BLE Implementation",
+                  "title": "BLE Central Implementation",
+                  "ai_prompt": "Scan, connect, and read from peripherals",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply BLE Implementation",
-                  "ai_prompt": "Build project demonstrating BLE Implementation",
+                  "title": "BLE Debugging",
+                  "ai_prompt": "Use nRF Connect and Wireshark for BLE debugging",
                   "hour_number": 3
                 }
               ]
@@ -4060,18 +4060,18 @@
               "focus": "WiFi Fundamentals",
               "hours": [
                 {
-                  "title": "Study WiFi Fundamentals",
-                  "ai_prompt": "Learn fundamental concepts of WiFi Fundamentals",
+                  "title": "WiFi Station Mode",
+                  "ai_prompt": "Connect to access point with WPA2",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice WiFi Fundamentals",
-                  "ai_prompt": "Complete hands-on exercises for WiFi Fundamentals",
+                  "title": "WiFi SoftAP Mode",
+                  "ai_prompt": "Create access point for device provisioning",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply WiFi Fundamentals",
-                  "ai_prompt": "Build project demonstrating WiFi Fundamentals",
+                  "title": "WiFi Provisioning Flow",
+                  "ai_prompt": "Implement BLE-to-WiFi provisioning",
                   "hour_number": 3
                 }
               ]
@@ -4150,18 +4150,18 @@
               "focus": "Filesystem resilience",
               "hours": [
                 {
-                  "title": "Study Filesystem resilience",
-                  "ai_prompt": "Learn fundamental concepts of Filesystem resilience",
+                  "title": "Wear Leveling Concepts",
+                  "ai_prompt": "Understand flash wear and leveling algorithms",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Filesystem resilience",
-                  "ai_prompt": "Complete hands-on exercises for Filesystem resilience",
+                  "title": "LittleFS Integration",
+                  "ai_prompt": "Implement power-safe filesystem on flash",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Filesystem resilience",
-                  "ai_prompt": "Build project demonstrating Filesystem resilience",
+                  "title": "Filesystem Corruption Recovery",
+                  "ai_prompt": "Detect and recover from filesystem errors",
                   "hour_number": 3
                 }
               ]
@@ -4171,18 +4171,18 @@
               "focus": "Filesystem resilience",
               "hours": [
                 {
-                  "title": "Study Filesystem resilience",
-                  "ai_prompt": "Learn fundamental concepts of Filesystem resilience",
+                  "title": "Flash Translation Layer",
+                  "ai_prompt": "Understand FTL for NAND flash",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Filesystem resilience",
-                  "ai_prompt": "Complete hands-on exercises for Filesystem resilience",
+                  "title": "Journaling Filesystems",
+                  "ai_prompt": "Implement write-ahead logging",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Filesystem resilience",
-                  "ai_prompt": "Build project demonstrating Filesystem resilience",
+                  "title": "Filesystem Testing",
+                  "ai_prompt": "Test with power-cycle stress tests",
                   "hour_number": 3
                 }
               ]
@@ -4303,18 +4303,18 @@
               "focus": "Unified logging schema",
               "hours": [
                 {
-                  "title": "Study Unified logging schema",
-                  "ai_prompt": "Learn fundamental concepts of Unified logging schema",
+                  "title": "Structured Logging Design",
+                  "ai_prompt": "Define log levels, categories, and format",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Unified logging schema",
-                  "ai_prompt": "Complete hands-on exercises for Unified logging schema",
+                  "title": "Circular Log Buffer",
+                  "ai_prompt": "Implement efficient ring buffer for logs",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Unified logging schema",
-                  "ai_prompt": "Build project demonstrating Unified logging schema",
+                  "title": "Log Compression",
+                  "ai_prompt": "Apply delta encoding or ZSTD compression",
                   "hour_number": 3
                 }
               ]
@@ -4324,18 +4324,18 @@
               "focus": "Unified logging schema",
               "hours": [
                 {
-                  "title": "Study Unified logging schema",
-                  "ai_prompt": "Learn fundamental concepts of Unified logging schema",
+                  "title": "Remote Logging Protocol",
+                  "ai_prompt": "Stream logs over MQTT or syslog",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Unified logging schema",
-                  "ai_prompt": "Complete hands-on exercises for Unified logging schema",
+                  "title": "Log Filtering and Routing",
+                  "ai_prompt": "Filter logs by severity and module",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Unified logging schema",
-                  "ai_prompt": "Build project demonstrating Unified logging schema",
+                  "title": "Log Analysis Dashboard",
+                  "ai_prompt": "Build log visualization with Grafana",
                   "hour_number": 3
                 }
               ]
@@ -4345,18 +4345,18 @@
               "focus": "Crash dump & corefile export",
               "hours": [
                 {
-                  "title": "Study Crash dump & corefile export",
-                  "ai_prompt": "Learn fundamental concepts of Crash dump & corefile export",
+                  "title": "Crash Dump Generation",
+                  "ai_prompt": "Capture registers and stack on fault",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Crash dump & corefile export",
-                  "ai_prompt": "Complete hands-on exercises for Crash dump & corefile export",
+                  "title": "Core File Format",
+                  "ai_prompt": "Generate ELF core file for GDB analysis",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Crash dump & corefile export",
-                  "ai_prompt": "Build project demonstrating Crash dump & corefile export",
+                  "title": "Post-Mortem Debugging",
+                  "ai_prompt": "Analyze crash dumps with addr2line",
                   "hour_number": 3
                 }
               ]
@@ -4609,18 +4609,18 @@
               "focus": "Static partitioning prototype",
               "hours": [
                 {
-                  "title": "Study Static partitioning prototype",
-                  "ai_prompt": "Learn fundamental concepts of Static partitioning prototype",
+                  "title": "Memory Protection Unit",
+                  "ai_prompt": "Configure MPU regions for isolation",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Static partitioning prototype",
-                  "ai_prompt": "Complete hands-on exercises for Static partitioning prototype",
+                  "title": "Static Partitioning",
+                  "ai_prompt": "Divide memory between safety and non-safety",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Static partitioning prototype",
-                  "ai_prompt": "Build project demonstrating Static partitioning prototype",
+                  "title": "Inter-Partition Communication",
+                  "ai_prompt": "Design safe message passing between partitions",
                   "hour_number": 3
                 }
               ]
@@ -4630,18 +4630,18 @@
               "focus": "Static partitioning prototype",
               "hours": [
                 {
-                  "title": "Study Static partitioning prototype",
-                  "ai_prompt": "Learn fundamental concepts of Static partitioning prototype",
+                  "title": "ARM TrustZone Basics",
+                  "ai_prompt": "Understand Secure and Non-Secure worlds",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Static partitioning prototype",
-                  "ai_prompt": "Complete hands-on exercises for Static partitioning prototype",
+                  "title": "Secure Boot Chain",
+                  "ai_prompt": "Implement chain of trust from ROM to application",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Static partitioning prototype",
-                  "ai_prompt": "Build project demonstrating Static partitioning prototype",
+                  "title": "Secure World Services",
+                  "ai_prompt": "Design secure service APIs",
                   "hour_number": 3
                 }
               ]
@@ -4651,18 +4651,18 @@
               "focus": "Hypervisor evaluation",
               "hours": [
                 {
-                  "title": "Study Hypervisor evaluation",
-                  "ai_prompt": "Learn fundamental concepts of Hypervisor evaluation",
+                  "title": "Hypervisor Concepts",
+                  "ai_prompt": "Understand Type-1 vs Type-2 hypervisors",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Hypervisor evaluation",
-                  "ai_prompt": "Complete hands-on exercises for Hypervisor evaluation",
+                  "title": "Xen on ARM Evaluation",
+                  "ai_prompt": "Set up Xen hypervisor on ARM board",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Hypervisor evaluation",
-                  "ai_prompt": "Build project demonstrating Hypervisor evaluation",
+                  "title": "Virtual Machine Configuration",
+                  "ai_prompt": "Configure VMs with device passthrough",
                   "hour_number": 3
                 }
               ]
@@ -4672,18 +4672,18 @@
               "focus": "Safety case scaffolding",
               "hours": [
                 {
-                  "title": "Study Safety case scaffolding",
-                  "ai_prompt": "Learn fundamental concepts of Safety case scaffolding",
+                  "title": "Safety Case Structure",
+                  "ai_prompt": "Understand ISO 26262 safety case format",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Safety case scaffolding",
-                  "ai_prompt": "Complete hands-on exercises for Safety case scaffolding",
+                  "title": "Safety Requirements Traceability",
+                  "ai_prompt": "Link requirements to implementation",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Safety case scaffolding",
-                  "ai_prompt": "Build project demonstrating Safety case scaffolding",
+                  "title": "Safety Validation Plan",
+                  "ai_prompt": "Define verification activities for ASIL",
                   "hour_number": 3
                 }
               ]
@@ -5074,18 +5074,18 @@
               "focus": "Quantization-aware training",
               "hours": [
                 {
-                  "title": "Study aware training",
-                  "ai_prompt": "Learn fundamental concepts of aware training",
+                  "title": "Quantization Fundamentals",
+                  "ai_prompt": "Understand weight and activation quantization",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice aware training",
-                  "ai_prompt": "Complete hands-on exercises for aware training",
+                  "title": "Post-Training Quantization",
+                  "ai_prompt": "Apply PTQ to reduce model size",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply aware training",
-                  "ai_prompt": "Build project demonstrating aware training",
+                  "title": "Quantization Error Analysis",
+                  "ai_prompt": "Measure accuracy loss from quantization",
                   "hour_number": 3
                 }
               ]
@@ -5095,18 +5095,18 @@
               "focus": "Quantization-aware training",
               "hours": [
                 {
-                  "title": "Study aware training",
-                  "ai_prompt": "Learn fundamental concepts of aware training",
+                  "title": "Quantization-Aware Training",
+                  "ai_prompt": "Train with fake quantization nodes",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice aware training",
-                  "ai_prompt": "Complete hands-on exercises for aware training",
+                  "title": "Mixed-Precision Quantization",
+                  "ai_prompt": "Apply different bit-widths per layer",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply aware training",
-                  "ai_prompt": "Build project demonstrating aware training",
+                  "title": "QAT vs PTQ Comparison",
+                  "ai_prompt": "Compare accuracy and inference speed",
                   "hour_number": 3
                 }
               ]
@@ -5116,18 +5116,18 @@
               "focus": "Operator fusion & optimization",
               "hours": [
                 {
-                  "title": "Study Operator fusion & optimization",
-                  "ai_prompt": "Learn fundamental concepts of Operator fusion & optimization",
+                  "title": "Operator Fusion",
+                  "ai_prompt": "Fuse Conv-BN-ReLU into single operation",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Operator fusion & optimization",
-                  "ai_prompt": "Complete hands-on exercises for Operator fusion & optimization",
+                  "title": "Memory Optimization",
+                  "ai_prompt": "Apply tensor memory planning",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Operator fusion & optimization",
-                  "ai_prompt": "Build project demonstrating Operator fusion & optimization",
+                  "title": "CMSIS-NN Optimization",
+                  "ai_prompt": "Use ARM CMSIS-NN for inference",
                   "hour_number": 3
                 }
               ]
@@ -5137,18 +5137,18 @@
               "focus": "Benchmark harness",
               "hours": [
                 {
-                  "title": "Study Benchmark harness",
-                  "ai_prompt": "Learn fundamental concepts of Benchmark harness",
+                  "title": "Inference Benchmarking",
+                  "ai_prompt": "Measure latency at different frequencies",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Benchmark harness",
-                  "ai_prompt": "Complete hands-on exercises for Benchmark harness",
+                  "title": "Power Profiling",
+                  "ai_prompt": "Measure current during inference",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Benchmark harness",
-                  "ai_prompt": "Build project demonstrating Benchmark harness",
+                  "title": "Performance Report",
+                  "ai_prompt": "Generate comprehensive benchmark report",
                   "hour_number": 3
                 }
               ]
@@ -5227,18 +5227,18 @@
               "focus": "Feature engineering",
               "hours": [
                 {
-                  "title": "Study Feature engineering",
-                  "ai_prompt": "Learn fundamental concepts of Feature engineering",
+                  "title": "Feature Extraction",
+                  "ai_prompt": "Extract time and frequency domain features",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Feature engineering",
-                  "ai_prompt": "Complete hands-on exercises for Feature engineering",
+                  "title": "Feature Selection",
+                  "ai_prompt": "Apply PCA and mutual information",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Feature engineering",
-                  "ai_prompt": "Build project demonstrating Feature engineering",
+                  "title": "Feature Normalization",
+                  "ai_prompt": "Apply z-score and min-max scaling",
                   "hour_number": 3
                 }
               ]
@@ -5248,18 +5248,18 @@
               "focus": "Feature engineering",
               "hours": [
                 {
-                  "title": "Study Feature engineering",
-                  "ai_prompt": "Learn fundamental concepts of Feature engineering",
+                  "title": "Window-Based Features",
+                  "ai_prompt": "Implement sliding window feature extraction",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Feature engineering",
-                  "ai_prompt": "Complete hands-on exercises for Feature engineering",
+                  "title": "Statistical Features",
+                  "ai_prompt": "Calculate mean, std, skewness, kurtosis",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Feature engineering",
-                  "ai_prompt": "Build project demonstrating Feature engineering",
+                  "title": "Frequency Features",
+                  "ai_prompt": "Calculate FFT-based spectral features",
                   "hour_number": 3
                 }
               ]
@@ -5269,18 +5269,18 @@
               "focus": "Adaptive filtering",
               "hours": [
                 {
-                  "title": "Study Adaptive filtering",
-                  "ai_prompt": "Learn fundamental concepts of Adaptive filtering",
+                  "title": "Kalman Filter Implementation",
+                  "ai_prompt": "Implement 1D Kalman filter for sensor",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Adaptive filtering",
-                  "ai_prompt": "Complete hands-on exercises for Adaptive filtering",
+                  "title": "Extended Kalman Filter",
+                  "ai_prompt": "Handle non-linear systems with EKF",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Adaptive filtering",
-                  "ai_prompt": "Build project demonstrating Adaptive filtering",
+                  "title": "Adaptive Filter Tuning",
+                  "ai_prompt": "Tune process and measurement noise",
                   "hour_number": 3
                 }
               ]
@@ -5290,18 +5290,18 @@
               "focus": "On-device learning experiments",
               "hours": [
                 {
-                  "title": "Study device learning experiments",
-                  "ai_prompt": "Learn fundamental concepts of device learning experiments",
+                  "title": "Online Learning Concepts",
+                  "ai_prompt": "Understand incremental vs batch learning",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice device learning experiments",
-                  "ai_prompt": "Complete hands-on exercises for device learning experiments",
+                  "title": "On-Device Model Update",
+                  "ai_prompt": "Implement lightweight model fine-tuning",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply device learning experiments",
-                  "ai_prompt": "Build project demonstrating device learning experiments",
+                  "title": "Continual Learning",
+                  "ai_prompt": "Handle concept drift in sensor data",
                   "hour_number": 3
                 }
               ]
@@ -5530,147 +5530,147 @@
           "days": [
             {
               "number": 1,
-              "focus": "Day 1 - Week 36 Studies",
+              "focus": "ISO 26262 Overview and ASIL Classification",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "ISO 26262 Standard Structure",
+                  "ai_prompt": "Understand the 12 parts of ISO 26262",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "ASIL A/B/C/D Classification",
+                  "ai_prompt": "Calculate ASIL from severity, exposure, controllability",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Safety Lifecycle Overview",
+                  "ai_prompt": "Map concept, development, and production phases",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 2,
-              "focus": "Day 2 - Week 36 Studies",
+              "focus": "Hazard Analysis and Risk Assessment (HARA)",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "Hazard Identification",
+                  "ai_prompt": "Identify hazards using HAZOP and brainstorming",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "Risk Assessment Matrix",
+                  "ai_prompt": "Evaluate risk using severity, probability, detectability",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Safety Goals Derivation",
+                  "ai_prompt": "Derive safety goals from hazard analysis",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 3,
-              "focus": "Day 3 - Week 36 Studies",
+              "focus": "Functional Safety Concept",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "Functional Safety Requirements",
+                  "ai_prompt": "Derive FSR from safety goals",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "Safety Mechanisms",
+                  "ai_prompt": "Design watchdog, plausibility checks, redundancy",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Fault Tolerance Time Interval",
+                  "ai_prompt": "Calculate FTTI for safety mechanisms",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 4,
-              "focus": "Day 4 - Week 36 Studies",
+              "focus": "Technical Safety Concept",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "Hardware Safety Requirements",
+                  "ai_prompt": "Derive HW requirements from FSC",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "Software Safety Requirements",
+                  "ai_prompt": "Derive SW requirements from FSC",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Hardware-Software Interface",
+                  "ai_prompt": "Document HSI for safety-critical functions",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 5,
-              "focus": "Day 5 - Week 36 Studies",
+              "focus": "Safety Analysis Methods",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "FMEA for Hardware",
+                  "ai_prompt": "Perform FMEA on safety-relevant hardware",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "FTA (Fault Tree Analysis)",
+                  "ai_prompt": "Build fault trees for safety goals",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "FMEDA Calculation",
+                  "ai_prompt": "Calculate diagnostic coverage and safe failure fraction",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 6,
-              "focus": "Day 6 - Week 36 Studies",
+              "focus": "Safety Verification and Validation",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "Safety Case Structure",
+                  "ai_prompt": "Build argument-based safety case",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "Verification Planning",
+                  "ai_prompt": "Plan unit, integration, and system testing",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Validation Activities",
+                  "ai_prompt": "Validate safety goals at vehicle level",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 7,
-              "focus": "Day 7 - Week 36 Studies",
+              "focus": "Week 36 Integration and Review",
               "hours": [
                 {
-                  "title": "Function Prototypes and Definitions",
-                  "ai_prompt": "Write function declarations and implementations",
+                  "title": "Safety Documentation Review",
+                  "ai_prompt": "Complete safety plan and safety case",
                   "hour_number": 1
                 },
                 {
-                  "title": "Parameter Passing Methods",
-                  "ai_prompt": "Compare pass-by-value vs pass-by-pointer",
+                  "title": "ASIL Decomposition Practice",
+                  "ai_prompt": "Decompose ASIL D to ASIL B(D) + ASIL B(D)",
                   "hour_number": 2
                 },
                 {
-                  "title": "Recursive Functions",
-                  "ai_prompt": "Implement recursion with proper base cases",
+                  "title": "Functional Safety Quiz",
+                  "ai_prompt": "Self-assessment on ISO 26262 concepts",
                   "hour_number": 3
                 }
               ]
@@ -5839,18 +5839,18 @@
               "focus": "Camera interface bring-up",
               "hours": [
                 {
-                  "title": "Study up",
-                  "ai_prompt": "Learn fundamental concepts of up",
+                  "title": "Camera Interface Setup",
+                  "ai_prompt": "Configure DVP/CSI camera interface",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice up",
-                  "ai_prompt": "Complete hands-on exercises for up",
+                  "title": "Image Format Handling",
+                  "ai_prompt": "Process YUV, RGB, and Bayer formats",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply up",
-                  "ai_prompt": "Build project demonstrating up",
+                  "title": "Frame Buffer Management",
+                  "ai_prompt": "Implement double buffering for frames",
                   "hour_number": 3
                 }
               ]
@@ -5860,18 +5860,18 @@
               "focus": "Camera interface bring-up",
               "hours": [
                 {
-                  "title": "Study up",
-                  "ai_prompt": "Learn fundamental concepts of up",
+                  "title": "ISP Pipeline Basics",
+                  "ai_prompt": "Understand debayer, white balance, gamma",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice up",
-                  "ai_prompt": "Complete hands-on exercises for up",
+                  "title": "Image Preprocessing",
+                  "ai_prompt": "Implement resize, crop, and normalize",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply up",
-                  "ai_prompt": "Build project demonstrating up",
+                  "title": "DMA for Image Transfer",
+                  "ai_prompt": "Use DMA for efficient frame transfer",
                   "hour_number": 3
                 }
               ]
@@ -5881,18 +5881,18 @@
               "focus": "Model selection",
               "hours": [
                 {
-                  "title": "Study Model selection",
-                  "ai_prompt": "Learn fundamental concepts of Model selection",
+                  "title": "Object Detection Models",
+                  "ai_prompt": "Compare YOLO, MobileNet-SSD, EfficientDet",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Model selection",
-                  "ai_prompt": "Complete hands-on exercises for Model selection",
+                  "title": "Model Selection Criteria",
+                  "ai_prompt": "Balance accuracy, latency, and memory",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Model selection",
-                  "ai_prompt": "Build project demonstrating Model selection",
+                  "title": "Model Conversion",
+                  "ai_prompt": "Convert to TFLite or ONNX format",
                   "hour_number": 3
                 }
               ]
@@ -5902,18 +5902,18 @@
               "focus": "Pipeline optimization",
               "hours": [
                 {
-                  "title": "Study Pipeline optimization",
-                  "ai_prompt": "Learn fundamental concepts of Pipeline optimization",
+                  "title": "Inference Pipeline Design",
+                  "ai_prompt": "Design preprocess-infer-postprocess flow",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Pipeline optimization",
-                  "ai_prompt": "Complete hands-on exercises for Pipeline optimization",
+                  "title": "NMS Implementation",
+                  "ai_prompt": "Implement non-maximum suppression",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Pipeline optimization",
-                  "ai_prompt": "Build project demonstrating Pipeline optimization",
+                  "title": "Latency Optimization",
+                  "ai_prompt": "Profile and optimize end-to-end latency",
                   "hour_number": 3
                 }
               ]
@@ -6145,18 +6145,18 @@
               "focus": "Diagnostic coverage calculations",
               "hours": [
                 {
-                  "title": "Study Diagnostic coverage calculations",
-                  "ai_prompt": "Learn fundamental concepts of Diagnostic coverage calculations",
+                  "title": "Diagnostic Coverage Basics",
+                  "ai_prompt": "Understand DC formula and targets",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Diagnostic coverage calculations",
-                  "ai_prompt": "Complete hands-on exercises for Diagnostic coverage calculations",
+                  "title": "Single Point Fault Metric",
+                  "ai_prompt": "Calculate SPFM for ASIL targets",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Diagnostic coverage calculations",
-                  "ai_prompt": "Build project demonstrating Diagnostic coverage calculations",
+                  "title": "Latent Fault Metric",
+                  "ai_prompt": "Calculate LFM and residual faults",
                   "hour_number": 3
                 }
               ]
@@ -6166,18 +6166,18 @@
               "focus": "Diagnostic coverage calculations",
               "hours": [
                 {
-                  "title": "Study Diagnostic coverage calculations",
-                  "ai_prompt": "Learn fundamental concepts of Diagnostic coverage calculations",
+                  "title": "Diagnostic Coverage Analysis",
+                  "ai_prompt": "Analyze coverage for each safety mechanism",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Diagnostic coverage calculations",
-                  "ai_prompt": "Complete hands-on exercises for Diagnostic coverage calculations",
+                  "title": "Coverage Improvement",
+                  "ai_prompt": "Design additional diagnostics for gaps",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Diagnostic coverage calculations",
-                  "ai_prompt": "Build project demonstrating Diagnostic coverage calculations",
+                  "title": "Documentation for Certification",
+                  "ai_prompt": "Document DC evidence for assessors",
                   "hour_number": 3
                 }
               ]
@@ -6187,18 +6187,18 @@
               "focus": "Redundant monitoring",
               "hours": [
                 {
-                  "title": "Study Redundant monitoring",
-                  "ai_prompt": "Learn fundamental concepts of Redundant monitoring",
+                  "title": "Redundant Sensor Design",
+                  "ai_prompt": "Implement dual-sensor plausibility check",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Redundant monitoring",
-                  "ai_prompt": "Complete hands-on exercises for Redundant monitoring",
+                  "title": "Redundant Computation",
+                  "ai_prompt": "Implement diverse software redundancy",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Redundant monitoring",
-                  "ai_prompt": "Build project demonstrating Redundant monitoring",
+                  "title": "Voting Mechanisms",
+                  "ai_prompt": "Design 2-out-of-3 voting logic",
                   "hour_number": 3
                 }
               ]
@@ -6208,18 +6208,18 @@
               "focus": "Fault injection campaign",
               "hours": [
                 {
-                  "title": "Study Fault injection campaign",
-                  "ai_prompt": "Learn fundamental concepts of Fault injection campaign",
+                  "title": "Fault Injection Test Design",
+                  "ai_prompt": "Plan fault injection test cases",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Fault injection campaign",
-                  "ai_prompt": "Complete hands-on exercises for Fault injection campaign",
+                  "title": "Hardware Fault Injection",
+                  "ai_prompt": "Use debugger to inject faults",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Fault injection campaign",
-                  "ai_prompt": "Build project demonstrating Fault injection campaign",
+                  "title": "Software Fault Injection",
+                  "ai_prompt": "Inject errors in safety functions",
                   "hour_number": 3
                 }
               ]
@@ -6667,18 +6667,18 @@
               "focus": "Compliance gap analysis",
               "hours": [
                 {
-                  "title": "Study Compliance gap analysis",
-                  "ai_prompt": "Learn fundamental concepts of Compliance gap analysis",
+                  "title": "EMC Pre-Compliance Testing",
+                  "ai_prompt": "Perform pre-scan for radiated emissions",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Compliance gap analysis",
-                  "ai_prompt": "Complete hands-on exercises for Compliance gap analysis",
+                  "title": "CE/FCC Requirements",
+                  "ai_prompt": "Understand certification requirements",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Compliance gap analysis",
-                  "ai_prompt": "Build project demonstrating Compliance gap analysis",
+                  "title": "Compliance Test Planning",
+                  "ai_prompt": "Create test plan for certification lab",
                   "hour_number": 3
                 }
               ]
@@ -7066,84 +7066,84 @@
           "days": [
             {
               "number": 1,
-              "focus": "Component risk assessment",
+              "focus": "Component Lifecycle Management",
               "hours": [
                 {
-                  "title": "Study Component risk assessment",
-                  "ai_prompt": "Learn fundamental concepts of Component risk assessment",
+                  "title": "EOL Monitoring",
+                  "ai_prompt": "Set up end-of-life alerts for components",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Component risk assessment",
-                  "ai_prompt": "Complete hands-on exercises for Component risk assessment",
+                  "title": "Second Source Strategy",
+                  "ai_prompt": "Identify alternate suppliers",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Component risk assessment",
-                  "ai_prompt": "Build project demonstrating Component risk assessment",
+                  "title": "Obsolescence Planning",
+                  "ai_prompt": "Plan for component obsolescence",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 2,
-              "focus": "Lifecycle management playbook",
+              "focus": "Supply Chain Risk Assessment",
               "hours": [
                 {
-                  "title": "Study Lifecycle management playbook",
-                  "ai_prompt": "Learn fundamental concepts of Lifecycle management playbook",
+                  "title": "Supplier Risk Analysis",
+                  "ai_prompt": "Evaluate supplier reliability",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Lifecycle management playbook",
-                  "ai_prompt": "Complete hands-on exercises for Lifecycle management playbook",
+                  "title": "Geopolitical Risk",
+                  "ai_prompt": "Assess regional supply risks",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Lifecycle management playbook",
-                  "ai_prompt": "Build project demonstrating Lifecycle management playbook",
+                  "title": "Lead Time Management",
+                  "ai_prompt": "Track and manage component lead times",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 3,
-              "focus": "Manufacturing data flows",
+              "focus": "Inventory Management",
               "hours": [
                 {
-                  "title": "Study Manufacturing data flows",
-                  "ai_prompt": "Learn fundamental concepts of Manufacturing data flows",
+                  "title": "Safety Stock Calculation",
+                  "ai_prompt": "Determine optimal safety stock",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Manufacturing data flows",
-                  "ai_prompt": "Complete hands-on exercises for Manufacturing data flows",
+                  "title": "Demand Forecasting",
+                  "ai_prompt": "Predict component requirements",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Manufacturing data flows",
-                  "ai_prompt": "Build project demonstrating Manufacturing data flows",
+                  "title": "Just-in-Time vs Buffer Stock",
+                  "ai_prompt": "Choose inventory strategy",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 4,
-              "focus": "Deep work",
+              "focus": "Supplier Relationship",
               "hours": [
                 {
-                  "title": "Deep Dive Study",
-                  "ai_prompt": "Thorough exploration of topic",
+                  "title": "Supplier Scorecard",
+                  "ai_prompt": "Evaluate supplier performance",
                   "hour_number": 1
                 },
                 {
-                  "title": "Hands-on Practice",
-                  "ai_prompt": "Build practical examples",
+                  "title": "Contract Negotiation",
+                  "ai_prompt": "Negotiate favorable terms",
                   "hour_number": 2
                 },
                 {
-                  "title": "Knowledge Application",
-                  "ai_prompt": "Apply to real projects",
+                  "title": "Quality Agreements",
+                  "ai_prompt": "Establish quality requirements",
                   "hour_number": 3
                 }
               ]
@@ -7372,84 +7372,84 @@
           "days": [
             {
               "number": 1,
-              "focus": "Regulatory landscape mapping",
+              "focus": "Regulatory Compliance Overview",
               "hours": [
                 {
-                  "title": "Study Regulatory landscape mapping",
-                  "ai_prompt": "Learn fundamental concepts of Regulatory landscape mapping",
+                  "title": "CE/FCC/UL Requirements",
+                  "ai_prompt": "Understand regional certification requirements",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Regulatory landscape mapping",
-                  "ai_prompt": "Complete hands-on exercises for Regulatory landscape mapping",
+                  "title": "EMC Standards",
+                  "ai_prompt": "Study IEC 61000 EMC requirements",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Regulatory landscape mapping",
-                  "ai_prompt": "Build project demonstrating Regulatory landscape mapping",
+                  "title": "Safety Standards",
+                  "ai_prompt": "Understand IEC 62368-1 safety requirements",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 2,
-              "focus": "Technical file compilation",
+              "focus": "Technical Documentation",
               "hours": [
                 {
-                  "title": "Study Technical file compilation",
-                  "ai_prompt": "Learn fundamental concepts of Technical file compilation",
+                  "title": "Technical File Structure",
+                  "ai_prompt": "Create EU technical file structure",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Technical file compilation",
-                  "ai_prompt": "Complete hands-on exercises for Technical file compilation",
+                  "title": "Test Report Compilation",
+                  "ai_prompt": "Organize test reports for submission",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Technical file compilation",
-                  "ai_prompt": "Build project demonstrating Technical file compilation",
+                  "title": "Risk Assessment Documentation",
+                  "ai_prompt": "Document product risk assessment",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 3,
-              "focus": "Technical file compilation",
+              "focus": "Technical File Completion",
               "hours": [
                 {
-                  "title": "Study Technical file compilation",
-                  "ai_prompt": "Learn fundamental concepts of Technical file compilation",
+                  "title": "Bill of Materials for Compliance",
+                  "ai_prompt": "Create BOM with component certifications",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Technical file compilation",
-                  "ai_prompt": "Complete hands-on exercises for Technical file compilation",
+                  "title": "Schematic and Layout Documentation",
+                  "ai_prompt": "Prepare hardware documentation",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Technical file compilation",
-                  "ai_prompt": "Build project demonstrating Technical file compilation",
+                  "title": "Software Documentation",
+                  "ai_prompt": "Document software for certification",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 4,
-              "focus": "Pre-certification lab coordination",
+              "focus": "Pre-Certification Preparation",
               "hours": [
                 {
-                  "title": "Study certification lab coordination",
-                  "ai_prompt": "Learn fundamental concepts of certification lab coordination",
+                  "title": "Lab Selection",
+                  "ai_prompt": "Choose appropriate certification lab",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice certification lab coordination",
-                  "ai_prompt": "Complete hands-on exercises for certification lab coordination",
+                  "title": "Pre-Compliance Testing",
+                  "ai_prompt": "Perform pre-scan EMC testing",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply certification lab coordination",
-                  "ai_prompt": "Build project demonstrating certification lab coordination",
+                  "title": "Test Plan Review",
+                  "ai_prompt": "Review and approve test plan with lab",
                   "hour_number": 3
                 }
               ]
@@ -7984,147 +7984,147 @@
           "days": [
             {
               "number": 1,
-              "focus": "Day 1 - Week 52 Studies",
+              "focus": "Build System Deep Dive",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "CMake for Embedded",
+                  "ai_prompt": "Configure CMake for cross-compilation",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Build System Comparison",
+                  "ai_prompt": "Compare Make, CMake, Meson, Bazel",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Reproducible Builds",
+                  "ai_prompt": "Ensure deterministic build outputs",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 2,
-              "focus": "Day 2 - Week 52 Studies",
+              "focus": "Static Analysis Integration",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "Static Analyzer Setup",
+                  "ai_prompt": "Configure cppcheck, clang-tidy, PC-lint",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "MISRA C Compliance",
+                  "ai_prompt": "Enable MISRA C:2012 rule checking",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Custom Rule Development",
+                  "ai_prompt": "Write project-specific analysis rules",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 3,
-              "focus": "Day 3 - Week 52 Studies",
+              "focus": "Testing Strategy and Quality",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "Testing Pyramid for Embedded",
+                  "ai_prompt": "Unit, integration, system, acceptance testing",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Test Coverage Metrics",
+                  "ai_prompt": "Measure code and requirement coverage",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Test-Driven Development",
+                  "ai_prompt": "Apply TDD for firmware development",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 4,
-              "focus": "Day 4 - Week 52 Studies",
+              "focus": "CI/CD Pipeline Development",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "GitHub Actions for Firmware",
+                  "ai_prompt": "Build and test firmware in CI",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Automated Testing in CI",
+                  "ai_prompt": "Run unit tests and static analysis",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Release Automation",
+                  "ai_prompt": "Automate firmware release packaging",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 5,
-              "focus": "Day 5 - Week 52 Studies",
+              "focus": "Release Management Process",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "Version Control Strategy",
+                  "ai_prompt": "Implement semver and git-flow",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Changelog Generation",
+                  "ai_prompt": "Automate changelog from commits",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Release Artifacts",
+                  "ai_prompt": "Package binaries, docs, and symbols",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 6,
-              "focus": "Day 6 - Week 52 Studies",
+              "focus": "Field Debugging Techniques",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "Remote Debugging Setup",
+                  "ai_prompt": "Configure JTAG/SWD for remote debug",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Logging Best Practices",
+                  "ai_prompt": "Design effective logging system",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Post-Mortem Analysis",
+                  "ai_prompt": "Analyze field failures from logs",
                   "hour_number": 3
                 }
               ]
             },
             {
               "number": 7,
-              "focus": "Day 7 - Week 52 Studies",
+              "focus": "Consolidation and Review",
               "hours": [
                 {
-                  "title": "Linux Command Line Basics",
-                  "ai_prompt": "Navigate filesystem with cd, ls, pwd",
+                  "title": "Knowledge Consolidation",
+                  "ai_prompt": "Review all SDLC concepts",
                   "hour_number": 1
                 },
                 {
-                  "title": "File Operations",
-                  "ai_prompt": "Use cp, mv, rm, cat, and redirections",
+                  "title": "Process Documentation",
+                  "ai_prompt": "Document team development processes",
                   "hour_number": 2
                 },
                 {
-                  "title": "Text Processing",
-                  "ai_prompt": "Apply grep, sed, awk for text manipulation",
+                  "title": "Continuous Improvement",
+                  "ai_prompt": "Identify process improvement areas",
                   "hour_number": 3
                 }
               ]
@@ -8446,18 +8446,18 @@
               "focus": "Qt/Qt Quick HMI enhancements",
               "hours": [
                 {
-                  "title": "Study Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Learn fundamental concepts of Qt/Qt Quick HMI enhancements",
+                  "title": "Qt Quick Fundamentals",
+                  "ai_prompt": "Create QML-based UI components",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Complete hands-on exercises for Qt/Qt Quick HMI enhancements",
+                  "title": "Qt Embedded Optimization",
+                  "ai_prompt": "Optimize Qt for resource-constrained devices",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Build project demonstrating Qt/Qt Quick HMI enhancements",
+                  "title": "Qt/C++ Integration",
+                  "ai_prompt": "Connect QML UI to C++ backend",
                   "hour_number": 3
                 }
               ]
@@ -8467,18 +8467,18 @@
               "focus": "Qt/Qt Quick HMI enhancements",
               "hours": [
                 {
-                  "title": "Study Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Learn fundamental concepts of Qt/Qt Quick HMI enhancements",
+                  "title": "Qt Graphics Performance",
+                  "ai_prompt": "Profile and optimize Qt rendering",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Complete hands-on exercises for Qt/Qt Quick HMI enhancements",
+                  "title": "Qt Theming",
+                  "ai_prompt": "Implement dark/light themes",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Qt/Qt Quick HMI enhancements",
-                  "ai_prompt": "Build project demonstrating Qt/Qt Quick HMI enhancements",
+                  "title": "Qt Localization",
+                  "ai_prompt": "Add multi-language support",
                   "hour_number": 3
                 }
               ]
@@ -8488,18 +8488,18 @@
               "focus": "UX validation",
               "hours": [
                 {
-                  "title": "Study UX validation",
-                  "ai_prompt": "Learn fundamental concepts of UX validation",
+                  "title": "UX Testing Methods",
+                  "ai_prompt": "Conduct usability testing",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice UX validation",
-                  "ai_prompt": "Complete hands-on exercises for UX validation",
+                  "title": "UX Metrics",
+                  "ai_prompt": "Measure task completion and satisfaction",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply UX validation",
-                  "ai_prompt": "Build project demonstrating UX validation",
+                  "title": "UX Iteration",
+                  "ai_prompt": "Improve UI based on feedback",
                   "hour_number": 3
                 }
               ]
@@ -8509,18 +8509,18 @@
               "focus": "UI performance optimization",
               "hours": [
                 {
-                  "title": "Study UI performance optimization",
-                  "ai_prompt": "Learn fundamental concepts of UI performance optimization",
+                  "title": "UI Performance Profiling",
+                  "ai_prompt": "Measure frame rate and latency",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice UI performance optimization",
-                  "ai_prompt": "Complete hands-on exercises for UI performance optimization",
+                  "title": "UI Memory Optimization",
+                  "ai_prompt": "Reduce UI memory footprint",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply UI performance optimization",
-                  "ai_prompt": "Build project demonstrating UI performance optimization",
+                  "title": "GPU vs CPU Rendering",
+                  "ai_prompt": "Optimize rendering strategy",
                   "hour_number": 3
                 }
               ]
@@ -8599,18 +8599,18 @@
               "focus": "Model performance & drift monitoring",
               "hours": [
                 {
-                  "title": "Study Model performance & drift monitoring",
-                  "ai_prompt": "Learn fundamental concepts of Model performance & drift monitoring",
+                  "title": "Model Monitoring Setup",
+                  "ai_prompt": "Track model accuracy over time",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Model performance & drift monitoring",
-                  "ai_prompt": "Complete hands-on exercises for Model performance & drift monitoring",
+                  "title": "Data Drift Detection",
+                  "ai_prompt": "Detect input distribution changes",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Model performance & drift monitoring",
-                  "ai_prompt": "Build project demonstrating Model performance & drift monitoring",
+                  "title": "Performance Alerting",
+                  "ai_prompt": "Set thresholds for model degradation",
                   "hour_number": 3
                 }
               ]
@@ -8620,18 +8620,18 @@
               "focus": "AI ops dashboards & alerts",
               "hours": [
                 {
-                  "title": "Study AI ops dashboards & alerts",
-                  "ai_prompt": "Learn fundamental concepts of AI ops dashboards & alerts",
+                  "title": "ML Ops Dashboard",
+                  "ai_prompt": "Build Grafana dashboard for ML metrics",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice AI ops dashboards & alerts",
-                  "ai_prompt": "Complete hands-on exercises for AI ops dashboards & alerts",
+                  "title": "Inference Latency Tracking",
+                  "ai_prompt": "Monitor p50/p95/p99 latency",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply AI ops dashboards & alerts",
-                  "ai_prompt": "Build project demonstrating AI ops dashboards & alerts",
+                  "title": "Alert Runbook",
+                  "ai_prompt": "Document response to ML alerts",
                   "hour_number": 3
                 }
               ]
@@ -8641,18 +8641,18 @@
               "focus": "Insight storytelling & incident playbooks",
               "hours": [
                 {
-                  "title": "Study Insight storytelling & incident playbook",
-                  "ai_prompt": "Learn fundamental concepts of Insight storytelling & incident playbook",
+                  "title": "ML Incident Response",
+                  "ai_prompt": "Handle model failures gracefully",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Insight storytelling & incident playbook",
-                  "ai_prompt": "Complete hands-on exercises for Insight storytelling & incident playbook",
+                  "title": "Model Rollback Plan",
+                  "ai_prompt": "Implement safe model rollback",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Insight storytelling & incident playbook",
-                  "ai_prompt": "Build project demonstrating Insight storytelling & incident playbook",
+                  "title": "Post-Mortem Template",
+                  "ai_prompt": "Document and learn from incidents",
                   "hour_number": 3
                 }
               ]
@@ -8752,18 +8752,18 @@
               "focus": "Operations runbook",
               "hours": [
                 {
-                  "title": "Study Operations runbook",
-                  "ai_prompt": "Learn fundamental concepts of Operations runbook",
+                  "title": "Runbook Structure",
+                  "ai_prompt": "Create standardized runbook template",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Operations runbook",
-                  "ai_prompt": "Complete hands-on exercises for Operations runbook",
+                  "title": "Operational Procedures",
+                  "ai_prompt": "Document startup, shutdown, recovery",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Operations runbook",
-                  "ai_prompt": "Build project demonstrating Operations runbook",
+                  "title": "Escalation Matrix",
+                  "ai_prompt": "Define escalation paths and contacts",
                   "hour_number": 3
                 }
               ]
@@ -8773,18 +8773,18 @@
               "focus": "Fulfillment & logistics mapping",
               "hours": [
                 {
-                  "title": "Study Fulfillment & logistics mapping",
-                  "ai_prompt": "Learn fundamental concepts of Fulfillment & logistics mapping",
+                  "title": "Supply Chain Mapping",
+                  "ai_prompt": "Document component suppliers and lead times",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Fulfillment & logistics mapping",
-                  "ai_prompt": "Complete hands-on exercises for Fulfillment & logistics mapping",
+                  "title": "Inventory Management",
+                  "ai_prompt": "Track component inventory levels",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Fulfillment & logistics mapping",
-                  "ai_prompt": "Build project demonstrating Fulfillment & logistics mapping",
+                  "title": "Alternate Sourcing",
+                  "ai_prompt": "Identify backup suppliers",
                   "hour_number": 3
                 }
               ]
@@ -8794,18 +8794,18 @@
               "focus": "Support tooling setup",
               "hours": [
                 {
-                  "title": "Study Support tooling setup",
-                  "ai_prompt": "Learn fundamental concepts of Support tooling setup",
+                  "title": "Support Ticket System",
+                  "ai_prompt": "Set up issue tracking for support",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Support tooling setup",
-                  "ai_prompt": "Complete hands-on exercises for Support tooling setup",
+                  "title": "Knowledge Base",
+                  "ai_prompt": "Create FAQ and troubleshooting guides",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Support tooling setup",
-                  "ai_prompt": "Build project demonstrating Support tooling setup",
+                  "title": "Support Metrics",
+                  "ai_prompt": "Track resolution time and satisfaction",
                   "hour_number": 3
                 }
               ]
@@ -8905,18 +8905,18 @@
               "focus": "Performance budget enforcement",
               "hours": [
                 {
-                  "title": "Study Performance budget enforcement",
-                  "ai_prompt": "Learn fundamental concepts of Performance budget enforcement",
+                  "title": "Performance Budget Definition",
+                  "ai_prompt": "Set latency, memory, power budgets",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Performance budget enforcement",
-                  "ai_prompt": "Complete hands-on exercises for Performance budget enforcement",
+                  "title": "Budget Monitoring",
+                  "ai_prompt": "Automate budget checking in CI",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Performance budget enforcement",
-                  "ai_prompt": "Build project demonstrating Performance budget enforcement",
+                  "title": "Budget Violation Response",
+                  "ai_prompt": "Process for handling violations",
                   "hour_number": 3
                 }
               ]
@@ -8926,18 +8926,18 @@
               "focus": "Cost modeling",
               "hours": [
                 {
-                  "title": "Study Cost modeling",
-                  "ai_prompt": "Learn fundamental concepts of Cost modeling",
+                  "title": "BOM Cost Analysis",
+                  "ai_prompt": "Calculate per-unit hardware cost",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Cost modeling",
-                  "ai_prompt": "Complete hands-on exercises for Cost modeling",
+                  "title": "Cost Reduction Ideas",
+                  "ai_prompt": "Identify cost optimization opportunities",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Cost modeling",
-                  "ai_prompt": "Build project demonstrating Cost modeling",
+                  "title": "Make vs Buy Analysis",
+                  "ai_prompt": "Evaluate build vs purchase decisions",
                   "hour_number": 3
                 }
               ]
@@ -8947,18 +8947,18 @@
               "focus": "Performance tuning sprint",
               "hours": [
                 {
-                  "title": "Study Performance tuning sprint",
-                  "ai_prompt": "Learn fundamental concepts of Performance tuning sprint",
+                  "title": "CPU Optimization",
+                  "ai_prompt": "Profile and optimize hot paths",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Performance tuning sprint",
-                  "ai_prompt": "Complete hands-on exercises for Performance tuning sprint",
+                  "title": "Memory Optimization",
+                  "ai_prompt": "Reduce RAM and flash usage",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Performance tuning sprint",
-                  "ai_prompt": "Build project demonstrating Performance tuning sprint",
+                  "title": "Power Optimization",
+                  "ai_prompt": "Extend battery life through optimization",
                   "hour_number": 3
                 }
               ]
@@ -9217,18 +9217,18 @@
               "focus": "Build System",
               "hours": [
                 {
-                  "title": "Study Build System",
-                  "ai_prompt": "Learn fundamental concepts of Build System",
+                  "title": "Week Review: Build Systems",
+                  "ai_prompt": "Consolidate build system knowledge",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Build System",
-                  "ai_prompt": "Complete hands-on exercises for Build System",
+                  "title": "Practice: CMake Exercise",
+                  "ai_prompt": "Build complex project with CMake",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Build System",
-                  "ai_prompt": "Build project demonstrating Build System",
+                  "title": "Documentation Update",
+                  "ai_prompt": "Update build documentation",
                   "hour_number": 3
                 }
               ]
@@ -9238,18 +9238,18 @@
               "focus": "Static Analysis",
               "hours": [
                 {
-                  "title": "Study Static Analysis",
-                  "ai_prompt": "Learn fundamental concepts of Static Analysis",
+                  "title": "Week Review: Quality Tools",
+                  "ai_prompt": "Consolidate static analysis knowledge",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Static Analysis",
-                  "ai_prompt": "Complete hands-on exercises for Static Analysis",
+                  "title": "Practice: Code Review",
+                  "ai_prompt": "Review code for quality issues",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Static Analysis",
-                  "ai_prompt": "Build project demonstrating Static Analysis",
+                  "title": "Process Improvement",
+                  "ai_prompt": "Improve development workflow",
                   "hour_number": 3
                 }
               ]
@@ -9280,18 +9280,18 @@
               "focus": "CI/CD Pipeline",
               "hours": [
                 {
-                  "title": "Study CI/CD Pipeline",
-                  "ai_prompt": "Learn fundamental concepts of CI/CD Pipeline",
+                  "title": "CI/CD Review",
+                  "ai_prompt": "Audit and improve CI pipeline",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice CI/CD Pipeline",
-                  "ai_prompt": "Complete hands-on exercises for CI/CD Pipeline",
+                  "title": "Pipeline Optimization",
+                  "ai_prompt": "Reduce build time",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply CI/CD Pipeline",
-                  "ai_prompt": "Build project demonstrating CI/CD Pipeline",
+                  "title": "Test Coverage Analysis",
+                  "ai_prompt": "Identify untested code",
                   "hour_number": 3
                 }
               ]
@@ -9301,18 +9301,18 @@
               "focus": "Release Management",
               "hours": [
                 {
-                  "title": "Study Release Management",
-                  "ai_prompt": "Learn fundamental concepts of Release Management",
+                  "title": "Release Process Review",
+                  "ai_prompt": "Audit release workflow",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Release Management",
-                  "ai_prompt": "Complete hands-on exercises for Release Management",
+                  "title": "Automation Improvement",
+                  "ai_prompt": "Add more automation",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Release Management",
-                  "ai_prompt": "Build project demonstrating Release Management",
+                  "title": "Documentation Review",
+                  "ai_prompt": "Update process documentation",
                   "hour_number": 3
                 }
               ]
@@ -9370,18 +9370,18 @@
               "focus": "Release checklist completion",
               "hours": [
                 {
-                  "title": "Study Release checklist completion",
-                  "ai_prompt": "Learn fundamental concepts of Release checklist completion",
+                  "title": "Release Checklist Review",
+                  "ai_prompt": "Verify all release criteria met",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Release checklist completion",
-                  "ai_prompt": "Complete hands-on exercises for Release checklist completion",
+                  "title": "Pre-Release Testing",
+                  "ai_prompt": "Execute final test suite",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Release checklist completion",
-                  "ai_prompt": "Build project demonstrating Release checklist completion",
+                  "title": "Sign-Off Collection",
+                  "ai_prompt": "Get stakeholder approvals",
                   "hour_number": 3
                 }
               ]
@@ -9391,18 +9391,18 @@
               "focus": "Documentation freeze",
               "hours": [
                 {
-                  "title": "Study Documentation freeze",
-                  "ai_prompt": "Learn fundamental concepts of Documentation freeze",
+                  "title": "Documentation Audit",
+                  "ai_prompt": "Review all documentation for accuracy",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Documentation freeze",
-                  "ai_prompt": "Complete hands-on exercises for Documentation freeze",
+                  "title": "API Documentation",
+                  "ai_prompt": "Ensure API docs are complete",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Documentation freeze",
-                  "ai_prompt": "Build project demonstrating Documentation freeze",
+                  "title": "User Guide Update",
+                  "ai_prompt": "Finalize user-facing documentation",
                   "hour_number": 3
                 }
               ]
@@ -9412,18 +9412,18 @@
               "focus": "Training & enablement",
               "hours": [
                 {
-                  "title": "Study Training & enablement",
-                  "ai_prompt": "Learn fundamental concepts of Training & enablement",
+                  "title": "Training Material Creation",
+                  "ai_prompt": "Develop training presentations",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Training & enablement",
-                  "ai_prompt": "Complete hands-on exercises for Training & enablement",
+                  "title": "Demo Preparation",
+                  "ai_prompt": "Prepare product demonstrations",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Training & enablement",
-                  "ai_prompt": "Build project demonstrating Training & enablement",
+                  "title": "Onboarding Guide",
+                  "ai_prompt": "Create new user onboarding flow",
                   "hour_number": 3
                 }
               ]
@@ -9829,18 +9829,18 @@
               "focus": "Systems design interview prep",
               "hours": [
                 {
-                  "title": "Study Systems design interview prep",
-                  "ai_prompt": "Learn fundamental concepts of Systems design interview prep",
+                  "title": "System Design Patterns",
+                  "ai_prompt": "Study common embedded system architectures",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Systems design interview prep",
-                  "ai_prompt": "Complete hands-on exercises for Systems design interview prep",
+                  "title": "Design Interview Practice",
+                  "ai_prompt": "Practice whiteboard system design",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Systems design interview prep",
-                  "ai_prompt": "Build project demonstrating Systems design interview prep",
+                  "title": "Mock Interview",
+                  "ai_prompt": "Conduct system design mock interview",
                   "hour_number": 3
                 }
               ]
@@ -9850,18 +9850,18 @@
               "focus": "Firmware coding kata",
               "hours": [
                 {
-                  "title": "Study Firmware coding kata",
-                  "ai_prompt": "Learn fundamental concepts of Firmware coding kata",
+                  "title": "Coding Challenge Practice",
+                  "ai_prompt": "Solve embedded-focused coding problems",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Firmware coding kata",
-                  "ai_prompt": "Complete hands-on exercises for Firmware coding kata",
+                  "title": "Algorithm Review",
+                  "ai_prompt": "Review sorting, searching, graph algorithms",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Firmware coding kata",
-                  "ai_prompt": "Build project demonstrating Firmware coding kata",
+                  "title": "Time/Space Analysis",
+                  "ai_prompt": "Practice Big-O complexity analysis",
                   "hour_number": 3
                 }
               ]
@@ -9871,18 +9871,18 @@
               "focus": "Behavioral interview stories",
               "hours": [
                 {
-                  "title": "Study Behavioral interview stories",
-                  "ai_prompt": "Learn fundamental concepts of Behavioral interview stories",
+                  "title": "STAR Method Stories",
+                  "ai_prompt": "Prepare behavioral interview stories",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Behavioral interview stories",
-                  "ai_prompt": "Complete hands-on exercises for Behavioral interview stories",
+                  "title": "Common Questions",
+                  "ai_prompt": "Practice answering common questions",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Behavioral interview stories",
-                  "ai_prompt": "Build project demonstrating Behavioral interview stories",
+                  "title": "Cultural Fit Preparation",
+                  "ai_prompt": "Research company values and culture",
                   "hour_number": 3
                 }
               ]
@@ -9982,18 +9982,18 @@
               "focus": "Open-source contribution sprint",
               "hours": [
                 {
-                  "title": "Study source contribution sprint",
-                  "ai_prompt": "Learn fundamental concepts of source contribution sprint",
+                  "title": "Open Source Project Selection",
+                  "ai_prompt": "Find project matching skills",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice source contribution sprint",
-                  "ai_prompt": "Complete hands-on exercises for source contribution sprint",
+                  "title": "First Contribution",
+                  "ai_prompt": "Submit bug fix or documentation PR",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply source contribution sprint",
-                  "ai_prompt": "Build project demonstrating source contribution sprint",
+                  "title": "Community Engagement",
+                  "ai_prompt": "Participate in project discussions",
                   "hour_number": 3
                 }
               ]
@@ -10003,18 +10003,18 @@
               "focus": "Community talk or blog",
               "hours": [
                 {
-                  "title": "Study Community talk or blog",
-                  "ai_prompt": "Learn fundamental concepts of Community talk or blog",
+                  "title": "Technical Blog Writing",
+                  "ai_prompt": "Write blog post about learning",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Community talk or blog",
-                  "ai_prompt": "Complete hands-on exercises for Community talk or blog",
+                  "title": "Conference Talk Proposal",
+                  "ai_prompt": "Submit talk to local meetup",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Community talk or blog",
-                  "ai_prompt": "Build project demonstrating Community talk or blog",
+                  "title": "Content Creation",
+                  "ai_prompt": "Create tutorial video or guide",
                   "hour_number": 3
                 }
               ]
@@ -10024,18 +10024,18 @@
               "focus": "Mentorship & outreach",
               "hours": [
                 {
-                  "title": "Study Mentorship & outreach",
-                  "ai_prompt": "Learn fundamental concepts of Mentorship & outreach",
+                  "title": "Mentorship Participation",
+                  "ai_prompt": "Offer help to beginners",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Mentorship & outreach",
-                  "ai_prompt": "Complete hands-on exercises for Mentorship & outreach",
+                  "title": "Community Building",
+                  "ai_prompt": "Organize local embedded meetup",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Mentorship & outreach",
-                  "ai_prompt": "Build project demonstrating Mentorship & outreach",
+                  "title": "Knowledge Sharing",
+                  "ai_prompt": "Present at team or community",
                   "hour_number": 3
                 }
               ]
@@ -10135,18 +10135,18 @@
               "focus": "Capstone polish sprint",
               "hours": [
                 {
-                  "title": "Study Capstone polish sprint",
-                  "ai_prompt": "Learn fundamental concepts of Capstone polish sprint",
+                  "title": "Code Quality Sprint",
+                  "ai_prompt": "Fix technical debt in capstone",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Capstone polish sprint",
-                  "ai_prompt": "Complete hands-on exercises for Capstone polish sprint",
+                  "title": "Performance Optimization",
+                  "ai_prompt": "Optimize capstone performance",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Capstone polish sprint",
-                  "ai_prompt": "Build project demonstrating Capstone polish sprint",
+                  "title": "Bug Bash",
+                  "ai_prompt": "Find and fix remaining bugs",
                   "hour_number": 3
                 }
               ]
@@ -10156,18 +10156,18 @@
               "focus": "Final live demo rehearsal",
               "hours": [
                 {
-                  "title": "Study Final live demo rehearsal",
-                  "ai_prompt": "Learn fundamental concepts of Final live demo rehearsal",
+                  "title": "Demo Script Creation",
+                  "ai_prompt": "Write compelling demo narrative",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Final live demo rehearsal",
-                  "ai_prompt": "Complete hands-on exercises for Final live demo rehearsal",
+                  "title": "Demo Rehearsal",
+                  "ai_prompt": "Practice demo multiple times",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Final live demo rehearsal",
-                  "ai_prompt": "Build project demonstrating Final live demo rehearsal",
+                  "title": "Backup Plan",
+                  "ai_prompt": "Prepare for demo failures",
                   "hour_number": 3
                 }
               ]
@@ -10177,18 +10177,18 @@
               "focus": "Celebration & gratitude",
               "hours": [
                 {
-                  "title": "Study Celebration & gratitude",
-                  "ai_prompt": "Learn fundamental concepts of Celebration & gratitude",
+                  "title": "Achievement Documentation",
+                  "ai_prompt": "Document journey and achievements",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Celebration & gratitude",
-                  "ai_prompt": "Complete hands-on exercises for Celebration & gratitude",
+                  "title": "Thank You Notes",
+                  "ai_prompt": "Acknowledge mentors and supporters",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Celebration & gratitude",
-                  "ai_prompt": "Build project demonstrating Celebration & gratitude",
+                  "title": "Celebration Planning",
+                  "ai_prompt": "Plan completion celebration",
                   "hour_number": 3
                 }
               ]
@@ -10288,18 +10288,18 @@
               "focus": "Launch retrospective",
               "hours": [
                 {
-                  "title": "Study Launch retrospective",
-                  "ai_prompt": "Learn fundamental concepts of Launch retrospective",
+                  "title": "Retrospective Facilitation",
+                  "ai_prompt": "Lead project retrospective",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Launch retrospective",
-                  "ai_prompt": "Complete hands-on exercises for Launch retrospective",
+                  "title": "Lessons Learned Document",
+                  "ai_prompt": "Document key learnings",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Launch retrospective",
-                  "ai_prompt": "Build project demonstrating Launch retrospective",
+                  "title": "Process Improvement Plan",
+                  "ai_prompt": "Identify areas for improvement",
                   "hour_number": 3
                 }
               ]
@@ -10309,18 +10309,18 @@
               "focus": "Career outreach campaign",
               "hours": [
                 {
-                  "title": "Study Career outreach campaign",
-                  "ai_prompt": "Learn fundamental concepts of Career outreach campaign",
+                  "title": "LinkedIn Optimization",
+                  "ai_prompt": "Update profile with accomplishments",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Career outreach campaign",
-                  "ai_prompt": "Complete hands-on exercises for Career outreach campaign",
+                  "title": "Networking Outreach",
+                  "ai_prompt": "Connect with industry professionals",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Career outreach campaign",
-                  "ai_prompt": "Build project demonstrating Career outreach campaign",
+                  "title": "Job Application Strategy",
+                  "ai_prompt": "Plan targeted job applications",
                   "hour_number": 3
                 }
               ]
@@ -10462,18 +10462,18 @@
               "focus": "Basic Software (BSW) Layers",
               "hours": [
                 {
-                  "title": "Study Basic Software (BSW) Layers",
-                  "ai_prompt": "Learn fundamental concepts of Basic Software (BSW) Layers",
+                  "title": "BSW Module Overview",
+                  "ai_prompt": "Understand MCAL, ECU Abstraction, Services",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Basic Software (BSW) Layers",
-                  "ai_prompt": "Complete hands-on exercises for Basic Software (BSW) Layers",
+                  "title": "Memory Stack",
+                  "ai_prompt": "Study NvM, Fee, Fls modules",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Basic Software (BSW) Layers",
-                  "ai_prompt": "Build project demonstrating Basic Software (BSW) Layers",
+                  "title": "Communication Stack",
+                  "ai_prompt": "Study Com, PduR, CanIf modules",
                   "hour_number": 3
                 }
               ]
@@ -10483,18 +10483,18 @@
               "focus": "Application Software Components (SWC)",
               "hours": [
                 {
-                  "title": "Study Application Software Components (SWC)",
-                  "ai_prompt": "Learn fundamental concepts of Application Software Components (SWC)",
+                  "title": "SWC Design",
+                  "ai_prompt": "Create software component with ports",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Application Software Components (SWC)",
-                  "ai_prompt": "Complete hands-on exercises for Application Software Components (SWC)",
+                  "title": "Runnable Entities",
+                  "ai_prompt": "Define runnable entities and timing",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Application Software Components (SWC)",
-                  "ai_prompt": "Build project demonstrating Application Software Components (SWC)",
+                  "title": "Inter-Runnable Variables",
+                  "ai_prompt": "Implement data exchange between runnables",
                   "hour_number": 3
                 }
               ]
@@ -10504,18 +10504,18 @@
               "focus": "Runtime Environment (RTE)",
               "hours": [
                 {
-                  "title": "Study Runtime Environment (RTE)",
-                  "ai_prompt": "Learn fundamental concepts of Runtime Environment (RTE)",
+                  "title": "RTE Generation",
+                  "ai_prompt": "Generate RTE from SWC/BSW configuration",
                   "hour_number": 1
                 },
                 {
-                  "title": "Practice Runtime Environment (RTE)",
-                  "ai_prompt": "Complete hands-on exercises for Runtime Environment (RTE)",
+                  "title": "RTE API Usage",
+                  "ai_prompt": "Use Rte_Read, Rte_Write, Rte_Call",
                   "hour_number": 2
                 },
                 {
-                  "title": "Apply Runtime Environment (RTE)",
-                  "ai_prompt": "Build project demonstrating Runtime Environment (RTE)",
+                  "title": "RTE Debugging",
+                  "ai_prompt": "Debug RTE-based applications",
                   "hour_number": 3
                 }
               ]
@@ -10594,18 +10594,18 @@
               "focus": "ARM Instruction Set Architecture (ISA) Overview",
               "hours": [
                 {
-                  "title": "Structure Definition and Usage",
-                  "ai_prompt": "Define structs with various member types",
+                  "title": "Rust Ownership Model",
+                  "ai_prompt": "Understand ownership, borrowing, lifetimes",
                   "hour_number": 1
                 },
                 {
-                  "title": "Nested Structures and Arrays",
-                  "ai_prompt": "Create complex data structures",
+                  "title": "Rust Memory Safety",
+                  "ai_prompt": "Compare Rust safety to C",
                   "hour_number": 2
                 },
                 {
-                  "title": "Bit Fields and Alignment",
-                  "ai_prompt": "Optimize memory with bit fields and packing",
+                  "title": "Rust for Embedded",
+                  "ai_prompt": "Set up Rust embedded development",
                   "hour_number": 3
                 }
               ]
@@ -10636,18 +10636,18 @@
               "focus": "ARM Registers (R0-R15, CPSR, SPSR)",
               "hours": [
                 {
-                  "title": "ARM Architecture Overview",
-                  "ai_prompt": "Understand Cortex-M processor family",
+                  "title": "no_std Rust",
+                  "ai_prompt": "Write Rust without standard library",
                   "hour_number": 1
                 },
                 {
-                  "title": "Register Set",
-                  "ai_prompt": "Master R0-R15, PSR, and special registers",
+                  "title": "Bare-Metal Rust",
+                  "ai_prompt": "Create minimal Rust firmware",
                   "hour_number": 2
                 },
                 {
-                  "title": "Instruction Set",
-                  "ai_prompt": "Learn Thumb-2 instruction encoding",
+                  "title": "Rust Panic Handling",
+                  "ai_prompt": "Implement panic handler for embedded",
                   "hour_number": 3
                 }
               ]
@@ -10678,18 +10678,18 @@
               "focus": "ARM Assembly Syntax and Common Instructions",
               "hours": [
                 {
-                  "title": "Structure Definition and Usage",
-                  "ai_prompt": "Define structs with various member types",
+                  "title": "embedded-hal Trait",
+                  "ai_prompt": "Use hardware abstraction traits",
                   "hour_number": 1
                 },
                 {
-                  "title": "Nested Structures and Arrays",
-                  "ai_prompt": "Create complex data structures",
+                  "title": "PAC and HAL Crates",
+                  "ai_prompt": "Work with peripheral access crates",
                   "hour_number": 2
                 },
                 {
-                  "title": "Bit Fields and Alignment",
-                  "ai_prompt": "Optimize memory with bit fields and packing",
+                  "title": "Driver Development in Rust",
+                  "ai_prompt": "Write I2C/SPI driver in Rust",
                   "hour_number": 3
                 }
               ]

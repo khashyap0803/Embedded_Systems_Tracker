@@ -3666,7 +3666,7 @@
     },
     {
       "id": 4002,
-      "title": "K-Map Construction",
+      "title": "Apply Boolean algebra simplification with K-Map",
       "day_id": 16
     },
     {
@@ -4396,7 +4396,7 @@
     },
     {
       "id": 2396,
-      "title": "Bootloader Security",
+      "title": "Configure U-Boot bootloader for ARM Cortex-M target",
       "day_id": 64
     },
     {
@@ -4411,7 +4411,7 @@
     },
     {
       "id": 2399,
-      "title": "Bootloader Security",
+      "title": "Build U-Boot with custom device tree configuration",
       "day_id": 65
     },
     {
@@ -4506,12 +4506,12 @@
     },
     {
       "id": 3651,
-      "title": "Docker Compose for Build Environment",
+      "title": "Implement linked list data structure for embedded buffers",
       "day_id": 72
     },
     {
       "id": 3652,
-      "title": "Cross-Compilation in Docker",
+      "title": "Build hash table for fast lookup in resource-constrained systems",
       "day_id": 72
     },
     {
@@ -5146,7 +5146,7 @@
     },
     {
       "id": 2567,
-      "title": "CAN Application",
+      "title": "Understand FlexRay bus protocol for safety-critical systems",
       "day_id": 114
     },
     {
@@ -7121,7 +7121,7 @@
     },
     {
       "id": 3046,
-      "title": "Power Supply Design",
+      "title": "Design HIL test bench for ECU simulation",
       "day_id": 246
     },
     {
@@ -7136,7 +7136,7 @@
     },
     {
       "id": 3049,
-      "title": "Power Supply Design",
+      "title": "Implement HIL test automation with Python scripts",
       "day_id": 247
     },
     {
@@ -9121,7 +9121,7 @@
     },
     {
       "id": 2921,
-      "title": "USB Debugging",
+      "title": "Implement Modbus RTU protocol for industrial communication",
       "day_id": 379
     },
     {
@@ -9136,7 +9136,7 @@
     },
     {
       "id": 2924,
-      "title": "USB Debugging",
+      "title": "Design Modbus TCP gateway for PLC integration",
       "day_id": 380
     },
     {
@@ -9551,12 +9551,12 @@
     },
     {
       "id": 2293,
-      "title": "Register Set",
+      "title": "Connect JTAG/SWD debugger for hardware debugging",
       "day_id": 408
     },
     {
       "id": 2294,
-      "title": "Instruction Set",
+      "title": "Use JTAG hardware breakpoints for real-time analysis",
       "day_id": 408
     },
     {
@@ -9996,12 +9996,12 @@
     },
     {
       "id": 2319,
-      "title": "Debugging Techniques",
+      "title": "Configure ADC peripheral for multi-channel sampling",
       "day_id": 452
     },
     {
       "id": 2320,
-      "title": "Use GDB for debugging firmware and inspecting variables",
+      "title": "Implement DAC output for analog signal generation",
       "day_id": 452
     },
     {

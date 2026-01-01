@@ -42,6 +42,7 @@ embedded_tracker.db
 
 # Exports (generated files - user specific)
 exports/
+audit_data/
 
 # Backups (user specific)
 *_backup_*.json

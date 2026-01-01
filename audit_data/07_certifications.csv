@@ -1,5 +1,0 @@
-ID,Name,Provider,Status,Progress,Phase ID,Phase Name,Due Date,Completion Date,Credential URL
-1,ST MCU Developer – Level 1,STMicroelectronics Academy,in_progress,0.35,1,Phase 1 – Hardware Foundations & Modern Embedded C++,2026-01-05,,
-2,FreeRTOS Certified Developer,AWS Training & Certification,planned,0.0,2,Phase 2 – Real-Time Systems & Connected Firmware,2026-04-06,,https://aws.amazon.com/training/course-descriptions/freertos/
-3,Edge Impulse Expert,Edge Impulse,planned,0.0,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",2026-06-29,,https://edgeimpulse.com/experts
-4,AWS IoT Specialty,AWS Training & Certification,planned,0.0,4,"Phase 4 – Productization, Launch & Career Amplification",2026-09-21,,

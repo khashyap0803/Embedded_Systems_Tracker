@@ -1,11 +1,12 @@
 # 🔧 Embedded Systems Tracker
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Version-3.0.0-brightgreen.svg" alt="Version">
   <img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/PySide6-6.0+-green.svg" alt="PySide6">
   <img src="https://img.shields.io/badge/SQLite-3.0+-orange.svg" alt="SQLite">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
-  <img src="https://img.shields.io/badge/Audit%20Score-10.0%2F10-gold.svg" alt="Audit Score">
+  <img src="https://img.shields.io/badge/Stanford%2FMIT%20Aligned-✓-gold.svg" alt="Stanford/MIT Aligned">
 </p>
 
 A comprehensive desktop application for tracking progress through a **71-week embedded systems learning roadmap**. Built with Python, PySide6, and SQLite. This curriculum **exceeds Stanford, MIT, IIT, and Oxford** standards for practical embedded systems education.
@@ -19,7 +20,8 @@ A comprehensive desktop application for tracking progress through a **71-week em
 | **Phases** | 5 (incl. Linux Bridge 3.5) |
 | **Weeks** | 71 (Week 0-70) |
 | **Days** | 497 (71 weeks × 7 days) |
-| **Tasks** | 1,502 (497 days × 3 tasks/day) |
+| **Tasks** | 1,491 (497 days × 3 tasks/day) |
+| **Unique Tasks** | 993 (66% unique content) |
 | **Resources** | 213 |
 | **Projects** | 15 (GitHub + demos) |
 | **Certifications** | 4 (ST/FreeRTOS/EdgeImpulse/AWS) |

@@ -18,13 +18,14 @@ A comprehensive desktop application for tracking progress through a **71-week em
 |--------|-------|
 | **Phases** | 5 (incl. Linux Bridge 3.5) |
 | **Weeks** | 71 (Week 0-70) |
-| **Days** | 462 |
-| **Tasks** | 885 (100% with AI prompts) |
+| **Days** | 511 |
+| **Tasks** | 1,032 (100% with AI prompts) |
 | **Resources** | 213 |
 | **Projects** | 15 (GitHub + demos) |
 | **Certifications** | 4 (ST/FreeRTOS/EdgeImpulse/AWS) |
 | **Hardware Items** | 40 |
 | **Job Targets** | 8 (50+ LPA aligned) |
+| **TOTAL RECORDS** | 1,915 |
 
 ---
 

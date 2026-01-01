@@ -78,7 +78,7 @@
     {
       "id": 7,
       "number": 8,
-      "focus": "Week 7 Focus \u2013 DMA Fundamentals & Peripheral Basics",
+      "focus": "Week 08 \u2013 DMA Fundamentals & Peripheral Basics",
       "phase_id": 1
     },
     {
@@ -5466,17 +5466,17 @@
     },
     {
       "id": 2631,
-      "title": "Deep Dive Study",
+      "title": "Explore lwIP netconn and socket APIs for TCP/UDP",
       "day_id": 136
     },
     {
       "id": 2632,
-      "title": "Hands-on Practice",
+      "title": "Configure lwIP memory pools and pbuf management",
       "day_id": 136
     },
     {
       "id": 2633,
-      "title": "Knowledge Application",
+      "title": "Debug lwIP with LWIP_DEBUG and packet tracing",
       "day_id": 136
     },
     {
@@ -5991,32 +5991,32 @@
     },
     {
       "id": 2757,
-      "title": "Integration Planning",
+      "title": "Deploy containerized workloads on Linux gateway",
       "day_id": 171
     },
     {
       "id": 2758,
-      "title": "Integration Testing",
+      "title": "Configure Docker/Podman for edge compute",
       "day_id": 171
     },
     {
       "id": 2759,
-      "title": "Integration Review",
+      "title": "Implement container orchestration with K3s",
       "day_id": 171
     },
     {
       "id": 2760,
-      "title": "Integration Planning",
+      "title": "Establish secure firmware update channel over TLS",
       "day_id": 172
     },
     {
       "id": 2761,
-      "title": "Integration Testing",
+      "title": "Implement mutual authentication for gateway",
       "day_id": 172
     },
     {
       "id": 2762,
-      "title": "Integration Review",
+      "title": "Build encrypted command channel with AES-GCM",
       "day_id": 172
     },
     {
@@ -6276,62 +6276,62 @@
     },
     {
       "id": 2814,
-      "title": "TinyML Overview",
+      "title": "Collect sensor data for TinyML training dataset",
       "day_id": 190
     },
     {
       "id": 2815,
-      "title": "Model Optimization",
+      "title": "Label training data with annotation tools",
       "day_id": 190
     },
     {
       "id": 2816,
-      "title": "TFLite Micro",
+      "title": "Split dataset into train/validation/test sets",
       "day_id": 190
     },
     {
       "id": 2817,
-      "title": "TinyML Overview",
+      "title": "Perform data augmentation for diverse training",
       "day_id": 191
     },
     {
       "id": 2818,
-      "title": "Model Optimization",
+      "title": "Balance dataset classes to prevent bias",
       "day_id": 191
     },
     {
       "id": 2819,
-      "title": "TFLite Micro",
+      "title": "Export dataset in TensorFlow-compatible format",
       "day_id": 191
     },
     {
       "id": 2820,
-      "title": "TinyML Overview",
+      "title": "Build CNN model for gesture recognition",
       "day_id": 192
     },
     {
       "id": 2821,
-      "title": "Model Optimization",
+      "title": "Train model with TensorFlow and evaluate accuracy",
       "day_id": 192
     },
     {
       "id": 2822,
-      "title": "TFLite Micro",
+      "title": "Iterate model architecture for size/accuracy tradeoff",
       "day_id": 192
     },
     {
       "id": 2823,
-      "title": "TinyML Overview",
+      "title": "Convert TensorFlow model to TFLite Micro format",
       "day_id": 193
     },
     {
       "id": 2824,
-      "title": "Model Optimization",
+      "title": "Deploy TFLite Micro interpreter on Cortex-M",
       "day_id": 193
     },
     {
       "id": 2825,
-      "title": "TFLite Micro",
+      "title": "Measure inference latency and memory footprint",
       "day_id": 193
     },
     {
@@ -6906,32 +6906,32 @@
     },
     {
       "id": 3003,
-      "title": "Embedded Security Basics",
+      "title": "Study AOSP Vehicle HAL architecture and HIDL interfaces",
       "day_id": 232
     },
     {
       "id": 3004,
-      "title": "Secure Coding",
+      "title": "Implement custom vehicle property in Vehicle HAL",
       "day_id": 232
     },
     {
       "id": 3005,
-      "title": "Security Testing",
+      "title": "Test Vehicle HAL with Android Automotive emulator",
       "day_id": 232
     },
     {
       "id": 3006,
-      "title": "Embedded Security Basics",
+      "title": "Extend Vehicle HAL for OEM-specific features",
       "day_id": 233
     },
     {
       "id": 3007,
-      "title": "Secure Coding",
+      "title": "Debug HAL communication with adb and logcat",
       "day_id": 233
     },
     {
       "id": 3008,
-      "title": "Security Testing",
+      "title": "Profile Vehicle HAL performance with systrace",
       "day_id": 233
     },
     {
@@ -9321,17 +9321,17 @@
     },
     {
       "id": 3192,
-      "title": "Linux Command Line Basics",
+      "title": "Study Linux kernel subsystem architecture overview",
       "day_id": 393
     },
     {
       "id": 3193,
-      "title": "File Operations",
+      "title": "Analyze kernel source tree structure and organization",
       "day_id": 393
     },
     {
       "id": 3194,
-      "title": "Text Processing",
+      "title": "Explore kernel build process from menuconfig to vmlinux",
       "day_id": 393
     },
     {
@@ -9516,17 +9516,17 @@
     },
     {
       "id": 3105,
-      "title": "Linux Kernel Overview",
+      "title": "Build complete AUTOSAR configuration in EB Tresos/Vector DaVinci",
       "day_id": 406
     },
     {
       "id": 3106,
-      "title": "Kernel Configuration",
+      "title": "Generate RTE code and integrate with BSW",
       "day_id": 406
     },
     {
       "id": 3107,
-      "title": "Kernel Modules",
+      "title": "Test AUTOSAR application with Hardware-in-Loop simulation",
       "day_id": 406
     },
     {
@@ -10476,92 +10476,92 @@
     },
     {
       "id": 3213,
-      "title": "Yocto Overview",
+      "title": "Understand Yocto/OpenEmbedded architecture and terminology",
       "day_id": 484
     },
     {
       "id": 3214,
-      "title": "Custom Layers",
+      "title": "Set up Poky build environment and initial configuration",
       "day_id": 484
     },
     {
       "id": 3215,
-      "title": "Image Customization",
+      "title": "Build first Yocto image with core-image-minimal",
       "day_id": 484
     },
     {
       "id": 3216,
-      "title": "Yocto Overview",
+      "title": "Create custom meta-layer with proper structure",
       "day_id": 485
     },
     {
       "id": 3217,
-      "title": "Custom Layers",
+      "title": "Configure layer.conf and BBLAYERS",
       "day_id": 485
     },
     {
       "id": 3218,
-      "title": "Image Customization",
+      "title": "Add custom recipe to meta-layer",
       "day_id": 485
     },
     {
       "id": 3219,
-      "title": "Yocto Overview",
+      "title": "Create BSP layer for custom hardware",
       "day_id": 486
     },
     {
       "id": 3220,
-      "title": "Custom Layers",
+      "title": "Configure machine.conf for target board",
       "day_id": 486
     },
     {
       "id": 3221,
-      "title": "Image Customization",
+      "title": "Integrate device tree with BSP layer",
       "day_id": 486
     },
     {
       "id": 3222,
-      "title": "Yocto Overview",
+      "title": "Add and configure IPK package format",
       "day_id": 487
     },
     {
       "id": 3223,
-      "title": "Custom Layers",
+      "title": "Create package groups for image composition",
       "day_id": 487
     },
     {
       "id": 3224,
-      "title": "Image Customization",
+      "title": "Configure package feeds for OTA updates",
       "day_id": 487
     },
     {
       "id": 3225,
-      "title": "Yocto Overview",
+      "title": "Create custom image recipe with IMAGE_INSTALL",
       "day_id": 488
     },
     {
       "id": 3226,
-      "title": "Custom Layers",
+      "title": "Configure image features and distro settings",
       "day_id": 488
     },
     {
       "id": 3227,
-      "title": "Image Customization",
+      "title": "Implement image post-processing scripts",
       "day_id": 488
     },
     {
       "id": 3228,
-      "title": "Yocto Overview",
+      "title": "Generate extensible SDK (eSDK) for development",
       "day_id": 489
     },
     {
       "id": 3229,
-      "title": "Custom Layers",
+      "title": "Configure SDK with required libraries and tools",
       "day_id": 489
     },
     {
       "id": 3230,
-      "title": "Image Customization",
+      "title": "Test cross-compilation with generated SDK",
       "day_id": 489
     },
     {

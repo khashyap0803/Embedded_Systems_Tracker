@@ -3596,7 +3596,7 @@
     },
     {
       "id": 2194,
-      "title": "GDB Usage",
+      "title": "Use GDB for debugging firmware and inspecting variables",
       "day_id": 11
     },
     {
@@ -3791,7 +3791,7 @@
     },
     {
       "id": 2233,
-      "title": "GDB Usage",
+      "title": "Use GDB for debugging firmware and inspecting variables",
       "day_id": 24
     },
     {
@@ -5906,7 +5906,7 @@
     },
     {
       "id": 2740,
-      "title": "GDB Usage",
+      "title": "Use GDB for debugging firmware and inspecting variables",
       "day_id": 165
     },
     {
@@ -8806,7 +8806,7 @@
     },
     {
       "id": 3893,
-      "title": "Bug Bash",
+      "title": "Conduct team bug bash session for quality assurance",
       "day_id": 358
     },
     {
@@ -9986,7 +9986,7 @@
     },
     {
       "id": 2317,
-      "title": "SPI Modes",
+      "title": "Configure SPI clock polarity and phase modes",
       "day_id": 451
     },
     {
@@ -10001,7 +10001,7 @@
     },
     {
       "id": 2320,
-      "title": "GDB Usage",
+      "title": "Use GDB for debugging firmware and inspecting variables",
       "day_id": 452
     },
     {

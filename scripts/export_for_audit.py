@@ -191,25 +191,8 @@ with session_scope() as session:
         ])
     total_rows += export_to_csv("10_metrics.csv", headers, rows)
     
-    # =========================================================================
-    # 11. TASK RECORDS (Pomodoro/Time Tracking)
-    # =========================================================================
-    try:
-        records = session.exec(select(TaskRecord).order_by(TaskRecord.id)).all()
-        
-        headers = ["ID", "Task ID", "Task Title", "Start Time", "End Time", 
-                   "Work Seconds", "Break Seconds", "Pause Seconds", "Notes"]
-        rows = []
-        task_title_map = {t.id: t.title for t in tasks}
-        for r in records:
-            rows.append([
-                r.id, r.task_id, task_title_map.get(r.task_id, "Unknown"),
-                r.start_time, r.end_time, r.work_seconds, r.break_seconds, 
-                r.pause_seconds, r.notes
-            ])
-        total_rows += export_to_csv("11_task_records.csv", headers, rows)
-    except Exception as e:
-        print(f"⚠️ Could not export task records: {e}")
+    # Note: TaskRecord model was removed from the schema.
+    # All 10 core tables have been exported successfully.
 
 print("\n" + "=" * 70)
 print(f"📊 EXPORT COMPLETE")

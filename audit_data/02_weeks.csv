@@ -6,63 +6,67 @@ ID,Week Number,Phase ID,Phase Name,Focus,Start Date,End Date
 4,4,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 04 – MCU architecture survey & toolchain onboarding,2026-02-05,2026-02-12
 5,5,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 05 – C programming foundations & syntax fluency,2026-02-13,2026-02-20
 6,6,1,Phase 1 – Hardware Foundations & Modern Embedded C++,"Week 06 – Memory, pointers, and ISR-grade C idioms",2026-02-23,2026-03-02
-7,7,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 7 Focus – DMA Fundamentals & Peripheral Basics,2026-03-03,2026-03-10
-8,8,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 08 – Communication protocol essentials,2026-03-11,2026-03-18
-9,9,1,Phase 1 – Hardware Foundations & Modern Embedded C++,"Week 09 – DMA Fundamentals & Integration sprint, reviews, and communication demo",2026-03-19,2026-03-26
-10,10,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 10 – Power management & low energy design,2026-03-27,2026-04-03
-11,11,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 11 – Bootloaders & secure update foundations,2026-04-06,2026-04-13
-12,12,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 12 – Containerized Build Environments & CI Enablement,2026-04-14,2026-04-21
-13,13,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 13 – Safety basics & design for reliability,2026-04-22,2026-04-29
-14,14,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 14 – Phase consolidation & portfolio artifact,2026-04-30,2026-05-07
-15,15,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 15 – Zephyr RTOS architecture & board bring-up,2026-05-08,2026-05-15
-16,16,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 16 – FreeRTOS Fundamentals (Replacing Buffer),2026-05-18,2026-05-25
-17,17,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 17 – Deterministic scheduling & time partitioning,2026-05-26,2026-06-02
-18,18,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 18 Focus – Advanced DMA Patterns & Multi-channel DMA,2026-06-03,2026-06-10
-19,19,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 19 – CAN/CAN-FD Physical Layer & LIN Protocol,2026-06-11,2026-06-18
-20,20,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 20 – ISO-TP & UDS Automotive Diagnostics,2026-06-19,2026-06-26
-21,21,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 21 – RISC-V bring-up & open tooling,2026-06-29,2026-07-06
-22,22,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 22 – TCP/IP Networking Stack Internals & Packet Analysis,2026-07-07,2026-07-14
-23,23,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 23 – Secure communications & provisioning hardening,2026-07-15,2026-07-22
-24,24,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 24 – Fleet update infrastructure & DevOps,2026-07-23,2026-07-30
-25,25,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 25 – 🔄 BUFFER – Catch-up & Consolidation,2026-07-31,2026-08-07
-26,26,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 26 – Data pipelines & storage durability,2026-08-10,2026-08-17
-27,27,2,Phase 2 – Real-Time Systems & Connected Firmware,"Week 27 – Observability, logging, and remote diagnostics",2026-08-18,2026-08-25
-28,28,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 28 – Gateway integration & heterogeneous compute,2026-08-26,2026-09-02
-29,29,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 29 – Mixed-criticality & virtualization,2026-09-03,2026-09-10
-30,30,2,Phase 2 – Real-Time Systems & Connected Firmware,"Week 30 – Phase consolidation, demos, and midterm review",2026-09-11,2026-09-18
-31,31,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 31 – TinyML foundations on Cortex-M,2026-09-21,2026-09-28
-32,32,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness","Week 32 – Optimization, quantization, and benchmarks",2026-09-29,2026-10-06
-33,33,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 33 – Sensor fusion with ML & adaptive algorithms,2026-10-07,2026-10-14
-34,34,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 34 – 🔄 BUFFER – Catch-up & Consolidation,2026-10-15,2026-10-22
-62,35,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 35 – USB Protocol Fundamentals & Device Class,2026-10-23,2026-10-30
-63,36,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 36 – Embedded Networking & IoT Protocols,2026-11-02,2026-11-09
-35,37,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 35 – Embedded computer vision & perception,2026-11-10,2026-11-17
-36,38,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 36 – Functional safety standards deep dive,2026-11-18,2026-11-25
-37,39,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 37 – Diagnostic coverage & redundancy,2026-11-26,2026-12-03
-38,40,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 38 – Android Automotive HAL & security operations,2026-12-04,2026-12-11
-39,41,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 39 – Production test fixtures & DFM,2026-12-14,2026-12-21
-40,42,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 40 – Hardware design validation & compliance,2026-12-22,2026-12-29
-41,43,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 41 – Reliability engineering & environmental tests,2026-12-30,2027-01-06
-69,44,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 44 – AUTOSAR Fundamentals for Automotive Embedded,2027-01-07,2027-01-14
-42,45,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 42 – Supply chain resilience & lifecycle management,2027-01-15,2027-01-22
-43,46,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 43 – 🔄 BUFFER – Catch-up & Consolidation,2027-01-25,2027-02-01
-44,47,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 44 – Regulatory compliance & certification prep,2027-02-02,2027-02-09
-64,48,5,Phase 3.5 – Embedded Linux Bridge,Week 47 – Linux Kernel Modules & Build System (Kbuild),2027-02-10,2027-02-17
-65,49,5,Phase 3.5 – Embedded Linux Bridge,Week 48 – Device Tree & Hardware Description,2027-02-18,2027-02-25
-67,50,5,Phase 3.5 – Embedded Linux Bridge,Week 49 – Yocto Project & Buildroot Basics,2027-02-26,2027-03-05
-68,51,5,Phase 3.5 – Embedded Linux Bridge,Week 50 – Linux Character Device Drivers,2027-03-08,2027-03-15
-45,52,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness","Week 45 – Phase integration, storytelling, and demo",2027-03-16,2027-03-23
-46,53,4,"Phase 4 – Productization, Launch & Career Amplification",Week 46 – Productization roadmap & customer empathy,2027-03-24,2027-03-31
-47,54,4,"Phase 4 – Productization, Launch & Career Amplification",Week 47 – UX refinement & embedded UI polish,2027-04-01,2027-04-08
-48,55,4,"Phase 4 – Productization, Launch & Career Amplification",Week 48 – AI observability & insight delivery,2027-04-09,2027-04-16
-49,56,4,"Phase 4 – Productization, Launch & Career Amplification",Week 49 – Production logistics & operations runbooks,2027-04-19,2027-04-26
-50,57,4,"Phase 4 – Productization, Launch & Career Amplification",Week 50 – Performance scaling & cost optimization,2027-04-27,2027-05-04
-51,58,4,"Phase 4 – Productization, Launch & Career Amplification",Week 51 – Security audits & red team drills,2027-05-05,2027-05-12
-52,59,4,"Phase 4 – Productization, Launch & Career Amplification",Week 52 – 🔄 BUFFER – Catch-up & Consolidation,2027-05-13,2027-05-20
-53,60,4,"Phase 4 – Productization, Launch & Career Amplification",Week 53 – Release management & documentation freeze,2027-05-21,2027-05-28
-54,61,4,"Phase 4 – Productization, Launch & Career Amplification",Week 54 – Launch simulation & incident readiness,2027-05-31,2027-06-07
-55,62,4,"Phase 4 – Productization, Launch & Career Amplification",Week 55 – Portfolio refresh & storytelling,2027-06-08,2027-06-15
-56,63,4,"Phase 4 – Productization, Launch & Career Amplification",Week 56 – Interview prep & coding drills,2027-06-16,2027-06-23
-57,64,4,"Phase 4 – Productization, Launch & Career Amplification",Week 57 – Community impact & open-source contributions,2027-06-24,2027-07-01
-58,65,4,"Phase 4 – Productization, Launch & Career Amplification",Week 58 – Capstone hardening & final demo,2027-07-02,2027-07-09
-59,66,4,"Phase 4 – Productization, Launch & Career Amplification",Week 59 – Launch retrospective & career outreach,2027-07-12,2027-07-19
+70,7,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 07 – ARM Assembly Fundamentals for Debugging,2025-02-15,
+7,8,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 7 Focus – DMA Fundamentals & Peripheral Basics,2026-03-03,2026-03-10
+8,9,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 08 – Communication protocol essentials,2026-03-11,2026-03-18
+9,10,1,Phase 1 – Hardware Foundations & Modern Embedded C++,"Week 09 – DMA Fundamentals & Integration sprint, reviews, and communication demo",2026-03-19,2026-03-26
+10,11,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 10 – Power management & low energy design,2026-03-27,2026-04-03
+11,12,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 11 – Bootloaders & secure update foundations,2026-04-06,2026-04-13
+12,13,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 12 – Containerized Build Environments & CI Enablement,2026-04-14,2026-04-21
+13,14,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 13 – Safety basics & design for reliability,2026-04-22,2026-04-29
+14,15,1,Phase 1 – Hardware Foundations & Modern Embedded C++,Week 14 – Phase consolidation & portfolio artifact,2026-04-30,2026-05-07
+15,16,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 15 – Zephyr RTOS architecture & board bring-up,2026-05-08,2026-05-15
+16,17,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 16 – FreeRTOS Fundamentals (Replacing Buffer),2026-05-18,2026-05-25
+17,18,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 17 – Deterministic scheduling & time partitioning,2026-05-26,2026-06-02
+18,19,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 18 Focus – Advanced DMA Patterns & Multi-channel DMA,2026-06-03,2026-06-10
+19,20,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 19 – CAN/CAN-FD Physical Layer & LIN Protocol,2026-06-11,2026-06-18
+20,21,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 20 – ISO-TP & UDS Automotive Diagnostics,2026-06-19,2026-06-26
+21,22,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 21 – RISC-V bring-up & open tooling,2026-06-29,2026-07-06
+22,23,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 22 – TCP/IP Networking Stack Internals & Packet Analysis,2026-07-07,2026-07-14
+23,24,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 23 – Secure communications & provisioning hardening,2026-07-15,2026-07-22
+24,25,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 24 – Fleet update infrastructure & DevOps,2026-07-23,2026-07-30
+25,26,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 25 – 🔄 BUFFER – Catch-up & Consolidation,2026-07-31,2026-08-07
+26,27,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 26 – Data pipelines & storage durability,2026-08-10,2026-08-17
+27,28,2,Phase 2 – Real-Time Systems & Connected Firmware,"Week 27 – Observability, logging, and remote diagnostics",2026-08-18,2026-08-25
+28,29,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 28 – Gateway integration & heterogeneous compute,2026-08-26,2026-09-02
+29,30,2,Phase 2 – Real-Time Systems & Connected Firmware,Week 29 – Mixed-criticality & virtualization,2026-09-03,2026-09-10
+30,31,2,Phase 2 – Real-Time Systems & Connected Firmware,"Week 30 – Phase consolidation, demos, and midterm review",2026-09-11,2026-09-18
+31,32,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 31 – TinyML foundations on Cortex-M,2026-09-21,2026-09-28
+32,33,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness","Week 32 – Optimization, quantization, and benchmarks",2026-09-29,2026-10-06
+33,34,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 33 – Sensor fusion with ML & adaptive algorithms,2026-10-07,2026-10-14
+34,35,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 34 – 🔄 BUFFER – Catch-up & Consolidation,2026-10-15,2026-10-22
+62,36,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 35 – USB Protocol Fundamentals & Device Class,2026-10-23,2026-10-30
+63,37,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 36 – Embedded Networking & IoT Protocols,2026-11-02,2026-11-09
+35,38,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 35 – Embedded computer vision & perception,2026-11-10,2026-11-17
+36,39,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 36 – Functional safety standards deep dive,2026-11-18,2026-11-25
+37,40,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 37 – Diagnostic coverage & redundancy,2026-11-26,2026-12-03
+38,41,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 38 – Android Automotive HAL & security operations,2026-12-04,2026-12-11
+39,42,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 39 – Production test fixtures & DFM,2026-12-14,2026-12-21
+40,43,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 40 – Hardware design validation & compliance,2026-12-22,2026-12-29
+41,44,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 41 – Reliability engineering & environmental tests,2026-12-30,2027-01-06
+69,45,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 44 – AUTOSAR Fundamentals for Automotive Embedded,2027-01-07,2027-01-14
+42,46,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 42 – Supply chain resilience & lifecycle management,2027-01-15,2027-01-22
+43,47,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 43 – 🔄 BUFFER – Catch-up & Consolidation,2027-01-25,2027-02-01
+44,48,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 44 – Regulatory compliance & certification prep,2027-02-02,2027-02-09
+64,49,5,Phase 3.5 – Embedded Linux Bridge,Week 47 – Linux Kernel Modules & Build System (Kbuild),2027-02-10,2027-02-17
+65,50,5,Phase 3.5 – Embedded Linux Bridge,Week 48 – Device Tree & Hardware Description,2027-02-18,2027-02-25
+67,51,5,Phase 3.5 – Embedded Linux Bridge,Week 49 – Yocto Project & Buildroot Basics,2027-02-26,2027-03-05
+68,52,5,Phase 3.5 – Embedded Linux Bridge,Week 50 – Linux Character Device Drivers,2027-03-08,2027-03-15
+45,53,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness","Week 45 – Phase integration, storytelling, and demo",2027-03-16,2027-03-23
+46,54,4,"Phase 4 – Productization, Launch & Career Amplification",Week 46 – Productization roadmap & customer empathy,2027-03-24,2027-03-31
+47,55,4,"Phase 4 – Productization, Launch & Career Amplification",Week 47 – UX refinement & embedded UI polish,2027-04-01,2027-04-08
+48,56,4,"Phase 4 – Productization, Launch & Career Amplification",Week 48 – AI observability & insight delivery,2027-04-09,2027-04-16
+49,57,4,"Phase 4 – Productization, Launch & Career Amplification",Week 49 – Production logistics & operations runbooks,2027-04-19,2027-04-26
+50,58,4,"Phase 4 – Productization, Launch & Career Amplification",Week 50 – Performance scaling & cost optimization,2027-04-27,2027-05-04
+51,59,4,"Phase 4 – Productization, Launch & Career Amplification",Week 51 – Security audits & red team drills,2027-05-05,2027-05-12
+52,60,4,"Phase 4 – Productization, Launch & Career Amplification",Week 52 – 🔄 BUFFER – Catch-up & Consolidation,2027-05-13,2027-05-20
+53,61,4,"Phase 4 – Productization, Launch & Career Amplification",Week 53 – Release management & documentation freeze,2027-05-21,2027-05-28
+54,62,4,"Phase 4 – Productization, Launch & Career Amplification",Week 54 – Launch simulation & incident readiness,2027-05-31,2027-06-07
+55,63,4,"Phase 4 – Productization, Launch & Career Amplification",Week 55 – Portfolio refresh & storytelling,2027-06-08,2027-06-15
+56,64,4,"Phase 4 – Productization, Launch & Career Amplification",Week 56 – Interview prep & coding drills,2027-06-16,2027-06-23
+57,65,4,"Phase 4 – Productization, Launch & Career Amplification",Week 57 – Community impact & open-source contributions,2027-06-24,2027-07-01
+58,66,4,"Phase 4 – Productization, Launch & Career Amplification",Week 58 – Capstone hardening & final demo,2027-07-02,2027-07-09
+59,67,4,"Phase 4 – Productization, Launch & Career Amplification",Week 59 – Launch retrospective & career outreach,2027-07-12,2027-07-19
+71,68,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",Week 68 – SystemVerilog Basics for HW/SW Co-Design (Optional),2025-12-01,
+72,69,4,"Phase 4 – Productization, Launch & Career Amplification",Week 69 – Rust for Embedded Systems (Optional Advanced),2025-12-08,
+73,70,4,"Phase 4 – Productization, Launch & Career Amplification",Week 70 – Applied Embedded Math & DSP (Stanford Gap Fixer),2025-12-15,

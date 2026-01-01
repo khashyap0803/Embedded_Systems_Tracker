@@ -4701,62 +4701,62 @@
     },
     {
       "id": 2457,
-      "title": "Portfolio Project Planning",
+      "title": "Refactor firmware codebase for clean architecture",
       "day_id": 85
     },
     {
       "id": 2458,
-      "title": "Portfolio Implementation",
+      "title": "Optimize critical code paths for performance",
       "day_id": 85
     },
     {
       "id": 2459,
-      "title": "Portfolio Documentation",
+      "title": "Document firmware API and module interfaces",
       "day_id": 85
     },
     {
       "id": 2460,
-      "title": "Portfolio Project Planning",
+      "title": "Add comprehensive error handling and logging",
       "day_id": 86
     },
     {
       "id": 2461,
-      "title": "Portfolio Implementation",
+      "title": "Write unit tests for core firmware modules",
       "day_id": 86
     },
     {
       "id": 2462,
-      "title": "Portfolio Documentation",
+      "title": "Validate firmware on target hardware",
       "day_id": 86
     },
     {
       "id": 2463,
-      "title": "Portfolio Project Planning",
+      "title": "Write technical case study of project challenges",
       "day_id": 87
     },
     {
       "id": 2464,
-      "title": "Portfolio Implementation",
+      "title": "Document design decisions and trade-offs",
       "day_id": 87
     },
     {
       "id": 2465,
-      "title": "Portfolio Documentation",
+      "title": "Create architecture diagrams for portfolio",
       "day_id": 87
     },
     {
       "id": 2466,
-      "title": "Portfolio Project Planning",
+      "title": "Conduct phase retrospective with learnings",
       "day_id": 88
     },
     {
       "id": 2467,
-      "title": "Portfolio Implementation",
+      "title": "Prioritize backlog for next phase",
       "day_id": 88
     },
     {
       "id": 2468,
-      "title": "Portfolio Documentation",
+      "title": "Set personal goals for continued growth",
       "day_id": 88
     },
     {
@@ -6171,32 +6171,32 @@
     },
     {
       "id": 2793,
-      "title": "Integration Planning",
+      "title": "Rehearse end-to-end demo with full hardware setup",
       "day_id": 183
     },
     {
       "id": 2794,
-      "title": "Integration Testing",
+      "title": "Validate demo scenario flow and timing",
       "day_id": 183
     },
     {
       "id": 2795,
-      "title": "Integration Review",
+      "title": "Prepare demo backup plan and fallback scenarios",
       "day_id": 183
     },
     {
       "id": 2796,
-      "title": "Integration Planning",
+      "title": "Execute live demo run-through with stakeholders",
       "day_id": 184
     },
     {
       "id": 2797,
-      "title": "Integration Testing",
+      "title": "Collect demo feedback and refine presentation",
       "day_id": 184
     },
     {
       "id": 2798,
-      "title": "Integration Review",
+      "title": "Document demo highlights and technical achievements",
       "day_id": 184
     },
     {
@@ -6936,17 +6936,17 @@
     },
     {
       "id": 3009,
-      "title": "Integration Planning",
+      "title": "Build Android-MCU serial communication bridge",
       "day_id": 234
     },
     {
       "id": 3010,
-      "title": "Integration Testing",
+      "title": "Implement message protocol between Android and MCU",
       "day_id": 234
     },
     {
       "id": 3011,
-      "title": "Integration Review",
+      "title": "Test integration harness with real-time data exchange",
       "day_id": 234
     },
     {
@@ -7536,62 +7536,62 @@
     },
     {
       "id": 3255,
-      "title": "Integration Planning",
+      "title": "Demonstrate intelligent firmware features to audience",
       "day_id": 274
     },
     {
       "id": 3256,
-      "title": "Integration Testing",
+      "title": "Showcase ML inference on edge with live sensor data",
       "day_id": 274
     },
     {
       "id": 3257,
-      "title": "Integration Review",
+      "title": "Present power optimization and sleep mode integration",
       "day_id": 274
     },
     {
       "id": 3258,
-      "title": "Integration Planning",
+      "title": "Demo OTA update and rollback capability",
       "day_id": 275
     },
     {
       "id": 3259,
-      "title": "Integration Testing",
+      "title": "Show remote debugging and observability features",
       "day_id": 275
     },
     {
       "id": 3260,
-      "title": "Integration Review",
+      "title": "Highlight security features and secure boot chain",
       "day_id": 275
     },
     {
       "id": 3261,
-      "title": "Code Review",
+      "title": "Review certification documentation completeness",
       "day_id": 276
     },
     {
       "id": 3262,
-      "title": "Design Review",
+      "title": "Validate compliance matrix against regulations",
       "day_id": 276
     },
     {
       "id": 3263,
-      "title": "Documentation Review",
+      "title": "Prepare certification submission package",
       "day_id": 276
     },
     {
       "id": 3264,
-      "title": "Integration Planning",
+      "title": "Conduct phase retrospective with team feedback",
       "day_id": 277
     },
     {
       "id": 3265,
-      "title": "Integration Testing",
+      "title": "Document lessons learned and best practices",
       "day_id": 277
     },
     {
       "id": 3266,
-      "title": "Integration Review",
+      "title": "Groom backlog for next phase priorities",
       "day_id": 277
     },
     {
@@ -8166,62 +8166,62 @@
     },
     {
       "id": 3381,
-      "title": "Embedded Security Basics",
+      "title": "Conduct code review for security vulnerabilities",
       "day_id": 316
     },
     {
       "id": 3382,
-      "title": "Secure Coding",
+      "title": "Analyze static analysis reports for security issues",
       "day_id": 316
     },
     {
       "id": 3383,
-      "title": "Security Testing",
+      "title": "Review authentication and authorization mechanisms",
       "day_id": 316
     },
     {
       "id": 3384,
-      "title": "Embedded Security Basics",
+      "title": "Audit cryptographic implementation correctness",
       "day_id": 317
     },
     {
       "id": 3385,
-      "title": "Secure Coding",
+      "title": "Verify secure storage of keys and credentials",
       "day_id": 317
     },
     {
       "id": 3386,
-      "title": "Security Testing",
+      "title": "Check secure communication channel configuration",
       "day_id": 317
     },
     {
       "id": 3387,
-      "title": "Embedded Security Basics",
+      "title": "Execute red team attack scenarios on firmware",
       "day_id": 318
     },
     {
       "id": 3388,
-      "title": "Secure Coding",
+      "title": "Attempt firmware extraction and reverse engineering",
       "day_id": 318
     },
     {
       "id": 3389,
-      "title": "Security Testing",
+      "title": "Document discovered vulnerabilities and severity",
       "day_id": 318
     },
     {
       "id": 3390,
-      "title": "Embedded Security Basics",
+      "title": "Update team on latest security threats and mitigations",
       "day_id": 319
     },
     {
       "id": 3391,
-      "title": "Secure Coding",
+      "title": "Train on secure coding practices and code review",
       "day_id": 319
     },
     {
       "id": 3392,
-      "title": "Security Testing",
+      "title": "Review security incident response procedures",
       "day_id": 319
     },
     {
@@ -8481,47 +8481,47 @@
     },
     {
       "id": 3465,
-      "title": "Portfolio Project Planning",
+      "title": "Curate top projects for portfolio presentation",
       "day_id": 337
     },
     {
       "id": 3466,
-      "title": "Portfolio Implementation",
+      "title": "Write compelling project descriptions and outcomes",
       "day_id": 337
     },
     {
       "id": 3467,
-      "title": "Portfolio Documentation",
+      "title": "Create visual assets for portfolio projects",
       "day_id": 337
     },
     {
       "id": 3468,
-      "title": "Portfolio Project Planning",
+      "title": "Record demo videos of key projects",
       "day_id": 338
     },
     {
       "id": 3469,
-      "title": "Portfolio Implementation",
+      "title": "Edit highlight reel with professional touches",
       "day_id": 338
     },
     {
       "id": 3470,
-      "title": "Portfolio Documentation",
+      "title": "Caption and annotate technical demonstrations",
       "day_id": 338
     },
     {
       "id": 3471,
-      "title": "Portfolio Project Planning",
+      "title": "Compile reference letters from mentors",
       "day_id": 339
     },
     {
       "id": 3472,
-      "title": "Portfolio Implementation",
+      "title": "Prepare LinkedIn recommendations",
       "day_id": 339
     },
     {
       "id": 3473,
-      "title": "Portfolio Documentation",
+      "title": "Build professional networking contact list",
       "day_id": 339
     },
     {
@@ -9426,77 +9426,77 @@
     },
     {
       "id": 3087,
-      "title": "AUTOSAR Architecture",
+      "title": "Understand AUTOSAR layered architecture overview",
       "day_id": 400
     },
     {
       "id": 3088,
-      "title": "Software Components",
+      "title": "Study AUTOSAR ECU software architecture patterns",
       "day_id": 400
     },
     {
       "id": 3089,
-      "title": "RTE Configuration",
+      "title": "Explore AUTOSAR build and configuration tools",
       "day_id": 400
     },
     {
       "id": 3090,
-      "title": "AUTOSAR Architecture",
+      "title": "Create application software component (SWC)",
       "day_id": 401
     },
     {
       "id": 3091,
-      "title": "Software Components",
+      "title": "Define SWC ports and interfaces",
       "day_id": 401
     },
     {
       "id": 3092,
-      "title": "RTE Configuration",
+      "title": "Implement runnable entities in SWC",
       "day_id": 401
     },
     {
       "id": 3093,
-      "title": "AUTOSAR Architecture",
+      "title": "Configure Basic Software (BSW) modules",
       "day_id": 402
     },
     {
       "id": 3094,
-      "title": "Software Components",
+      "title": "Set up MCAL for target microcontroller",
       "day_id": 402
     },
     {
       "id": 3095,
-      "title": "RTE Configuration",
+      "title": "Configure ECU abstraction layer",
       "day_id": 402
     },
     {
       "id": 3096,
-      "title": "AUTOSAR Architecture",
+      "title": "Develop application algorithms in SWC",
       "day_id": 403
     },
     {
       "id": 3097,
-      "title": "Software Components",
+      "title": "Integrate application with RTE",
       "day_id": 403
     },
     {
       "id": 3098,
-      "title": "RTE Configuration",
+      "title": "Test application behavior with Virtual ECU",
       "day_id": 403
     },
     {
       "id": 3099,
-      "title": "AUTOSAR Architecture",
+      "title": "Configure CAN communication stack",
       "day_id": 404
     },
     {
       "id": 3100,
-      "title": "Software Components",
+      "title": "Set up COM and PDU router modules",
       "day_id": 404
     },
     {
       "id": 3101,
-      "title": "RTE Configuration",
+      "title": "Test CAN message transmission and reception",
       "day_id": 404
     },
     {
@@ -10371,62 +10371,62 @@
     },
     {
       "id": 3129,
-      "title": "Linux Kernel Overview",
+      "title": "Configure kernel using menuconfig",
       "day_id": 477
     },
     {
       "id": 3130,
-      "title": "Kernel Configuration",
+      "title": "Build kernel image and modules",
       "day_id": 477
     },
     {
       "id": 3131,
-      "title": "Kernel Modules",
+      "title": "Analyze kernel build output and symbols",
       "day_id": 477
     },
     {
       "id": 3132,
-      "title": "Linux Kernel Overview",
+      "title": "Write loadable kernel module from scratch",
       "day_id": 478
     },
     {
       "id": 3133,
-      "title": "Kernel Configuration",
+      "title": "Implement module initialization and cleanup",
       "day_id": 478
     },
     {
       "id": 3134,
-      "title": "Kernel Modules",
+      "title": "Test module loading with insmod/rmmod",
       "day_id": 478
     },
     {
       "id": 3135,
-      "title": "Linux Driver Model",
+      "title": "Implement character device driver structure",
       "day_id": 479
     },
     {
       "id": 3136,
-      "title": "Character Drivers",
+      "title": "Register chrdev with kernel",
       "day_id": 479
     },
     {
       "id": 3137,
-      "title": "Platform Drivers",
+      "title": "Test character device from userspace",
       "day_id": 479
     },
     {
       "id": 3138,
-      "title": "Linux Kernel Overview",
+      "title": "Use spinlocks for short critical sections",
       "day_id": 480
     },
     {
       "id": 3139,
-      "title": "Kernel Configuration",
+      "title": "Implement mutex for sleeping contexts",
       "day_id": 480
     },
     {
       "id": 3140,
-      "title": "Kernel Modules",
+      "title": "Test synchronization with concurrent access",
       "day_id": 480
     },
     {

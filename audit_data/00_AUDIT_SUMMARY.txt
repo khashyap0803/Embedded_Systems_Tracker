@@ -1,0 +1,25 @@
+EMBEDDED SYSTEMS TRACKER - DATA AUDIT EXPORT
+==================================================
+
+Export Date: 2026-01-01 15:14:41
+Total Rows: 1676
+
+FILES:
+  01_phases.csv        - Learning phases
+  02_weeks.csv         - Weekly curriculum
+  03_days.csv          - Daily schedules
+  04_tasks.csv         - Hourly tasks with AI prompts
+  05_resources.csv     - URLs and learning materials
+  06_projects.csv      - Portfolio projects
+  07_certifications.csv- Certification tracking
+  08_applications.csv  - Job applications
+  09_hardware.csv      - Hardware inventory
+  10_metrics.csv       - Progress metrics
+  11_task_records.csv  - Time tracking records
+
+AUDIT CHECKLIST:
+  [ ] Verify all URLs in 05_resources.csv are valid
+  [ ] Check week focuses match phase descriptions
+  [ ] Ensure no forbidden content (web dev, video editing)
+  [ ] Confirm 50+ LPA skills coverage
+  [ ] Validate hardware items are embedded-relevant

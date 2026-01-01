@@ -1,0 +1,49 @@
+ID,Recorded Date,Type,Value,Unit,Phase ID,Phase Name
+1,2025-11-17,phase1_hours_logged,78.0,hours,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+2,2026-01-19,lab_automation_pass_rate,0.92,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+3,2025-12-15,foundation_quiz_score,0.88,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+4,2025-12-22,breadboard_bug_rate,2.0,bugs_per_week,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+5,2026-03-09,rtos_context_switch_latency,18.0,microseconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+6,2026-04-20,fleet_connectivity_uptime,0.997,ratio,2,Phase 2 – Real-Time Systems & Connected Firmware
+7,2026-03-02,riscv_port_boot_time,1.8,seconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+8,2026-04-06,firmware_bugs_found_per_week,14.0,count,2,Phase 2 – Real-Time Systems & Connected Firmware
+9,2026-06-15,tinyml_inference_latency,18.5,milliseconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+10,2026-07-20,manufacturing_test_pass_rate,0.975,ratio,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+11,2026-06-08,android_hal_boot_time,6.5,seconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+12,2026-08-10,ai_ops_drift_alerts,1.0,count,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+13,2026-08-31,ux_test_nps,68.0,nps,4,"Phase 4 – Productization, Launch & Career Amplification"
+14,2026-10-19,job_applications_dispatched,50.0,count,4,"Phase 4 – Productization, Launch & Career Amplification"
+15,2026-09-14,ai_ops_incident_rate,0.01,incidents_per_week,4,"Phase 4 – Productization, Launch & Career Amplification"
+16,2026-09-21,post_launch_crash_free_sessions,0.985,ratio,4,"Phase 4 – Productization, Launch & Career Amplification"
+17,2025-11-17,phase1_hours_logged,78.0,hours,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+18,2026-01-19,lab_automation_pass_rate,0.92,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+19,2025-12-15,foundation_quiz_score,0.88,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+20,2025-12-22,breadboard_bug_rate,2.0,bugs_per_week,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+21,2026-03-09,rtos_context_switch_latency,18.0,microseconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+22,2026-04-20,fleet_connectivity_uptime,0.997,ratio,2,Phase 2 – Real-Time Systems & Connected Firmware
+23,2026-03-02,riscv_port_boot_time,1.8,seconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+24,2026-04-06,firmware_bugs_found_per_week,14.0,count,2,Phase 2 – Real-Time Systems & Connected Firmware
+25,2026-06-15,tinyml_inference_latency,18.5,milliseconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+26,2026-07-20,manufacturing_test_pass_rate,0.975,ratio,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+27,2026-06-08,android_hal_boot_time,6.5,seconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+28,2026-08-10,ai_ops_drift_alerts,1.0,count,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+29,2026-08-31,ux_test_nps,68.0,nps,4,"Phase 4 – Productization, Launch & Career Amplification"
+30,2026-10-19,job_applications_dispatched,50.0,count,4,"Phase 4 – Productization, Launch & Career Amplification"
+31,2026-09-14,ai_ops_incident_rate,0.01,incidents_per_week,4,"Phase 4 – Productization, Launch & Career Amplification"
+32,2026-09-21,post_launch_crash_free_sessions,0.985,ratio,4,"Phase 4 – Productization, Launch & Career Amplification"
+33,2025-11-17,phase1_hours_logged,78.0,hours,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+34,2026-01-19,lab_automation_pass_rate,0.92,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+35,2025-12-15,foundation_quiz_score,0.88,ratio,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+36,2025-12-22,breadboard_bug_rate,2.0,bugs_per_week,1,Phase 1 – Hardware Foundations & Modern Embedded C++
+37,2026-03-09,rtos_context_switch_latency,18.0,microseconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+38,2026-04-20,fleet_connectivity_uptime,0.997,ratio,2,Phase 2 – Real-Time Systems & Connected Firmware
+39,2026-03-02,riscv_port_boot_time,1.8,seconds,2,Phase 2 – Real-Time Systems & Connected Firmware
+40,2026-04-06,firmware_bugs_found_per_week,14.0,count,2,Phase 2 – Real-Time Systems & Connected Firmware
+41,2026-06-15,tinyml_inference_latency,18.5,milliseconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+42,2026-07-20,manufacturing_test_pass_rate,0.975,ratio,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+43,2026-06-08,android_hal_boot_time,6.5,seconds,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+44,2026-08-10,ai_ops_drift_alerts,1.0,count,3,"Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness"
+45,2026-08-31,ux_test_nps,68.0,nps,4,"Phase 4 – Productization, Launch & Career Amplification"
+46,2026-10-19,job_applications_dispatched,50.0,count,4,"Phase 4 – Productization, Launch & Career Amplification"
+47,2026-09-14,ai_ops_incident_rate,0.01,incidents_per_week,4,"Phase 4 – Productization, Launch & Career Amplification"
+48,2026-09-21,post_launch_crash_free_sessions,0.985,ratio,4,"Phase 4 – Productization, Launch & Career Amplification"

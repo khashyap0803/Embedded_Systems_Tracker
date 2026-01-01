@@ -1,0 +1,41 @@
+ID,Name,Category,Type,MCU,Architecture,Quantity,Status,Price (INR),Interface,Features,Notes
+1,NUCLEO-L476RG,board,development_board,STM32L476RG,ARM Cortex-M4,1,available,,,"Low Power,USB OTG,LCD Driver,ST-Link V2-1",Main STM32 development board with integrated debugger
+2,STM32F411 BlackPill,board,development_board,STM32F411CEU6,ARM Cortex-M4,1,available,,,"USB OTG,Compact Form Factor",Compact board for portable projects
+3,ESP32 DevKit,board,development_board,ESP32-WROOM-32,Xtensa LX6 Dual Core,2,available,,,"WiFi,Bluetooth,BLE,Touch Sensors",WiFi/BLE enabled boards for IoT projects
+4,Arduino Uno,board,development_board,ATmega328P,AVR,1,available,,,"USB-B,Beginner Friendly",Classic Arduino for simple prototyping
+5,MQ-135 Gas Sensor,sensor,gas,,,1,available,,Analog,,Air quality monitoring
+6,IR Sensor Module,sensor,proximity,,,1,available,,Digital,,Object detection and line following
+7,LDR Sensor Module,sensor,light,,,1,available,,Analog/Digital,,Light intensity detection
+8,PIR Sensor Module,sensor,motion,,,1,available,,Digital,,Motion detection for security/automation
+9,HC-SR04 Ultrasonic Sensor,sensor,distance,,,1,available,,Digital (Trigger/Echo),,Distance measurement
+10,Touch Sensor Module,sensor,touch,,,1,available,,Digital,,Capacitive touch detection
+11,Relay Module,module,actuator,,,1,available,,,,AC/DC load switching
+12,Power Supply Module,module,power,,,1,available,,,,Breadboard power supply
+13,RTC Module (DS3231),module,timing,,,1,available,,I2C,,Real-time clock with battery backup
+14,ADC Module,module,converter,,,1,available,,I2C/SPI,,External ADC for higher precision
+15,MUX Module,module,logic,,,1,available,,,,Analog/Digital multiplexer
+16,Encoder/Decoder HT/HD,module,logic,,,1,available,,,,RF encoder/decoder pair
+17,Humidifier Piezo Module,module,actuator,,,1,available,,,,Piezoelectric disc for mist generation
+18,TJA1050 CAN Transceiver Module,module,bus_transceiver,,,2,available,,CAN,,CRITICAL: Added per Red Team Audit - CAN controller requires external transceiver
+19,TJA1021 LIN Transceiver Module,module,bus_transceiver,,,2,available,,LIN,,Added per Red Team Audit - LIN slave implementation
+20,USB-CAN Analyzer,module,bus_analyzer,,,1,available,,USB/CAN,,Added per Red Team Audit - verify CAN communication
+21,"Variable Bench Power Supply (0-30V, 0-5A)",module,power,,,1,available,,,,CRITICAL: Added per Red Team Audit - motors cause brownout on USB rail
+22,LoRa RA-02,rf_module,lora_transceiver,,,2,available,,SPI,,Long range wireless for remote sensing projects
+23,433MHz TX/RX Module,rf_module,rf_transceiver,,,2,available,,,,Simple wireless communication pair
+24,OLED Display 0.96 inch,display,oled,,,1,available,,I2C,,Compact display for status/debug info
+25,Servo Motor SG90,actuator,servo,,,1,available,,,,Micro servo for positioning
+26,DC Motor,actuator,motor,,,1,available,,,,Small DC motor
+27,Buzzer (Active),actuator,audio,,,1,available,,,,Audio feedback/alarms
+28,LED Pack (Assorted),actuator,indicator,,,20,available,,,,Various 5mm LEDs
+29,Digital Multimeter,tool,measurement,,,1,available,,,"Voltage,Current,Resistance,Continuity",Essential measurement tool
+30,Jumper Wires M-M,tool,connector,,,40,available,,,,
+31,Jumper Wires M-F,tool,connector,,,40,available,,,,
+32,Connecting Wires,tool,connector,,,20,available,,,,Solid core wires for breadboarding
+33,24MHz 8-Channel Logic Analyzer (Saleae Clone),tool,measurement,,,1,available,,,"SPI,I2C,UART,Protocol Analysis",CRITICAL: Added per Red Team Audit - essential for debugging SPI/I2C protocols
+34,Rigol DS1054Z Oscilloscope,other,,,,1,ordered,25000.0,,,Essential for debugging analog signals
+35,Hantek 6022BE USB Oscilloscope,other,,,,1,ordered,8000.0,,,Budget alternative to Rigol
+36,MCP2551 CAN Transceiver,other,,,,1,ordered,180.0,,,Alternative CAN transceiver
+37,TJA1020 LIN Transceiver,other,,,,1,ordered,200.0,,,For LIN bus projects
+38,CAN Bus Development Kit,other,,,,1,ordered,1500.0,,,Complete CAN learning kit
+39,Raspberry Pi 4 Model B (4GB),other,,,,1,ordered,5500.0,,,For Embedded Linux Phase
+40,SD Card (32GB Class 10),other,,,,2,ordered,600.0,,,For Linux Images

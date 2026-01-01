@@ -1130,43 +1130,43 @@
     {
       "id": 99,
       "number": 1,
-      "focus": "Fixed-Point Q-Format Introduction",
+      "focus": "Rate Monotonic Scheduling (RMS) Fundamentals",
       "week_id": 17
     },
     {
       "id": 100,
       "number": 2,
-      "focus": "Q-Format Arithmetic",
+      "focus": "Deadline Monotonic Scheduling (DMS)",
       "week_id": 17
     },
     {
       "id": 101,
       "number": 3,
-      "focus": "CMSIS-DSP Library",
+      "focus": "WCET Analysis and Measurement Techniques",
       "week_id": 17
     },
     {
       "id": 102,
       "number": 4,
-      "focus": "Tracing & visualization",
+      "focus": "Time Partitioning and Slot-Based Scheduling",
       "week_id": 17
     },
     {
       "id": 103,
       "number": 5,
-      "focus": "Deep work",
+      "focus": "Scheduling Visualization and Tracing",
       "week_id": 17
     },
     {
       "id": 104,
       "number": 6,
-      "focus": "Integration, reflection, portfolio updates",
+      "focus": "Integration and Jitter Analysis",
       "week_id": 17
     },
     {
       "id": 105,
       "number": 7,
-      "focus": "Rest & recharge",
+      "focus": "Deterministic Scheduling Review and Project",
       "week_id": 17
     },
     {
@@ -1190,7 +1190,7 @@
     {
       "id": 109,
       "number": 4,
-      "focus": "Driver fatigue tests",
+      "focus": "DMA Stress Testing and Fatigue Analysis",
       "week_id": 18
     },
     {
@@ -3062,43 +3062,43 @@
     {
       "id": 386,
       "number": 1,
-      "focus": "OSI Model & TCP/IP Stack (LwIP)",
+      "focus": "Kernel Module Architecture and Lifecycle",
       "week_id": 63
     },
     {
       "id": 387,
       "number": 2,
-      "focus": "MAC & PHY Interfaces (MII/RMII)",
+      "focus": "Kbuild System and Module Makefiles",
       "week_id": 63
     },
     {
       "id": 388,
       "number": 3,
-      "focus": "UDP vs TCP for Embedded",
+      "focus": "Module Parameters and Symbol Export",
       "week_id": 63
     },
     {
       "id": 389,
       "number": 4,
-      "focus": "MQTT Protocol Basics",
+      "focus": "MQTT Integration with Kernel Driver",
       "week_id": 63
     },
     {
       "id": 390,
       "number": 5,
-      "focus": "CoAP for Constrained Devices",
+      "focus": "Memory Management in Kernel Modules",
       "week_id": 63
     },
     {
       "id": 391,
       "number": 6,
-      "focus": "Secure Sockets (TLS/SSL)",
+      "focus": "Kernel Debugging and Tracing",
       "week_id": 63
     },
     {
       "id": 392,
       "number": 7,
-      "focus": "Project: IoT Sensor Node",
+      "focus": "Kernel Module Integration Project",
       "week_id": 63
     },
     {
@@ -3230,85 +3230,85 @@
     {
       "id": 400,
       "number": 1,
-      "focus": "Build Systems Overview",
+      "focus": "AUTOSAR Architecture and Build Configuration",
       "week_id": 67
     },
     {
       "id": 401,
       "number": 2,
-      "focus": "Bitbake & Recipes",
+      "focus": "AUTOSAR Software Component Development",
       "week_id": 67
     },
     {
       "id": 402,
       "number": 3,
-      "focus": "Layers & Meta-data",
+      "focus": "AUTOSAR BSW Layer Configuration",
       "week_id": 67
     },
     {
       "id": 403,
       "number": 4,
-      "focus": "Creating Custom Image",
+      "focus": "AUTOSAR Application Layer Development",
       "week_id": 67
     },
     {
       "id": 404,
       "number": 5,
-      "focus": "SDK Generation",
+      "focus": "AUTOSAR Communication Stack Integration",
       "week_id": 67
     },
     {
       "id": 405,
       "number": 6,
-      "focus": "Root Filesystem Structure",
+      "focus": "AUTOSAR Memory and Diagnostic Services",
       "week_id": 67
     },
     {
       "id": 406,
       "number": 7,
-      "focus": "Patching Kernel in Yocto",
+      "focus": "AUTOSAR Integration and Testing",
       "week_id": 67
     },
     {
       "id": 407,
       "number": 1,
-      "focus": "Char Driver Structure (open/read/write)",
+      "focus": "ARM Assembly Syntax and Instruction Format",
       "week_id": 68
     },
     {
       "id": 408,
       "number": 2,
-      "focus": "Major/Minor Numbers",
+      "focus": "ARM Register Model and Special Registers",
       "week_id": 68
     },
     {
       "id": 409,
       "number": 3,
-      "focus": "Register-Based Operations",
+      "focus": "Data Processing and Arithmetic Instructions",
       "week_id": 68
     },
     {
       "id": 410,
       "number": 4,
-      "focus": "User-Kernel Data Transfer (copy_to_user)",
+      "focus": "Load/Store Instructions and Memory Access",
       "week_id": 68
     },
     {
       "id": 411,
       "number": 5,
-      "focus": "Blocking IO & Wait Queues",
+      "focus": "Branch Instructions and Control Flow",
       "week_id": 68
     },
     {
       "id": 412,
       "number": 6,
-      "focus": "Platform Drivers",
+      "focus": "Assembly Debugging with GDB and Disassembly",
       "week_id": 68
     },
     {
       "id": 413,
       "number": 7,
-      "focus": "Project: SPI/I2C Linux Driver",
+      "focus": "ARM Assembly Integration Project",
       "week_id": 68
     },
     {
@@ -3681,17 +3681,17 @@
     },
     {
       "id": 2211,
-      "title": "Git Basics",
+      "title": "Implement two-state LED toggle FSM in C with switch-case",
       "day_id": 17
     },
     {
       "id": 2212,
-      "title": "Branching Strategy",
+      "title": "Build three-state traffic light FSM with defined transitions",
       "day_id": 17
     },
     {
       "id": 2213,
-      "title": "Collaboration",
+      "title": "Design FSM state diagram and convert to C struct-based implementation",
       "day_id": 17
     },
     {
@@ -3906,17 +3906,17 @@
     },
     {
       "id": 2256,
-      "title": "LED Characteristics",
+      "title": "Create Notion database template for C syntax quick-reference",
       "day_id": 32
     },
     {
       "id": 2257,
-      "title": "Current Limiting Design",
+      "title": "Build knowledge-base structure for embedded programming concepts",
       "day_id": 32
     },
     {
       "id": 2258,
-      "title": "LED Driver Circuits",
+      "title": "Document learning progress tracker with spaced repetition system",
       "day_id": 32
     },
     {
@@ -4836,17 +4836,17 @@
     },
     {
       "id": 2484,
-      "title": "Linux Kernel Overview",
+      "title": "Explore Zephyr kernel services: threads, fifos, and work queues",
       "day_id": 94
     },
     {
       "id": 2485,
-      "title": "Kernel Configuration",
+      "title": "Configure Zephyr kernel timing with k_sleep and k_timer APIs",
       "day_id": 94
     },
     {
       "id": 2486,
-      "title": "Kernel Modules",
+      "title": "Implement Zephyr semaphores and mutexes for thread synchronization",
       "day_id": 94
     },
     {
@@ -4911,77 +4911,77 @@
     },
     {
       "id": 3957,
-      "title": "Q-Format Notation",
+      "title": "Implement Rate Monotonic Scheduling with static priorities",
       "day_id": 99
     },
     {
       "id": 3958,
-      "title": "Fixed-Point vs Floating-Point",
+      "title": "Calculate schedulability using RMS utilization bound",
       "day_id": 99
     },
     {
       "id": 3959,
-      "title": "Q-Format Conversion",
+      "title": "Analyze task period and deadline relationships",
       "day_id": 99
     },
     {
       "id": 3960,
-      "title": "Q-Format Addition/Subtraction",
+      "title": "Implement Deadline Monotonic Scheduling algorithm",
       "day_id": 100
     },
     {
       "id": 3961,
-      "title": "Q-Format Multiplication",
+      "title": "Compare RMS vs DMS for varying deadline constraints",
       "day_id": 100
     },
     {
       "id": 3962,
-      "title": "Q-Format Division",
+      "title": "Build periodic task set with response time analysis",
       "day_id": 100
     },
     {
       "id": 3963,
-      "title": "CMSIS-DSP Overview",
+      "title": "Measure worst-case execution time using cycle counters",
       "day_id": 101
     },
     {
       "id": 3964,
-      "title": "CMSIS-DSP Integration",
+      "title": "Apply static WCET analysis with timing annotations",
       "day_id": 101
     },
     {
       "id": 3965,
-      "title": "CMSIS-DSP Functions",
+      "title": "Handle interrupt preemption in WCET calculations",
       "day_id": 101
     },
     {
       "id": 3669,
-      "title": "Q15 Format Arithmetic",
+      "title": "Design time partitioning scheme with fixed time slots",
       "day_id": 102
     },
     {
       "id": 3670,
-      "title": "Q31 Format Operations",
+      "title": "Implement temporal isolation between partitions",
       "day_id": 102
     },
     {
       "id": 3671,
-      "title": "Fixed-Point Overflow",
+      "title": "Build partition scheduler with health monitoring",
       "day_id": 102
     },
     {
       "id": 3672,
-      "title": "Fixed-Point Filter Design",
+      "title": "Visualize task execution traces with timeline diagrams",
       "day_id": 103
     },
     {
       "id": 3673,
-      "title": "CMSIS-DSP Integration",
+      "title": "Measure scheduling jitter and latency distributions",
       "day_id": 103
     },
     {
       "id": 3674,
-      "title": "Performance Benchmarking",
+      "title": "Profile context switch overhead and optimize",
       "day_id": 103
     },
     {
@@ -5061,17 +5061,17 @@
     },
     {
       "id": 2550,
-      "title": "Linux Driver Model",
+      "title": "Design DMA stress test suite for high-throughput scenarios",
       "day_id": 109
     },
     {
       "id": 2551,
-      "title": "Character Drivers",
+      "title": "Measure DMA channel contention under sustained load",
       "day_id": 109
     },
     {
       "id": 2552,
-      "title": "Platform Drivers",
+      "title": "Validate DMA error recovery mechanisms with fault injection",
       "day_id": 109
     },
     {
@@ -5151,32 +5151,32 @@
     },
     {
       "id": 2568,
-      "title": "CAN Protocol",
+      "title": "Implement LIN slave node identification and diagnostics",
       "day_id": 115
     },
     {
       "id": 2569,
-      "title": "CAN Configuration",
+      "title": "Build LIN signal response with protected identifier",
       "day_id": 115
     },
     {
       "id": 2570,
-      "title": "CAN Application",
+      "title": "Handle LIN frame timing constraints and bit synchronization",
       "day_id": 115
     },
     {
       "id": 2571,
-      "title": "CAN Protocol",
+      "title": "Design LIN master schedule table with collision avoidance",
       "day_id": 116
     },
     {
       "id": 2572,
-      "title": "CAN Configuration",
+      "title": "Implement LIN diagnostic frame scheduling",
       "day_id": 116
     },
     {
       "id": 2573,
-      "title": "CAN Application",
+      "title": "Build LIN event-triggered frame mechanism",
       "day_id": 116
     },
     {
@@ -5646,62 +5646,62 @@
     },
     {
       "id": 2667,
-      "title": "Structure Definition and Usage",
+      "title": "Design update orchestration server with device registry",
       "day_id": 148
     },
     {
       "id": 2668,
-      "title": "Nested Structures and Arrays",
+      "title": "Build firmware distribution pipeline with CDN integration",
       "day_id": 148
     },
     {
       "id": 2669,
-      "title": "Bit Fields and Alignment",
+      "title": "Implement device authentication for update authorization",
       "day_id": 148
     },
     {
       "id": 2670,
-      "title": "Structure Definition and Usage",
+      "title": "Create update manifest format with version dependencies",
       "day_id": 149
     },
     {
       "id": 2671,
-      "title": "Nested Structures and Arrays",
+      "title": "Build update campaign management with targeting rules",
       "day_id": 149
     },
     {
       "id": 2672,
-      "title": "Bit Fields and Alignment",
+      "title": "Implement update scheduling with maintenance windows",
       "day_id": 149
     },
     {
       "id": 2673,
-      "title": "Structure Definition and Usage",
+      "title": "Design canary deployment strategy with staged rollout",
       "day_id": 150
     },
     {
       "id": 2674,
-      "title": "Nested Structures and Arrays",
+      "title": "Build rollout monitoring with success rate thresholds",
       "day_id": 150
     },
     {
       "id": 2675,
-      "title": "Bit Fields and Alignment",
+      "title": "Implement automatic rollback on failure detection",
       "day_id": 150
     },
     {
       "id": 2676,
-      "title": "Structure Definition and Usage",
+      "title": "Create device health reporting with heartbeat mechanism",
       "day_id": 151
     },
     {
       "id": 2677,
-      "title": "Nested Structures and Arrays",
+      "title": "Build telemetry aggregation pipeline for fleet analytics",
       "day_id": 151
     },
     {
       "id": 2678,
-      "title": "Bit Fields and Alignment",
+      "title": "Implement alert thresholds for fleet health monitoring",
       "day_id": 151
     },
     {
@@ -5961,32 +5961,32 @@
     },
     {
       "id": 2751,
-      "title": "Linux Command Line Basics",
+      "title": "Design gateway-MCU communication protocol over serial/SPI",
       "day_id": 169
     },
     {
       "id": 2752,
-      "title": "File Operations",
+      "title": "Implement secure handshake with mutual authentication",
       "day_id": 169
     },
     {
       "id": 2753,
-      "title": "Text Processing",
+      "title": "Build connection state machine with reconnection logic",
       "day_id": 169
     },
     {
       "id": 2754,
-      "title": "Linux Command Line Basics",
+      "title": "Create Linux-side gateway service with D-Bus interface",
       "day_id": 170
     },
     {
       "id": 2755,
-      "title": "File Operations",
+      "title": "Implement message routing between MCU and cloud endpoints",
       "day_id": 170
     },
     {
       "id": 2756,
-      "title": "Text Processing",
+      "title": "Build health monitoring for gateway-MCU link",
       "day_id": 170
     },
     {
@@ -6696,62 +6696,62 @@
     },
     {
       "id": 2961,
-      "title": "Function Prototypes and Definitions",
+      "title": "Draft project-specific safety plan per ISO 26262 Part 2",
       "day_id": 218
     },
     {
       "id": 2962,
-      "title": "Parameter Passing Methods",
+      "title": "Define safety lifecycle phases and gate reviews",
       "day_id": 218
     },
     {
       "id": 2963,
-      "title": "Recursive Functions",
+      "title": "Establish safety organization roles and responsibilities",
       "day_id": 218
     },
     {
       "id": 2964,
-      "title": "Function Prototypes and Definitions",
+      "title": "Create safety plan compliance matrix",
       "day_id": 219
     },
     {
       "id": 2965,
-      "title": "Parameter Passing Methods",
+      "title": "Document configuration management for safety artifacts",
       "day_id": 219
     },
     {
       "id": 2966,
-      "title": "Recursive Functions",
+      "title": "Define tool qualification requirements",
       "day_id": 219
     },
     {
       "id": 2967,
-      "title": "Function Prototypes and Definitions",
+      "title": "Derive software safety requirements from system design",
       "day_id": 220
     },
     {
       "id": 2968,
-      "title": "Parameter Passing Methods",
+      "title": "Apply ASIL-specific coding guidelines (MISRA, AUTOSAR)",
       "day_id": 220
     },
     {
       "id": 2969,
-      "title": "Recursive Functions",
+      "title": "Document software architecture safety analysis",
       "day_id": 220
     },
     {
       "id": 2970,
-      "title": "Function Prototypes and Definitions",
+      "title": "Create software verification plan per ISO 26262 Part 6",
       "day_id": 221
     },
     {
       "id": 2971,
-      "title": "Parameter Passing Methods",
+      "title": "Define test coverage targets for each ASIL level",
       "day_id": 221
     },
     {
       "id": 2972,
-      "title": "Recursive Functions",
+      "title": "Plan code review and static analysis activities",
       "day_id": 221
     },
     {
@@ -7011,62 +7011,62 @@
     },
     {
       "id": 3024,
-      "title": "Unit Testing",
+      "title": "Design PCB test fixture with pogo pins for production",
       "day_id": 239
     },
     {
       "id": 3025,
-      "title": "Integration Testing",
+      "title": "Create fixture wiring diagram for automated testing",
       "day_id": 239
     },
     {
       "id": 3026,
-      "title": "Test Automation",
+      "title": "Build boundary scan chain for PCB fault detection",
       "day_id": 239
     },
     {
       "id": 3027,
-      "title": "Unit Testing",
+      "title": "Implement test fixture power sequencing logic",
       "day_id": 240
     },
     {
       "id": 3028,
-      "title": "Integration Testing",
+      "title": "Design fixture mechanical alignment for high-volume production",
       "day_id": 240
     },
     {
       "id": 3029,
-      "title": "Test Automation",
+      "title": "Create fixture calibration procedure for accurate measurements",
       "day_id": 240
     },
     {
       "id": 3030,
-      "title": "Unit Testing",
+      "title": "Develop production test sequence with pass/fail criteria",
       "day_id": 241
     },
     {
       "id": 3031,
-      "title": "Integration Testing",
+      "title": "Implement flash programming station for firmware loading",
       "day_id": 241
     },
     {
       "id": 3032,
-      "title": "Test Automation",
+      "title": "Create production data logging for traceability",
       "day_id": 241
     },
     {
       "id": 3033,
-      "title": "Code Review",
+      "title": "Conduct Design for Manufacturing (DFM) checklist review",
       "day_id": 242
     },
     {
       "id": 3034,
-      "title": "Design Review",
+      "title": "Analyze solder joint reliability and component placement",
       "day_id": 242
     },
     {
       "id": 3035,
-      "title": "Documentation Review",
+      "title": "Document manufacturing yield improvement recommendations",
       "day_id": 242
     },
     {
@@ -7221,62 +7221,62 @@
     },
     {
       "id": 3066,
-      "title": "Unit Testing",
+      "title": "Design HALT test profile with temperature/vibration steps",
       "day_id": 253
     },
     {
       "id": 3067,
-      "title": "Integration Testing",
+      "title": "Define HALT destruct limits and operational margins",
       "day_id": 253
     },
     {
       "id": 3068,
-      "title": "Test Automation",
+      "title": "Create HALT to HASS transition criteria",
       "day_id": 253
     },
     {
       "id": 3069,
-      "title": "Unit Testing",
+      "title": "Plan HASS screening profile for production",
       "day_id": 254
     },
     {
       "id": 3070,
-      "title": "Integration Testing",
+      "title": "Define HASS detection and precipitation levels",
       "day_id": 254
     },
     {
       "id": 3071,
-      "title": "Test Automation",
+      "title": "Establish HASS proof-of-screen validation",
       "day_id": 254
     },
     {
       "id": 3072,
-      "title": "Unit Testing",
+      "title": "Execute thermal shock testing per MIL-STD-810",
       "day_id": 255
     },
     {
       "id": 3073,
-      "title": "Integration Testing",
+      "title": "Conduct vibration profile testing with accelerometer",
       "day_id": 255
     },
     {
       "id": 3074,
-      "title": "Test Automation",
+      "title": "Perform humidity and salt fog resistance testing",
       "day_id": 255
     },
     {
       "id": 3075,
-      "title": "Unit Testing",
+      "title": "Calculate MTBF from accelerated life test data",
       "day_id": 256
     },
     {
       "id": 3076,
-      "title": "Integration Testing",
+      "title": "Apply Arrhenius equation for thermal acceleration",
       "day_id": 256
     },
     {
       "id": 3077,
-      "title": "Test Automation",
+      "title": "Build reliability prediction model with Weibull analysis",
       "day_id": 256
     },
     {
@@ -7641,62 +7641,62 @@
     },
     {
       "id": 3276,
-      "title": "DMA Fundamentals",
+      "title": "Conduct stakeholder interviews for product requirements",
       "day_id": 281
     },
     {
       "id": 3277,
-      "title": "DMA Configuration",
+      "title": "Analyze customer feedback patterns and pain points",
       "day_id": 281
     },
     {
       "id": 3278,
-      "title": "DMA with Peripherals",
+      "title": "Create customer persona profiles for embedded product",
       "day_id": 281
     },
     {
       "id": 3279,
-      "title": "DMA Fundamentals",
+      "title": "Build voice-of-customer synthesis report",
       "day_id": 282
     },
     {
       "id": 3280,
-      "title": "DMA Configuration",
+      "title": "Prioritize features using MoSCoW method",
       "day_id": 282
     },
     {
       "id": 3281,
-      "title": "DMA with Peripherals",
+      "title": "Define minimum viable product scope and roadmap",
       "day_id": 282
     },
     {
       "id": 3282,
-      "title": "DMA Fundamentals",
+      "title": "Groom product backlog with user stories and acceptance criteria",
       "day_id": 283
     },
     {
       "id": 3283,
-      "title": "DMA Configuration",
+      "title": "Estimate story points for productization features",
       "day_id": 283
     },
     {
       "id": 3284,
-      "title": "DMA with Peripherals",
+      "title": "Create sprint plan for productization phase",
       "day_id": 283
     },
     {
       "id": 3285,
-      "title": "DMA Fundamentals",
+      "title": "Map end-to-end customer journey for embedded product",
       "day_id": 284
     },
     {
       "id": 3286,
-      "title": "DMA Configuration",
+      "title": "Identify touchpoints and moments of truth",
       "day_id": 284
     },
     {
       "id": 3287,
-      "title": "DMA with Peripherals",
+      "title": "Design delightful unboxing and first-run experience",
       "day_id": 284
     },
     {
@@ -8931,17 +8931,17 @@
     },
     {
       "id": 3555,
-      "title": "DMA Fundamentals",
+      "title": "Create 1-year/5-year career development roadmap",
       "day_id": 367
     },
     {
       "id": 3556,
-      "title": "DMA Configuration",
+      "title": "Identify skill gaps and learning path for target roles",
       "day_id": 367
     },
     {
       "id": 3557,
-      "title": "DMA with Peripherals",
+      "title": "Plan continuous learning with certifications and courses",
       "day_id": 367
     },
     {
@@ -9216,47 +9216,47 @@
     },
     {
       "id": 3171,
-      "title": "Linux Command Line Basics",
+      "title": "Understand kernel module loading with insmod/modprobe",
       "day_id": 386
     },
     {
       "id": 3172,
-      "title": "File Operations",
+      "title": "Implement module_init and module_exit functions",
       "day_id": 386
     },
     {
       "id": 3173,
-      "title": "Text Processing",
+      "title": "Handle module dependencies and versioning",
       "day_id": 386
     },
     {
       "id": 3174,
-      "title": "Linux Command Line Basics",
+      "title": "Create kernel module Kbuild Makefile",
       "day_id": 387
     },
     {
       "id": 3175,
-      "title": "File Operations",
+      "title": "Configure out-of-tree module compilation",
       "day_id": 387
     },
     {
       "id": 3176,
-      "title": "Text Processing",
+      "title": "Build module with custom compiler flags",
       "day_id": 387
     },
     {
       "id": 3177,
-      "title": "Linux Command Line Basics",
+      "title": "Implement module parameters with module_param macro",
       "day_id": 388
     },
     {
       "id": 3178,
-      "title": "File Operations",
+      "title": "Export symbols for inter-module communication",
       "day_id": 388
     },
     {
       "id": 3179,
-      "title": "Text Processing",
+      "title": "Handle module reference counting",
       "day_id": 388
     },
     {
@@ -9276,47 +9276,47 @@
     },
     {
       "id": 3183,
-      "title": "Linux Command Line Basics",
+      "title": "Implement kmalloc/kfree for dynamic kernel memory",
       "day_id": 390
     },
     {
       "id": 3184,
-      "title": "File Operations",
+      "title": "Use vmalloc for large kernel allocations",
       "day_id": 390
     },
     {
       "id": 3185,
-      "title": "Text Processing",
+      "title": "Handle memory barriers and synchronization",
       "day_id": 390
     },
     {
       "id": 3186,
-      "title": "Linux Command Line Basics",
+      "title": "Debug kernel modules with printk and dynamic debug",
       "day_id": 391
     },
     {
       "id": 3187,
-      "title": "File Operations",
+      "title": "Use ftrace for kernel function tracing",
       "day_id": 391
     },
     {
       "id": 3188,
-      "title": "Text Processing",
+      "title": "Analyze kernel oops and panic messages",
       "day_id": 391
     },
     {
       "id": 3189,
-      "title": "Linux Command Line Basics",
+      "title": "Build complete character device driver module",
       "day_id": 392
     },
     {
       "id": 3190,
-      "title": "File Operations",
+      "title": "Integrate module with Device Tree",
       "day_id": 392
     },
     {
       "id": 3191,
-      "title": "Text Processing",
+      "title": "Test module with automated kernel test framework",
       "day_id": 392
     },
     {
@@ -9501,17 +9501,17 @@
     },
     {
       "id": 3102,
-      "title": "Structure Definition and Usage",
+      "title": "Configure AUTOSAR MemStack with NvM and Fee modules",
       "day_id": 405
     },
     {
       "id": 3103,
-      "title": "Nested Structures and Arrays",
+      "title": "Implement AUTOSAR SecOC for secure communication",
       "day_id": 405
     },
     {
       "id": 3104,
-      "title": "Bit Fields and Alignment",
+      "title": "Set up AUTOSAR Dem for diagnostic event management",
       "day_id": 405
     },
     {
@@ -9531,17 +9531,17 @@
     },
     {
       "id": 2289,
-      "title": "Structure Definition and Usage",
+      "title": "Understand ARM unified assembly syntax (UAL) and mnemonics",
       "day_id": 407
     },
     {
       "id": 2290,
-      "title": "Nested Structures and Arrays",
+      "title": "Analyze instruction encoding format for ARM Thumb-2",
       "day_id": 407
     },
     {
       "id": 2291,
-      "title": "Bit Fields and Alignment",
+      "title": "Practice reading disassembled C code in ARM assembly",
       "day_id": 407
     },
     {
@@ -9576,62 +9576,62 @@
     },
     {
       "id": 2298,
-      "title": "Linux Kernel Overview",
+      "title": "Implement LDR/STR single-register transfers",
       "day_id": 410
     },
     {
       "id": 2299,
-      "title": "Kernel Configuration",
+      "title": "Practice LDM/STM multiple-register transfers",
       "day_id": 410
     },
     {
       "id": 2300,
-      "title": "Kernel Modules",
+      "title": "Analyze memory addressing modes (pre/post indexed)",
       "day_id": 410
     },
     {
       "id": 2301,
-      "title": "Queue Fundamentals",
+      "title": "Implement conditional branch instructions (BEQ, BNE, BGT)",
       "day_id": 411
     },
     {
       "id": 2302,
-      "title": "Queue Operations",
+      "title": "Build subroutine calls with BL and return with BX LR",
       "day_id": 411
     },
     {
       "id": 2303,
-      "title": "Queue Design",
+      "title": "Design conditional execution using IT blocks",
       "day_id": 411
     },
     {
       "id": 2304,
-      "title": "Linux Driver Model",
+      "title": "Debug assembly code using GDB disassemble command",
       "day_id": 412
     },
     {
       "id": 2305,
-      "title": "Character Drivers",
+      "title": "Analyze stack frames and register values in GDB",
       "day_id": 412
     },
     {
       "id": 2306,
-      "title": "Platform Drivers",
+      "title": "Correlate C source with generated assembly using -S flag",
       "day_id": 412
     },
     {
       "id": 2307,
-      "title": "Linux Command Line Basics",
+      "title": "Implement optimized memcpy routine in ARM assembly",
       "day_id": 413
     },
     {
       "id": 2308,
-      "title": "File Operations",
+      "title": "Write assembly startup code for bare-metal Cortex-M",
       "day_id": 413
     },
     {
       "id": 2309,
-      "title": "Text Processing",
+      "title": "Debug interrupt vectors and exception handlers in assembly",
       "day_id": 413
     },
     {
@@ -9801,17 +9801,17 @@
     },
     {
       "id": 3612,
-      "title": "Git Basics",
+      "title": "Review combinational logic: gates, multiplexers, decoders",
       "day_id": 428
     },
     {
       "id": 3613,
-      "title": "Branching Strategy",
+      "title": "Implement flip-flop circuits: D, JK, T types",
       "day_id": 428
     },
     {
       "id": 3614,
-      "title": "Collaboration",
+      "title": "Design sequential logic circuits with state registers",
       "day_id": 428
     },
     {
@@ -9936,17 +9936,17 @@
     },
     {
       "id": 3627,
-      "title": "Git Basics",
+      "title": "Implement moving average filter with circular buffer",
       "day_id": 444
     },
     {
       "id": 3628,
-      "title": "Branching Strategy",
+      "title": "Design FIR filter with configurable taps",
       "day_id": 444
     },
     {
       "id": 3629,
-      "title": "Collaboration",
+      "title": "Build IIR filter with biquad sections",
       "day_id": 444
     },
     {
@@ -10071,17 +10071,17 @@
     },
     {
       "id": 3666,
-      "title": "Queue APIs Deep Dive",
+      "title": "Implement binary semaphore for mutual exclusion patterns",
       "day_id": 457
     },
     {
       "id": 3667,
-      "title": "Queue Set Operations",
+      "title": "Design counting semaphore for resource pool management",
       "day_id": 457
     },
     {
       "id": 3668,
-      "title": "Queue Design Patterns",
+      "title": "Build producer-consumer pattern using semaphore synchronization",
       "day_id": 457
     },
     {
@@ -10266,92 +10266,92 @@
     },
     {
       "id": 2877,
-      "title": "USB Fundamentals",
+      "title": "Understand USB speed classes (LS/FS/HS/SS) and signaling",
       "day_id": 470
     },
     {
       "id": 2878,
-      "title": "USB Device Mode",
+      "title": "Analyze USB packet structure: token, data, handshake",
       "day_id": 470
     },
     {
       "id": 2879,
-      "title": "USB Debugging",
+      "title": "Study USB endpoint types: control, bulk, interrupt, isochronous",
       "day_id": 470
     },
     {
       "id": 2880,
-      "title": "USB Fundamentals",
+      "title": "Implement USB CDC class for virtual COM port",
       "day_id": 471
     },
     {
       "id": 2881,
-      "title": "USB Device Mode",
+      "title": "Implement USB HID class for keyboard/mouse emulation",
       "day_id": 471
     },
     {
       "id": 2882,
-      "title": "USB Debugging",
+      "title": "Implement USB MSC class for mass storage device",
       "day_id": 471
     },
     {
       "id": 2883,
-      "title": "USB Fundamentals",
+      "title": "Analyze USB D+/D- differential signaling with oscilloscope",
       "day_id": 472
     },
     {
       "id": 2884,
-      "title": "USB Device Mode",
+      "title": "Implement USB descriptor creation and parsing",
       "day_id": 472
     },
     {
       "id": 2885,
-      "title": "USB Debugging",
+      "title": "Handle USB suspend/resume power management",
       "day_id": 472
     },
     {
       "id": 2886,
-      "title": "USB Fundamentals",
+      "title": "Configure USB host controller for enumeration",
       "day_id": 473
     },
     {
       "id": 2887,
-      "title": "USB Device Mode",
+      "title": "Implement USB host class driver for HID devices",
       "day_id": 473
     },
     {
       "id": 2888,
-      "title": "USB Debugging",
+      "title": "Build USB hub support with multi-device handling",
       "day_id": 473
     },
     {
       "id": 2889,
-      "title": "USB Fundamentals",
+      "title": "Capture USB traffic with Wireshark USBPcap",
       "day_id": 474
     },
     {
       "id": 2890,
-      "title": "USB Device Mode",
+      "title": "Debug USB enumeration failures with protocol analyzer",
       "day_id": 474
     },
     {
       "id": 2891,
-      "title": "USB Debugging",
+      "title": "Analyze USB timing with logic analyzer",
       "day_id": 474
     },
     {
       "id": 2892,
-      "title": "USB Fundamentals",
+      "title": "Optimize USB bulk transfer throughput",
       "day_id": 475
     },
     {
       "id": 2893,
-      "title": "USB Device Mode",
+      "title": "Measure USB latency and jitter for real-time applications",
       "day_id": 475
     },
     {
       "id": 2894,
-      "title": "USB Debugging",
+      "title": "Implement double-buffering for continuous data streaming",
       "day_id": 475
     },
     {

@@ -15,7 +15,7 @@ ID,Title,Type,URL,Week ID,Week Number,Notes
 14,Embedded C Programming (Book),book,https://www.researchgate.net/publication/343889943_Embedded_C_Programming,5,5,Daily end-of-chapter drills
 15,HackerRank C track,platform,https://www.hackerrank.com/domains/c,5,5,Target 50 easy problems over the phase
 16,Valgrind quickstart,docs,https://valgrind.org/docs/manual/quick-start.html,6,6,Memory checking on Ubuntu
-17,Embedded C Coding Standards,book,https://barrgroup.com/embedded-systems/books,6,6,Chapters on pointers & volatile
+17,Embedded C Coding Standards,book,https://www.amazon.in/Embedded-Coding-Standard-Michael-Barr/dp/1442164824,6,6,Chapters on pointers & volatile
 18,STM32 reference manual GPIO chapter,docs,https://www.st.com/en/microcontrollers-microprocessors/stm32f7-series/documentation.html,6,6,Register map practice
 19,I2C Bus Specification,spec,https://www.nxp.com/docs/en/user-guide/UM10204.pdf,8,9,Fast-mode tables
 20,Saleae University,video,https://www.youtube.com/playlist?list=PLUdiafhsYS1RD_4aqtbYda7RJ_amlbgY4,8,9,Logic analyzer workflow

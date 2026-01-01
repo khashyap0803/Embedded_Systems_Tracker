@@ -1,8 +1,8 @@
 EMBEDDED SYSTEMS TRACKER - DATA AUDIT EXPORT
 ==================================================
 
-Export Date: 2026-01-01 16:27:44
-Total Rows: 1744
+Export Date: 2026-01-01 16:52:18
+Total Rows: 1712
 
 FILES:
   01_phases.csv        - Learning phases

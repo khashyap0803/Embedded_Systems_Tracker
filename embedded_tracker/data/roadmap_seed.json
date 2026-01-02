@@ -26399,7 +26399,8 @@
               "description": "AND, OR, XOR, MUX",
               "estimated_hours": 1.0,
               "ai_prompt": "Explain Verilog logic gates",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 483
             },
             {
               "id": 1451,
@@ -26407,7 +26408,8 @@
               "description": "Write Verilog modules",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilog 2-to-1 MUX",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 483
             },
             {
               "id": 1452,
@@ -26415,7 +26417,8 @@
               "description": "Data types",
               "estimated_hours": 1.0,
               "ai_prompt": "Wire vs reg in Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 483
             },
             {
               "id": 1453,
@@ -26423,7 +26426,8 @@
               "description": "Reusable designs",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilog parameters",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 484
             },
             {
               "id": 1454,
@@ -26431,7 +26435,8 @@
               "description": "Named port connections",
               "estimated_hours": 1.0,
               "ai_prompt": "Module instantiation",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 484
             },
             {
               "id": 1455,
@@ -26439,7 +26444,8 @@
               "description": "Conditional logic",
               "estimated_hours": 1.0,
               "ai_prompt": "Priority encoder Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 484
             },
             {
               "id": 1456,
@@ -26447,7 +26453,8 @@
               "description": "= vs <= semantics",
               "estimated_hours": 1.0,
               "ai_prompt": "Blocking assignment Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 485
             },
             {
               "id": 1457,
@@ -26455,7 +26462,8 @@
               "description": "Sensitivity list",
               "estimated_hours": 1.0,
               "ai_prompt": "Always @(*) in Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 485
             },
             {
               "id": 1458,
@@ -26463,7 +26471,8 @@
               "description": "Flip-flop inference",
               "estimated_hours": 1.0,
               "ai_prompt": "Always @(posedge clk)",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 485
             },
             {
               "id": 1459,
@@ -26471,7 +26480,8 @@
               "description": "Output on state only",
               "estimated_hours": 1.0,
               "ai_prompt": "Moore FSM Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 486
             },
             {
               "id": 1460,
@@ -26479,7 +26489,8 @@
               "description": "Output on state+input",
               "estimated_hours": 1.0,
               "ai_prompt": "Mealy FSM Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 486
             },
             {
               "id": 1461,
@@ -26487,7 +26498,8 @@
               "description": "Pattern recognition",
               "estimated_hours": 1.0,
               "ai_prompt": "1011 detector Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 486
             },
             {
               "id": 1462,
@@ -26495,7 +26507,8 @@
               "description": "Automated verification",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilog testbench assertions",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 487
             },
             {
               "id": 1463,
@@ -26503,7 +26516,8 @@
               "description": "Testbench scaffold",
               "estimated_hours": 1.0,
               "ai_prompt": "Clock generation Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 487
             },
             {
               "id": 1464,
@@ -26511,7 +26525,8 @@
               "description": "Read test data",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilog readmemh",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 487
             },
             {
               "id": 1465,
@@ -26519,7 +26534,8 @@
               "description": "Lint and simulate",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilator tutorial",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 488
             },
             {
               "id": 1466,
@@ -26527,7 +26543,8 @@
               "description": "Waveform viewer",
               "estimated_hours": 1.0,
               "ai_prompt": "GTKWave debug Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 488
             },
             {
               "id": 1467,
@@ -26535,7 +26552,8 @@
               "description": "Optimize testbench",
               "estimated_hours": 1.0,
               "ai_prompt": "Verilator optimization",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 488
             },
             {
               "id": 1468,
@@ -26543,7 +26561,8 @@
               "description": "SPI protocol",
               "estimated_hours": 1.0,
               "ai_prompt": "SPI Master Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 489
             },
             {
               "id": 1469,
@@ -26551,7 +26570,8 @@
               "description": "Full duplex SPI",
               "estimated_hours": 1.0,
               "ai_prompt": "SPI Slave Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 489
             },
             {
               "id": 1470,
@@ -26559,7 +26579,8 @@
               "description": "End-to-end test",
               "estimated_hours": 1.0,
               "ai_prompt": "SPI loopback test Verilog",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 489
             }
           ],
           "resources": [
@@ -27056,147 +27077,168 @@
               "description": "Math without FPU",
               "estimated_hours": 1.0,
               "ai_prompt": "Explain Q15 fixed point format",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 497
             },
             {
               "title": "Implement Q15 multiplication with saturation",
               "description": "Overflow handling",
               "estimated_hours": 1.0,
               "ai_prompt": "C code for Q15 multiplication with saturation",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 497
             },
             {
               "title": "Build fixed-point addition with saturation",
               "description": "Prevent wraparound",
               "estimated_hours": 1.0,
               "ai_prompt": "Saturating addition in fixed-point",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 497
             },
             {
               "title": "Implement square root approximation",
               "description": "Newton-Raphson in fixed-point",
               "estimated_hours": 1.0,
               "ai_prompt": "Fixed-point square root algorithm",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 498
             },
             {
               "title": "Build sine/cosine lookup table",
               "description": "Trig without FPU",
               "estimated_hours": 1.0,
               "ai_prompt": "Sine lookup table for embedded",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 498
             },
             {
               "title": "Implement CORDIC algorithm",
               "description": "Efficient rotation/trig",
               "estimated_hours": 1.0,
               "ai_prompt": "CORDIC algorithm for sin/cos",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 498
             },
             {
               "title": "Implement moving average filter",
               "description": "Simple smoothing",
               "estimated_hours": 1.0,
               "ai_prompt": "Moving average filter in C",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 499
             },
             {
               "title": "Design FIR filter with configurable taps",
               "description": "Finite impulse response",
               "estimated_hours": 1.5,
               "ai_prompt": "FIR filter implementation",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 499
             },
             {
               "title": "Build IIR biquad filter section",
               "description": "Second-order IIR",
               "estimated_hours": 1.5,
               "ai_prompt": "Biquad IIR filter for embedded",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 499
             },
             {
               "title": "Understand DFT and FFT basics",
               "description": "Frequency domain analysis",
               "estimated_hours": 1.0,
               "ai_prompt": "DFT vs FFT explained",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 500
             },
             {
               "title": "Implement radix-2 FFT",
               "description": "Cooley-Tukey algorithm",
               "estimated_hours": 2.0,
               "ai_prompt": "Radix-2 FFT implementation C",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 500
             },
             {
               "title": "Use CMSIS-DSP FFT functions",
               "description": "Optimized ARM library",
               "estimated_hours": 1.0,
               "ai_prompt": "CMSIS-DSP FFT STM32",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 500
             },
             {
               "title": "Understand PID controller theory",
               "description": "Proportional-Integral-Derivative",
               "estimated_hours": 1.0,
               "ai_prompt": "PID controller theory basics",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 501
             },
             {
               "title": "Implement discrete PID controller",
               "description": "Digital control loop",
               "estimated_hours": 1.0,
               "ai_prompt": "Discrete PID in C",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 501
             },
             {
               "title": "Tune PID with Ziegler-Nichols method",
               "description": "Classical tuning",
               "estimated_hours": 1.0,
               "ai_prompt": "Ziegler-Nichols PID tuning",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 501
             },
             {
               "title": "Understand Kalman filter theory",
               "description": "State estimation basics",
               "estimated_hours": 1.0,
               "ai_prompt": "Kalman filter intuition",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 502
             },
             {
               "title": "Implement 1D Kalman filter",
               "description": "Simple state estimation",
               "estimated_hours": 1.5,
               "ai_prompt": "1D Kalman filter C code",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 502
             },
             {
               "title": "Apply Kalman to sensor fusion",
               "description": "IMU/accelerometer fusion",
               "estimated_hours": 1.5,
               "ai_prompt": "Sensor fusion Kalman filter",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 502
             },
             {
               "title": "Design lock-free ring buffer",
               "description": "Thread-safe audio buffer",
               "estimated_hours": 1.0,
               "ai_prompt": "Lock-free ring buffer ISR",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 503
             },
             {
               "title": "Build real-time audio processing chain",
               "description": "Filter + FFT pipeline",
               "estimated_hours": 1.5,
               "ai_prompt": "Real-time audio processing MCU",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 503
             },
             {
               "title": "Create spectrum analyzer display",
               "description": "FFT visualization",
               "estimated_hours": 1.5,
               "ai_prompt": "Audio spectrum analyzer embedded",
-              "status": "pending"
+              "status": "pending",
+              "day_id": 503
             }
           ],
           "resources": [

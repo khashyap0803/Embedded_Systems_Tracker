@@ -12659,7 +12659,7 @@
       "name": "Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",
       "description": "Blend TinyML with safety-critical practices, Android Automotive integration, and manufacturing readiness. Harden products for compliance while building intelligent firmware paired with production test rigs and certification artefacts.",
       "start_date": "2026-09-29",
-      "end_date": "2027-08-04",
+      "end_date": "2027-03-31",
       "weeks": [
         {
           "id": 31,
@@ -20633,8 +20633,8 @@
       "id": 5,
       "name": "Phase 5 – Productization, Launch & Career Amplification",
       "description": "Bridge from bare-metal to Linux: Kernel modules, Device Trees, and Drivers.",
-      "start_date": "2027-02-18",
-      "end_date": "2027-03-23",
+      "start_date": "2027-08-21",
+      "end_date": "2027-12-31",
       "weeks": [
         {
           "id": 45,

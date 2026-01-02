@@ -6936,7 +6936,7 @@
         {
           "id": 16,
           "number": 18,
-          "focus": "Week 18 – FreeRTOS Fundamentals (Replacing Buffer)",
+          "focus": "Week 18 – FreeRTOS Synchronization Primitives",
           "start_date": "2026-05-26",
           "end_date": "2026-06-02",
           "status": "pending",
@@ -10373,7 +10373,7 @@
         {
           "id": 25,
           "number": 27,
-          "focus": "Week 27 – 🔄 BUFFER – Catch-up & Consolidation",
+          "focus": "Week 27 – Wireless Connectivity: BLE, WiFi & MQTT",
           "start_date": "2026-08-10",
           "end_date": "2026-08-17",
           "status": "pending",
@@ -17256,7 +17256,7 @@
         {
           "id": 43,
           "number": 48,
-          "focus": "Week 48 – 🔄 BUFFER – Catch-up & Consolidation",
+          "focus": "Week 48 – Linux Kernel Internals & Drivers",
           "start_date": "2027-02-02",
           "end_date": "2027-02-09",
           "status": "pending",
@@ -23335,7 +23335,7 @@
         {
           "id": 52,
           "number": 61,
-          "focus": "Week 61 – 🔄 BUFFER – Catch-up & Consolidation",
+          "focus": "Week 61 – Testing, CI/CD & Release Engineering",
           "start_date": "2027-05-21",
           "end_date": "2027-05-28",
           "status": "pending",

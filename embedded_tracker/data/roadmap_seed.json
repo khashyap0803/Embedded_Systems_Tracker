@@ -2671,6 +2671,56 @@
               "total_work_seconds": 0,
               "total_break_seconds": 0,
               "total_pause_seconds": 0
+            },
+            {
+              "id": 4026,
+              "title": "Configure ADC1 for single-channel continuous conversion",
+              "status": "pending",
+              "ai_prompt": "Configure ADC1 in continuous mode with DMA",
+              "hour_number": 1,
+              "total_work_seconds": 0,
+              "total_break_seconds": 0,
+              "total_pause_seconds": 0
+            },
+            {
+              "id": 4027,
+              "title": "Implement DMA-driven ADC circular buffer transfer",
+              "status": "pending",
+              "ai_prompt": "Set up DMA for circular buffer ADC sampling",
+              "hour_number": 2,
+              "total_work_seconds": 0,
+              "total_break_seconds": 0,
+              "total_pause_seconds": 0
+            },
+            {
+              "id": 4028,
+              "title": "Calibrate ADC using internal voltage reference (VREFINT)",
+              "status": "pending",
+              "ai_prompt": "Use VREFINT for ADC calibration accuracy",
+              "hour_number": 3,
+              "total_work_seconds": 0,
+              "total_break_seconds": 0,
+              "total_pause_seconds": 0
+            },
+            {
+              "id": 4029,
+              "title": "Implement Analog Watchdog (AWD) interrupt protection",
+              "status": "pending",
+              "ai_prompt": "Configure AWD thresholds and ISR",
+              "hour_number": 1,
+              "total_work_seconds": 0,
+              "total_break_seconds": 0,
+              "total_pause_seconds": 0
+            },
+            {
+              "id": 4030,
+              "title": "Synchronize Timer TRGO with ADC injection",
+              "status": "pending",
+              "ai_prompt": "Use Timer TRGO to trigger ADC injected conversions",
+              "hour_number": 2,
+              "total_work_seconds": 0,
+              "total_break_seconds": 0,
+              "total_pause_seconds": 0
             }
           ],
           "resources": [
@@ -19119,7 +19169,7 @@
     {
       "id": 4,
       "name": "Phase 4 – Embedded Linux Bridge",
-      "description": "Polish the product experience, finalize launch readiness, and translate achievements into standout portfolio assets. Concludes with simulated launch, community contributions, and career outreach campaign.",
+      "description": "Bridge from bare-metal to Linux: Kernel modules, Device Trees, and Drivers.",
       "start_date": "2027-04-01",
       "end_date": "2027-08-20",
       "weeks": [
@@ -20632,7 +20682,7 @@
     {
       "id": 5,
       "name": "Phase 5 – Productization, Launch & Career Amplification",
-      "description": "Bridge from bare-metal to Linux: Kernel modules, Device Trees, and Drivers.",
+      "description": "Polish the product experience, finalize launch readiness, and translate achievements into standout portfolio assets. Concludes with simulated launch, community contributions, and career outreach campaign.",
       "start_date": "2027-08-21",
       "end_date": "2027-12-31",
       "weeks": [

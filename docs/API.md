@@ -269,7 +269,7 @@ def session_scope() -> Generator[Session, None, None]
 def seed_database() -> None
     """
     Seed database from roadmap_seed.json.
-    Creates 71 weeks, 462 days, 885 tasks, 213 resources.
+    Creates 72 weeks, 504 days, 1,517 tasks, 170+ resources.
     """
 ```
 

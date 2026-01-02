@@ -17,10 +17,10 @@ A comprehensive desktop application for tracking progress through a **72-week em
 
 | Metric | Count |
 |--------|-------|
-| **Phases** | 5 (incl. Linux Bridge 3.5) |
+| **Phases** | 5 |
 | **Weeks** | 72 (Week 0-71) |
 | **Days** | 504 (72 weeks × 7 days) |
-| **Tasks** | 1,512 (504 days × 3 tasks/day) |
+| **Tasks** | 1,517 (1,512 + 5 ADC enrichment tasks) |
 | **Unique Tasks** | ~1,000+ (66%+ unique content) |
 | **Resources** | 213 |
 | **Projects** | 15 (GitHub + demos) |
@@ -37,7 +37,7 @@ A comprehensive desktop application for tracking progress through a **72-week em
 | Feature | Description |
 |---------|-------------|
 | **Phase Tracking** | 5 learning phases with dates and progress |
-| **Week Planning** | 71 weeks with focus areas and milestones |
+| **Week Planning** | 72 weeks with focus areas and milestones |
 | **Day Scheduling** | Day-by-day task planning with notes |
 | **Task Tracking** | Hour-level work items with AI prompts |
 
@@ -73,7 +73,7 @@ A comprehensive desktop application for tracking progress through a **72-week em
 
 ### From .deb Package (Linux)
 ```bash
-sudo dpkg -i dist/linux/embedded-tracker_0.1.0_amd64.deb
+sudo dpkg -i dist/linux/embedded-tracker_3.1.0_amd64.deb
 embedded-tracker
 ```
 

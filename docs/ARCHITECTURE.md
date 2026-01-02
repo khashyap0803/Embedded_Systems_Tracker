@@ -41,8 +41,8 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 | SQLModel Tables | 11 |
 | GUI Tabs | 10 |
 | Curriculum Weeks | 72 (Week 0-71) |
-| Total Tasks | 1,512 |
-| Data Records | 2,373 |
+| Total Tasks | 1,517 |
+| Data Records | 2,378 |
 
 ---
 
@@ -66,9 +66,9 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 │                           (services.py)                                  │
 │  ┌───────────────────────────────────────────────────────────────────┐  │
 │  │ • list_phases(), create_phase(), update_phase(), delete_phase()   │  │
-│  │ • list_weeks(), list_days(), list_tasks() (71 weeks, 462 days)   │  │
+│  │ • list_weeks(), list_days(), list_tasks() (72 weeks, 504 days)      │  │
 │  │ • start_task(), pause_task(), complete_task() (Timer management) │  │
-│  │ • list_resources() (213 curated URLs)                             │  │
+│  │ • list_resources() (170+ curated URLs)                            │  │
 │  │ • list_projects() (15 portfolio projects)                         │  │
 │  │ • Validation, type conversion, business rules                     │  │
 │  └───────────────────────────────────────────────────────────────────┘  │

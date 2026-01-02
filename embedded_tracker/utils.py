@@ -24,12 +24,21 @@ __all__ = [
     "format_local_datetime",
     "format_duration",
     "sanitize_csv_value",
-    # Constants
+    # Timer Constants
     "TIMER_REFRESH_MS",
     "POMODORO_WORK_MINUTES",
     "POMODORO_BREAK_MINUTES",
     "LIVE_REFRESH_INTERVAL_MS",
     "IDLE_REFRESH_INTERVAL_MS",
+    # v4.0: Date/Time Format Constants
+    "DATE_DISPLAY_FORMAT",
+    "DATETIME_DISPLAY_FORMAT",
+    "TIME_DISPLAY_FORMAT",
+    # v4.0: UI Constants
+    "UI_MARGIN_SMALL",
+    "UI_MARGIN_STANDARD",
+    "UI_MARGIN_LARGE",
+    "UI_SPACING_STANDARD",
 ]
 
 
@@ -41,6 +50,17 @@ POMODORO_BREAK_MINUTES = 5  # Standard Pomodoro break
 # GUI refresh intervals
 LIVE_REFRESH_INTERVAL_MS = 1000   # Refresh interval when task is running (1 second)
 IDLE_REFRESH_INTERVAL_MS = 15000  # Refresh interval when idle (15 seconds)
+
+# v4.0: Global date/time format constants for consistency
+DATE_DISPLAY_FORMAT = "%Y-%m-%d"           # ISO format for dates
+DATETIME_DISPLAY_FORMAT = "%Y-%m-%d %H:%M"  # ISO format for datetimes
+TIME_DISPLAY_FORMAT = "%H:%M:%S"            # 24-hour time format
+
+# v4.0: UI layout constants to avoid magic numbers
+UI_MARGIN_SMALL = 5
+UI_MARGIN_STANDARD = 10
+UI_MARGIN_LARGE = 20
+UI_SPACING_STANDARD = 10
 
 
 UTC = timezone.utc

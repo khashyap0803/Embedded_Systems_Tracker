@@ -269,7 +269,7 @@ def ensure_seed_data(seed_path: Path | None = None) -> None:
     # Import lazily to avoid circular dependency during module import.
     from .seed import seed_from_file
 
-    print(f"Auto-seeding roadmap database from {resolved}")
+    logger.info(f"Auto-seeding roadmap database from {resolved}")
     seed_from_file(resolved)
     
     # Also seed hardware inventory
@@ -292,7 +292,7 @@ def _ensure_hardware_seed() -> None:
         from . import services
         count = services.seed_hardware_from_json()
         if count > 0:
-            print(f"Auto-seeded {count} hardware items from inventory JSON")
+            logger.info(f"Auto-seeded {count} hardware items from inventory JSON")
     except Exception as e:
         logger.warning(f"Could not auto-seed hardware: {e}")
 

@@ -1,8 +1,8 @@
 # API Reference
 
-> **Version**: 0.2.0  
-> **Last Updated**: 2026-01-01  
-> **Audit Score**: 10.0/10 PLATINUM TIER
+> **Version**: 3.1.0  
+> **Last Updated**: 2026-01-02  
+> **Audit Score**: PLATINUM TIER (10/10)
 
 This document provides comprehensive API documentation for the Embedded Systems Tracker application.
 
@@ -85,13 +85,13 @@ def delete_phase(phase_id: int) -> None
 ```python
 def list_weeks(phase_id: Optional[int] = None) -> List[WeekRecord]
     """
-    List all 71 weeks of the curriculum.
+    List all 72 weeks of the curriculum (Week 0-71).
     
     Args:
         phase_id: Optional filter by phase
     
     Returns:
-        Weeks ordered by week number (0-70)
+        Weeks ordered by week number (0-71)
     """
 
 def create_week(

@@ -108,7 +108,7 @@ embedded-tracker/
 │   ├── seed.py                  # Data seeding
 │   │
 │   ├── data/                    # Curriculum data
-│   │   ├── roadmap_seed.json    # 71-week roadmap
+│   │   ├── roadmap_seed.json    # 72-week roadmap (Week 0-71)
 │   │   ├── hardware_bom.json    # Hardware BOM
 │   │   ├── hardware_inventory.json
 │   │   ├── pre_week1_checklist.json

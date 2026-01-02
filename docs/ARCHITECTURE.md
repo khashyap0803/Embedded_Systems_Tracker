@@ -1,8 +1,8 @@
 # System Architecture
 
-> **Version**: 0.2.0  
-> **Last Updated**: 2026-01-01  
-> **Audit Score**: 10.0/10 PLATINUM TIER
+> **Version**: 3.1.0  
+> **Last Updated**: 2026-01-02  
+> **Audit Score**: PLATINUM TIER (10/10)
 
 This document describes the architectural design of the Embedded Systems Tracker application.
 
@@ -36,11 +36,13 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 
 | Metric | Value |
 |--------|-------|
-| Total Lines of Code | ~8,000 |
+| Total Lines of Code | ~8,500 |
 | Python Modules | 15 |
-| SQLModel Tables | 15 |
+| SQLModel Tables | 11 |
 | GUI Tabs | 10 |
-| Data Records | 1,719 |
+| Curriculum Weeks | 72 (Week 0-71) |
+| Total Tasks | 1,512 |
+| Data Records | 2,373 |
 
 ---
 

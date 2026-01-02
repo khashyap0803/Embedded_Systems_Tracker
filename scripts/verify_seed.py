@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SEED_PATH = ROOT / "data" / "roadmap_seed.json"
+SEED_PATH = ROOT / "embedded_tracker" / "data" / "roadmap_seed.json"
 
 KEYWORD_FAMILIES = {
     "foundations": ["electronics", "logic", "breadboard", "uart", "digital", "c "],

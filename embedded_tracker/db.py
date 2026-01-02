@@ -65,7 +65,24 @@ def init_db() -> None:
         with _ENGINE.begin() as conn:
             conn.execute(text("PRAGMA journal_mode=WAL"))
         
-        _apply_migrations()
+        # v4.0: Use Alembic for migrations (preferred method)
+        try:
+            from alembic.config import Config
+            from alembic import command
+            
+            alembic_cfg = Config(_PACKAGE_ROOT / "alembic.ini")
+            alembic_cfg.set_main_option("script_location", str(_PACKAGE_ROOT / "alembic"))
+            alembic_cfg.set_main_option("sqlalchemy.url", f"sqlite:///{_DB_PATH}")
+            command.upgrade(alembic_cfg, "head")
+            logger.info("Alembic migrations applied successfully")
+        except ImportError:
+            logger.warning("Alembic not available, using legacy migrations")
+            _apply_migrations()
+        except Exception as alembic_error:
+            # Fallback to legacy migrations if Alembic fails
+            logger.warning(f"Alembic migration failed, falling back to legacy: {alembic_error}")
+            _apply_migrations()
+        
         SQLModel.metadata.create_all(_ENGINE)
         logger.info("Database initialized successfully")
     except (sqlite3.Error, OSError) as e:

@@ -61,6 +61,16 @@ _SEED_PATH = _PACKAGE_ROOT / "data" / "roadmap_seed.json"
 def init_db() -> None:
     """Create database tables if they do not already exist."""
     try:
+        # v4.0: Auto-backup database before migrations to prevent data loss
+        if _DB_PATH.exists():
+            import shutil
+            backup_path = _DB_PATH.with_suffix('.db.bak')
+            try:
+                shutil.copy2(_DB_PATH, backup_path)
+                logger.debug(f"Database backed up to {backup_path}")
+            except (OSError, shutil.Error) as backup_error:
+                logger.warning(f"Could not create database backup: {backup_error}")
+        
         # v4.0: Enable WAL mode for better concurrent access
         with _ENGINE.begin() as conn:
             conn.execute(text("PRAGMA journal_mode=WAL"))

@@ -42,7 +42,11 @@ T = TypeVar("T")
 
 
 def _safe_str(value: Any) -> str:
-    """Convert any value to a safe string for CSV/PDF export."""
+    """Convert any value to a safe string for CSV/PDF export.
+    
+    Includes CSV injection protection by prefixing dangerous characters
+    that could trigger Excel formula execution.
+    """
     if value is None:
         return ""
     if isinstance(value, datetime):
@@ -59,6 +63,13 @@ def _safe_str(value: Any) -> str:
     if '.' in result and result.split('.')[0].endswith('Status'):
         # Extract just the status value part
         return result.split('.')[-1].replace('_', ' ').title()
+    
+    # v4.0: CSV injection protection - prefix dangerous characters with single quote
+    # This prevents Excel from interpreting the value as a formula
+    dangerous_prefixes = ('=', '@', '+', '-', '\t', '\r')
+    if result and result[0] in dangerous_prefixes:
+        return f"'{result}"
+    
     return result
 
 

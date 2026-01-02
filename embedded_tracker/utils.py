@@ -23,6 +23,7 @@ __all__ = [
     "get_user_timezone",
     "format_local_datetime",
     "format_duration",
+    "sanitize_csv_value",
     # Constants
     "TIMER_REFRESH_MS",
     "POMODORO_WORK_MINUTES",
@@ -217,3 +218,36 @@ def format_duration(seconds: float | int | None) -> str:
     hours, remainder = divmod(total_seconds, 3600)
     minutes, secs = divmod(remainder, 60)
     return f"{hours:02d}:{minutes:02d}:{secs:02d}"
+
+
+def sanitize_csv_value(value: str | None) -> str:
+    """Sanitize a string value for safe CSV export.
+    
+    Prevents CSV injection attacks by prefixing potentially dangerous
+    characters with a single quote, which forces Excel to treat them as text.
+    
+    Dangerous prefixes: =, @, +, -, tab, carriage return
+    
+    Args:
+        value: String value to sanitize (None returns empty string)
+    
+    Returns:
+        Sanitized string safe for CSV export
+        
+    Example:
+        >>> sanitize_csv_value("=cmd|' /C calc'!A0")
+        "'=cmd|' /C calc'!A0"
+    """
+    if value is None:
+        return ""
+    
+    value_str = str(value)
+    
+    # Characters that could trigger formula execution in Excel
+    dangerous_prefixes = ('=', '@', '+', '-', '\t', '\r')
+    
+    if value_str and value_str[0] in dangerous_prefixes:
+        return f"'{value_str}"
+    
+    return value_str
+

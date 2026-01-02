@@ -28,6 +28,7 @@ __all__ = [
     "export_roadmap_csv",
     "export_tasks_pdf",
     "export_roadmap_pdf",
+    "export_all_csv",
     "ExportError",
 ]
 
@@ -518,3 +519,181 @@ def export_roadmap_pdf(
     except Exception as e:
         logger.exception("PDF generation failed")
         raise ExportError(f"PDF generation failed: {str(e)}") from e
+
+
+def export_all_csv(output_folder: Union[str, Path]) -> dict:
+    """Export all database tables to CSV files in a folder.
+    
+    Creates individual CSV files for each table plus a combined all.csv file.
+    
+    Args:
+        output_folder: Path to folder where CSV files will be created
+        
+    Returns:
+        Dictionary with export statistics for each table
+        
+    Raises:
+        ExportError: If export fails
+    """
+    from . import services
+    
+    try:
+        folder = Path(output_folder)
+        folder.mkdir(parents=True, exist_ok=True)
+        
+        stats = {}
+        all_data = []  # For combined all.csv
+        
+        # 1. Export Phases
+        phases = services.list_phases()
+        with open(folder / "phases.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Name", "Description", "Status", "Start Date", "End Date"])
+            for p in phases:
+                writer.writerow([
+                    p.id, p.name, getattr(p, 'description', ''),
+                    _safe_str(p.status), _safe_str(p.start_date), _safe_str(p.end_date)
+                ])
+        stats["phases"] = len(phases)
+        all_data.append(("=== PHASES ===", ["ID", "Name", "Description", "Status", "Start Date", "End Date"], 
+                        [[p.id, p.name, getattr(p, 'description', ''), _safe_str(p.status), 
+                          _safe_str(p.start_date), _safe_str(p.end_date)] for p in phases]))
+        
+        # 2. Export Weeks
+        weeks = services.list_weeks()
+        with open(folder / "weeks.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Number", "Phase", "Focus", "Status", "Start Date", "End Date"])
+            for w in weeks:
+                writer.writerow([
+                    w.id, w.number, w.phase_name, getattr(w, 'focus', ''),
+                    _safe_str(w.status), _safe_str(w.start_date), _safe_str(w.end_date)
+                ])
+        stats["weeks"] = len(weeks)
+        all_data.append(("=== WEEKS ===", ["ID", "Number", "Phase", "Focus", "Status", "Start Date", "End Date"],
+                        [[w.id, w.number, w.phase_name, getattr(w, 'focus', ''), _safe_str(w.status),
+                          _safe_str(w.start_date), _safe_str(w.end_date)] for w in weeks]))
+        
+        # 3. Export Days
+        days = services.list_days()
+        with open(folder / "days.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Number", "Week", "Focus", "Status", "Scheduled Date"])
+            for d in days:
+                writer.writerow([
+                    d.id, d.number, d.week_number, d.focus,
+                    _safe_str(d.status), _safe_str(d.scheduled_date)
+                ])
+        stats["days"] = len(days)
+        all_data.append(("=== DAYS ===", ["ID", "Number", "Week", "Focus", "Status", "Scheduled Date"],
+                        [[d.id, d.number, d.week_number, d.focus, _safe_str(d.status),
+                          _safe_str(d.scheduled_date)] for d in days]))
+        
+        # 4. Export Tasks
+        tasks = services.list_tasks()
+        with open(folder / "tasks.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Title", "Week", "Day", "Hour", "Status", "Work Seconds", "Break Seconds"])
+            for t in tasks:
+                writer.writerow([
+                    t.id, t.title, t.week_number, t.day_number, t.hour_number,
+                    _safe_str(t.status), t.work_seconds, t.break_seconds
+                ])
+        stats["tasks"] = len(tasks)
+        all_data.append(("=== TASKS ===", ["ID", "Title", "Week", "Day", "Hour", "Status", "Work Seconds", "Break Seconds"],
+                        [[t.id, t.title, t.week_number, t.day_number, t.hour_number,
+                          _safe_str(t.status), t.work_seconds, t.break_seconds] for t in tasks]))
+        
+        # 5. Export Resources
+        resources = services.list_resources()
+        with open(folder / "resources.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Title", "Type", "URL", "Week", "Phase", "Notes"])
+            for r in resources:
+                writer.writerow([
+                    r.id, r.title, _safe_str(r.type), r.url,
+                    r.week_number, r.phase_name, r.notes
+                ])
+        stats["resources"] = len(resources)
+        all_data.append(("=== RESOURCES ===", ["ID", "Title", "Type", "URL", "Week", "Phase", "Notes"],
+                        [[r.id, r.title, _safe_str(r.type), r.url, r.week_number, r.phase_name, r.notes] for r in resources]))
+        
+        # 6. Export Projects
+        projects = services.list_projects()
+        with open(folder / "projects.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Name", "Status", "Phase", "Repo URL", "Due Date"])
+            for p in projects:
+                writer.writerow([
+                    p.id, p.name, _safe_str(p.status), p.phase_name,
+                    p.repo_url, _safe_str(p.due_date)
+                ])
+        stats["projects"] = len(projects)
+        all_data.append(("=== PROJECTS ===", ["ID", "Name", "Status", "Phase", "Repo URL", "Due Date"],
+                        [[p.id, p.name, _safe_str(p.status), p.phase_name, p.repo_url, _safe_str(p.due_date)] for p in projects]))
+        
+        # 7. Export Certifications
+        certifications = services.list_certifications()
+        with open(folder / "certifications.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Name", "Provider", "Status", "Progress", "Due Date"])
+            for c in certifications:
+                writer.writerow([
+                    c.id, c.name, c.provider, _safe_str(c.status),
+                    c.progress, _safe_str(c.due_date)
+                ])
+        stats["certifications"] = len(certifications)
+        all_data.append(("=== CERTIFICATIONS ===", ["ID", "Name", "Provider", "Status", "Progress", "Due Date"],
+                        [[c.id, c.name, c.provider, _safe_str(c.status), c.progress, _safe_str(c.due_date)] for c in certifications]))
+        
+        # 8. Export Applications
+        applications = services.list_applications()
+        with open(folder / "applications.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Company", "Role", "Status", "Date Applied", "Next Action"])
+            for a in applications:
+                writer.writerow([
+                    a.id, a.company, a.role, _safe_str(a.status),
+                    _safe_str(a.date_applied), a.next_action
+                ])
+        stats["applications"] = len(applications)
+        all_data.append(("=== APPLICATIONS ===", ["ID", "Company", "Role", "Status", "Date Applied", "Next Action"],
+                        [[a.id, a.company, a.role, _safe_str(a.status), _safe_str(a.date_applied), a.next_action] for a in applications]))
+        
+        # 9. Export Hardware
+        hardware = services.list_hardware()
+        with open(folder / "hardware.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["ID", "Name", "Category", "Status", "Quantity", "Price INR", "Notes"])
+            for h in hardware:
+                writer.writerow([
+                    h.id, h.name, _safe_str(h.category), _safe_str(h.status),
+                    h.quantity, h.price_inr, h.notes
+                ])
+        stats["hardware"] = len(hardware)
+        all_data.append(("=== HARDWARE ===", ["ID", "Name", "Category", "Status", "Quantity", "Price INR", "Notes"],
+                        [[h.id, h.name, _safe_str(h.category), _safe_str(h.status), h.quantity, h.price_inr, h.notes] for h in hardware]))
+        
+        # 10. Create combined all.csv
+        with open(folder / "all.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["Embedded Tracker - Complete Database Export"])
+            writer.writerow([f"Generated: {datetime.now().isoformat()}"])
+            writer.writerow([])
+            
+            for section_name, headers, rows in all_data:
+                writer.writerow([section_name])
+                writer.writerow(headers)
+                for row in rows:
+                    writer.writerow(row)
+                writer.writerow([])  # Empty row between sections
+        
+        stats["total_records"] = sum(stats.values())
+        stats["files_created"] = 10  # 9 individual + 1 all.csv
+        
+        logger.info(f"Exported all data to {folder}: {stats}")
+        return stats
+        
+    except Exception as e:
+        logger.exception("Export all failed")
+        raise ExportError(f"Failed to export all data: {e}") from e

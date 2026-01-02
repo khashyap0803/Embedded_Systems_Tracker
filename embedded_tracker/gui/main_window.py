@@ -25,7 +25,7 @@ from PySide6.QtWidgets import (
 
 from ..db import ensure_seed_data, init_db
 from .. import services
-from ..export import export_tasks_csv, export_roadmap_csv, export_tasks_pdf, export_roadmap_pdf, ExportError
+from ..export import export_tasks_csv, export_roadmap_csv, export_tasks_pdf, export_roadmap_pdf, export_all_csv, ExportError
 
 # Import shared base components
 from .base import BaseCrudTab, DARK_THEME, LIGHT_THEME
@@ -259,6 +259,14 @@ class MainWindow(QMainWindow):
         export_roadmap_pdf_action.triggered.connect(self._export_roadmap_pdf)
         export_menu.addAction(export_roadmap_pdf_action)
         
+        export_menu.addSeparator()
+        
+        export_all_csv_action = QAction("📁 Export All (CSV)", self)
+        export_all_csv_action.setShortcut(QKeySequence("Ctrl+Shift+E"))
+        export_all_csv_action.setStatusTip("Export all database tables to CSV files")
+        export_all_csv_action.triggered.connect(self._export_all_csv)
+        export_menu.addAction(export_all_csv_action)
+        
         file_menu.addSeparator()
         
         # Backup & Restore submenu
@@ -454,6 +462,23 @@ class MainWindow(QMainWindow):
                 weeks = services.list_weeks()
                 export_roadmap_pdf(phases, weeks, path)
                 QMessageBox.information(self, "Success", f"Roadmap exported to:\n{path}")
+            except ExportError as e:
+                QMessageBox.critical(self, "Export Error", str(e))
+    
+    def _export_all_csv(self) -> None:
+        """Export all database tables to CSV files in a folder."""
+        folder = QFileDialog.getExistingDirectory(
+            self, "Select Export Folder", "", QFileDialog.Option.ShowDirsOnly
+        )
+        if folder:
+            try:
+                stats = export_all_csv(folder)
+                summary = "\n".join([f"  {k}: {v}" for k, v in stats.items()])
+                QMessageBox.information(
+                    self,
+                    "Export Complete",
+                    f"✅ All data exported successfully!\n\nFolder: {folder}\n\nFiles created:\n{summary}"
+                )
             except ExportError as e:
                 QMessageBox.critical(self, "Export Error", str(e))
     

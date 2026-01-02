@@ -64,6 +64,7 @@ A comprehensive desktop application for tracking progress through a **71-week em
 | **Search & Filter** | Real-time filtering on all tables |
 | **Undo/Redo** | Reversible operations |
 | **Backup/Restore** | Full JSON backup and restore |
+| **Export All (CSV)** | Export all tables to CSV files + combined all.csv |
 | **Keyboard Shortcuts** | Comprehensive shortcut support |
 
 ---
@@ -153,8 +154,8 @@ Bosch, Texas Instruments, Continental, Qualcomm, NVIDIA, Ola Electric, Tata Elxs
 | `Ctrl+E` | Edit selected |
 | `Delete` | Delete selected |
 | `Ctrl+R` | Refresh tab |
-| `Ctrl+Z` | Undo |
-| `Ctrl+Y` | Redo |
+| `Ctrl+B` | Create backup |
+| `Ctrl+Shift+E` | Export All (CSV) |
 | `Ctrl+D` | Toggle theme |
 | `Ctrl+Q` | Quit |
 

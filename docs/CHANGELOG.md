@@ -47,6 +47,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Version bumped from 0.1.0 to 3.0.0
 - Updated roadmap_seed.json with all fixes
 
+### Added - Export Features
+- **Export All (CSV)**: New menu option (File → Export → Export All CSV)
+  - Exports all 9 database tables to individual CSV files
+  - Creates combined `all.csv` with all 2,344 records
+  - Keyboard shortcut: `Ctrl+Shift+E`
+  - Files: phases, weeks, days, tasks, resources, projects, certifications, applications, hardware
+
 ---
 
 ## [0.1.0] - 2025-12-29

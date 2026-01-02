@@ -1708,6 +1708,17 @@ def recalculate_all_plan_dates(new_start_date: date) -> None:
                 phase.end_date = phase_weeks[-1].end_date
                 session.add(phase)
         
+        # Update project due dates based on their phase's new end date
+        projects = session.exec(select(Project)).all()
+        for project in projects:
+            if project.phase_id:
+                project_phase = next((p for p in phases if p.id == project.phase_id), None)
+                if project_phase and project_phase.end_date:
+                    project.due_date = project_phase.end_date
+                    if project.start_date is None or project.start_date < project_phase.start_date:
+                        project.start_date = project_phase.start_date
+                    session.add(project)
+        
         logger.info(f"Recalculated all plan dates (work calendar) from {new_start_date}")
 
 
@@ -1767,6 +1778,19 @@ def cascade_dates_from_phase_change(phase_id: int, new_start_date: date) -> None
                 phase.start_date = phase_weeks[0].start_date
                 phase.end_date = phase_weeks[-1].end_date
                 session.add(phase)
+        
+        # Update project due dates based on their phase's new end date
+        projects = session.exec(select(Project)).all()
+        for project in projects:
+            if project.phase_id:
+                # Find the phase for this project
+                project_phase = next((p for p in phases if p.id == project.phase_id), None)
+                if project_phase and project_phase.end_date:
+                    # Set project due date to phase end date (or a few days before)
+                    project.due_date = project_phase.end_date
+                    if project.start_date is None or project.start_date < project_phase.start_date:
+                        project.start_date = project_phase.start_date
+                    session.add(project)
         
         logger.info(f"Cascaded dates (work calendar) from phase {phase_id} starting {new_start_date}")
 

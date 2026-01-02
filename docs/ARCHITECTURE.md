@@ -126,9 +126,9 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 | Tab | File | Entity |
 |-----|------|--------|
 | Phases | `tabs/phases.py` | 5 learning phases |
-| Weeks | `tabs/weeks.py` | 71 curriculum weeks |
-| Days | `tabs/days.py` | 462 daily schedules |
-| Hours | `tabs/hours.py` | 885 tasks with timer |
+| Weeks | `tabs/weeks.py` | 72 curriculum weeks |
+| Days | `tabs/days.py` | 504 daily schedules |
+| Hours | `tabs/hours.py` | 1,517 tasks with timer |
 | Resources | `tabs/resources.py` | 213 learning resources |
 | Projects | `tabs/projects.py` | 15 portfolio projects |
 | Certifications | `tabs/certifications.py` | 4 industry certs |
@@ -202,7 +202,7 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 │       ├───────────────────┬─────────────────────┐                       │
 │       ▼                   ▼                     ▼                       │
 │  ┌─────────┐        ┌──────────┐          ┌─────────┐                   │
-│  │ DayPlan │ (462)  │ Resource │ (213)    │  Task   │ (885)             │
+│  │ DayPlan │ (504)  │ Resource │ (213)    │  Task   │ (1517)            │
 │  └────┬────┘        └──────────┘          └─────────┘                   │
 │       │ 1:N                                                              │
 │       ▼                                                                  │
@@ -297,8 +297,8 @@ The Embedded Systems Tracker is a **3-tier desktop application** built with:
 │ │ │ │                    QTableWidget                           │   │ │ │
 │ │ │ │ ID │ Name    │ Status   │ Date       │ ...                │   │ │ │
 │ │ │ │────┼─────────┼──────────┼────────────┼────                │   │ │ │
-│ │ │ │ 1  │ Phase 1 │ pending  │ 2025-01-06 │                    │   │ │ │
-│ │ │ │ 2  │ Phase 2 │ pending  │ 2025-04-21 │                    │   │ │ │
+│ │ │ │ 1  │ Phase 1 │ pending  │ 2026-01-06 │                    │   │ │ │
+│ │ │ │ 2  │ Phase 2 │ pending  │ 2026-04-21 │                    │   │ │ │
 │ │ │ └───────────────────────────────────────────────────────────┘   │ │ │
 │ │ └─────────────────────────────────────────────────────────────────┘ │ │
 │ ├─────────────────────────────────────────────────────────────────────┤ │

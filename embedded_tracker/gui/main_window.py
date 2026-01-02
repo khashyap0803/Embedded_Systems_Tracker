@@ -488,11 +488,11 @@ class MainWindow(QMainWindow):
             self,
             "About Embedded Tracker",
             "<h2>🔧 Embedded Systems Tracker</h2>"
-            "<p><b>Version 1.0.0</b></p>"
+            "<p><b>Version 3.1.0</b></p>"
             "<p>A professional roadmap tracking application for embedded systems mastery.</p>"
             "<p><b>✨ Features:</b></p>"
             "<ul>"
-            "<li>📅 59-week learning roadmap with 6 buffer weeks</li>"
+            "<li>📅 72-week learning roadmap (Week 0-71)</li>"
             "<li>⏱️ Dynamic scheduling (dates calculated on first task start)</li>"
             "<li>🔄 Plan vs Actual date comparison for efficiency tracking</li>"
             "<li>💼 Project portfolio management</li>"

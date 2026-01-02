@@ -96,7 +96,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added - Export Features
 - **Export All (CSV)**: New menu option (File → Export → Export All CSV)
   - Exports all 9 database tables to individual CSV files
-  - Creates combined `all.csv` with all 2,344 records
+  - Creates combined `all.csv` with all 2,378 records
   - Keyboard shortcut: `Ctrl+Shift+E`
   - Files: phases, weeks, days, tasks, resources, projects, certifications, applications, hardware
 
@@ -105,7 +105,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [0.1.0] - 2025-12-29
 
 ### Initial Release
-- 71-week embedded systems curriculum
+- 72-week embedded systems curriculum
 - 5 phases including Linux Bridge (3.5)
 - Desktop application with PySide6
 - SQLite database with 15 models

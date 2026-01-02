@@ -118,7 +118,7 @@ def delete_week(week_id: int) -> None
 
 ```python
 def list_days(week_id: Optional[int] = None) -> List[DayRecord]
-    """List all 462 days across the curriculum."""
+    """List all 504 days across the curriculum."""
 
 def create_day(
     number: int,
@@ -143,7 +143,7 @@ def list_tasks(
     """
     List tasks with optional filters.
     
-    Total: 885 tasks (100% with AI prompts)
+    Total: 1,517 tasks (100% with AI prompts)
     """
 
 def create_task(
@@ -284,9 +284,9 @@ def seed_database() -> None
 | Model | Description | Fields |
 |-------|-------------|--------|
 | `Phase` | Learning phase (5 total) | id, name, description, start_date, end_date |
-| `Week` | Curriculum week (71 total) | id, number, focus, phase_id, start_date, end_date |
-| `DayPlan` | Daily schedule (462 total) | id, number, focus, week_id, scheduled_date, notes |
-| `Task` | Hour-level task (885 total) | id, title, description, ai_prompt, status, times |
+| `Week` | Curriculum week (72 total) | id, number, focus, phase_id, start_date, end_date |
+| `DayPlan` | Daily schedule (504 total) | id, number, focus, week_id, scheduled_date, notes |
+| `Task` | Hour-level task (1,517 total) | id, title, description, ai_prompt, status, times |
 | `Resource` | Learning resource (213 total) | id, title, url, type, week_id, notes |
 | `Project` | Portfolio project (15 total) | id, name, description, repo_url, demo_url, status |
 | `Certification` | Industry cert (4 total) | id, name, provider, status, progress |

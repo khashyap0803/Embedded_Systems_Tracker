@@ -4,7 +4,7 @@
   "phases": [
     {
       "id": 1,
-      "name": "Phase 1 – Hardware Foundations & Modern Embedded C++",
+      "name": "Phase 1 \u2013 Hardware Foundations & Modern Embedded C++",
       "description": "Calibrate hardware lab, sharpen modern C++ for microcontrollers, and build disciplined debugging habits. End goal: confidently shipping bring-up firmware on STM32 and ESP32 targets.",
       "start_date": "2026-01-02",
       "end_date": "2026-05-15",
@@ -12,7 +12,7 @@
         {
           "id": 1,
           "number": 1,
-          "focus": "Week 01 – Electronics Foundations for STM32 Development",
+          "focus": "Week 01 \u2013 Electronics Foundations for STM32 Development",
           "start_date": "2026-01-12",
           "end_date": "2026-01-19",
           "status": "pending",
@@ -103,7 +103,7 @@
               "status": "pending",
               "estimated_hours": null,
               "actual_hours": null,
-              "ai_prompt": "Use P=IV and P=I²R for power analysis",
+              "ai_prompt": "Use P=IV and P=I\u00b2R for power analysis",
               "day_id": 1,
               "hour_number": 3,
               "total_work_seconds": 0,
@@ -404,7 +404,7 @@
         {
           "id": 2,
           "number": 2,
-          "focus": "Week 02 – Circuit simulation sprints & power supply literacy",
+          "focus": "Week 02 \u2013 Circuit simulation sprints & power supply literacy",
           "start_date": "2026-01-20",
           "end_date": "2026-01-27",
           "status": "pending",
@@ -782,7 +782,7 @@
         {
           "id": 3,
           "number": 3,
-          "focus": "Week 03 – Digital logic blueprints & finite-state thinking",
+          "focus": "Week 03 \u2013 Digital logic blueprints & finite-state thinking",
           "start_date": "2026-01-28",
           "end_date": "2026-02-04",
           "status": "pending",
@@ -790,7 +790,7 @@
             {
               "id": 15,
               "number": 1,
-              "focus": "Truth tables → Logisim simulations",
+              "focus": "Truth tables \u2192 Logisim simulations",
               "scheduled_date": "2026-01-28",
               "status": "pending"
             },
@@ -1174,7 +1174,7 @@
         {
           "id": 4,
           "number": 4,
-          "focus": "Week 04 – ARM Cortex-M Architecture & STM32 MCU Deep Dive",
+          "focus": "Week 04 \u2013 ARM Cortex-M Architecture & STM32 MCU Deep Dive",
           "start_date": "2026-02-05",
           "end_date": "2026-02-12",
           "status": "pending",
@@ -1552,7 +1552,7 @@
         {
           "id": 5,
           "number": 5,
-          "focus": "Week 05 – C programming foundations & syntax fluency",
+          "focus": "Week 05 \u2013 C programming foundations & syntax fluency",
           "start_date": "2026-02-13",
           "end_date": "2026-02-20",
           "status": "pending",
@@ -1944,7 +1944,7 @@
         {
           "id": 6,
           "number": 6,
-          "focus": "Week 06 – Memory, pointers, and ISR-grade C idioms",
+          "focus": "Week 06 \u2013 Memory, pointers, and ISR-grade C idioms",
           "start_date": "2026-02-23",
           "end_date": "2026-03-02",
           "status": "pending",
@@ -2322,7 +2322,7 @@
         {
           "id": 7,
           "number": 9,
-          "focus": "Week 09 – DMA Fundamentals & Peripheral Basics",
+          "focus": "Week 09 \u2013 DMA Fundamentals & Peripheral Basics",
           "start_date": "2026-03-11",
           "end_date": "2026-03-18",
           "status": "pending",
@@ -2757,7 +2757,7 @@
         {
           "id": 8,
           "number": 10,
-          "focus": "Week 10 – I2C, SPI & UART DMA Optimization Patterns",
+          "focus": "Week 10 \u2013 I2C, SPI & UART DMA Optimization Patterns",
           "start_date": "2026-03-19",
           "end_date": "2026-03-26",
           "status": "pending",
@@ -3135,7 +3135,7 @@
         {
           "id": 9,
           "number": 11,
-          "focus": "Week 11 – Low Power Modes & UART Sleep Handling",
+          "focus": "Week 11 \u2013 Low Power Modes & UART Sleep Handling",
           "start_date": "2026-03-27",
           "end_date": "2026-04-03",
           "status": "pending",
@@ -3513,7 +3513,7 @@
         {
           "id": 10,
           "number": 12,
-          "focus": "Week 12 – Power management & low energy design",
+          "focus": "Week 12 \u2013 Power management & low energy design",
           "start_date": "2026-04-06",
           "end_date": "2026-04-13",
           "status": "pending",
@@ -3891,7 +3891,7 @@
         {
           "id": 11,
           "number": 13,
-          "focus": "Week 13 – Bootloaders & secure update foundations",
+          "focus": "Week 13 \u2013 Bootloaders & secure update foundations",
           "start_date": "2026-04-14",
           "end_date": "2026-04-21",
           "status": "pending",
@@ -4269,7 +4269,7 @@
         {
           "id": 12,
           "number": 14,
-          "focus": "Week 14 – Containerized Build Environments & CI Enablement",
+          "focus": "Week 14 \u2013 Containerized Build Environments & CI Enablement",
           "start_date": "2026-04-22",
           "end_date": "2026-04-29",
           "status": "pending",
@@ -4654,7 +4654,7 @@
         {
           "id": 13,
           "number": 15,
-          "focus": "Week 15 – Safety basics & design for reliability",
+          "focus": "Week 15 \u2013 Safety basics & design for reliability",
           "start_date": "2026-04-30",
           "end_date": "2026-05-07",
           "status": "pending",
@@ -5032,7 +5032,7 @@
         {
           "id": 14,
           "number": 16,
-          "focus": "Week 16 – Phase consolidation & portfolio artifact",
+          "focus": "Week 16 \u2013 Phase consolidation & portfolio artifact",
           "start_date": "2026-05-08",
           "end_date": "2026-05-15",
           "status": "pending",
@@ -5410,7 +5410,7 @@
         {
           "id": 60,
           "number": 0,
-          "focus": "Week 00 – Pre-Requisite Bootcamp (Complete Beginner Ramp-Up)",
+          "focus": "Week 00 \u2013 Pre-Requisite Bootcamp (Complete Beginner Ramp-Up)",
           "start_date": "2026-01-02",
           "end_date": "2026-01-09",
           "status": "pending",
@@ -5418,49 +5418,49 @@
             {
               "id": 372,
               "number": 1,
-              "focus": "C Programming – Variables, loops, functions",
+              "focus": "C Programming \u2013 Variables, loops, functions",
               "scheduled_date": "2026-01-02",
               "status": "pending"
             },
             {
               "id": 373,
               "number": 2,
-              "focus": "C Programming – Pointers and memory",
+              "focus": "C Programming \u2013 Pointers and memory",
               "scheduled_date": "2026-01-05",
               "status": "pending"
             },
             {
               "id": 374,
               "number": 3,
-              "focus": "Electronics 101 – Voltage, current, Ohm's law",
+              "focus": "Electronics 101 \u2013 Voltage, current, Ohm's law",
               "scheduled_date": "2026-01-06",
               "status": "pending"
             },
             {
               "id": 375,
               "number": 4,
-              "focus": "Electronics 101 – Components (resistors, capacitors, LEDs)",
+              "focus": "Electronics 101 \u2013 Components (resistors, capacitors, LEDs)",
               "scheduled_date": "2026-01-07",
               "status": "pending"
             },
             {
               "id": 376,
               "number": 5,
-              "focus": "Linux Terminal – Navigation, file operations",
+              "focus": "Linux Terminal \u2013 Navigation, file operations",
               "scheduled_date": "2026-01-08",
               "status": "pending"
             },
             {
               "id": 377,
               "number": 6,
-              "focus": "Linux Terminal – GCC compilation, Makefiles",
+              "focus": "Linux Terminal \u2013 GCC compilation, Makefiles",
               "scheduled_date": "2026-01-09",
               "status": "pending"
             },
             {
               "id": 378,
               "number": 7,
-              "focus": "Number Systems – Binary, hexadecimal, 2's complement",
+              "focus": "Number Systems \u2013 Binary, hexadecimal, 2's complement",
               "scheduled_date": "2026-01-12",
               "status": "pending"
             }
@@ -5766,7 +5766,7 @@
         {
           "id": 68,
           "number": 7,
-          "focus": "Week 07 – ARM Assembly Fundamentals for Debugging",
+          "focus": "Week 07 \u2013 ARM Assembly Fundamentals for Debugging",
           "start_date": "2026-03-03",
           "end_date": "2026-03-10",
           "status": "pending",
@@ -6122,7 +6122,7 @@
         {
           "id": 72,
           "number": 8,
-          "focus": "Week 08 – Timers, PWM & Waveform Generation",
+          "focus": "Week 08 \u2013 Timers, PWM & Waveform Generation",
           "start_date": "2026-03-11",
           "end_date": "2026-03-17",
           "status": "pending",
@@ -6543,7 +6543,7 @@
     },
     {
       "id": 2,
-      "name": "Phase 2 – Real-Time Systems & Connected Firmware",
+      "name": "Phase 2 \u2013 Real-Time Systems & Connected Firmware",
       "description": "Deepen RTOS mastery, tackle open RISC-V/ESP32-C3 bring-up, design resilient connectivity stacks, and harden security for fleet-ready firmware. Culminates in a production-quality Zephyr/FreeRTOS application spanning CAN, Ethernet, BLE, and secure provisioning.",
       "start_date": "2026-05-18",
       "end_date": "2026-09-28",
@@ -6551,7 +6551,7 @@
         {
           "id": 15,
           "number": 17,
-          "focus": "Week 17 – Zephyr RTOS architecture & board bring-up",
+          "focus": "Week 17 \u2013 Zephyr RTOS architecture & board bring-up",
           "start_date": "2026-05-18",
           "end_date": "2026-05-25",
           "status": "pending",
@@ -6936,7 +6936,7 @@
         {
           "id": 16,
           "number": 18,
-          "focus": "Week 18 – FreeRTOS Synchronization Primitives",
+          "focus": "Week 18 \u2013 FreeRTOS Synchronization Primitives",
           "start_date": "2026-05-26",
           "end_date": "2026-06-02",
           "status": "pending",
@@ -7307,7 +7307,7 @@
         {
           "id": 17,
           "number": 19,
-          "focus": "Week 19 – Deterministic scheduling & time partitioning",
+          "focus": "Week 19 \u2013 Deterministic scheduling & time partitioning",
           "start_date": "2026-06-03",
           "end_date": "2026-06-10",
           "status": "pending",
@@ -7685,7 +7685,7 @@
         {
           "id": 18,
           "number": 20,
-          "focus": "Week 20 Focus – Advanced DMA Patterns & Multi-channel DMA",
+          "focus": "Week 20 Focus \u2013 Advanced DMA Patterns & Multi-channel DMA",
           "start_date": "2026-06-11",
           "end_date": "2026-06-18",
           "status": "pending",
@@ -8063,7 +8063,7 @@
         {
           "id": 19,
           "number": 21,
-          "focus": "Week 21 – CAN/CAN-FD Physical Layer & LIN Protocol",
+          "focus": "Week 21 \u2013 CAN/CAN-FD Physical Layer & LIN Protocol",
           "start_date": "2026-06-19",
           "end_date": "2026-06-26",
           "status": "pending",
@@ -8448,7 +8448,7 @@
         {
           "id": 20,
           "number": 22,
-          "focus": "Week 22 – ISO-TP & UDS Automotive Diagnostics",
+          "focus": "Week 22 \u2013 ISO-TP & UDS Automotive Diagnostics",
           "start_date": "2026-06-29",
           "end_date": "2026-07-06",
           "status": "pending",
@@ -8840,7 +8840,7 @@
         {
           "id": 21,
           "number": 23,
-          "focus": "Week 23 – Bluetooth Low Energy (BLE) & MQTT Publish/Subscribe",
+          "focus": "Week 23 \u2013 Bluetooth Low Energy (BLE) & MQTT Publish/Subscribe",
           "start_date": "2026-07-07",
           "end_date": "2026-07-14",
           "status": "pending",
@@ -9225,7 +9225,7 @@
         {
           "id": 22,
           "number": 24,
-          "focus": "Week 24 – Ethernet, TCP/IP, LwIP & MQTT Broker Integration",
+          "focus": "Week 24 \u2013 Ethernet, TCP/IP, LwIP & MQTT Broker Integration",
           "start_date": "2026-07-15",
           "end_date": "2026-07-22",
           "status": "pending",
@@ -9617,7 +9617,7 @@
         {
           "id": 23,
           "number": 25,
-          "focus": "Week 25 – Secure communications & provisioning hardening",
+          "focus": "Week 25 \u2013 Secure communications & provisioning hardening",
           "start_date": "2026-07-23",
           "end_date": "2026-07-30",
           "status": "pending",
@@ -9995,7 +9995,7 @@
         {
           "id": 24,
           "number": 26,
-          "focus": "Week 26 – Fleet update infrastructure & DevOps",
+          "focus": "Week 26 \u2013 Fleet update infrastructure & DevOps",
           "start_date": "2026-07-31",
           "end_date": "2026-08-07",
           "status": "pending",
@@ -10373,7 +10373,7 @@
         {
           "id": 25,
           "number": 27,
-          "focus": "Week 27 – Wireless Connectivity: BLE, WiFi & MQTT",
+          "focus": "Week 27 \u2013 Wireless Connectivity: BLE, WiFi & MQTT",
           "start_date": "2026-08-10",
           "end_date": "2026-08-17",
           "status": "pending",
@@ -10737,7 +10737,7 @@
         {
           "id": 26,
           "number": 28,
-          "focus": "Week 28 – Data pipelines & storage durability",
+          "focus": "Week 28 \u2013 Data pipelines & storage durability",
           "start_date": "2026-08-18",
           "end_date": "2026-08-25",
           "status": "pending",
@@ -11115,7 +11115,7 @@
         {
           "id": 27,
           "number": 29,
-          "focus": "Week 29 – Observability, logging, and remote diagnostics",
+          "focus": "Week 29 \u2013 Observability, logging, and remote diagnostics",
           "start_date": "2026-08-26",
           "end_date": "2026-09-02",
           "status": "pending",
@@ -11493,7 +11493,7 @@
         {
           "id": 28,
           "number": 30,
-          "focus": "Week 30 – Gateway integration & heterogeneous compute",
+          "focus": "Week 30 \u2013 Gateway integration & heterogeneous compute",
           "start_date": "2026-09-03",
           "end_date": "2026-09-10",
           "status": "pending",
@@ -11871,7 +11871,7 @@
         {
           "id": 29,
           "number": 31,
-          "focus": "Week 31 – Mixed-criticality & virtualization",
+          "focus": "Week 31 \u2013 Mixed-criticality & virtualization",
           "start_date": "2026-09-11",
           "end_date": "2026-09-18",
           "status": "pending",
@@ -12249,7 +12249,7 @@
         {
           "id": 30,
           "number": 32,
-          "focus": "Week 32 – Phase consolidation, demos, and midterm review",
+          "focus": "Week 32 \u2013 Phase consolidation, demos, and midterm review",
           "start_date": "2026-09-21",
           "end_date": "2026-09-28",
           "status": "pending",
@@ -12706,7 +12706,7 @@
     },
     {
       "id": 3,
-      "name": "Phase 3 – Edge Intelligence, Safety & Manufacturing Readiness",
+      "name": "Phase 3 \u2013 Edge Intelligence, Safety & Manufacturing Readiness",
       "description": "Blend TinyML with safety-critical practices, Android Automotive integration, and manufacturing readiness. Harden products for compliance while building intelligent firmware paired with production test rigs and certification artefacts.",
       "start_date": "2026-09-29",
       "end_date": "2027-03-31",
@@ -12714,7 +12714,7 @@
         {
           "id": 31,
           "number": 33,
-          "focus": "Week 33 – Edge AI & TinyML Sensor Preprocessing",
+          "focus": "Week 33 \u2013 Edge AI & TinyML Sensor Preprocessing",
           "start_date": "2026-09-29",
           "end_date": "2026-10-06",
           "status": "pending",
@@ -13092,7 +13092,7 @@
         {
           "id": 32,
           "number": 34,
-          "focus": "Week 34 – Optimization, quantization, and benchmarks",
+          "focus": "Week 34 \u2013 Optimization, quantization, and benchmarks",
           "start_date": "2026-10-07",
           "end_date": "2026-10-14",
           "status": "pending",
@@ -13470,7 +13470,7 @@
         {
           "id": 33,
           "number": 35,
-          "focus": "Week 35 – Sensor fusion with ML & adaptive algorithms",
+          "focus": "Week 35 \u2013 Sensor fusion with ML & adaptive algorithms",
           "start_date": "2026-10-15",
           "end_date": "2026-10-22",
           "status": "pending",
@@ -13848,7 +13848,7 @@
         {
           "id": 34,
           "number": 36,
-          "focus": "Week 36 – USB Device/Host Mode & High-Speed Protocols",
+          "focus": "Week 36 \u2013 USB Device/Host Mode & High-Speed Protocols",
           "start_date": "2026-10-23",
           "end_date": "2026-10-30",
           "status": "pending",
@@ -14204,7 +14204,7 @@
         {
           "id": 35,
           "number": 39,
-          "focus": "Week 39 – Embedded computer vision & perception",
+          "focus": "Week 39 \u2013 Embedded computer vision & perception",
           "start_date": "2026-11-18",
           "end_date": "2026-11-25",
           "status": "pending",
@@ -14589,7 +14589,7 @@
         {
           "id": 36,
           "number": 40,
-          "focus": "Week 40 – Functional safety standards deep dive",
+          "focus": "Week 40 \u2013 Functional safety standards deep dive",
           "start_date": "2026-11-26",
           "end_date": "2026-12-03",
           "status": "pending",
@@ -14967,7 +14967,7 @@
         {
           "id": 37,
           "number": 41,
-          "focus": "Week 41 – Diagnostic coverage & redundancy",
+          "focus": "Week 41 \u2013 Diagnostic coverage & redundancy",
           "start_date": "2026-12-04",
           "end_date": "2026-12-11",
           "status": "pending",
@@ -15345,7 +15345,7 @@
         {
           "id": 38,
           "number": 42,
-          "focus": "Week 42 – Android Automotive HAL & security operations",
+          "focus": "Week 42 \u2013 Android Automotive HAL & security operations",
           "start_date": "2026-12-14",
           "end_date": "2026-12-21",
           "status": "pending",
@@ -15723,7 +15723,7 @@
         {
           "id": 39,
           "number": 43,
-          "focus": "Week 43 – Production test fixtures & DFM",
+          "focus": "Week 43 \u2013 Production test fixtures & DFM",
           "start_date": "2026-12-22",
           "end_date": "2026-12-29",
           "status": "pending",
@@ -16122,7 +16122,7 @@
         {
           "id": 40,
           "number": 44,
-          "focus": "Week 44 – Hardware design validation & compliance",
+          "focus": "Week 44 \u2013 Hardware design validation & compliance",
           "start_date": "2026-12-30",
           "end_date": "2027-01-06",
           "status": "pending",
@@ -16500,7 +16500,7 @@
         {
           "id": 41,
           "number": 45,
-          "focus": "Week 45 – Reliability engineering & environmental tests",
+          "focus": "Week 45 \u2013 Reliability engineering & environmental tests",
           "start_date": "2027-01-07",
           "end_date": "2027-01-14",
           "status": "pending",
@@ -16878,7 +16878,7 @@
         {
           "id": 42,
           "number": 47,
-          "focus": "Week 47 – Supply chain resilience & lifecycle management",
+          "focus": "Week 47 \u2013 Supply chain resilience & lifecycle management",
           "start_date": "2027-01-25",
           "end_date": "2027-02-01",
           "status": "pending",
@@ -17256,7 +17256,7 @@
         {
           "id": 43,
           "number": 48,
-          "focus": "Week 48 – Linux Kernel Internals & Drivers",
+          "focus": "Week 48 \u2013 Linux Kernel Internals & Drivers",
           "start_date": "2027-02-02",
           "end_date": "2027-02-09",
           "status": "pending",
@@ -17612,7 +17612,7 @@
         {
           "id": 44,
           "number": 49,
-          "focus": "Week 49 – Regulatory compliance & certification prep",
+          "focus": "Week 49 \u2013 Regulatory compliance & certification prep",
           "start_date": "2027-02-10",
           "end_date": "2027-02-17",
           "status": "pending",
@@ -17990,7 +17990,7 @@
         {
           "id": 61,
           "number": 37,
-          "focus": "Week 37 – ISO 26262 Functional Safety Foundation",
+          "focus": "Week 37 \u2013 ISO 26262 Functional Safety Foundation",
           "start_date": "2026-11-02",
           "end_date": "2026-11-09",
           "status": "pending",
@@ -18368,7 +18368,7 @@
         {
           "id": 62,
           "number": 38,
-          "focus": "Week 38 – Embedded Networking & IoT Protocols",
+          "focus": "Week 38 \u2013 Embedded Networking & IoT Protocols",
           "start_date": "2026-11-10",
           "end_date": "2026-11-17",
           "status": "pending",
@@ -18739,7 +18739,7 @@
         {
           "id": 67,
           "number": 46,
-          "focus": "Week 46 – AUTOSAR Fundamentals for Automotive Embedded",
+          "focus": "Week 46 \u2013 AUTOSAR Fundamentals for Automotive Embedded",
           "start_date": "2027-01-15",
           "end_date": "2027-01-22",
           "status": "pending",
@@ -19168,7 +19168,7 @@
     },
     {
       "id": 4,
-      "name": "Phase 4 – Embedded Linux Bridge",
+      "name": "Phase 4 \u2013 Embedded Linux Bridge",
       "description": "Bridge from bare-metal to Linux: Kernel modules, Device Trees, and Drivers.",
       "start_date": "2027-04-01",
       "end_date": "2027-08-20",
@@ -19176,7 +19176,7 @@
         {
           "id": 63,
           "number": 50,
-          "focus": "Week 50 – Linux Kernel Modules & Build System (Kbuild)",
+          "focus": "Week 50 \u2013 Linux Kernel Modules & Build System (Kbuild)",
           "start_date": "2027-02-18",
           "end_date": "2027-02-25",
           "status": "pending",
@@ -19540,7 +19540,7 @@
         {
           "id": 64,
           "number": 51,
-          "focus": "Week 51 – Device Tree & Hardware Description",
+          "focus": "Week 51 \u2013 Device Tree & Hardware Description",
           "start_date": "2027-02-26",
           "end_date": "2027-03-05",
           "status": "pending",
@@ -19904,7 +19904,7 @@
         {
           "id": 65,
           "number": 52,
-          "focus": "Week 52 – Yocto Project & Buildroot Basics",
+          "focus": "Week 52 \u2013 Yocto Project & Buildroot Basics",
           "start_date": "2027-03-08",
           "end_date": "2027-03-15",
           "status": "pending",
@@ -20260,7 +20260,7 @@
         {
           "id": 66,
           "number": 53,
-          "focus": "Week 53 – Linux Character Device Drivers",
+          "focus": "Week 53 \u2013 Linux Character Device Drivers",
           "start_date": "2027-03-16",
           "end_date": "2027-03-23",
           "status": "pending",
@@ -20681,7 +20681,7 @@
     },
     {
       "id": 5,
-      "name": "Phase 5 – Productization, Launch & Career Amplification",
+      "name": "Phase 5 \u2013 Productization, Launch & Career Amplification",
       "description": "Polish the product experience, finalize launch readiness, and translate achievements into standout portfolio assets. Concludes with simulated launch, community contributions, and career outreach campaign.",
       "start_date": "2027-08-21",
       "end_date": "2027-12-31",
@@ -20689,7 +20689,7 @@
         {
           "id": 45,
           "number": 54,
-          "focus": "Week 54 – Phase integration, storytelling, and demo",
+          "focus": "Week 54 \u2013 Phase integration, storytelling, and demo",
           "start_date": "2027-03-24",
           "end_date": "2027-03-31",
           "status": "pending",
@@ -21067,7 +21067,7 @@
         {
           "id": 46,
           "number": 55,
-          "focus": "Week 55 – Productization roadmap & customer empathy",
+          "focus": "Week 55 \u2013 Productization roadmap & customer empathy",
           "start_date": "2027-04-01",
           "end_date": "2027-04-08",
           "status": "pending",
@@ -21445,7 +21445,7 @@
         {
           "id": 47,
           "number": 56,
-          "focus": "Week 56 – UX refinement & embedded UI polish",
+          "focus": "Week 56 \u2013 UX refinement & embedded UI polish",
           "start_date": "2027-04-09",
           "end_date": "2027-04-16",
           "status": "pending",
@@ -21823,7 +21823,7 @@
         {
           "id": 48,
           "number": 57,
-          "focus": "Week 57 – AI observability & insight delivery",
+          "focus": "Week 57 \u2013 AI observability & insight delivery",
           "start_date": "2027-04-19",
           "end_date": "2027-04-26",
           "status": "pending",
@@ -22201,7 +22201,7 @@
         {
           "id": 49,
           "number": 58,
-          "focus": "Week 58 – Production logistics & operations runbooks",
+          "focus": "Week 58 \u2013 Production logistics & operations runbooks",
           "start_date": "2027-04-27",
           "end_date": "2027-05-04",
           "status": "pending",
@@ -22579,7 +22579,7 @@
         {
           "id": 50,
           "number": 59,
-          "focus": "Week 59 – Performance scaling & cost optimization",
+          "focus": "Week 59 \u2013 Performance scaling & cost optimization",
           "start_date": "2027-05-05",
           "end_date": "2027-05-12",
           "status": "pending",
@@ -22957,7 +22957,7 @@
         {
           "id": 51,
           "number": 60,
-          "focus": "Week 60 – Security audits & red team drills",
+          "focus": "Week 60 \u2013 Security audits & red team drills",
           "start_date": "2027-05-13",
           "end_date": "2027-05-20",
           "status": "pending",
@@ -23335,7 +23335,7 @@
         {
           "id": 52,
           "number": 61,
-          "focus": "Week 61 – Testing, CI/CD & Release Engineering",
+          "focus": "Week 61 \u2013 Testing, CI/CD & Release Engineering",
           "start_date": "2027-05-21",
           "end_date": "2027-05-28",
           "status": "pending",
@@ -23691,7 +23691,7 @@
         {
           "id": 53,
           "number": 62,
-          "focus": "Week 62 – Release management & documentation freeze",
+          "focus": "Week 62 \u2013 Release management & documentation freeze",
           "start_date": "2027-05-31",
           "end_date": "2027-06-07",
           "status": "pending",
@@ -24069,7 +24069,7 @@
         {
           "id": 54,
           "number": 63,
-          "focus": "Week 63 – Launch simulation & incident readiness",
+          "focus": "Week 63 \u2013 Launch simulation & incident readiness",
           "start_date": "2027-06-08",
           "end_date": "2027-06-15",
           "status": "pending",
@@ -24447,7 +24447,7 @@
         {
           "id": 55,
           "number": 64,
-          "focus": "Week 64 – Portfolio refresh & storytelling",
+          "focus": "Week 64 \u2013 Portfolio refresh & storytelling",
           "start_date": "2027-06-16",
           "end_date": "2027-06-23",
           "status": "pending",
@@ -24825,7 +24825,7 @@
         {
           "id": 56,
           "number": 65,
-          "focus": "Week 65 – Interview prep & coding drills",
+          "focus": "Week 65 \u2013 Interview prep & coding drills",
           "start_date": "2027-06-24",
           "end_date": "2027-07-01",
           "status": "pending",
@@ -25203,7 +25203,7 @@
         {
           "id": 57,
           "number": 66,
-          "focus": "Week 66 – Community impact & open-source contributions",
+          "focus": "Week 66 \u2013 Community impact & open-source contributions",
           "start_date": "2027-07-02",
           "end_date": "2027-07-09",
           "status": "pending",
@@ -25581,7 +25581,7 @@
         {
           "id": 58,
           "number": 67,
-          "focus": "Week 67 – Capstone hardening & final demo",
+          "focus": "Week 67 \u2013 Capstone hardening & final demo",
           "start_date": "2027-07-12",
           "end_date": "2027-07-19",
           "status": "pending",
@@ -25959,7 +25959,7 @@
         {
           "id": 59,
           "number": 68,
-          "focus": "Week 68 – Launch retrospective & career outreach",
+          "focus": "Week 68 \u2013 Launch retrospective & career outreach",
           "start_date": "2027-07-20",
           "end_date": "2027-07-27",
           "status": "pending",
@@ -26337,7 +26337,7 @@
         {
           "id": 69,
           "number": 69,
-          "focus": "Week 69 – SystemVerilog Basics for HW/SW Co-Design (Optional)",
+          "focus": "Week 69 \u2013 SystemVerilog Basics for HW/SW Co-Design (Optional)",
           "start_date": "2027-07-28",
           "end_date": "2027-08-04",
           "status": "pending",
@@ -26610,59 +26610,45 @@
         {
           "id": 70,
           "number": 70,
-          "focus": "Week 70 – Rust for Embedded Systems (Optional Advanced)",
+          "focus": "Week 70 \u2013 Rust for Embedded Systems (Optional Advanced)",
           "start_date": "2027-08-05",
           "end_date": "2027-08-12",
           "status": "pending",
           "days": [
             {
-              "id": 421,
               "number": 1,
-              "focus": "ARM Instruction Set Architecture (ISA) Overview",
-              "scheduled_date": "2027-08-05",
-              "status": "pending"
+              "focus": "Rust Basics and Memory Safety",
+              "notes": "Ownership introduction"
             },
             {
-              "id": 422,
               "number": 2,
-              "focus": "ARM Registers (R0-R15, CPSR, SPSR)",
-              "scheduled_date": "2027-08-09",
-              "status": "pending"
+              "focus": "Ownership and Borrow Checker",
+              "notes": "Core Rust concepts"
             },
             {
-              "id": 423,
               "number": 3,
-              "focus": "ARM Assembly Syntax and Common Instructions",
-              "scheduled_date": "2027-08-11",
-              "status": "pending"
+              "focus": "Lifetimes and Error Handling",
+              "notes": "Result/Option types"
             },
             {
-              "id": 424,
               "number": 4,
-              "focus": "Inline Assembly in C for Performance",
-              "scheduled_date": "2027-08-13",
-              "status": "pending"
+              "focus": "Unsafe Rust and FFI",
+              "notes": "Low-level access"
             },
             {
-              "id": 435,
               "number": 5,
               "focus": "Rust Ownership and Borrowing Basics",
-              "scheduled_date": "2027-08-06",
-              "status": "pending"
+              "notes": "Practical application"
             },
             {
-              "id": 436,
               "number": 6,
               "focus": "no_std Rust for Bare-Metal",
-              "scheduled_date": "2027-08-10",
-              "status": "pending"
+              "notes": "Embedded context"
             },
             {
-              "id": 437,
               "number": 7,
               "focus": "embedded-hal and PAC Crates",
-              "scheduled_date": "2027-08-12",
-              "status": "pending"
+              "notes": "HAL abstraction"
             }
           ],
           "tasks": [
@@ -27016,7 +27002,7 @@
         {
           "id": 71,
           "number": 71,
-          "focus": "Week 71 – Applied Embedded Math & DSP (Stanford Gap Fixer)",
+          "focus": "Week 71 \u2013 Applied Embedded Math & DSP (Stanford Gap Fixer)",
           "start_date": "2027-08-13",
           "end_date": "2027-08-20",
           "status": "pending",
@@ -27308,7 +27294,7 @@
   "certifications": [
     {
       "id": 1,
-      "name": "ST MCU Developer – Level 1",
+      "name": "ST MCU Developer \u2013 Level 1",
       "provider": "STMicroelectronics Academy",
       "status": "in_progress",
       "progress": 0.35,

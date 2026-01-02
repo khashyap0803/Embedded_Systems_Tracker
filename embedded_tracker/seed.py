@@ -368,16 +368,27 @@ def seed_from_payload(payload: Dict[str, Any]) -> int:
                 if week.status is None:
                     week.status = TaskStatus.PENDING
                 days_payload = list(_iterate(week_payload.get("days")))
+                # Build mapping of JSON day IDs to database day objects
+                json_day_id_to_db_day: Dict[int, DayPlan] = {}
                 if days_payload:
                     for day_payload in days_payload:
                         day = upsert_day(session, week, day_payload)
                         if day.status is None:
                             day.status = TaskStatus.PENDING
+                        # Map JSON day ID to database day object
+                        json_day_id = day_payload.get("id")
+                        if json_day_id is not None:
+                            json_day_id_to_db_day[json_day_id] = day
                         for hour_payload in _iterate(day_payload.get("hours")):
                             upsert_task(session, week, hour_payload, day=day, existing_tasks=week_tasks)
-                else:
-                    for task_payload in _iterate(week_payload.get("tasks")):
-                        upsert_task(session, week, task_payload, existing_tasks=week_tasks)
+                
+                # Process week.tasks with proper day mapping
+                for task_payload in _iterate(week_payload.get("tasks")):
+                    task_day = None
+                    task_day_id = task_payload.get("day_id")
+                    if task_day_id is not None and task_day_id in json_day_id_to_db_day:
+                        task_day = json_day_id_to_db_day[task_day_id]
+                    upsert_task(session, week, task_payload, day=task_day, existing_tasks=week_tasks)
                 for resource_payload in _iterate(week_payload.get("resources")):
                     upsert_resource(session, week, resource_payload)
 

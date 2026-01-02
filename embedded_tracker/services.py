@@ -611,12 +611,15 @@ def create_task(
         if day_id is not None and day is None:
             raise ValueError(f"Day {day_id} not found")
         phase = session.get(Phase, week.phase_id)
+        # v4.0 fix: Convert actual_hours to work_seconds (source of truth)
+        work_seconds = int(round(actual_hours * 3600)) if actual_hours else 0
         task = Task(
             title=title,
             description=description,
             status=_coerce_enum(status, TaskStatus),
             estimated_hours=estimated_hours,
             actual_hours=actual_hours,
+            total_work_seconds=work_seconds,  # Source of truth
             ai_prompt=ai_prompt,
             week_id=week_id,
             day_id=day_id,
@@ -659,7 +662,10 @@ def update_task(
         if estimated_hours is not UNSET:
             task.estimated_hours = estimated_hours
         if actual_hours is not UNSET:
-            task.actual_hours = actual_hours
+            # v4.0 fix: Convert hours to seconds (source of truth)
+            if actual_hours is not None:
+                task.total_work_seconds = int(round(actual_hours * 3600))
+            task.actual_hours = actual_hours  # Keep legacy column in sync
         if ai_prompt is not UNSET:
             task.ai_prompt = ai_prompt
         if week_id is not UNSET:
@@ -1367,7 +1373,8 @@ def _task_to_record(
         description=task.description,
         status=task.status,
         estimated_hours=task.estimated_hours,
-        actual_hours=task.actual_hours,
+        # Compute actual_hours from work_seconds (v4.0 fix: avoid stale DB column)
+        actual_hours=round(snapshot.work_seconds / 3600.0, 2) if snapshot.work_seconds else 0.0,
         ai_prompt=task.ai_prompt,
         week_id=week.id or task.week_id,
         week_number=week.number,
@@ -2304,7 +2311,8 @@ def backup_database_to_json(output_path: str | Path) -> str:
                         "description": task.description,
                         "status": task.status.value if task.status else None,
                         "estimated_hours": task.estimated_hours,
-                        "actual_hours": task.actual_hours,
+                        # v4.0 fix: Compute from work_seconds, not stale DB column
+                        "actual_hours": round(task.total_work_seconds / 3600.0, 2) if task.total_work_seconds else 0.0,
                         "ai_prompt": task.ai_prompt,
                         "day_id": task.day_id,
                         "hour_number": task.hour_number,

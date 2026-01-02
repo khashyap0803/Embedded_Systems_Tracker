@@ -1,6 +1,6 @@
 # System Architecture
 
-> **Version**: 3.1.0  
+> **Version**: 3.3.0  
 > **Last Updated**: 2026-01-02  
 > **Audit Score**: PLATINUM TIER (10/10)
 

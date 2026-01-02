@@ -73,7 +73,7 @@ A comprehensive desktop application for tracking progress through a **72-week em
 
 ### From .deb Package (Linux)
 ```bash
-sudo dpkg -i dist/linux/embedded-tracker_3.1.0_amd64.deb
+sudo dpkg -i dist/linux/embedded-tracker_3.3.0_amd64.deb
 embedded-tracker
 ```
 

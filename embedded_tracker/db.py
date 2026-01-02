@@ -42,7 +42,17 @@ except (OSError, PermissionError) as e:
     raise
 
 _DB_PATH = _DATA_DIR / "embedded_tracker.db"
-_ENGINE = create_engine(f"sqlite:///{_DB_PATH}", echo=False, future=True)
+
+# v4.0: Thread-safe SQLite configuration for QThreadPool workers
+# - check_same_thread=False: Allow connections from multiple threads
+# - pool_pre_ping=True: Check connection health before use
+_ENGINE = create_engine(
+    f"sqlite:///{_DB_PATH}",
+    echo=False,
+    future=True,
+    connect_args={"check_same_thread": False},
+    pool_pre_ping=True,
+)
 _SEED_ENV_VAR = "EMBEDDED_TRACKER_SEED_FILE"
 _PACKAGE_ROOT = Path(__file__).resolve().parent
 _SEED_PATH = _PACKAGE_ROOT / "data" / "roadmap_seed.json"
@@ -51,6 +61,10 @@ _SEED_PATH = _PACKAGE_ROOT / "data" / "roadmap_seed.json"
 def init_db() -> None:
     """Create database tables if they do not already exist."""
     try:
+        # v4.0: Enable WAL mode for better concurrent access
+        with _ENGINE.begin() as conn:
+            conn.execute(text("PRAGMA journal_mode=WAL"))
+        
         _apply_migrations()
         SQLModel.metadata.create_all(_ENGINE)
         logger.info("Database initialized successfully")

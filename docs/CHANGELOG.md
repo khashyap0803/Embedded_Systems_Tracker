@@ -6,6 +6,53 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [4.0.0] - 2026-01-03
+
+### 🚀 Major Architecture & Reliability Release
+
+**Complete architectural overhaul with 20+ improvements for production readiness.**
+
+#### 🔴 High Priority Fixes
+
+##### Data Integrity
+- **actual_hours Computed**: Now calculated from `total_work_seconds` instead of stored redundantly
+- **Export Accuracy**: All exports compute hours from seconds (no stale data)
+
+##### Thread Safety
+- **SQLite Multi-Thread**: Added `check_same_thread=False` for QThreadPool workers
+- **Connection Health**: Added `pool_pre_ping=True` for automatic reconnection
+- **WAL Mode**: Enabled Write-Ahead Logging for better concurrent access
+
+##### Database Migrations
+- **Alembic Integration**: Proper schema versioning replaces manual migrations
+- **Initial Migration**: Captured v3.3.0 schema as baseline
+- **Fallback Support**: Legacy `_apply_migrations()` as backup
+
+#### 🟡 Medium Priority Fixes
+
+- **CSV Injection Protection**: Prefixes dangerous characters (`=`, `@`, `+`, `-`) with `'`
+- **Database Auto-Backup**: Copies `.db` to `.db.bak` before migrations
+- **Log Rotation**: RotatingFileHandler (10MB max, 5 backups) already existed
+
+#### 🔵 Low Priority Polish
+
+- **Print Removal**: Replaced `print()` with `logger.info()` in core files
+- **Format Constants**: Added `DATE_DISPLAY_FORMAT`, `DATETIME_DISPLAY_FORMAT`
+- **UI Constants**: Added `UI_MARGIN_SMALL/STANDARD/LARGE`, `UI_SPACING_STANDARD`
+
+#### Statistics (Unchanged)
+| Metric | Value |
+|--------|-------|
+| Phases | 5 |
+| Weeks | 72 |
+| Days | 504 |
+| Tasks | 1,517 |
+| Resources | 213 |
+| Projects | 15 |
+| Tests | 23/23 ✅ |
+
+---
+
 ## [3.3.0] - 2026-01-02
 
 ### 🏆 Principal Engineer Forensic Audit Release

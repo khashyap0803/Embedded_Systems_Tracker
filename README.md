@@ -1,7 +1,7 @@
 # 🔧 Embedded Systems Tracker
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-3.3.0-brightgreen.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Version-4.0.0-brightgreen.svg" alt="Version">
   <img src="https://img.shields.io/badge/Python-3.11+-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/PySide6-6.0+-green.svg" alt="PySide6">
   <img src="https://img.shields.io/badge/SQLite-3.0+-orange.svg" alt="SQLite">
@@ -73,7 +73,7 @@ A comprehensive desktop application for tracking progress through a **72-week em
 
 ### From .deb Package (Linux)
 ```bash
-sudo dpkg -i dist/linux/embedded-tracker_3.3.0_amd64.deb
+sudo dpkg -i dist/linux/embedded-tracker_4.0.0_amd64.deb
 embedded-tracker
 ```
 

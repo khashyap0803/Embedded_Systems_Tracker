@@ -23,6 +23,8 @@ from PySide6.QtWidgets import (
     QTabWidget,
 )
 
+from ..utils import APP_VERSION
+
 from ..db import ensure_seed_data, init_db
 from .. import services
 from ..export import export_tasks_csv, export_roadmap_csv, export_tasks_pdf, export_roadmap_pdf, export_all_csv, ExportError
@@ -50,7 +52,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("Embedded Tracker")
+        self.setWindowTitle(f"Embedded Tracker v{APP_VERSION}")
         self.resize(1280, 800)
         
         # Settings for persistence

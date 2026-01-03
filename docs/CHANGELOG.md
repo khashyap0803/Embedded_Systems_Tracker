@@ -6,6 +6,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [5.0.0] - 2026-01-03
+
+### 🎯 Distribution Compatibility Release
+
+**Focused release addressing PyInstaller compatibility and version visibility.**
+
+#### New Features
+
+- **PyInstaller Path Helper**: Added `get_resource_path()` function that correctly resolves asset paths in both development and frozen PyInstaller bundles (`sys._MEIPASS`)
+- **Dynamic Window Title**: Window now shows version number (`Embedded Tracker v5.0.0`) for easier bug reporting
+- **APP_VERSION Constant**: Single source of truth for version in `utils.py`
+
+#### Technical Details
+
+| Change | File | Impact |
+|--------|------|--------|
+| `get_resource_path()` | `utils.py` | Fixes EXE distribution |
+| `APP_VERSION` | `utils.py` | Centralized version |
+| Window title | `main_window.py` | UX improvement |
+
+**Tests:** 23/23 ✅
+
+---
+
 ## [4.0.0] - 2026-01-03
 
 ### 🚀 Major Architecture & Reliability Release

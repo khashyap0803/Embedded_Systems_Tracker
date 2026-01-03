@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
+import sys
 import platform
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Iterable, List, Optional
 
 try:
     from zoneinfo import ZoneInfo
 except ImportError:
     ZoneInfo = None  # type: ignore[misc, assignment]
+
+
+# Application version - single source of truth
+APP_VERSION = "5.0.0"
 
 
 # Public API exports
@@ -24,6 +30,9 @@ __all__ = [
     "format_local_datetime",
     "format_duration",
     "sanitize_csv_value",
+    "get_resource_path",
+    # v5.0: App version
+    "APP_VERSION",
     # Timer Constants
     "TIMER_REFRESH_MS",
     "POMODORO_WORK_MINUTES",
@@ -61,6 +70,28 @@ UI_MARGIN_SMALL = 5
 UI_MARGIN_STANDARD = 10
 UI_MARGIN_LARGE = 20
 UI_SPACING_STANDARD = 10
+
+
+def get_resource_path(relative_path: str) -> Path:
+    """Get absolute path to resource, works for dev and PyInstaller.
+    
+    When running as a PyInstaller frozen bundle, assets are extracted
+    to a temp folder (sys._MEIPASS). This helper handles both cases.
+    
+    Args:
+        relative_path: Path relative to the embedded_tracker package root.
+    
+    Returns:
+        Absolute path to the resource.
+    
+    Example:
+        >>> seed_file = get_resource_path("data/roadmap_seed.json")
+    """
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller frozen bundle
+        return Path(sys._MEIPASS) / relative_path
+    # Development mode - relative to this file's package
+    return Path(__file__).parent / relative_path
 
 
 UTC = timezone.utc

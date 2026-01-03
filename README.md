@@ -85,6 +85,20 @@ poetry install
 poetry run python main.py
 ```
 
+### Build .deb Package (Linux)
+```bash
+# Rebuild the .deb installer
+bash scripts/build_linux_deb.sh
+
+# Install the rebuilt package
+sudo dpkg -i dist/linux/embedded-tracker_5.0.0_amd64.deb
+```
+
+### Run Tests
+```bash
+poetry run pytest tests/ -v
+```
+
 ---
 
 ## 📁 Project Structure

@@ -169,6 +169,28 @@ STATUS_COLORS = {
 }
 
 
+class NoFocusDelegate(QStyledItemDelegate):
+    """Custom delegate that removes the native Windows focus rectangle.
+    
+    On Windows, Qt draws a black dotted focus rectangle that obscures text.
+    This delegate paints items normally but without the focus indicator.
+    """
+    
+    def paint(
+        self, painter: QPainter, option: QStyleOptionViewItem, index: Any
+    ) -> None:
+        # Remove the focus state before painting to avoid native focus rectangle
+        from PySide6.QtWidgets import QStyle
+        
+        # Create a modified option without focus state
+        opt = QStyleOptionViewItem(option)
+        if opt.state & QStyle.State_HasFocus:
+            opt.state = opt.state & ~QStyle.State_HasFocus
+        
+        # Call the default paint without focus state
+        super().paint(painter, opt, index)
+
+
 class StatusDelegate(QStyledItemDelegate):
     """Custom delegate to render status values as colored pills with centered text."""
     
@@ -514,7 +536,10 @@ class BaseCrudTab(QWidget):
         self.table.viewport().installEventFilter(self)
         layout.addWidget(self.table)
 
-        # Apply pill renderers for status columns
+        # Apply NoFocusDelegate as default to remove Windows focus rectangle
+        self.table.setItemDelegate(NoFocusDelegate(self.table))
+        
+        # Apply pill renderers for status columns (overrides default delegate)
         for i, (_, field_name) in enumerate(self.columns):
             if "status" in field_name.lower():
                 self.table.setItemDelegateForColumn(i, StatusDelegate(self.table))
@@ -899,12 +924,6 @@ QTableWidget::item:selected {
     border: 1px solid #e67e22;
     font-weight: bold;
 }
-QTableWidget::item:focus {
-    border: 2px solid rgba(230, 126, 34, 0.7);
-    border-radius: 4px;
-    outline: none;
-    background-color: rgba(230, 126, 34, 0.15);
-}
 QHeaderView::section {
     background-color: #1e1e1e;
     color: #e67e22;
@@ -1080,12 +1099,6 @@ QTableWidget::item:selected {
     color: #2d3436;
     border: 1px solid #ff7f50;
     font-weight: bold;
-}
-QTableWidget::item:focus {
-    border: 2px solid rgba(255, 127, 80, 0.7);
-    border-radius: 4px;
-    outline: none;
-    background-color: rgba(255, 127, 80, 0.15);
 }
 QHeaderView::section {
     background-color: #ffffff;

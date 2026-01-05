@@ -2079,13 +2079,62 @@ def get_hardware_inventory_json() -> dict:
 
 
 def seed_hardware_from_json() -> int:
-    """Seed hardware inventory from JSON file. Returns count of items added."""
+    """Seed hardware inventory from JSON file. Returns count of items added.
+    
+    Supports both old format (boards/sensors/modules categories) and 
+    new format (flat 'components' array).
+    """
     inventory = get_hardware_inventory_json()
     if not inventory:
         return 0
     
     count = 0
-    category_map = {
+    
+    # Category string to enum mapping
+    category_str_map = {
+        "board": HardwareCategory.BOARD,
+        "sensor": HardwareCategory.SENSOR,
+        "module": HardwareCategory.MODULE,
+        "rf_module": HardwareCategory.RF_MODULE,
+        "display": HardwareCategory.DISPLAY,
+        "actuator": HardwareCategory.ACTUATOR,
+        "tool": HardwareCategory.TOOL,
+        # New category mappings from enriched data
+        "discrete semiconductor": HardwareCategory.OTHER,
+        "electronic component": HardwareCategory.OTHER,
+        "passive - capacitor": HardwareCategory.OTHER,
+        "sensor module": HardwareCategory.SENSOR,
+        "sensor ic": HardwareCategory.SENSOR,
+        "sensor ic / module": HardwareCategory.SENSOR,
+        "module (generic)": HardwareCategory.MODULE,
+        "power - linear regulator": HardwareCategory.MODULE,
+        "power - ldo regulator": HardwareCategory.MODULE,
+        "power - battery": HardwareCategory.OTHER,
+        "tool / consumable / hardware": HardwareCategory.TOOL,
+        "tool / measurement": HardwareCategory.TOOL,
+        "rf / lora module": HardwareCategory.RF_MODULE,
+        "wireless mcu module": HardwareCategory.BOARD,
+        "wireless mcu/soc": HardwareCategory.BOARD,
+        "microcontroller": HardwareCategory.BOARD,
+        "display module": HardwareCategory.DISPLAY,
+        "led / lighting": HardwareCategory.ACTUATOR,
+        "relay": HardwareCategory.ACTUATOR,
+        "bus transceiver": HardwareCategory.MODULE,
+        "ethernet module": HardwareCategory.MODULE,
+        "logic level converter": HardwareCategory.MODULE,
+        "rfid / nfc module": HardwareCategory.RF_MODULE,
+        "cellular module": HardwareCategory.RF_MODULE,
+        "gnss module": HardwareCategory.MODULE,
+        "audio sensor": HardwareCategory.SENSOR,
+        "adc ic / module": HardwareCategory.MODULE,
+        "interface / usb-uart": HardwareCategory.TOOL,
+        "encoder/decoder ic": HardwareCategory.MODULE,
+        "electro-mechanical": HardwareCategory.OTHER,
+        "unclassified": HardwareCategory.OTHER,
+    }
+    
+    # Old category key to enum mapping
+    old_category_map = {
         "boards": HardwareCategory.BOARD,
         "sensors": HardwareCategory.SENSOR,
         "modules": HardwareCategory.MODULE,
@@ -2096,30 +2145,69 @@ def seed_hardware_from_json() -> int:
     }
     
     with session_scope() as session:
-        for category_key, category_enum in category_map.items():
-            items = inventory.get(category_key, [])
-            for item_data in items:
+        # Handle NEW format: flat 'components' array
+        if "components" in inventory:
+            for item_data in inventory["components"]:
+                name = item_data.get("name", "Unknown")
                 # Check if item already exists
                 existing = session.exec(
-                    select(HardwareItem).where(HardwareItem.name == item_data.get("name"))
+                    select(HardwareItem).where(HardwareItem.name == name)
                 ).first()
                 if existing:
                     continue
                 
+                # Map category string to enum
+                cat_str = (item_data.get("category") or "unclassified").lower()
+                category = category_str_map.get(cat_str, HardwareCategory.OTHER)
+                
+                # Map status
+                status_str = (item_data.get("status") or "available").lower()
+                if status_str == "ordered":
+                    status = HardwareStatus.ORDERED
+                elif status_str == "in_use":
+                    status = HardwareStatus.IN_USE
+                elif status_str == "broken":
+                    status = HardwareStatus.BROKEN
+                else:
+                    status = HardwareStatus.AVAILABLE
+                
                 hw_item = HardwareItem(
-                    name=item_data.get("name", "Unknown"),
-                    category=category_enum,
-                    hardware_type=item_data.get("type"),
-                    mcu=item_data.get("mcu"),
-                    architecture=item_data.get("architecture"),
+                    name=name,
+                    category=category,
+                    hardware_type=item_data.get("package"),
                     quantity=item_data.get("quantity", 1),
-                    status=HardwareStatus.AVAILABLE,
-                    interface=item_data.get("interface"),
-                    notes=item_data.get("notes"),
-                    features=",".join(item_data.get("features", [])) if item_data.get("features") else None,
+                    status=status,
+                    specifications=item_data.get("specifications"),
+                    notes=item_data.get("description"),
+                    price_inr=item_data.get("price_inr"),
                 )
                 session.add(hw_item)
                 count += 1
+        else:
+            # Handle OLD format: categorized arrays
+            for category_key, category_enum in old_category_map.items():
+                items = inventory.get(category_key, [])
+                for item_data in items:
+                    existing = session.exec(
+                        select(HardwareItem).where(HardwareItem.name == item_data.get("name"))
+                    ).first()
+                    if existing:
+                        continue
+                    
+                    hw_item = HardwareItem(
+                        name=item_data.get("name", "Unknown"),
+                        category=category_enum,
+                        hardware_type=item_data.get("type"),
+                        mcu=item_data.get("mcu"),
+                        architecture=item_data.get("architecture"),
+                        quantity=item_data.get("quantity", 1),
+                        status=HardwareStatus.AVAILABLE,
+                        interface=item_data.get("interface"),
+                        notes=item_data.get("notes"),
+                        features=",".join(item_data.get("features", [])) if item_data.get("features") else None,
+                    )
+                    session.add(hw_item)
+                    count += 1
     
     logger.info(f"Seeded {count} hardware items from inventory JSON")
     return count

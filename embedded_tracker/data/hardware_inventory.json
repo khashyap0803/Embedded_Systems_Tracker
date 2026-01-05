@@ -3,7 +3,7 @@
         "version": "2.0",
         "last_updated": "2026-01-05",
         "owner": "Nani",
-        "notes": "Real component inventory from COMPONENTS_DATA_ENRICHED.xlsx - merged duplicates with accurate quantities"
+        "notes": "Real component inventory with 8 new ordered items (logic analyzer, CAN/LIN transceivers, etc.)"
     },
     "components": [
         {
@@ -1331,10 +1331,122 @@
             "category": "Tool / Consumable / Hardware",
             "datasheet_url": null,
             "status": "available"
+        },
+        {
+            "id": "comp_103",
+            "name": "SLogic Combo 8 Logic Analyzer",
+            "original_name": "Sipeed SLogic Combo 8",
+            "mpn": "SLogic Combo 8",
+            "description": "The Daily Driver. 8-channel logic analyzer that decodes UART, SPI, I2C, PWM. Essential for firmware debugging.",
+            "quantity": 1,
+            "package": null,
+            "specifications": "8 channels, USB interface",
+            "category": "Tool / Measurement",
+            "datasheet_url": null,
+            "status": "ordered",
+            "price_inr": 1559
+        },
+        {
+            "id": "comp_104",
+            "name": "USB-CAN Analyzer (CAN-FD)",
+            "original_name": "WeAct USB-CAN Analyzer",
+            "mpn": "USB-CAN Analyzer",
+            "description": "The Automotive Must-Have. Decodes CAN bus traffic for automotive projects.",
+            "quantity": 1,
+            "package": null,
+            "specifications": "CAN-FD support, USB interface",
+            "category": "Tool / Measurement",
+            "datasheet_url": null,
+            "status": "ordered",
+            "price_inr": 1075
+        },
+        {
+            "id": "comp_105",
+            "name": "SN65HVD230 CAN Transceiver Board",
+            "original_name": "SN65HVD230 CAN Board",
+            "mpn": "SN65HVD230 (Texas Instruments)",
+            "description": "Connects STM32 to CAN Bus. 3.3V CAN transceiver.",
+            "quantity": 2,
+            "package": "Module",
+            "specifications": "3.3V, CAN 2.0",
+            "category": "Bus Transceiver",
+            "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf",
+            "status": "ordered",
+            "price_inr": 418
+        },
+        {
+            "id": "comp_106",
+            "name": "MCP2003-E/P LIN Transceiver",
+            "original_name": "MCP2003-E/P LIN Transceiver (DIP-8)",
+            "mpn": "MCP2003-E/P (Microchip)",
+            "description": "Connects STM32 to LIN Bus for automotive networks.",
+            "quantity": 2,
+            "package": "DIP-8",
+            "specifications": "LIN 2.x compatible",
+            "category": "Bus Transceiver",
+            "datasheet_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/20002230G.pdf",
+            "status": "ordered",
+            "price_inr": 152
+        },
+        {
+            "id": "comp_107",
+            "name": "ENC28J60 Ethernet Module",
+            "original_name": "ENC28J60 Ethernet Module",
+            "mpn": "ENC28J60 (Microchip)",
+            "description": "For Learning TCP/IP stacks. SPI-based Ethernet controller.",
+            "quantity": 1,
+            "package": "Module",
+            "specifications": "10Base-T, SPI interface",
+            "category": "Ethernet Module",
+            "datasheet_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/39662e.pdf",
+            "status": "ordered",
+            "price_inr": 299
+        },
+        {
+            "id": "comp_108",
+            "name": "TXS0108E Logic Level Converter",
+            "original_name": "TXS0108E Logic Level Converter",
+            "mpn": "TXS0108E (Texas Instruments)",
+            "description": "Safety converter for 5V <-> 3.3V bidirectional level shifting.",
+            "quantity": 1,
+            "package": "Module",
+            "specifications": "8-channel, bidirectional",
+            "category": "Logic Level Converter",
+            "datasheet_url": "https://www.ti.com/lit/ds/symlink/txs0108e.pdf",
+            "status": "ordered",
+            "price_inr": 48
+        },
+        {
+            "id": "comp_109",
+            "name": "INA219 Current Sensor",
+            "original_name": "INA219 Current Sensor",
+            "mpn": "INA219 (Texas Instruments)",
+            "description": "For measuring power consumption. I2C current/voltage sensor.",
+            "quantity": 1,
+            "package": "Module",
+            "specifications": "I2C interface, 0-26V, 3.2A max",
+            "category": "Sensor Module",
+            "datasheet_url": "https://www.ti.com/lit/ds/symlink/ina219.pdf",
+            "status": "ordered",
+            "price_inr": 200
+        },
+        {
+            "id": "comp_110",
+            "name": "USB Microscope 1000X",
+            "original_name": "USB Microscope (1000X / R150809)",
+            "mpn": null,
+            "description": "For inspecting solder joints and SMD components.",
+            "quantity": 1,
+            "package": "USB Device",
+            "specifications": "1000X magnification",
+            "category": "Tool / Measurement",
+            "datasheet_url": null,
+            "status": "ordered",
+            "price_inr": null
         }
     ],
     "summary": {
-        "total_components": 102,
+        "total_components": 110,
         "categories": {
             "Display Module": 1,
             "Unclassified": 60,

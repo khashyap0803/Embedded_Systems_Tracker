@@ -1942,6 +1942,7 @@ def create_hardware(
     name: str,
     category: HardwareCategory,
     hardware_type: Optional[str] = None,
+    mpn: Optional[str] = None,
     mcu: Optional[str] = None,
     architecture: Optional[str] = None,
     quantity: int = 1,
@@ -1950,6 +1951,7 @@ def create_hardware(
     features: Optional[str] = None,
     interface: Optional[str] = None,
     notes: Optional[str] = None,
+    datasheet_url: Optional[str] = None,
     price_inr: Optional[float] = None,
     project_id: Optional[int] = None,
 ) -> HardwareRecord:
@@ -1959,6 +1961,7 @@ def create_hardware(
             name=name,
             category=category,
             hardware_type=hardware_type,
+            mpn=mpn,
             mcu=mcu,
             architecture=architecture,
             quantity=quantity,
@@ -1967,6 +1970,7 @@ def create_hardware(
             features=features,
             interface=interface,
             notes=notes,
+            datasheet_url=datasheet_url,
             price_inr=price_inr,
             project_id=project_id,
         )
@@ -1983,9 +1987,18 @@ def update_hardware(
     name: object = UNSET,
     category: object = UNSET,
     hardware_type: object = UNSET,
+    mpn: object = UNSET,
+    mcu: object = UNSET,
+    architecture: object = UNSET,
     quantity: object = UNSET,
     status: object = UNSET,
+    specifications: object = UNSET,
+    features: object = UNSET,
+    interface: object = UNSET,
     notes: object = UNSET,
+    datasheet_url: object = UNSET,
+    purchase_date: object = UNSET,
+    price_inr: object = UNSET,
     project_id: object = UNSET,
 ) -> HardwareRecord:
     """Update a hardware item."""
@@ -1999,12 +2012,30 @@ def update_hardware(
             item.category = category
         if hardware_type is not UNSET:
             item.hardware_type = hardware_type
+        if mpn is not UNSET:
+            item.mpn = mpn
+        if mcu is not UNSET:
+            item.mcu = mcu
+        if architecture is not UNSET:
+            item.architecture = architecture
         if quantity is not UNSET:
             item.quantity = quantity
         if status is not UNSET:
             item.status = status
+        if specifications is not UNSET:
+            item.specifications = specifications
+        if features is not UNSET:
+            item.features = features
+        if interface is not UNSET:
+            item.interface = interface
         if notes is not UNSET:
             item.notes = notes
+        if datasheet_url is not UNSET:
+            item.datasheet_url = datasheet_url
+        if purchase_date is not UNSET:
+            item.purchase_date = purchase_date
+        if price_inr is not UNSET:
+            item.price_inr = price_inr
         if project_id is not UNSET:
             item.project_id = project_id
         session.add(item)

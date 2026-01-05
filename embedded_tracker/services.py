@@ -2175,10 +2175,12 @@ def seed_hardware_from_json() -> int:
                     name=name,
                     category=category,
                     hardware_type=item_data.get("package"),
+                    mpn=item_data.get("mpn"),
                     quantity=item_data.get("quantity", 1),
                     status=status,
                     specifications=item_data.get("specifications"),
                     notes=item_data.get("description"),
+                    datasheet_url=item_data.get("datasheet_url"),
                     price_inr=item_data.get("price_inr"),
                 )
                 session.add(hw_item)

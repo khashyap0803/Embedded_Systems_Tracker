@@ -323,14 +323,16 @@ class HardwareItem(SQLModel, table=True):
     name: str = Field(index=True)
     category: HardwareCategory = Field(default=HardwareCategory.OTHER)
     hardware_type: Optional[str] = None  # e.g., "gas", "proximity", "lora"
+    mpn: Optional[str] = None  # Manufacturer Part Number
     mcu: Optional[str] = None  # For boards
     architecture: Optional[str] = None  # e.g., "ARM Cortex-M4"
     quantity: int = Field(default=1, ge=0)
     status: HardwareStatus = Field(default=HardwareStatus.AVAILABLE)
-    specifications: Optional[str] = None  # JSON string for detailed specs
+    specifications: Optional[str] = None  # Voltage/current ratings, etc.
     features: Optional[str] = None  # Comma-separated features
     interface: Optional[str] = None  # e.g., "I2C", "SPI", "UART"
-    notes: Optional[str] = None
+    notes: Optional[str] = None  # Description/notes
+    datasheet_url: Optional[str] = None  # Link to datasheet
     purchase_date: Optional[date] = None
     price_inr: Optional[float] = None
     

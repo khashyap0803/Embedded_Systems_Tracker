@@ -35,7 +35,7 @@
         {
             "id": "comp_003",
             "original_name": "1000MICROF 25V",
-            "name": "Electrolytic Capacitor",
+            "name": "Electrolytic Capacitor 1000MICROF 25V",
             "mpn": "EEU-FR1E1000 (example series)",
             "description": "Aluminum electrolytic capacitor, 1000\u00b5F, 25V (radial)",
             "quantity": 10,
@@ -48,7 +48,7 @@
         {
             "id": "comp_004",
             "original_name": "100MICROF 25V",
-            "name": "Electrolytic Capacitor (100MICROF 25V)",
+            "name": "Electrolytic Capacitor 100MICROF 25V",
             "mpn": "EEU-FR1E100 (example series)",
             "description": "Aluminum electrolytic capacitor, 100\u00b5F, 25V (radial)",
             "quantity": 5,
@@ -87,7 +87,7 @@
         {
             "id": "comp_007",
             "original_name": "10MICROF 25V",
-            "name": "Electrolytic Capacitor (10MICROF 25V)",
+            "name": "Electrolytic Capacitor 10MICROF 25V",
             "mpn": "EEU-FR1E010 (example series)",
             "description": "Aluminum electrolytic capacitor, 10\u00b5F, 25V (radial)",
             "quantity": 5,
@@ -100,7 +100,7 @@
         {
             "id": "comp_008",
             "original_name": "10MICROF 50V",
-            "name": "Electrolytic Capacitor (10MICROF 50V)",
+            "name": "Electrolytic Capacitor 10MICROF 50V",
             "mpn": "EEU-FR1E010 (example series)",
             "description": "Aluminum electrolytic capacitor, 10\u00b5F, 50V (radial)",
             "quantity": 5,
@@ -139,7 +139,7 @@
         {
             "id": "comp_011",
             "original_name": "1MICROF 50V",
-            "name": "Electrolytic Capacitor (1MICROF 50V)",
+            "name": "Electrolytic Capacitor 1MICROF 50V",
             "mpn": "EEU-FR1E001 (example series)",
             "description": "Aluminum electrolytic capacitor, 1\u00b5F, 50V (radial)",
             "quantity": 5,
@@ -152,7 +152,7 @@
         {
             "id": "comp_012",
             "original_name": "2N 2222 A331",
-            "name": "BJT Transistor",
+            "name": "Transistor 2N 2222 A331",
             "mpn": "2N2222",
             "description": "General-purpose BJT transistor (2N2222)",
             "quantity": 20,
@@ -178,7 +178,7 @@
         {
             "id": "comp_014",
             "original_name": "2N 5401 B331",
-            "name": "BJT Transistor (2N 5401 B331)",
+            "name": "Transistor 2N 5401 B331",
             "mpn": "2N5401",
             "description": "General-purpose BJT transistor (2N5401)",
             "quantity": 20,
@@ -191,7 +191,7 @@
         {
             "id": "comp_015",
             "original_name": "2N 5551 A011",
-            "name": "BJT Transistor (2N 5551 A011)",
+            "name": "Transistor 2N 5551 A011",
             "mpn": "2N5551",
             "description": "General-purpose BJT transistor (2N5551)",
             "quantity": 20,
@@ -217,7 +217,7 @@
         {
             "id": "comp_017",
             "original_name": "47MICROF 63V",
-            "name": "Electrolytic Capacitor (47MICROF 63V)",
+            "name": "Electrolytic Capacitor 47MICROF 63V",
             "mpn": "EEU-FR1E047 (example series)",
             "description": "Aluminum electrolytic capacitor, 47\u00b5F, 63V (radial)",
             "quantity": 5,
@@ -321,7 +321,7 @@
         {
             "id": "comp_025",
             "original_name": "BC328 25K 5K",
-            "name": "BJT Transistor (BC328 25K 5K)",
+            "name": "Transistor BC328 25K 5K",
             "mpn": "BC328",
             "description": "General-purpose BJT transistor (BC328)",
             "quantity": 20,
@@ -334,7 +334,7 @@
         {
             "id": "comp_026",
             "original_name": "BC541 B 080",
-            "name": "BJT Transistor (BC541 B 080)",
+            "name": "Transistor BC541 B 080",
             "mpn": "BC541",
             "description": "General-purpose BJT transistor (BC541)",
             "quantity": 10,
@@ -347,7 +347,7 @@
         {
             "id": "comp_027",
             "original_name": "BC547 B 080",
-            "name": "BJT Transistor (BC547 B 080)",
+            "name": "Transistor BC547 B 080",
             "mpn": "BC547",
             "description": "General-purpose BJT transistor (BC547)",
             "quantity": 10,
@@ -360,7 +360,7 @@
         {
             "id": "comp_028",
             "original_name": "BC548 B 166",
-            "name": "BJT Transistor (BC548 B 166)",
+            "name": "Transistor BC548 B 166",
             "mpn": "BC548",
             "description": "General-purpose BJT transistor (BC548)",
             "quantity": 20,
@@ -373,7 +373,7 @@
         {
             "id": "comp_029",
             "original_name": "BC557 B 080",
-            "name": "BJT Transistor (BC557 B 080)",
+            "name": "Transistor BC557 B 080",
             "mpn": "BC557",
             "description": "General-purpose BJT transistor (BC557)",
             "quantity": 20,
@@ -392,7 +392,7 @@
             "quantity": 1,
             "package": "LGA-8 (2.0x2.5mm) / Module",
             "specifications": "1.71\u20133.6V (sensor core); many modules accept 3.3V",
-            "category": "Sensor IC / Module",
+            "category": "Sensor Module",
             "datasheet_url": "https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf",
             "status": "available"
         },
@@ -509,7 +509,7 @@
             "quantity": 1,
             "package": "N/A",
             "specifications": "N/A",
-            "category": "Tool / Consumable / Hardware",
+            "category": "Actuator / Motor",
             "datasheet_url": null,
             "status": "available"
         },
@@ -522,7 +522,7 @@
             "quantity": 1,
             "package": "Module on dev board",
             "specifications": "3.0\u20133.6V (3.3V nominal)",
-            "category": "Wireless MCU Module",
+            "category": "Microcontroller",
             "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf",
             "status": "available"
         },
@@ -535,7 +535,7 @@
             "quantity": 1,
             "package": "Module",
             "specifications": "3.0\u20133.6V (3.3V nominal)",
-            "category": "Wireless MCU Module",
+            "category": "Microcontroller",
             "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
             "status": "available"
         },
@@ -548,7 +548,7 @@
             "quantity": 1,
             "package": "IC: QFN-32 (5x5mm) / Module",
             "specifications": "3.0\u20133.6V (3.3V nominal)",
-            "category": "Wireless MCU/SoC",
+            "category": "Microcontroller",
             "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf",
             "status": "available"
         },
@@ -639,7 +639,7 @@
             "quantity": 1,
             "package": "DFN-6 (3x3mm)",
             "specifications": "VDD: 1.5\u20133.6V (typ 3.0V)",
-            "category": "Sensor IC",
+            "category": "Sensor Module",
             "datasheet_url": "https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf",
             "status": "available"
         },
@@ -880,7 +880,7 @@
         {
             "id": "comp_068",
             "original_name": "IRF540N",
-            "name": "N-channel MOSFET",
+            "name": "MOSFET IRF540N",
             "mpn": "IRF540N (Infineon/International Rectifier)",
             "description": "Power MOSFET (100V) used in switching applications",
             "quantity": 1,
@@ -893,7 +893,7 @@
         {
             "id": "comp_069",
             "original_name": "IRFZ44N",
-            "name": "N-channel MOSFET (IRFZ44N)",
+            "name": "MOSFET IRFZ44N",
             "mpn": "IRFZ44N (Infineon/International Rectifier)",
             "description": "Logic-level-ish power MOSFET (55V) commonly used in hobby power switching",
             "quantity": 3,
@@ -1055,7 +1055,7 @@
             "quantity": 4,
             "package": null,
             "specifications": null,
-            "category": "Electronic Component",
+            "category": "Actuator / Motor",
             "datasheet_url": null,
             "status": "available"
         },
@@ -1081,7 +1081,7 @@
             "quantity": 1,
             "package": null,
             "specifications": null,
-            "category": "Electronic Component",
+            "category": "Sensor Module",
             "datasheet_url": null,
             "status": "available"
         },
@@ -1127,13 +1127,13 @@
         {
             "id": "comp_087",
             "original_name": "NUCLEO-L476RG",
-            "name": "Nucleo-L476Rg",
+            "name": "NUCLEO-L476RG Development Board",
             "mpn": "NUCLEO-L476RG",
             "description": "Nucleo-L476Rg",
             "quantity": 1,
             "package": null,
             "specifications": null,
-            "category": "Electronic Component",
+            "category": "Microcontroller",
             "datasheet_url": null,
             "status": "available"
         },
@@ -1283,7 +1283,7 @@
         {
             "id": "comp_099",
             "original_name": "STM32F411CEU6",
-            "name": "STM32F4 MCU",
+            "name": "STM32F411 Black Pill Board",
             "mpn": "STM32F411CEU6 (STMicroelectronics)",
             "description": "ARM Cortex\u2011M4 MCU (STM32F411CEU6) typically 512KB Flash, LQFP\u201148",
             "quantity": 1,
